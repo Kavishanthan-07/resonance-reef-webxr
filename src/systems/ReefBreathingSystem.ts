@@ -11,6 +11,7 @@ import {
 
 import { FishSchool } from '../ocean/FishSchool.js';
 import { JellyfishGuide } from '../ocean/JellyfishGuide.js';
+import { ReefEnvironment } from '../ocean/ReefEnvironment.js';
 
 function selectFishAnimation(
   clips: readonly AnimationClip[],
@@ -55,11 +56,26 @@ export class ReefBreathingSystem extends createSystem({}) {
     | FishSchool
     | null = null;
 
+  private environment:
+    | ReefEnvironment
+    | null = null;
+
   private previousPhase:
     | BreathPhase
     | null = null;
 
   init(): void {
+    this.environment =
+      new ReefEnvironment(this.world);
+
+    this.world.createTransformEntity(
+      this.environment.root,
+    );
+
+    this.cleanupFuncs.push(() => {
+      this.environment?.dispose();
+    });
+
     /*
      * Jellyfish breathing guide.
      */
@@ -98,6 +114,11 @@ export class ReefBreathingSystem extends createSystem({}) {
      */
     this.jellyfish?.update(
       state,
+      time,
+    );
+
+    this.environment?.update(
+      delta,
       time,
     );
 

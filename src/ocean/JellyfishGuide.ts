@@ -7,7 +7,7 @@ import {
   MeshBasicMaterial,
   SphereGeometry,
   TorusGeometry,
-} from 'three';
+} from '@iwsdk/core';
 
 import type { BreathState } from '../breathing/BreathEngine.js';
 
@@ -37,6 +37,7 @@ export class JellyfishGuide {
   constructor() {
     this.root.name = 'ResonanceReefJellyfishGuide';
     this.root.position.set(0, this.baseY, -2.4);
+    this.root.scale.setScalar(0.65);
 
     /*
      * Main translucent bell.
