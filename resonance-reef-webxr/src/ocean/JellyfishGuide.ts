@@ -36,16 +36,16 @@ export class JellyfishGuide {
 
   constructor() {
     this.root.name = 'ResonanceReefJellyfishGuide';
-    this.root.position.set(0, this.baseY, -2.4);
-    this.root.scale.setScalar(0.65);
+    this.root.position.set(0, this.baseY, -2.6);
+    this.root.scale.setScalar(0.47);
 
     /*
      * Main translucent bell.
      */
     this.bellMaterial = new MeshBasicMaterial({
-      color: 0x60ddff,
+      color: 0x79d7df,
       transparent: true,
-      opacity: 0.52,
+      opacity: 0.28,
       side: DoubleSide,
       depthWrite: false,
       blending: AdditiveBlending,
@@ -71,9 +71,9 @@ export class JellyfishGuide {
      * Inner bioluminescent core.
      */
     this.coreMaterial = new MeshBasicMaterial({
-      color: 0xb9f7ff,
+      color: 0xbdecef,
       transparent: true,
-      opacity: 0.42,
+      opacity: 0.24,
       depthWrite: false,
       blending: AdditiveBlending,
     });
@@ -92,9 +92,9 @@ export class JellyfishGuide {
      * Soft glowing rim under the bell.
      */
     const ringMaterial = new MeshBasicMaterial({
-      color: 0x76e8ff,
+      color: 0x8cdde0,
       transparent: true,
-      opacity: 0.35,
+      opacity: 0.18,
       depthWrite: false,
       blending: AdditiveBlending,
     });
@@ -114,9 +114,9 @@ export class JellyfishGuide {
      * Procedural tentacles.
      */
     const tentacleMaterial = new MeshBasicMaterial({
-      color: 0x77d9ef,
+      color: 0x82cfd8,
       transparent: true,
-      opacity: 0.32,
+      opacity: 0.2,
       depthWrite: false,
       blending: AdditiveBlending,
     });
@@ -184,8 +184,8 @@ export class JellyfishGuide {
     const coreScale = 0.88 + expansion * 0.24;
     this.core.scale.setScalar(coreScale);
 
-    this.coreMaterial.opacity = 0.28 + expansion * 0.34;
-    this.bellMaterial.opacity = 0.42 + expansion * 0.16;
+    this.coreMaterial.opacity = 0.14 + expansion * 0.16;
+    this.bellMaterial.opacity = 0.2 + expansion * 0.08;
 
     const ringScale = 0.95 + expansion * 0.11;
     this.ring.scale.setScalar(ringScale);
