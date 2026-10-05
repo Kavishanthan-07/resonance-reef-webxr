@@ -9,6 +9,7 @@ import {
   type BreathPhase,
 } from '../breathing/BreathEngine.js';
 
+import { OceanAudio } from '../audio/OceanAudio.js';
 import { BioluminescentPlankton } from '../ocean/BioluminescentPlankton.js';
 import { FishSchool } from '../ocean/FishSchool.js';
 import { JellyfishGuide } from '../ocean/JellyfishGuide.js';
@@ -70,6 +71,10 @@ export class ReefBreathingSystem extends createSystem({}) {
     | BioluminescentPlankton
     | null = null;
 
+  private oceanAudio:
+    | OceanAudio
+    | null = null;
+
   private previousPhase:
     | BreathPhase
     | null = null;
@@ -84,6 +89,7 @@ export class ReefBreathingSystem extends createSystem({}) {
 
     this.cleanupFuncs.push(() => {
       this.environment?.dispose();
+      this.oceanAudio?.dispose();
     });
 
     /*
@@ -109,6 +115,9 @@ export class ReefBreathingSystem extends createSystem({}) {
     this.world.createTransformEntity(
       this.plankton.points,
     );
+
+    this.oceanAudio =
+      new OceanAudio(this.world);
 
     void this.loadFishSchool();
 
@@ -154,6 +163,13 @@ export class ReefBreathingSystem extends createSystem({}) {
 
     if (current != null) {
       this.plankton?.update(
+        state,
+        current,
+        delta,
+        time,
+      );
+
+      this.oceanAudio?.update(
         state,
         current,
         delta,

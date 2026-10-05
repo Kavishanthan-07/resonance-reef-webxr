@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "src/systems/ReefBreathingSystem.ts": {
-    "mtime": 1791179660.5024004,
-    "ast_hash": "1db333426f0fba8ff75f992d3c1dd426",
+    "mtime": 1791180760.4108024,
+    "ast_hash": "17798afd3a298770304980257324bd04",
     "semantic_hash": ""
   },
   "src/vite-env.d.ts": {
@@ -542,6 +542,16 @@
   "src/ocean/WaterCurrent.ts": {
     "mtime": 1791180140.678537,
     "ast_hash": "af11f2d130c0950e3b42828195f1791f",
+    "semantic_hash": ""
+  },
+  "src/audio/OceanAudio.ts": {
+    "mtime": 1791182477.4253893,
+    "ast_hash": "2bd8d9fec09187aec8996acaeb7c2dd3",
+    "semantic_hash": ""
+  },
+  "src/audio/ProceduralAudio.ts": {
+    "mtime": 1791182463.0203247,
+    "ast_hash": "63f2d83e88d55a6016dd84645d1f8ef2",
     "semantic_hash": ""
   }
 }
