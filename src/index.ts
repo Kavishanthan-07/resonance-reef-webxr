@@ -1,19 +1,27 @@
 /**
- * Copyright (c) Meta Platforms, Inc. and affiliates.
+ * Resonance Reef
  *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
+ * Bioresponsive WebXR underwater breathing experience.
  */
 
 import { World } from '@iwsdk/core';
 import projectOptions from 'virtual:iwsdk-project';
-import { PanelSystem } from './panel.js';
-import { RobotSystem } from './robot.js';
 
-World.create(
-  document.getElementById('scene-container') as HTMLDivElement,
-  projectOptions,
-).then((world) => {
-  world.registerSystem(RobotSystem);
-  world.registerSystem(PanelSystem);
-});
+import { ReefBreathingSystem } from './systems/ReefBreathingSystem.js';
+
+const sceneContainer = document.getElementById('scene-container');
+
+if (!(sceneContainer instanceof HTMLDivElement)) {
+  throw new Error('Missing #scene-container');
+}
+
+World.create(sceneContainer, projectOptions)
+  .then((world) => {
+    world.registerSystem(ReefBreathingSystem);
+  })
+  .catch((error: unknown) => {
+    console.error(
+      '[Resonance Reef] Failed to initialize IWSDK world.',
+      error,
+    );
+  });
