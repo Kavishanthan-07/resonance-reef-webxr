@@ -20,4 +20,46 @@ export default defineAssets({
     type: AssetType.GLTF,
     url: `${baseUrl}models/fish/manta-ray.glb`,
   },
+  'coral-a': {
+    name: 'Coral A',
+    priority: 'lazy',
+    type: AssetType.GLTF,
+    url: `${baseUrl}models/environment/coral/coral-a.glb`,
+  },
+  'coral-c': {
+    name: 'Coral C',
+    priority: 'lazy',
+    type: AssetType.GLTF,
+    url: `${baseUrl}models/environment/coral/coral-c.glb`,
+  },
+  'coral-d': {
+    name: 'Coral D',
+    priority: 'lazy',
+    type: AssetType.GLTF,
+    url: `${baseUrl}models/environment/coral/coral-d.glb`,
+  },
+  'coral-f': {
+    name: 'Coral F',
+    priority: 'lazy',
+    type: AssetType.GLTF,
+    url: `${baseUrl}models/environment/coral/coral-f.glb`,
+  },
+  'seaweed-a': {
+    name: 'Seaweed A',
+    priority: 'lazy',
+    type: AssetType.GLTF,
+    url: `${baseUrl}models/environment/vegetation/seaweed-a.glb`,
+  },
+  'seaweed-b': {
+    name: 'Seaweed B',
+    priority: 'lazy',
+    type: AssetType.GLTF,
+    url: `${baseUrl}models/environment/vegetation/seaweed-b.glb`,
+  },
+  'seaweed-c': {
+    name: 'Seaweed C',
+    priority: 'lazy',
+    type: AssetType.GLTF,
+    url: `${baseUrl}models/environment/vegetation/seaweed-c.glb`,
+  },
 });

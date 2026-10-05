@@ -1,16 +1,16 @@
 # Graph Report - resonance-reef-webxr  (2026-10-05)
 
 ## Corpus Check
-- 107 files · ~106,750 words
+- 110 files · ~236,715 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1093 nodes · 1201 edges · 108 communities (100 shown, 8 thin omitted)
+- 1115 nodes · 1249 edges · 108 communities (100 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `ec134b34`
+- Built from commit: `22f3a294`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -129,9 +129,9 @@
 5. `ReefBreathingSystem` - 18 edges
 6. `BreathState` - 17 edges
 7. `ExperienceController` - 17 edges
-8. `ReefEnvironment` - 14 edges
+8. `ReefEnvironment` - 17 edges
 9. `SessionState` - 13 edges
-10. `CurrentSample` - 12 edges
+10. `ReefDecorLayer` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `OceanAudio` --references--> `ProceduralAudio`  [EXTRACTED]
@@ -151,8 +151,8 @@
 ## Communities (108 total, 8 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.17
-Nodes (12): AudioContextConstructor, AudioWindow, clamp01(), ProceduralAudio, randomRange(), REEF_CUE_POSITIONS, ReefCue, setPannerPosition() (+4 more)
+Cohesion: 0.20
+Nodes (10): clamp01(), ProceduralAudio, randomRange(), REEF_CUE_POSITIONS, ReefCue, setPannerPosition(), setParam(), smoothStep() (+2 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.06
@@ -183,8 +183,8 @@ Cohesion: 0.08
 Nodes (23): 2D app stuck on a loading screen, An app secret was committed or published, App loads but assets 404, App mode failures, Auto-enter works on device but breaks the browser, Blank, white, or error page after launch, bubblewrap hangs or exits without doing anything, bubblewrap update fails fetching the manifest (+15 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.14
-Nodes (8): CoralTarget, createSeabedGeometry(), ReefEnvironment, setNoShadows(), SwayTarget, ParticleFieldConfig, randomRange(), UnderwaterParticles
+Cohesion: 0.08
+Nodes (18): REEF_CORAL_PLACEMENTS, REEF_SEAWEED_PLACEMENTS, ReefDecorAssetId, ReefDecorCategory, ReefDecorPlacement, Vec3Tuple, collectStandardMaterials(), ReefDecorLayer (+10 more)
 
 ### Community 9 - "Community 9"
 Cohesion: 0.10
@@ -499,8 +499,8 @@ Cohesion: 0.12
 Nodes (4): ExperienceController, ExperienceXRControls, XRButton, XRButtonAction
 
 ### Community 97 - "Community 97"
-Cohesion: 0.20
-Nodes (8): BreathPhase, BreathState, BreathTiming, JellyfishGuide, smoothStep(), clamp01(), smoothStep(), WaterCurrent
+Cohesion: 0.18
+Nodes (10): AudioContextConstructor, AudioWindow, BreathPhase, BreathState, BreathTiming, JellyfishGuide, smoothStep(), clamp01() (+2 more)
 
 ### Community 98 - "Community 98"
 Cohesion: 0.18
@@ -547,9 +547,9 @@ Nodes (4): 18. Feature Configuration (Critical!), Feature Decision Matrix, Locom
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `OceanAudio` connect `Community 94` to `Community 0`, `Community 97`, `Community 103`?**
-  _High betweenness centrality (0.009) - this node is a cross-community bridge._
-- **Why does `ReefBreathingSystem` connect `Community 103` to `Community 96`, `Community 97`, `Community 98`, `Community 101`, `Community 102`, `Community 8`, `Community 94`, `Community 95`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+  _High betweenness centrality (0.010) - this node is a cross-community bridge._
+- **Why does `ReefEnvironment` connect `Community 8` to `Community 0`, `Community 97`, `Community 103`?**
+  _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **Why does `ExperienceController` connect `Community 96` to `Community 97`, `Community 101`, `Community 103`?**
   _High betweenness centrality (0.006) - this node is a cross-community bridge._
 - **What connects `$schema`, `allow`, `enabledMcpjsonServers` to the rest of the system?**

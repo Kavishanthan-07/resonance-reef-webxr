@@ -15,39 +15,23 @@ import {
   MeshBasicMaterial,
   MeshStandardMaterial,
   PlaneGeometry,
+  RepeatWrapping,
   SphereGeometry,
+  SRGBColorSpace,
+  TextureLoader,
   type Scene,
   type Texture,
   type World,
 } from '@iwsdk/core';
 
 import type { SessionState } from '../experience/SessionController.js';
+import { ReefDecorLayer } from './ReefDecorLayer.js';
+import type {
+  CoralTarget,
+  SwayTarget,
+} from './ReefResponseTargets.js';
 import { UnderwaterParticles } from './UnderwaterParticles.js';
 import type { CurrentSample } from './WaterCurrent.js';
-
-interface SwayTarget {
-  root: Group;
-  phase: number;
-  amplitude: number;
-  speed: number;
-  responsiveness: number;
-  baseRotationX: number;
-  baseRotationZ: number;
-  bendX: number;
-  bendZ: number;
-  impact: number;
-  hitPulseId: number;
-}
-
-interface CoralTarget {
-  root: Group;
-  materials: MeshStandardMaterial[];
-  baseColors: Color[];
-  baseEmissives: Color[];
-  responsiveness: number;
-  impact: number;
-  hitPulseId: number;
-}
 
 const DEBUG_REEF_CURRENT = false;
 const RESPONSE_DECAY_SECONDS = 1.6;
@@ -101,6 +85,7 @@ export class ReefEnvironment {
   private readonly previousFog: Scene['fog'];
   private readonly swayTargets: SwayTarget[] = [];
   private readonly coralTargets: CoralTarget[] = [];
+  private readonly decorLayer: ReefDecorLayer;
   private readonly particles: UnderwaterParticles;
   private readonly coralGlowColor = new Color(0x67d9d1);
 
@@ -118,10 +103,25 @@ export class ReefEnvironment {
       new Fog(0x083847, 3.6, 9.8);
 
     this.addLighting();
+    this.decorLayer =
+      new ReefDecorLayer({
+        coralTargets: this.coralTargets,
+        swayTargets: this.swayTargets,
+      });
+
     this.addSeabed();
     this.addRocks();
     this.addCoral();
     this.addVegetation();
+    this.root.add(this.decorLayer.root);
+    void this.decorLayer
+      .load()
+      .catch((error: unknown) => {
+        console.warn(
+          '[Resonance Reef] Failed to load imported reef decor.',
+          error,
+        );
+      });
     this.addLightShafts();
 
     this.particles =
@@ -309,6 +309,7 @@ export class ReefEnvironment {
     }
 
     this.particles.update(deltaSeconds, timeSeconds);
+    this.decorLayer.update(deltaSeconds);
   }
 
   resetProgression(): void {
@@ -394,11 +395,21 @@ export class ReefEnvironment {
   }
 
   private addSeabed(): void {
+    const sandTexture = new TextureLoader().load(
+      `${import.meta.env.BASE_URL}textures/seabed/textures/sand_03_diff_1k.jpg`,
+    );
+
+    sandTexture.colorSpace = SRGBColorSpace;
+    sandTexture.wrapS = RepeatWrapping;
+    sandTexture.wrapT = RepeatWrapping;
+    sandTexture.repeat.set(4, 3);
+
     const seabedMaterial = new MeshStandardMaterial({
-      color: 0x486c66,
-      flatShading: true,
+      color: 0xb8aa8f,
+      map: sandTexture,
+      flatShading: false,
       metalness: 0,
-      roughness: 1,
+      roughness: 0.96,
     });
     const seabed = new Mesh(
       createSeabedGeometry(),
@@ -415,7 +426,7 @@ export class ReefEnvironment {
       new DodecahedronGeometry(1, 0);
     const moundMaterial =
       new MeshStandardMaterial({
-        color: 0x3f625d,
+        color: 0x52695f,
         flatShading: true,
         roughness: 1,
       });
@@ -459,17 +470,17 @@ export class ReefEnvironment {
 
     const materials = [
       new MeshStandardMaterial({
-        color: 0x294d50,
+        color: 0x314d4b,
         flatShading: true,
         roughness: 1,
       }),
       new MeshStandardMaterial({
-        color: 0x375d56,
+        color: 0x415f54,
         flatShading: true,
         roughness: 1,
       }),
       new MeshStandardMaterial({
-        color: 0x233e48,
+        color: 0x293f45,
         flatShading: true,
         roughness: 1,
       }),
