@@ -5,47 +5,99 @@ import {
   type BreathPhase,
 } from '../breathing/BreathEngine.js';
 
+import { FishSchool } from '../ocean/FishSchool.js';
 import { JellyfishGuide } from '../ocean/JellyfishGuide.js';
 
 export class ReefBreathingSystem extends createSystem({}) {
-  private readonly breathing = new BreathEngine({
-    inhaleSeconds: 5,
-    exhaleSeconds: 5,
-  });
+  private readonly breathing =
+    new BreathEngine({
+      inhaleSeconds: 5,
+      exhaleSeconds: 5,
+    });
 
-  private jellyfish: JellyfishGuide | null = null;
-  private previousPhase: BreathPhase | null = null;
+  private jellyfish:
+    | JellyfishGuide
+    | null = null;
+
+  private fishSchool:
+    | FishSchool
+    | null = null;
+
+  private previousPhase:
+    | BreathPhase
+    | null = null;
 
   init(): void {
-    this.jellyfish = new JellyfishGuide();
+    /*
+     * Jellyfish breathing guide.
+     */
+    this.jellyfish =
+      new JellyfishGuide();
+
+    this.world.createTransformEntity(
+      this.jellyfish.root,
+    );
 
     /*
-     * Register the Three.js hierarchy with IWSDK so its lifecycle
-     * belongs to the active XR world.
+     * Procedural fish school.
      */
-    this.world.createTransformEntity(this.jellyfish.root);
+    this.fishSchool =
+      new FishSchool(24);
 
-    const initialState = this.breathing.getState();
-    this.previousPhase = initialState.phase;
+    this.world.createTransformEntity(
+      this.fishSchool.root,
+    );
 
-    console.info(
+    const initialState =
+      this.breathing.getState();
+
+    this.previousPhase =
+      initialState.phase;
+
+    console.log(
       `[Resonance Reef] Breath phase: ${initialState.phase.toUpperCase()}`,
     );
   }
 
-  update(delta: number, time: number): void {
-    if (this.jellyfish == null) {
+  update(
+    delta: number,
+    time: number,
+  ): void {
+    if (
+      this.jellyfish == null ||
+      this.fishSchool == null
+    ) {
       return;
     }
 
-    const state = this.breathing.update(delta);
+    /*
+     * ONE shared breath signal.
+     */
+    const state =
+      this.breathing.update(delta);
 
-    this.jellyfish.update(state, time);
+    /*
+     * Every environmental system receives the same state.
+     */
+    this.jellyfish.update(
+      state,
+      time,
+    );
 
-    if (state.phase !== this.previousPhase) {
-      this.previousPhase = state.phase;
+    this.fishSchool.update(
+      state,
+      delta,
+      time,
+    );
 
-      console.info(
+    if (
+      state.phase !==
+      this.previousPhase
+    ) {
+      this.previousPhase =
+        state.phase;
+
+      console.log(
         `[Resonance Reef] Breath phase: ${state.phase.toUpperCase()}`,
       );
     }
