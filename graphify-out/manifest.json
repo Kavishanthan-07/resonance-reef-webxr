@@ -70,18 +70,18 @@
     "semantic_hash": ""
   },
   "src/ocean/ReefEnvironment.ts": {
-    "mtime": 1791197881.4523327,
-    "ast_hash": "796aed4f611c935bf405699333b4e7b0",
+    "mtime": 1791200961.0728333,
+    "ast_hash": "bce77500d24af088196a282ff3cc2dea",
     "semantic_hash": ""
   },
   "src/ocean/UnderwaterParticles.ts": {
-    "mtime": 1791178565.4735596,
-    "ast_hash": "72a8c9a0dedc2652382a69bfd993a8a5",
+    "mtime": 1791200521.1012914,
+    "ast_hash": "fc3f4961fe9c3ee242de3fa480b4a111",
     "semantic_hash": ""
   },
   "src/systems/ReefBreathingSystem.ts": {
-    "mtime": 1791196140.4734275,
-    "ast_hash": "9fa553d6cabf8a4ca10b7d896eeb6154",
+    "mtime": 1791200520.8551588,
+    "ast_hash": "6865d88b78d1a17fe0f3d521af4478fa",
     "semantic_hash": ""
   },
   "src/vite-env.d.ts": {
@@ -617,6 +617,16 @@
   "public/textures/seabed/textures/sand_03_disp_1k.png": {
     "mtime": 1791196907.334392,
     "ast_hash": "a9d505b87ae1c99a695609d47900145b",
+    "semantic_hash": ""
+  },
+  "src/ocean/UnderwaterAtmosphere.ts": {
+    "mtime": 1791200981.4646368,
+    "ast_hash": "41ac61ce5d241f0bf719f7c6509fd142",
+    "semantic_hash": ""
+  },
+  "artifacts/reef-realism-pass2.png": {
+    "mtime": 1791200587.0429559,
+    "ast_hash": "a0a0ef1e6b7486ca82936220a9a8ef49",
     "semantic_hash": ""
   }
 }
