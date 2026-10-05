@@ -1,4 +1,8 @@
-import { createSystem } from '@iwsdk/core';
+import {
+  AssetManager,
+  createSystem,
+  type AnimationClip,
+} from '@iwsdk/core';
 
 import {
   BreathEngine,
@@ -7,6 +11,34 @@ import {
 
 import { FishSchool } from '../ocean/FishSchool.js';
 import { JellyfishGuide } from '../ocean/JellyfishGuide.js';
+
+function selectFishAnimation(
+  clips: readonly AnimationClip[],
+): AnimationClip | null {
+  if (clips.length === 0) {
+    return null;
+  }
+
+  const priorities = [
+    'swim',
+    'swimming',
+    'idle',
+  ];
+
+  for (const priority of priorities) {
+    const clip = clips.find((candidate) =>
+      candidate.name
+        .toLowerCase()
+        .includes(priority),
+    );
+
+    if (clip != null) {
+      return clip;
+    }
+  }
+
+  return clips[0];
+}
 
 export class ReefBreathingSystem extends createSystem({}) {
   private readonly breathing =
@@ -38,15 +70,7 @@ export class ReefBreathingSystem extends createSystem({}) {
       this.jellyfish.root,
     );
 
-    /*
-     * Procedural fish school.
-     */
-    this.fishSchool =
-      new FishSchool(24);
-
-    this.world.createTransformEntity(
-      this.fishSchool.root,
-    );
+    void this.loadFishSchool();
 
     const initialState =
       this.breathing.getState();
@@ -63,13 +87,6 @@ export class ReefBreathingSystem extends createSystem({}) {
     delta: number,
     time: number,
   ): void {
-    if (
-      this.jellyfish == null ||
-      this.fishSchool == null
-    ) {
-      return;
-    }
-
     /*
      * ONE shared breath signal.
      */
@@ -79,12 +96,12 @@ export class ReefBreathingSystem extends createSystem({}) {
     /*
      * Every environmental system receives the same state.
      */
-    this.jellyfish.update(
+    this.jellyfish?.update(
       state,
       time,
     );
 
-    this.fishSchool.update(
+    this.fishSchool?.update(
       state,
       delta,
       time,
@@ -99,6 +116,77 @@ export class ReefBreathingSystem extends createSystem({}) {
 
       console.log(
         `[Resonance Reef] Breath phase: ${state.phase.toUpperCase()}`,
+      );
+    }
+  }
+
+  private async loadFishSchool(): Promise<void> {
+    try {
+      const gltf =
+        await AssetManager.loadGLTFById(
+          'reef-fish-a',
+        );
+
+      console.log(
+        '[Resonance Reef] Loaded reef-fish-a',
+      );
+
+      const animationNames = gltf.animations.map(
+        (clip) => clip.name,
+      );
+
+      console.log(
+        `[Resonance Reef] reef-fish-a animations: ${
+          animationNames.length > 0
+            ? animationNames.join(', ')
+            : '(none)'
+        }`,
+      );
+
+      const selectedAnimation =
+        selectFishAnimation(gltf.animations);
+
+      if (selectedAnimation == null) {
+        console.warn(
+          '[Resonance Reef] reef-fish-a has no animation clips; rendering static fish.',
+        );
+      } else {
+        console.log(
+          `[Resonance Reef] reef-fish-a selected animation: ${selectedAnimation.name}`,
+        );
+      }
+
+      this.fishSchool =
+        new FishSchool({
+          count: 10,
+          species: {
+            headingOffsetY: 0,
+            modelScale: 0.18,
+          },
+          swimClip: selectedAnimation,
+          visualFactory: () => {
+            const clone =
+              AssetManager.getGLTF(
+                'reef-fish-a',
+              );
+
+            if (clone == null) {
+              throw new Error(
+                'Cached reef-fish-a GLTF clone was unavailable.',
+              );
+            }
+
+            return clone.scene;
+          },
+        });
+
+      this.world.createTransformEntity(
+        this.fishSchool.root,
+      );
+    } catch (error: unknown) {
+      console.error(
+        '[Resonance Reef] Failed to load reef-fish-a GLB.',
+        error,
       );
     }
   }
