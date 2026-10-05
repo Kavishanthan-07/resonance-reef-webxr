@@ -6,10 +6,12 @@ import {
 
 import {
   BreathEngine,
-  type BreathPhase,
 } from '../breathing/BreathEngine.js';
 
 import { OceanAudio } from '../audio/OceanAudio.js';
+import { DesktopControls } from '../experience/DesktopControls.js';
+import { ExperienceController } from '../experience/ExperienceController.js';
+import { ExperienceXRControls } from '../experience/ExperienceXRControls.js';
 import { MantaFinale } from '../experience/MantaFinale.js';
 import { SessionController } from '../experience/SessionController.js';
 import { BioluminescentPlankton } from '../ocean/BioluminescentPlankton.js';
@@ -84,8 +86,16 @@ export class ReefBreathingSystem extends createSystem({}) {
     | MantaFinale
     | null = null;
 
-  private previousPhase:
-    | BreathPhase
+  private experienceController:
+    | ExperienceController
+    | null = null;
+
+  private desktopControls:
+    | DesktopControls
+    | null = null;
+
+  private xrControls:
+    | ExperienceXRControls
     | null = null;
 
   init(): void {
@@ -100,6 +110,8 @@ export class ReefBreathingSystem extends createSystem({}) {
       this.environment?.dispose();
       this.oceanAudio?.dispose();
       this.mantaFinale?.reset();
+      this.desktopControls?.dispose();
+      this.xrControls?.dispose();
     });
 
     /*
@@ -136,53 +148,70 @@ export class ReefBreathingSystem extends createSystem({}) {
       this.mantaFinale.root,
     );
 
+    this.experienceController =
+      new ExperienceController({
+        resetExperience: () => {
+          this.resetExperienceSystems();
+        },
+        resumeAudio: async () => {
+          await this.oceanAudio?.resume();
+        },
+        setMuted: (muted) => {
+          this.oceanAudio?.setMuted(muted);
+        },
+      });
+
+    this.desktopControls =
+      new DesktopControls(this.experienceController);
+    this.xrControls =
+      new ExperienceXRControls(
+        this.world,
+        this.experienceController,
+      );
+
     void this.loadFishSchool();
     void this.loadMantaFinale();
-
-    const initialState =
-      this.breathing.getState();
-
-    this.previousPhase =
-      initialState.phase;
-
-    console.log(
-      `[Resonance Reef] Breath phase: ${initialState.phase.toUpperCase()}`,
-    );
   }
 
   update(
     delta: number,
     time: number,
   ): void {
-    /*
-     * ONE shared breath signal.
-     */
-    const state =
-      this.breathing.update(delta);
-    const session =
-      this.sessionController.update(state);
-    const current =
-      this.waterCurrent?.update(
-        state,
-        delta,
-      );
+    const experience =
+      this.experienceController?.getState();
+    const isRunning =
+      experience?.phase === 'running';
+    const state = isRunning
+      ? this.breathing.update(delta)
+      : this.breathing.getState();
+    const session = isRunning
+      ? this.sessionController.update(state)
+      : this.sessionController.getState();
+    const current = isRunning
+      ? this.waterCurrent?.update(
+          state,
+          delta,
+        )
+      : undefined;
 
     /*
      * Every environmental system receives the same state.
      */
-    this.jellyfish?.update(
-      state,
-      time,
-    );
+    if (isRunning) {
+      this.jellyfish?.update(
+        state,
+        time,
+      );
+    }
 
     this.environment?.update(
-      delta,
+      isRunning ? delta : 0,
       time,
       current,
       session,
     );
 
-    if (current != null) {
+    if (isRunning && current != null) {
       this.plankton?.update(
         state,
         current,
@@ -200,31 +229,40 @@ export class ReefBreathingSystem extends createSystem({}) {
       );
     }
 
-    if (session.finaleTriggered) {
+    if (isRunning && session.finaleTriggered) {
       this.mantaFinale?.start();
     }
 
-    this.mantaFinale?.update(delta);
+    if (isRunning) {
+      this.mantaFinale?.update(delta);
 
-    this.fishSchool?.update(
-      state,
-      delta,
-      time,
-      current,
-      session,
-    );
+      if (this.mantaFinale?.isComplete === true) {
+        this.experienceController?.markComplete();
+      }
+    }
 
-    if (
-      state.phase !==
-      this.previousPhase
-    ) {
-      this.previousPhase =
-        state.phase;
-
-      console.log(
-        `[Resonance Reef] Breath phase: ${state.phase.toUpperCase()}`,
+    if (isRunning) {
+      this.fishSchool?.update(
+        state,
+        delta,
+        time,
+        current,
+        session,
       );
     }
+
+    this.desktopControls?.update(state, session);
+    this.xrControls?.update();
+  }
+
+  private resetExperienceSystems(): void {
+    this.breathing.reset();
+    this.sessionController.reset();
+    this.waterCurrent?.reset();
+    this.environment?.resetProgression();
+    this.plankton?.reset();
+    this.fishSchool?.reset();
+    this.mantaFinale?.reset();
   }
 
   private async loadMantaFinale(): Promise<void> {

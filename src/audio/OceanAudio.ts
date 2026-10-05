@@ -89,6 +89,10 @@ export class OceanAudio {
     this.procedural?.setMuted(muted);
   }
 
+  async resume(): Promise<void> {
+    await this.tryResume();
+  }
+
   update(
     state: BreathState,
     current: CurrentSample,

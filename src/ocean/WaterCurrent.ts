@@ -143,6 +143,23 @@ export class WaterCurrent {
     return this.sample;
   }
 
+  reset(): CurrentSample {
+    this.previousPhase = null;
+    this.active = false;
+    this.pulseAge = 0;
+    this.pulseId = 0;
+    this.sample.radius = START_RADIUS;
+    this.sample.strength = 0;
+    this.sample.pulseId = 0;
+    this.sample.phase = 'inactive';
+    this.ring.visible = false;
+    this.ring.scale.setScalar(1);
+    this.ring.position.copy(this.origin);
+    this.ringMaterial.opacity = 0;
+
+    return this.sample;
+  }
+
   private startPulse(): void {
     this.active = true;
     this.pulseAge = 0;

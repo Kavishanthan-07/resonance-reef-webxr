@@ -1394,10 +1394,20 @@
       "norm_label": ".setmuted()"
     },
     {
-      "label": ".update()",
+      "label": ".resume()",
       "file_type": "code",
       "source_file": "src/audio/OceanAudio.ts",
       "source_location": "L92",
+      "_origin": "ast",
+      "id": "audio_oceanaudio_oceanaudio_resume",
+      "community": 94,
+      "norm_label": ".resume()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "src/audio/OceanAudio.ts",
+      "source_location": "L96",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_update",
       "community": 0,
@@ -1407,7 +1417,7 @@
       "label": ".dispose()",
       "file_type": "code",
       "source_file": "src/audio/OceanAudio.ts",
-      "source_location": "L117",
+      "source_location": "L121",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_dispose",
       "community": 94,
@@ -1417,7 +1427,7 @@
       "label": ".installUnlockListeners()",
       "file_type": "code",
       "source_file": "src/audio/OceanAudio.ts",
-      "source_location": "L133",
+      "source_location": "L137",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_installunlocklisteners",
       "community": 94,
@@ -1427,7 +1437,7 @@
       "label": ".removeUnlockListeners()",
       "file_type": "code",
       "source_file": "src/audio/OceanAudio.ts",
-      "source_location": "L150",
+      "source_location": "L154",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_removeunlocklisteners",
       "community": 94,
@@ -1437,7 +1447,7 @@
       "label": ".tryResume()",
       "file_type": "code",
       "source_file": "src/audio/OceanAudio.ts",
-      "source_location": "L169",
+      "source_location": "L173",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_tryresume",
       "community": 94,
@@ -1447,7 +1457,7 @@
       "label": ".playDiagnosticTone()",
       "file_type": "code",
       "source_file": "src/audio/OceanAudio.ts",
-      "source_location": "L209",
+      "source_location": "L213",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_playdiagnostictone",
       "community": 94,
@@ -1457,7 +1467,7 @@
       "label": ".logGraphDiagnostics()",
       "file_type": "code",
       "source_file": "src/audio/OceanAudio.ts",
-      "source_location": "L241",
+      "source_location": "L245",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_loggraphdiagnostics",
       "community": 94,
@@ -1467,7 +1477,7 @@
       "label": ".updateListener()",
       "file_type": "code",
       "source_file": "src/audio/OceanAudio.ts",
-      "source_location": "L257",
+      "source_location": "L261",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_updatelistener",
       "community": 94,
@@ -1477,7 +1487,7 @@
       "label": ".updateStationaryListener()",
       "file_type": "code",
       "source_file": "src/audio/OceanAudio.ts",
-      "source_location": "L300",
+      "source_location": "L304",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_updatestationarylistener",
       "community": 94,
@@ -1487,7 +1497,7 @@
       "label": ".setListener()",
       "file_type": "code",
       "source_file": "src/audio/OceanAudio.ts",
-      "source_location": "L314",
+      "source_location": "L318",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_setlistener",
       "community": 94,
@@ -1497,7 +1507,7 @@
       "label": ".warnOnce()",
       "file_type": "code",
       "source_file": "src/audio/OceanAudio.ts",
-      "source_location": "L377",
+      "source_location": "L381",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_warnonce",
       "community": 94,
@@ -1680,7 +1690,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "breathing_breathengine",
-      "community": 0,
+      "community": 97,
       "norm_label": "breathengine.ts"
     },
     {
@@ -1690,7 +1700,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "breathing_breathengine_breathphase",
-      "community": 0,
+      "community": 97,
       "norm_label": "breathphase"
     },
     {
@@ -1700,7 +1710,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "breathing_breathengine_breathstate",
-      "community": 0,
+      "community": 97,
       "norm_label": "breathstate"
     },
     {
@@ -1710,7 +1720,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "breathing_breathengine_breathtiming",
-      "community": 0,
+      "community": 97,
       "norm_label": "breathtiming"
     },
     {
@@ -1772,6 +1782,366 @@
       "id": "breathing_breathengine_breathengine_getphaseduration",
       "community": 100,
       "norm_label": ".getphaseduration()"
+    },
+    {
+      "label": "DesktopControls.ts",
+      "file_type": "code",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "experience_desktopcontrols",
+      "community": 101,
+      "norm_label": "desktopcontrols.ts"
+    },
+    {
+      "label": "createElement()",
+      "file_type": "code",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L10",
+      "_origin": "ast",
+      "id": "experience_desktopcontrols_createelement",
+      "community": 101,
+      "norm_label": "createelement()"
+    },
+    {
+      "label": "getPhaseLabel()",
+      "file_type": "code",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "experience_desktopcontrols_getphaselabel",
+      "community": 101,
+      "norm_label": "getphaselabel()"
+    },
+    {
+      "label": "DesktopControls",
+      "file_type": "code",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L36",
+      "_origin": "ast",
+      "id": "experience_desktopcontrols_desktopcontrols",
+      "community": 101,
+      "norm_label": "desktopcontrols"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "experience_desktopcontrols_desktopcontrols_constructor",
+      "community": 101,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L115",
+      "_origin": "ast",
+      "id": "experience_desktopcontrols_desktopcontrols_update",
+      "community": 101,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".dispose()",
+      "file_type": "code",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L159",
+      "_origin": "ast",
+      "id": "experience_desktopcontrols_desktopcontrols_dispose",
+      "community": 101,
+      "norm_label": ".dispose()"
+    },
+    {
+      "label": ".installStyles()",
+      "file_type": "code",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L163",
+      "_origin": "ast",
+      "id": "experience_desktopcontrols_desktopcontrols_installstyles",
+      "community": 101,
+      "norm_label": ".installstyles()"
+    },
+    {
+      "label": "ExperienceController.ts",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller",
+      "community": 101,
+      "norm_label": "experiencecontroller.ts"
+    },
+    {
+      "label": "ExperiencePhase",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencephase",
+      "community": 101,
+      "norm_label": "experiencephase"
+    },
+    {
+      "label": "ExperienceState",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencestate",
+      "community": 101,
+      "norm_label": "experiencestate"
+    },
+    {
+      "label": "ExperienceControllerHooks",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencecontrollerhooks",
+      "community": 101,
+      "norm_label": "experiencecontrollerhooks"
+    },
+    {
+      "label": "ExperienceController",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencecontroller",
+      "community": 96,
+      "norm_label": "experiencecontroller"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencecontroller_constructor",
+      "community": 96,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".getState()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L29",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencecontroller_getstate",
+      "community": 96,
+      "norm_label": ".getstate()"
+    },
+    {
+      "label": ".start()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L33",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencecontroller_start",
+      "community": 96,
+      "norm_label": ".start()"
+    },
+    {
+      "label": ".pause()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencecontroller_pause",
+      "community": 96,
+      "norm_label": ".pause()"
+    },
+    {
+      "label": ".resume()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencecontroller_resume",
+      "community": 96,
+      "norm_label": ".resume()"
+    },
+    {
+      "label": ".restart()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L65",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencecontroller_restart",
+      "community": 96,
+      "norm_label": ".restart()"
+    },
+    {
+      "label": ".markComplete()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencecontroller_markcomplete",
+      "community": 96,
+      "norm_label": ".markcomplete()"
+    },
+    {
+      "label": ".setMuted()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencecontroller_setmuted",
+      "community": 96,
+      "norm_label": ".setmuted()"
+    },
+    {
+      "label": ".toggleMuted()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L88",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencecontroller_togglemuted",
+      "community": 96,
+      "norm_label": ".togglemuted()"
+    },
+    {
+      "label": ".requestAudioUnlock()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L92",
+      "_origin": "ast",
+      "id": "experience_experiencecontroller_experiencecontroller_requestaudiounlock",
+      "community": 96,
+      "norm_label": ".requestaudiounlock()"
+    },
+    {
+      "label": "ExperienceXRControls.ts",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols",
+      "community": 96,
+      "norm_label": "experiencexrcontrols.ts"
+    },
+    {
+      "label": "XRButtonAction",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_xrbuttonaction",
+      "community": 96,
+      "norm_label": "xrbuttonaction"
+    },
+    {
+      "label": "XRButton",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_xrbutton",
+      "community": 96,
+      "norm_label": "xrbutton"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_xrbutton_constructor",
+      "community": 96,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".setLabel()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_xrbutton_setlabel",
+      "community": 96,
+      "norm_label": ".setlabel()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_xrbutton_update",
+      "community": 96,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".dispose()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L90",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_xrbutton_dispose",
+      "community": 96,
+      "norm_label": ".dispose()"
+    },
+    {
+      "label": ".drawTexture()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_xrbutton_drawtexture",
+      "community": 96,
+      "norm_label": ".drawtexture()"
+    },
+    {
+      "label": "ExperienceXRControls",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L145",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_experiencexrcontrols",
+      "community": 96,
+      "norm_label": "experiencexrcontrols"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L154",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_experiencexrcontrols_constructor",
+      "community": 96,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L203",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_experiencexrcontrols_update",
+      "community": 96,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".dispose()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L217",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_experiencexrcontrols_dispose",
+      "community": 96,
+      "norm_label": ".dispose()"
+    },
+    {
+      "label": ".layoutReady()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L225",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_experiencexrcontrols_layoutready",
+      "community": 96,
+      "norm_label": ".layoutready()"
     },
     {
       "label": "MantaFinale.ts",
@@ -1950,7 +2320,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "experience_sessioncontroller",
-      "community": 0,
+      "community": 99,
       "norm_label": "sessioncontroller.ts"
     },
     {
@@ -1960,7 +2330,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessionstage",
-      "community": 0,
+      "community": 99,
       "norm_label": "sessionstage"
     },
     {
@@ -1980,7 +2350,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "experience_sessioncontroller_initial_state",
-      "community": 0,
+      "community": 99,
       "norm_label": "initial_state"
     },
     {
@@ -1990,7 +2360,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "experience_sessioncontroller_clamp01",
-      "community": 0,
+      "community": 99,
       "norm_label": "clamp01()"
     },
     {
@@ -2000,7 +2370,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "experience_sessioncontroller_smoothstep",
-      "community": 0,
+      "community": 99,
       "norm_label": "smoothstep()"
     },
     {
@@ -2010,7 +2380,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getcycleposition",
-      "community": 0,
+      "community": 99,
       "norm_label": "getcycleposition()"
     },
     {
@@ -2020,7 +2390,7 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getstage",
-      "community": 0,
+      "community": 99,
       "norm_label": "getstage()"
     },
     {
@@ -2030,7 +2400,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "experience_sessioncontroller_interpolate",
-      "community": 0,
+      "community": 99,
       "norm_label": "interpolate()"
     },
     {
@@ -2040,7 +2410,7 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getstageprogress",
-      "community": 0,
+      "community": 99,
       "norm_label": "getstageprogress()"
     },
     {
@@ -2050,7 +2420,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getenvironmentintensity",
-      "community": 0,
+      "community": 99,
       "norm_label": "getenvironmentintensity()"
     },
     {
@@ -2060,7 +2430,7 @@
       "source_location": "L114",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller",
-      "community": 0,
+      "community": 99,
       "norm_label": "sessioncontroller"
     },
     {
@@ -2070,7 +2440,7 @@
       "source_location": "L119",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_update",
-      "community": 0,
+      "community": 99,
       "norm_label": ".update()"
     },
     {
@@ -2080,7 +2450,7 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_getstate",
-      "community": 0,
+      "community": 99,
       "norm_label": ".getstate()"
     },
     {
@@ -2090,7 +2460,7 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_reset",
-      "community": 0,
+      "community": 99,
       "norm_label": ".reset()"
     },
     {
@@ -2100,7 +2470,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_index",
-      "community": 0,
+      "community": 103,
       "norm_label": "index.ts"
     },
     {
@@ -2110,7 +2480,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_index_scenecontainer",
-      "community": 0,
+      "community": 103,
       "norm_label": "scenecontainer"
     },
     {
@@ -2120,7 +2490,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton",
-      "community": 0,
+      "community": 102,
       "norm_label": "bioluminescentplankton.ts"
     },
     {
@@ -2130,7 +2500,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_randomrange",
-      "community": 0,
+      "community": 102,
       "norm_label": "randomrange()"
     },
     {
@@ -2140,7 +2510,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_clamp",
-      "community": 0,
+      "community": 102,
       "norm_label": "clamp()"
     },
     {
@@ -2150,7 +2520,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_clamp01",
-      "community": 0,
+      "community": 102,
       "norm_label": "clamp01()"
     },
     {
@@ -2160,7 +2530,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_smoothstep",
-      "community": 0,
+      "community": 102,
       "norm_label": "smoothstep()"
     },
     {
@@ -2170,7 +2540,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton",
-      "community": 0,
+      "community": 102,
       "norm_label": "bioluminescentplankton"
     },
     {
@@ -2180,28 +2550,48 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_constructor",
-      "community": 0,
+      "community": 102,
       "norm_label": ".constructor()"
+    },
+    {
+      "label": ".reset()",
+      "file_type": "code",
+      "source_file": "src/ocean/BioluminescentPlankton.ts",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "ocean_bioluminescentplankton_bioluminescentplankton_reset",
+      "community": 102,
+      "norm_label": ".reset()"
     },
     {
       "label": ".setSessionIntensity()",
       "file_type": "code",
       "source_file": "src/ocean/BioluminescentPlankton.ts",
-      "source_location": "L117",
+      "source_location": "L106",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_setsessionintensity",
-      "community": 0,
+      "community": 102,
       "norm_label": ".setsessionintensity()"
     },
     {
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/ocean/BioluminescentPlankton.ts",
-      "source_location": "L126",
+      "source_location": "L115",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_update",
-      "community": 0,
+      "community": 102,
       "norm_label": ".update()"
+    },
+    {
+      "label": ".randomizeParticles()",
+      "file_type": "code",
+      "source_file": "src/ocean/BioluminescentPlankton.ts",
+      "source_location": "L281",
+      "_origin": "ast",
+      "id": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles",
+      "community": 102,
+      "norm_label": ".randomizeparticles()"
     },
     {
       "label": "FishAgent.ts",
@@ -2210,7 +2600,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_fishagent",
-      "community": 0,
+      "community": 98,
       "norm_label": "fishagent.ts"
     },
     {
@@ -2220,7 +2610,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagentconfig",
-      "community": 0,
+      "community": 98,
       "norm_label": "fishagentconfig"
     },
     {
@@ -2230,7 +2620,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagent",
-      "community": 0,
+      "community": 98,
       "norm_label": "fishagent"
     },
     {
@@ -2240,7 +2630,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagent_constructor",
-      "community": 0,
+      "community": 98,
       "norm_label": ".constructor()"
     },
     {
@@ -2250,7 +2640,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagent_updateanimation",
-      "community": 0,
+      "community": 98,
       "norm_label": ".updateanimation()"
     },
     {
@@ -2260,7 +2650,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_fishschool",
-      "community": 0,
+      "community": 98,
       "norm_label": "fishschool.ts"
     },
     {
@@ -2270,7 +2660,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "ocean_fishschool_fishspeciesconfig",
-      "community": 0,
+      "community": 98,
       "norm_label": "fishspeciesconfig"
     },
     {
@@ -2280,7 +2670,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschoolconfig",
-      "community": 0,
+      "community": 98,
       "norm_label": "fishschoolconfig"
     },
     {
@@ -2290,7 +2680,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "ocean_fishschool_randomrange",
-      "community": 0,
+      "community": 98,
       "norm_label": "randomrange()"
     },
     {
@@ -2300,7 +2690,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "ocean_fishschool_smoothstep",
-      "community": 0,
+      "community": 98,
       "norm_label": "smoothstep()"
     },
     {
@@ -2310,7 +2700,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "ocean_fishschool_default_species",
-      "community": 0,
+      "community": 98,
       "norm_label": "default_species"
     },
     {
@@ -2320,7 +2710,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool",
-      "community": 0,
+      "community": 98,
       "norm_label": "fishschool"
     },
     {
@@ -2330,7 +2720,7 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_constructor",
-      "community": 0,
+      "community": 98,
       "norm_label": ".constructor()"
     },
     {
@@ -2340,7 +2730,7 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_creategatheroffset",
-      "community": 0,
+      "community": 98,
       "norm_label": ".creategatheroffset()"
     },
     {
@@ -2350,7 +2740,7 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_createoutwardbias",
-      "community": 0,
+      "community": 98,
       "norm_label": ".createoutwardbias()"
     },
     {
@@ -2360,8 +2750,18 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_update",
-      "community": 0,
+      "community": 98,
       "norm_label": ".update()"
+    },
+    {
+      "label": ".reset()",
+      "file_type": "code",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L449",
+      "_origin": "ast",
+      "id": "ocean_fishschool_fishschool_reset",
+      "community": 98,
+      "norm_label": ".reset()"
     },
     {
       "label": "JellyfishGuide.ts",
@@ -2370,7 +2770,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_jellyfishguide",
-      "community": 0,
+      "community": 97,
       "norm_label": "jellyfishguide.ts"
     },
     {
@@ -2380,7 +2780,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_smoothstep",
-      "community": 0,
+      "community": 97,
       "norm_label": "smoothstep()"
     },
     {
@@ -2390,7 +2790,7 @@
       "source_location": "L24",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_jellyfishguide",
-      "community": 0,
+      "community": 97,
       "norm_label": "jellyfishguide"
     },
     {
@@ -2400,7 +2800,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_jellyfishguide_constructor",
-      "community": 0,
+      "community": 97,
       "norm_label": ".constructor()"
     },
     {
@@ -2410,7 +2810,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_jellyfishguide_update",
-      "community": 0,
+      "community": 97,
       "norm_label": ".update()"
     },
     {
@@ -2504,10 +2904,20 @@
       "norm_label": ".update()"
     },
     {
-      "label": ".dispose()",
+      "label": ".resetProgression()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
       "source_location": "L314",
+      "_origin": "ast",
+      "id": "ocean_reefenvironment_reefenvironment_resetprogression",
+      "community": 8,
+      "norm_label": ".resetprogression()"
+    },
+    {
+      "label": ".dispose()",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefEnvironment.ts",
+      "source_location": "L343",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_dispose",
       "community": 8,
@@ -2517,7 +2927,7 @@
       "label": ".addLighting()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L321",
+      "source_location": "L350",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addlighting",
       "community": 8,
@@ -2527,7 +2937,7 @@
       "label": ".addSeabed()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L367",
+      "source_location": "L396",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addseabed",
       "community": 8,
@@ -2537,7 +2947,7 @@
       "label": ".addRocks()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L424",
+      "source_location": "L453",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addrocks",
       "community": 8,
@@ -2547,7 +2957,7 @@
       "label": ".addCoral()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L489",
+      "source_location": "L518",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addcoral",
       "community": 8,
@@ -2557,7 +2967,7 @@
       "label": ".addVegetation()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L640",
+      "source_location": "L669",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addvegetation",
       "community": 8,
@@ -2567,7 +2977,7 @@
       "label": ".addLightShafts()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L734",
+      "source_location": "L763",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addlightshafts",
       "community": 8,
@@ -2640,7 +3050,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_watercurrent",
-      "community": 0,
+      "community": 97,
       "norm_label": "watercurrent.ts"
     },
     {
@@ -2660,7 +3070,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "ocean_watercurrent_clamp01",
-      "community": 0,
+      "community": 97,
       "norm_label": "clamp01()"
     },
     {
@@ -2670,7 +3080,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "ocean_watercurrent_smoothstep",
-      "community": 0,
+      "community": 97,
       "norm_label": "smoothstep()"
     },
     {
@@ -2680,7 +3090,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent",
-      "community": 0,
+      "community": 97,
       "norm_label": "watercurrent"
     },
     {
@@ -2690,7 +3100,7 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent_constructor",
-      "community": 0,
+      "community": 97,
       "norm_label": ".constructor()"
     },
     {
@@ -2700,27 +3110,37 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent_update",
-      "community": 0,
+      "community": 97,
       "norm_label": ".update()"
+    },
+    {
+      "label": ".reset()",
+      "file_type": "code",
+      "source_file": "src/ocean/WaterCurrent.ts",
+      "source_location": "L146",
+      "_origin": "ast",
+      "id": "ocean_watercurrent_watercurrent_reset",
+      "community": 97,
+      "norm_label": ".reset()"
     },
     {
       "label": ".startPulse()",
       "file_type": "code",
       "source_file": "src/ocean/WaterCurrent.ts",
-      "source_location": "L146",
+      "source_location": "L163",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent_startpulse",
-      "community": 0,
+      "community": 97,
       "norm_label": ".startpulse()"
     },
     {
       "label": ".updateVisual()",
       "file_type": "code",
       "source_file": "src/ocean/WaterCurrent.ts",
-      "source_location": "L162",
+      "source_location": "L179",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent_updatevisual",
-      "community": 0,
+      "community": 97,
       "norm_label": ".updatevisual()"
     },
     {
@@ -2730,67 +3150,77 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem",
-      "community": 0,
+      "community": 97,
       "norm_label": "reefbreathingsystem.ts"
     },
     {
       "label": "selectFishAnimation()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L21",
+      "source_location": "L23",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_selectfishanimation",
-      "community": 0,
+      "community": 103,
       "norm_label": "selectfishanimation()"
     },
     {
       "label": "ReefBreathingSystem",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L49",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem",
-      "community": 0,
+      "community": 103,
       "norm_label": "reefbreathingsystem"
     },
     {
       "label": ".init()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L91",
+      "source_location": "L101",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_init",
-      "community": 0,
+      "community": 103,
       "norm_label": ".init()"
     },
     {
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L153",
+      "source_location": "L176",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_update",
-      "community": 0,
+      "community": 103,
       "norm_label": ".update()"
+    },
+    {
+      "label": ".resetExperienceSystems()",
+      "file_type": "code",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L258",
+      "_origin": "ast",
+      "id": "systems_reefbreathingsystem_reefbreathingsystem_resetexperiencesystems",
+      "community": 103,
+      "norm_label": ".resetexperiencesystems()"
     },
     {
       "label": ".loadMantaFinale()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L230",
+      "source_location": "L268",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_loadmantafinale",
-      "community": 0,
+      "community": 103,
       "norm_label": ".loadmantafinale()"
     },
     {
       "label": ".loadFishSchool()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L286",
+      "source_location": "L324",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_loadfishschool",
-      "community": 0,
+      "community": 103,
       "norm_label": ".loadfishschool()"
     },
     {
@@ -4130,7 +4560,7 @@
       "source_location": "L750",
       "_origin": "ast",
       "id": "agents_skills_iwsdk_dev_references_api_reference_md_references_api_reference_18_feature_configuration_critical",
-      "community": 1,
+      "community": 106,
       "norm_label": "18. feature configuration (critical!)"
     },
     {
@@ -4140,7 +4570,7 @@
       "source_location": "L754",
       "_origin": "ast",
       "id": "agents_skills_iwsdk_dev_references_api_reference_md_references_api_reference_feature_decision_matrix",
-      "community": 1,
+      "community": 106,
       "norm_label": "feature decision matrix"
     },
     {
@@ -4150,7 +4580,7 @@
       "source_location": "L765",
       "_origin": "ast",
       "id": "agents_skills_iwsdk_dev_references_api_reference_md_references_api_reference_locomotion_requires_environment_setup",
-      "community": 1,
+      "community": 106,
       "norm_label": "locomotion requires environment setup"
     },
     {
@@ -4160,7 +4590,7 @@
       "source_location": "L793",
       "_origin": "ast",
       "id": "agents_skills_iwsdk_dev_references_api_reference_md_references_api_reference_vr_vs_ar_feature_sets",
-      "community": 1,
+      "community": 106,
       "norm_label": "vr vs ar feature sets"
     },
     {
@@ -4320,7 +4750,7 @@
       "source_location": "L1294",
       "_origin": "ast",
       "id": "agents_skills_iwsdk_dev_references_api_reference_md_references_api_reference_what_iwsdk_provides_don_t_rebuild_these",
-      "community": 11,
+      "community": 104,
       "norm_label": "what iwsdk provides (don't rebuild these)"
     },
     {
@@ -4330,7 +4760,7 @@
       "source_location": "L1298",
       "_origin": "ast",
       "id": "agents_skills_iwsdk_dev_references_api_reference_md_references_api_reference_reinvention_risk_table",
-      "community": 11,
+      "community": 104,
       "norm_label": "reinvention risk table"
     },
     {
@@ -4340,7 +4770,7 @@
       "source_location": "L1325",
       "_origin": "ast",
       "id": "agents_skills_iwsdk_dev_references_api_reference_md_references_api_reference_asset_loading_assetmanager",
-      "community": 11,
+      "community": 104,
       "norm_label": "asset loading (assetmanager)"
     },
     {
@@ -4350,7 +4780,7 @@
       "source_location": "L1383",
       "_origin": "ast",
       "id": "agents_skills_iwsdk_dev_references_api_reference_md_references_api_reference_entity_parenting_level_lifecycle",
-      "community": 11,
+      "community": 104,
       "norm_label": "entity parenting & level lifecycle"
     },
     {
@@ -4360,7 +4790,7 @@
       "source_location": "L1413",
       "_origin": "ast",
       "id": "agents_skills_iwsdk_dev_references_api_reference_md_references_api_reference_input_interaction",
-      "community": 11,
+      "community": 104,
       "norm_label": "input & interaction"
     },
     {
@@ -4370,7 +4800,7 @@
       "source_location": "L1449",
       "_origin": "ast",
       "id": "agents_skills_iwsdk_dev_references_api_reference_md_references_api_reference_built_in_visuals_don_t_recreate",
-      "community": 11,
+      "community": 104,
       "norm_label": "built-in visuals (don't recreate)"
     },
     {
@@ -7820,7 +8250,7 @@
       "source_location": "L750",
       "_origin": "ast",
       "id": "claude_skills_iwsdk_dev_references_api_reference_md_references_api_reference_18_feature_configuration_critical",
-      "community": 2,
+      "community": 107,
       "norm_label": "18. feature configuration (critical!)"
     },
     {
@@ -7830,7 +8260,7 @@
       "source_location": "L754",
       "_origin": "ast",
       "id": "claude_skills_iwsdk_dev_references_api_reference_md_references_api_reference_feature_decision_matrix",
-      "community": 2,
+      "community": 107,
       "norm_label": "feature decision matrix"
     },
     {
@@ -7840,7 +8270,7 @@
       "source_location": "L765",
       "_origin": "ast",
       "id": "claude_skills_iwsdk_dev_references_api_reference_md_references_api_reference_locomotion_requires_environment_setup",
-      "community": 2,
+      "community": 107,
       "norm_label": "locomotion requires environment setup"
     },
     {
@@ -7850,7 +8280,7 @@
       "source_location": "L793",
       "_origin": "ast",
       "id": "claude_skills_iwsdk_dev_references_api_reference_md_references_api_reference_vr_vs_ar_feature_sets",
-      "community": 2,
+      "community": 107,
       "norm_label": "vr vs ar feature sets"
     },
     {
@@ -8010,7 +8440,7 @@
       "source_location": "L1294",
       "_origin": "ast",
       "id": "claude_skills_iwsdk_dev_references_api_reference_md_references_api_reference_what_iwsdk_provides_don_t_rebuild_these",
-      "community": 13,
+      "community": 105,
       "norm_label": "what iwsdk provides (don't rebuild these)"
     },
     {
@@ -8020,7 +8450,7 @@
       "source_location": "L1298",
       "_origin": "ast",
       "id": "claude_skills_iwsdk_dev_references_api_reference_md_references_api_reference_reinvention_risk_table",
-      "community": 13,
+      "community": 105,
       "norm_label": "reinvention risk table"
     },
     {
@@ -8030,7 +8460,7 @@
       "source_location": "L1325",
       "_origin": "ast",
       "id": "claude_skills_iwsdk_dev_references_api_reference_md_references_api_reference_asset_loading_assetmanager",
-      "community": 13,
+      "community": 105,
       "norm_label": "asset loading (assetmanager)"
     },
     {
@@ -8040,7 +8470,7 @@
       "source_location": "L1383",
       "_origin": "ast",
       "id": "claude_skills_iwsdk_dev_references_api_reference_md_references_api_reference_entity_parenting_level_lifecycle",
-      "community": 13,
+      "community": 105,
       "norm_label": "entity parenting & level lifecycle"
     },
     {
@@ -8050,7 +8480,7 @@
       "source_location": "L1413",
       "_origin": "ast",
       "id": "claude_skills_iwsdk_dev_references_api_reference_md_references_api_reference_input_interaction",
-      "community": 13,
+      "community": 105,
       "norm_label": "input & interaction"
     },
     {
@@ -8060,7 +8490,7 @@
       "source_location": "L1449",
       "_origin": "ast",
       "id": "claude_skills_iwsdk_dev_references_api_reference_md_references_api_reference_built_in_visuals_don_t_recreate",
-      "community": 13,
+      "community": 105,
       "norm_label": "built-in visuals (don't recreate)"
     },
     {
@@ -11938,6 +12368,16 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/audio/OceanAudio.ts",
+      "source_location": "L92",
+      "weight": 1.0,
+      "source": "audio_oceanaudio_oceanaudio",
+      "target": "audio_oceanaudio_oceanaudio_resume",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/OceanAudio.ts",
       "source_location": "L252",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -12069,6 +12509,17 @@
       "confidence_score": 1.0,
       "source": "audio_oceanaudio_oceanaudio_constructor",
       "target": "audio_oceanaudio_oceanaudio_warnonce"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/OceanAudio.ts",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "audio_oceanaudio_oceanaudio_resume",
+      "target": "audio_oceanaudio_oceanaudio_tryresume",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -12714,6 +13165,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols",
+      "target": "breathing_breathengine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L1",
       "weight": 1.0,
@@ -12819,6 +13281,28 @@
       "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem",
       "target": "breathing_breathengine_breathphase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols",
+      "target": "breathing_breathengine_breathstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols_desktopcontrols_update",
+      "target": "breathing_breathengine_breathstate",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -13027,81 +13511,276 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L11",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L10",
       "weight": 1.0,
-      "source": "experience_mantafinale",
-      "target": "experience_mantafinale_finalestate",
+      "source": "experience_desktopcontrols",
+      "target": "experience_desktopcontrols_createelement",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L30",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L36",
       "weight": 1.0,
-      "source": "experience_mantafinale",
-      "target": "experience_mantafinale_manta_finale_defaults",
+      "source": "experience_desktopcontrols",
+      "target": "experience_desktopcontrols_desktopcontrols",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L37",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L23",
       "weight": 1.0,
-      "source": "experience_mantafinale",
-      "target": "experience_mantafinale_manta_finale_points",
+      "source": "experience_desktopcontrols",
+      "target": "experience_desktopcontrols_getphaselabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols",
+      "target": "experience_experiencecontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols",
+      "target": "experience_experiencecontroller_experiencecontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols",
+      "target": "experience_experiencecontroller_experiencephase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols",
+      "target": "experience_sessioncontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols",
+      "target": "experience_sessioncontroller_sessionstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "experience_desktopcontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols_desktopcontrols_constructor",
+      "target": "experience_desktopcontrols_createelement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols_desktopcontrols_installstyles",
+      "target": "experience_desktopcontrols_createelement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols_desktopcontrols_update",
+      "target": "experience_desktopcontrols_getphaselabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols_desktopcontrols",
+      "target": "experience_desktopcontrols_desktopcontrols_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L159",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols_desktopcontrols",
+      "target": "experience_desktopcontrols_desktopcontrols_dispose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols_desktopcontrols",
+      "target": "experience_desktopcontrols_desktopcontrols_installstyles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols_desktopcontrols",
+      "target": "experience_desktopcontrols_desktopcontrols_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "experience_desktopcontrols_desktopcontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem_reefbreathingsystem",
+      "target": "experience_desktopcontrols_desktopcontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols_desktopcontrols_constructor",
+      "target": "experience_desktopcontrols_desktopcontrols_installstyles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols_desktopcontrols_constructor",
+      "target": "experience_experiencecontroller_experiencecontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L115",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols_desktopcontrols_update",
+      "target": "experience_sessioncontroller_sessionstate",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L80",
-      "weight": 1.0,
-      "source": "experience_mantafinale",
-      "target": "experience_mantafinale_mantafinale",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L25",
-      "weight": 1.0,
-      "source": "experience_mantafinale",
-      "target": "experience_mantafinale_mantafinaleasset",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
+      "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L18",
       "weight": 1.0,
-      "source": "experience_mantafinale",
-      "target": "experience_mantafinale_mantafinaleconfig",
+      "source": "experience_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencecontroller",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L45",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L12",
       "weight": 1.0,
-      "source": "experience_mantafinale",
-      "target": "experience_mantafinale_selectmantaanimation",
+      "source": "experience_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencecontrollerhooks",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L73",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L1",
       "weight": 1.0,
-      "source": "experience_mantafinale",
-      "target": "experience_mantafinale_setnoshadows",
+      "source": "experience_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencephase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "experience_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencestate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols",
+      "target": "experience_experiencecontroller",
       "confidence_score": 1.0
     },
     {
@@ -13112,109 +13791,129 @@
       "source_location": "L13",
       "weight": 1.0,
       "source": "systems_reefbreathingsystem",
-      "target": "experience_mantafinale",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L133",
-      "weight": 1.0,
-      "source": "experience_mantafinale_mantafinale_setasset",
-      "target": "experience_mantafinale_selectmantaanimation",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L126",
-      "weight": 1.0,
-      "source": "experience_mantafinale_mantafinale_setasset",
-      "target": "experience_mantafinale_setnoshadows",
+      "target": "experience_experiencecontroller",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L236",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L25",
       "weight": 1.0,
-      "source": "experience_mantafinale_mantafinale",
-      "target": "experience_mantafinale_mantafinale_complete",
+      "source": "experience_experiencecontroller_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencecontroller_constructor",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L99",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L29",
       "weight": 1.0,
-      "source": "experience_mantafinale_mantafinale",
-      "target": "experience_mantafinale_mantafinale_constructor",
+      "source": "experience_experiencecontroller_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencecontroller_getstate",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L110",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L69",
       "weight": 1.0,
-      "source": "experience_mantafinale_mantafinale",
-      "target": "experience_mantafinale_mantafinale_currentstate",
+      "source": "experience_experiencecontroller_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencecontroller_markcomplete",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L114",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L42",
       "weight": 1.0,
-      "source": "experience_mantafinale_mantafinale",
-      "target": "experience_mantafinale_mantafinale_iscomplete",
+      "source": "experience_experiencecontroller_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencecontroller_pause",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L223",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L92",
       "weight": 1.0,
-      "source": "experience_mantafinale_mantafinale",
-      "target": "experience_mantafinale_mantafinale_reset",
+      "source": "experience_experiencecontroller_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencecontroller_requestaudiounlock",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L118",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L65",
       "weight": 1.0,
-      "source": "experience_mantafinale_mantafinale",
-      "target": "experience_mantafinale_mantafinale_setasset",
+      "source": "experience_experiencecontroller_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencecontroller_restart",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L162",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L53",
       "weight": 1.0,
-      "source": "experience_mantafinale_mantafinale",
-      "target": "experience_mantafinale_mantafinale_start",
+      "source": "experience_experiencecontroller_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencecontroller_resume",
       "confidence_score": 1.0
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/experience/MantaFinale.ts",
-      "source_location": "L185",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L80",
       "weight": 1.0,
-      "source": "experience_mantafinale_mantafinale",
-      "target": "experience_mantafinale_mantafinale_update",
+      "source": "experience_experiencecontroller_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencecontroller_setmuted",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "experience_experiencecontroller_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencecontroller_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "experience_experiencecontroller_experiencecontroller",
+      "target": "experience_experiencecontroller_experiencecontroller_togglemuted",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols",
+      "target": "experience_experiencecontroller_experiencecontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_experiencexrcontrols_constructor",
+      "target": "experience_experiencecontroller_experiencecontroller",
       "confidence_score": 1.0
     },
     {
@@ -13225,8 +13924,486 @@
       "source_location": "L13",
       "weight": 1.0,
       "source": "systems_reefbreathingsystem",
-      "target": "experience_mantafinale_mantafinale",
+      "target": "experience_experiencecontroller_experiencecontroller",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem_reefbreathingsystem",
+      "target": "experience_experiencecontroller_experiencecontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "experience_experiencecontroller_experiencecontroller_restart",
+      "target": "experience_experiencecontroller_experiencecontroller_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "experience_experiencecontroller_experiencecontroller_start",
+      "target": "experience_experiencecontroller_experiencecontroller_requestaudiounlock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "experience_experiencecontroller_experiencecontroller_resume",
+      "target": "experience_experiencecontroller_experiencecontroller_requestaudiounlock",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceController.ts",
+      "source_location": "L89",
+      "weight": 1.0,
+      "source": "experience_experiencecontroller_experiencecontroller_togglemuted",
+      "target": "experience_experiencecontroller_experiencecontroller_setmuted",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L145",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols",
+      "target": "experience_experiencexrcontrols_experiencexrcontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols",
+      "target": "experience_experiencexrcontrols_xrbutton",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols",
+      "target": "experience_experiencexrcontrols_xrbuttonaction",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "experience_experiencexrcontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrbutton",
+      "target": "experience_experiencexrcontrols_xrbutton_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrbutton",
+      "target": "experience_experiencexrcontrols_xrbutton_dispose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrbutton",
+      "target": "experience_experiencexrcontrols_xrbutton_drawtexture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrbutton",
+      "target": "experience_experiencexrcontrols_xrbutton_setlabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrbutton",
+      "target": "experience_experiencexrcontrols_xrbutton_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrbutton_constructor",
+      "target": "experience_experiencexrcontrols_xrbutton_setlabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L208",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_experiencexrcontrols_update",
+      "target": "experience_experiencexrcontrols_xrbutton_setlabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrbutton_setlabel",
+      "target": "experience_experiencexrcontrols_xrbutton_drawtexture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrbutton_update",
+      "target": "experience_experiencexrcontrols_xrbutton_drawtexture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L91",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrbutton_dispose",
+      "target": "experience_experiencexrcontrols_experiencexrcontrols_dispose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_experiencexrcontrols",
+      "target": "experience_experiencexrcontrols_experiencexrcontrols_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L217",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_experiencexrcontrols",
+      "target": "experience_experiencexrcontrols_experiencexrcontrols_dispose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L225",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_experiencexrcontrols",
+      "target": "experience_experiencexrcontrols_experiencexrcontrols_layoutready",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_experiencexrcontrols",
+      "target": "experience_experiencexrcontrols_experiencexrcontrols_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "experience_experiencexrcontrols_experiencexrcontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem_reefbreathingsystem",
+      "target": "experience_experiencexrcontrols_experiencexrcontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L200",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_experiencexrcontrols_constructor",
+      "target": "experience_experiencexrcontrols_experiencexrcontrols_layoutready",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_finalestate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_manta_finale_defaults"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_manta_finale_points"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_mantafinale"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_mantafinaleasset"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_mantafinaleconfig"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_selectmantaanimation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L73",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_setnoshadows"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "experience_mantafinale"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L133",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale_mantafinale_setasset",
+      "target": "experience_mantafinale_selectmantaanimation"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L126",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale_mantafinale_setasset",
+      "target": "experience_mantafinale_setnoshadows"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L236",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_complete"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L99",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_constructor"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L110",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_currentstate"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L114",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_iscomplete"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L223",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_reset"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_setasset"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L162",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_start"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L185",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_update"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "experience_mantafinale_mantafinale"
     },
     {
       "relation": "references",
@@ -13235,9 +14412,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem",
-      "target": "experience_mantafinale_mantafinale",
-      "confidence_score": 1.0
+      "target": "experience_mantafinale_mantafinale"
     },
     {
       "relation": "calls",
@@ -13246,9 +14423,9 @@
       "source_file": "src/experience/MantaFinale.ts",
       "source_location": "L149",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_mantafinale_mantafinale_setasset",
-      "target": "experience_mantafinale_mantafinale_reset",
-      "confidence_score": 1.0
+      "target": "experience_mantafinale_mantafinale_reset"
     },
     {
       "relation": "calls",
@@ -13257,9 +14434,9 @@
       "source_file": "src/experience/MantaFinale.ts",
       "source_location": "L152",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_mantafinale_mantafinale_setasset",
-      "target": "experience_mantafinale_mantafinale_start",
-      "confidence_score": 1.0
+      "target": "experience_mantafinale_mantafinale_start"
     },
     {
       "relation": "calls",
@@ -13268,9 +14445,9 @@
       "source_file": "src/experience/MantaFinale.ts",
       "source_location": "L179",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_mantafinale_mantafinale_start",
-      "target": "experience_mantafinale_mantafinale_reset",
-      "confidence_score": 1.0
+      "target": "experience_mantafinale_mantafinale_reset"
     },
     {
       "relation": "calls",
@@ -13279,9 +14456,9 @@
       "source_file": "src/experience/MantaFinale.ts",
       "source_location": "L217",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_mantafinale_mantafinale_update",
-      "target": "experience_mantafinale_mantafinale_complete",
-      "confidence_score": 1.0
+      "target": "experience_mantafinale_mantafinale_complete"
     },
     {
       "relation": "contains",
@@ -13785,6 +14962,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/BioluminescentPlankton.ts",
+      "source_location": "L285",
+      "weight": 1.0,
+      "source": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles",
+      "target": "ocean_bioluminescentplankton_randomrange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L118",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -13871,6 +15059,26 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/BioluminescentPlankton.ts",
+      "source_location": "L281",
+      "weight": 1.0,
+      "source": "ocean_bioluminescentplankton_bioluminescentplankton",
+      "target": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/BioluminescentPlankton.ts",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "ocean_bioluminescentplankton_bioluminescentplankton",
+      "target": "ocean_bioluminescentplankton_bioluminescentplankton_reset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L117",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -13908,6 +15116,28 @@
       "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem",
       "target": "ocean_bioluminescentplankton_bioluminescentplankton"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/BioluminescentPlankton.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "source": "ocean_bioluminescentplankton_bioluminescentplankton_constructor",
+      "target": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/BioluminescentPlankton.ts",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "ocean_bioluminescentplankton_bioluminescentplankton_reset",
+      "target": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -14135,6 +15365,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L458",
+      "weight": 1.0,
+      "source": "ocean_fishschool_fishschool_reset",
+      "target": "ocean_fishschool_randomrange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
       "source_location": "L177",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14170,6 +15411,16 @@
       "confidence_score": 1.0,
       "source": "ocean_fishschool_fishschool",
       "target": "ocean_fishschool_fishschool_createoutwardbias"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L449",
+      "weight": 1.0,
+      "source": "ocean_fishschool_fishschool",
+      "target": "ocean_fishschool_fishschool_reset",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -14541,6 +15792,16 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/ReefEnvironment.ts",
+      "source_location": "L314",
+      "weight": 1.0,
+      "source": "ocean_reefenvironment_reefenvironment",
+      "target": "ocean_reefenvironment_reefenvironment_resetprogression",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefEnvironment.ts",
       "source_location": "L116",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14816,6 +16077,16 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/WaterCurrent.ts",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "ocean_watercurrent_watercurrent",
+      "target": "ocean_watercurrent_watercurrent_reset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/WaterCurrent.ts",
       "source_location": "L143",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14943,8 +16214,18 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L230",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem",
-      "target": "systems_reefbreathingsystem_reefbreathingsystem_loadmantafinale",
+      "target": "systems_reefbreathingsystem_reefbreathingsystem_loadmantafinale"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L258",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem_reefbreathingsystem",
+      "target": "systems_reefbreathingsystem_reefbreathingsystem_resetexperiencesystems",
       "confidence_score": 1.0
     },
     {
@@ -14975,9 +16256,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem_init",
-      "target": "systems_reefbreathingsystem_reefbreathingsystem_loadmantafinale",
-      "confidence_score": 1.0
+      "target": "systems_reefbreathingsystem_reefbreathingsystem_loadmantafinale"
     },
     {
       "relation": "contains",
@@ -21881,5 +23162,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d5f81702ddbcc5a2b4244c2adebbaae1f2b5e66d"
+  "built_at_commit": "ec134b34f7e72a7a344d4cd50c252648094b3a34"
 }

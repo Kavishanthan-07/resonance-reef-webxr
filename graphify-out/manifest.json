@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   "src/ocean/FishSchool.ts": {
-    "mtime": 1791184027.0500724,
-    "ast_hash": "3bd173df212259e01d4e716b008869c5",
+    "mtime": 1791196112.884534,
+    "ast_hash": "1de06e9dc2bc94fd20250a27bdc60c2d",
     "semantic_hash": ""
   },
   "src/ocean/JellyfishGuide.ts": {
@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "src/ocean/ReefEnvironment.ts": {
-    "mtime": 1791184027.3284278,
-    "ast_hash": "4d7b5155757d5f9bd198b82164b460a1",
+    "mtime": 1791196112.6243136,
+    "ast_hash": "ce3fe4f4573e62996a4981c8dc76b624",
     "semantic_hash": ""
   },
   "src/ocean/UnderwaterParticles.ts": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "src/systems/ReefBreathingSystem.ts": {
-    "mtime": 1791184341.7238705,
-    "ast_hash": "ea7554d50ea4d9e8d820b53bf8cb23f9",
+    "mtime": 1791196140.4734275,
+    "ast_hash": "9fa553d6cabf8a4ca10b7d896eeb6154",
     "semantic_hash": ""
   },
   "src/vite-env.d.ts": {
@@ -535,18 +535,18 @@
     "semantic_hash": ""
   },
   "src/ocean/BioluminescentPlankton.ts": {
-    "mtime": 1791184026.7673547,
-    "ast_hash": "9214e55389ae1367eb1bbf0f458ec314",
+    "mtime": 1791196112.3836162,
+    "ast_hash": "f4f8aae7d2d35a3f8ec3eae30bc3eb71",
     "semantic_hash": ""
   },
   "src/ocean/WaterCurrent.ts": {
-    "mtime": 1791180140.678537,
-    "ast_hash": "af11f2d130c0950e3b42828195f1791f",
+    "mtime": 1791196112.1329558,
+    "ast_hash": "d3a1ad1f9867c0fad9aad6caf2c974ea",
     "semantic_hash": ""
   },
   "src/audio/OceanAudio.ts": {
-    "mtime": 1791183435.2431023,
-    "ast_hash": "ce61cd1bf3ed3f82504755dd7b11047a",
+    "mtime": 1791196111.900521,
+    "ast_hash": "409a2e2f2ca21adfa7595e1d83a1150c",
     "semantic_hash": ""
   },
   "src/audio/ProceduralAudio.ts": {
@@ -562,6 +562,21 @@
   "src/experience/MantaFinale.ts": {
     "mtime": 1791195464.2983243,
     "ast_hash": "96a1d4231ff14d3a4323172378482657",
+    "semantic_hash": ""
+  },
+  "src/experience/DesktopControls.ts": {
+    "mtime": 1791196081.1093037,
+    "ast_hash": "013815269b6d6b5ff4fa2844f32f46ab",
+    "semantic_hash": ""
+  },
+  "src/experience/ExperienceController.ts": {
+    "mtime": 1791196080.6398492,
+    "ast_hash": "c4bd4f72570991ad67306d1b7f08de2f",
+    "semantic_hash": ""
+  },
+  "src/experience/ExperienceXRControls.ts": {
+    "mtime": 1791196081.6144679,
+    "ast_hash": "ade408a49007d847207db4db2b76e1e3",
     "semantic_hash": ""
   }
 }

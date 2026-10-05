@@ -66,25 +66,7 @@ export class BioluminescentPlankton {
   private sessionIntensity = 0.74;
 
   constructor() {
-    for (let index = 0; index < PLANKTON_COUNT; index += 1) {
-      const offset = index * 3;
-
-      this.positions[offset] = randomRange(X_MIN, X_MAX);
-      this.positions[offset + 1] = randomRange(Y_MIN, Y_MAX);
-      this.positions[offset + 2] = randomRange(Z_MIN, Z_MAX);
-
-      this.targets[offset] =
-        BREATH_ZONE_X + randomRange(-1.15, 1.15);
-      this.targets[offset + 1] =
-        BREATH_ZONE_Y + randomRange(-0.65, 0.72);
-      this.targets[offset + 2] =
-        BREATH_ZONE_Z + randomRange(-1.05, 0.82);
-
-      this.driftSpeeds[index] =
-        randomRange(0.006, 0.018);
-      this.phaseOffsets[index] =
-        Math.random() * Math.PI * 2;
-    }
+    this.randomizeParticles();
 
     const geometry = new BufferGeometry();
 
@@ -112,6 +94,13 @@ export class BioluminescentPlankton {
     );
 
     this.points.name = 'ResonanceReefBioluminescentPlankton';
+  }
+
+  reset(): void {
+    this.randomizeParticles();
+    this.sessionIntensity = 0.74;
+    this.material.opacity = 0.175;
+    this.positionAttribute.needsUpdate = true;
   }
 
   setSessionIntensity(value: number): void {
@@ -287,5 +276,30 @@ export class BioluminescentPlankton {
     }
 
     this.positionAttribute.needsUpdate = true;
+  }
+
+  private randomizeParticles(): void {
+    for (let index = 0; index < PLANKTON_COUNT; index += 1) {
+      const offset = index * 3;
+
+      this.positions[offset] = randomRange(X_MIN, X_MAX);
+      this.positions[offset + 1] = randomRange(Y_MIN, Y_MAX);
+      this.positions[offset + 2] = randomRange(Z_MIN, Z_MAX);
+      this.velocities[offset] = 0;
+      this.velocities[offset + 1] = 0;
+      this.velocities[offset + 2] = 0;
+
+      this.targets[offset] =
+        BREATH_ZONE_X + randomRange(-1.15, 1.15);
+      this.targets[offset + 1] =
+        BREATH_ZONE_Y + randomRange(-0.65, 0.72);
+      this.targets[offset + 2] =
+        BREATH_ZONE_Z + randomRange(-1.05, 0.82);
+
+      this.driftSpeeds[index] =
+        randomRange(0.006, 0.018);
+      this.phaseOffsets[index] =
+        Math.random() * Math.PI * 2;
+    }
   }
 }
