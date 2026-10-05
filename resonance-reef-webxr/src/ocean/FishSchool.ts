@@ -31,7 +31,7 @@ function smoothStep(value: number): number {
 
 const DEFAULT_SPECIES: FishSpeciesConfig = {
   headingOffsetY: 0,
-  modelScale: 0.18,
+  modelScale: 0.105,
 };
 
 /**
@@ -52,8 +52,8 @@ export class FishSchool {
   private readonly userPoint = new Vector3(0, 1.6, 0);
   private readonly guideCenter = new Vector3(0, 1.55, -2.6);
   private readonly reefCenter = new Vector3(0, 1.5, -3.2);
-  private readonly jellyfishExclusionRadius = 0.65;
-  private readonly userExclusionRadius = 0.9;
+  private readonly jellyfishExclusionRadius = 0.9;
+  private readonly userExclusionRadius = 0.95;
 
   private readonly centroid = new Vector3();
   private readonly averageVelocity = new Vector3();
@@ -118,14 +118,19 @@ export class FishSchool {
   private createGatherOffset(index: number): Vector3 {
     const angle =
       (index / Math.max(1, this.fishCount)) * Math.PI * 2 +
-      randomRange(-0.28, 0.28);
-    const radius = randomRange(0.72, 1.35);
+      randomRange(-0.38, 0.38);
+    const radius = randomRange(1.1, 1.8);
+    const depthOffset =
+      index % 3 === 0
+        ? randomRange(-1.35, -0.62)
+        : index % 3 === 1
+          ? randomRange(-0.45, 0.18)
+          : randomRange(0.1, 0.55);
 
     return new Vector3(
       Math.cos(angle) * radius,
-      randomRange(-0.5, 0.6),
-      Math.sin(angle) * radius * 0.42 +
-        randomRange(-0.4, 0.5),
+      randomRange(-0.7, 0.8),
+      depthOffset,
     );
   }
 

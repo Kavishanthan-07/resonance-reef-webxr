@@ -179,10 +179,10 @@ export class ReefBreathingSystem extends createSystem({}) {
 
       this.fishSchool =
         new FishSchool({
-          count: 10,
+          count: 8,
           species: {
             headingOffsetY: 0,
-            modelScale: 0.18,
+            modelScale: 0.105,
           },
           swimClip: selectedAnimation,
           visualFactory: () => {
