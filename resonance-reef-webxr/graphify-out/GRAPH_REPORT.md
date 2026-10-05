@@ -1,0 +1,500 @@
+# Graph Report - resonance-reef-webxr  (2026-10-05)
+
+## Corpus Check
+- 100 files · ~101,722 words
+- Verdict: corpus is large enough that graph structure adds value.
+
+## Summary
+- 979 nodes · 960 edges · 94 communities (88 shown, 6 thin omitted)
+- Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
+- Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `3d4c2d85`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
+
+## Community Hubs (Navigation)
+- [[_COMMUNITY_Community 0|Community 0]]
+- [[_COMMUNITY_Community 1|Community 1]]
+- [[_COMMUNITY_Community 2|Community 2]]
+- [[_COMMUNITY_Community 3|Community 3]]
+- [[_COMMUNITY_Community 4|Community 4]]
+- [[_COMMUNITY_Community 5|Community 5]]
+- [[_COMMUNITY_Community 6|Community 6]]
+- [[_COMMUNITY_Community 7|Community 7]]
+- [[_COMMUNITY_Community 8|Community 8]]
+- [[_COMMUNITY_Community 9|Community 9]]
+- [[_COMMUNITY_Community 10|Community 10]]
+- [[_COMMUNITY_Community 11|Community 11]]
+- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 13|Community 13]]
+- [[_COMMUNITY_Community 14|Community 14]]
+- [[_COMMUNITY_Community 15|Community 15]]
+- [[_COMMUNITY_Community 16|Community 16]]
+- [[_COMMUNITY_Community 17|Community 17]]
+- [[_COMMUNITY_Community 18|Community 18]]
+- [[_COMMUNITY_Community 19|Community 19]]
+- [[_COMMUNITY_Community 20|Community 20]]
+- [[_COMMUNITY_Community 21|Community 21]]
+- [[_COMMUNITY_Community 22|Community 22]]
+- [[_COMMUNITY_Community 23|Community 23]]
+- [[_COMMUNITY_Community 24|Community 24]]
+- [[_COMMUNITY_Community 25|Community 25]]
+- [[_COMMUNITY_Community 26|Community 26]]
+- [[_COMMUNITY_Community 27|Community 27]]
+- [[_COMMUNITY_Community 28|Community 28]]
+- [[_COMMUNITY_Community 29|Community 29]]
+- [[_COMMUNITY_Community 30|Community 30]]
+- [[_COMMUNITY_Community 31|Community 31]]
+- [[_COMMUNITY_Community 32|Community 32]]
+- [[_COMMUNITY_Community 33|Community 33]]
+- [[_COMMUNITY_Community 34|Community 34]]
+- [[_COMMUNITY_Community 35|Community 35]]
+- [[_COMMUNITY_Community 36|Community 36]]
+- [[_COMMUNITY_Community 37|Community 37]]
+- [[_COMMUNITY_Community 38|Community 38]]
+- [[_COMMUNITY_Community 39|Community 39]]
+- [[_COMMUNITY_Community 40|Community 40]]
+- [[_COMMUNITY_Community 41|Community 41]]
+- [[_COMMUNITY_Community 42|Community 42]]
+- [[_COMMUNITY_Community 43|Community 43]]
+- [[_COMMUNITY_Community 44|Community 44]]
+- [[_COMMUNITY_Community 45|Community 45]]
+- [[_COMMUNITY_Community 46|Community 46]]
+- [[_COMMUNITY_Community 47|Community 47]]
+- [[_COMMUNITY_Community 48|Community 48]]
+- [[_COMMUNITY_Community 49|Community 49]]
+- [[_COMMUNITY_Community 50|Community 50]]
+- [[_COMMUNITY_Community 51|Community 51]]
+- [[_COMMUNITY_Community 52|Community 52]]
+- [[_COMMUNITY_Community 53|Community 53]]
+- [[_COMMUNITY_Community 54|Community 54]]
+- [[_COMMUNITY_Community 55|Community 55]]
+- [[_COMMUNITY_Community 56|Community 56]]
+- [[_COMMUNITY_Community 57|Community 57]]
+- [[_COMMUNITY_Community 58|Community 58]]
+- [[_COMMUNITY_Community 59|Community 59]]
+- [[_COMMUNITY_Community 60|Community 60]]
+- [[_COMMUNITY_Community 61|Community 61]]
+- [[_COMMUNITY_Community 62|Community 62]]
+- [[_COMMUNITY_Community 63|Community 63]]
+- [[_COMMUNITY_Community 64|Community 64]]
+- [[_COMMUNITY_Community 65|Community 65]]
+- [[_COMMUNITY_Community 66|Community 66]]
+- [[_COMMUNITY_Community 67|Community 67]]
+- [[_COMMUNITY_Community 68|Community 68]]
+- [[_COMMUNITY_Community 69|Community 69]]
+- [[_COMMUNITY_Community 70|Community 70]]
+- [[_COMMUNITY_Community 71|Community 71]]
+- [[_COMMUNITY_Community 72|Community 72]]
+- [[_COMMUNITY_Community 73|Community 73]]
+- [[_COMMUNITY_Community 74|Community 74]]
+- [[_COMMUNITY_Community 75|Community 75]]
+- [[_COMMUNITY_Community 76|Community 76]]
+- [[_COMMUNITY_Community 77|Community 77]]
+- [[_COMMUNITY_Community 78|Community 78]]
+- [[_COMMUNITY_Community 79|Community 79]]
+- [[_COMMUNITY_Community 80|Community 80]]
+- [[_COMMUNITY_Community 81|Community 81]]
+- [[_COMMUNITY_Community 82|Community 82]]
+- [[_COMMUNITY_Community 83|Community 83]]
+- [[_COMMUNITY_Community 84|Community 84]]
+- [[_COMMUNITY_Community 85|Community 85]]
+- [[_COMMUNITY_Community 86|Community 86]]
+- [[_COMMUNITY_Community 87|Community 87]]
+- [[_COMMUNITY_Community 88|Community 88]]
+- [[_COMMUNITY_Community 89|Community 89]]
+- [[_COMMUNITY_Community 90|Community 90]]
+
+## God Nodes (most connected - your core abstractions)
+1. `Critical Best Practices` - 32 edges
+2. `Critical Best Practices` - 32 edges
+3. `Review Checklist` - 21 edges
+4. `ReefEnvironment` - 13 edges
+5. `ReefBreathingSystem` - 11 edges
+6. `compilerOptions` - 11 edges
+7. `IWSDK Scene Format` - 11 edges
+8. `IWSDK Scene Format` - 11 edges
+9. `scripts` - 10 edges
+10. `IWSDK API Reference & Best Practices` - 10 edges
+
+## Surprising Connections (you probably didn't know these)
+- `ReefBreathingSystem` --references--> `ReefEnvironment`  [EXTRACTED]
+  src/systems/ReefBreathingSystem.ts → src/ocean/ReefEnvironment.ts
+- `WaterCurrent` --references--> `BreathPhase`  [EXTRACTED]
+  src/ocean/WaterCurrent.ts → src/breathing/BreathEngine.ts
+- `ReefBreathingSystem` --references--> `BreathPhase`  [EXTRACTED]
+  src/systems/ReefBreathingSystem.ts → src/breathing/BreathEngine.ts
+- `ReefBreathingSystem` --references--> `BioluminescentPlankton`  [EXTRACTED]
+  src/systems/ReefBreathingSystem.ts → src/ocean/BioluminescentPlankton.ts
+- `FishSchool` --references--> `FishAgent`  [EXTRACTED]
+  src/ocean/FishSchool.ts → src/ocean/FishAgent.ts
+
+## Import Cycles
+- None detected.
+
+## Communities (94 total, 6 thin omitted)
+
+### Community 0 - "Community 0"
+Cohesion: 0.07
+Nodes (26): BreathEngine, BreathPhase, BreathState, BreathTiming, BioluminescentPlankton, clamp(), clamp01(), randomRange() (+18 more)
+
+### Community 1 - "Community 1"
+Cohesion: 0.06
+Nodes (35): 10. Audio System, 11. Physics System, 12. Grabbable Components, 13. Environment/Lighting, 14. Asset Loading, 15. VisibilityState, 16. Locomotion Configuration, 17. Scene Understanding (AR) (+27 more)
+
+### Community 2 - "Community 2"
+Cohesion: 0.06
+Nodes (35): 10. Audio System, 11. Physics System, 12. Grabbable Components, 13. Environment/Lighting, 14. Asset Loading, 15. VisibilityState, 16. Locomotion Configuration, 17. Scene Understanding (AR) (+27 more)
+
+### Community 3 - "Community 3"
+Cohesion: 0.06
+Nodes (33): dependencies, @iwsdk/core, @pmndrs/uikit, @pmndrs/uikit-horizon, @pmndrs/uikit-lucide, three, devDependencies, @iwsdk/cli (+25 more)
+
+### Community 4 - "Community 4"
+Cohesion: 0.06
+Nodes (30): assets, module, lookAt, position, dev, emulator, device, environmentRaycast (+22 more)
+
+### Community 5 - "Community 5"
+Cohesion: 0.08
+Nodes (21): 10. Audio Configuration, 11. Three.js Import Check (CRITICAL), 12. Component Size Check, 15. Direct asset loaders instead of AssetManager, 16. Raw scene.add() instead of createTransformEntity, 17. Raw Raycaster used as an interaction system, 18. Environment components on wrong entity, 19. Missing `_needsUpdate` on environment changes (+13 more)
+
+### Community 6 - "Community 6"
+Cohesion: 0.08
+Nodes (23): 2D app stuck on a loading screen, An app secret was committed or published, App loads but assets 404, App mode failures, Auto-enter works on device but breaks the browser, Blank, white, or error page after launch, bubblewrap hangs or exits without doing anything, bubblewrap update fails fetching the manifest (+15 more)
+
+### Community 7 - "Community 7"
+Cohesion: 0.08
+Nodes (23): 2D app stuck on a loading screen, An app secret was committed or published, App loads but assets 404, App mode failures, Auto-enter works on device but breaks the browser, Blank, white, or error page after launch, bubblewrap hangs or exits without doing anything, bubblewrap update fails fetching the manifest (+15 more)
+
+### Community 8 - "Community 8"
+Cohesion: 0.15
+Nodes (7): createSeabedGeometry(), ReefEnvironment, setNoShadows(), SwayTarget, ParticleFieldConfig, randomRange(), UnderwaterParticles
+
+### Community 9 - "Community 9"
+Cohesion: 0.10
+Nodes (20): command, enabled, type, command, enabled, type, mcp, iwsdk-reference (+12 more)
+
+### Community 10 - "Community 10"
+Cohesion: 0.12
+Nodes (16): Asset, Asset Boundary, Authoring And Review, Authoring-Only Imports, Capability First, Components And Constraints, Contents, Document Boundary (+8 more)
+
+### Community 11 - "Community 11"
+Cohesion: 0.12
+Nodes (16): Anti-Patterns to Avoid, Asset Loading (AssetManager), Built-in Visuals (Don't Recreate), Core Architecture, Core Components Reference (30 Total), Core Systems Reference (20 Total), Custom System Priority Guidelines, Entity Parenting & Level Lifecycle (+8 more)
+
+### Community 12 - "Community 12"
+Cohesion: 0.12
+Nodes (16): Asset, Asset Boundary, Authoring And Review, Authoring-Only Imports, Capability First, Components And Constraints, Contents, Document Boundary (+8 more)
+
+### Community 13 - "Community 13"
+Cohesion: 0.12
+Nodes (16): Anti-Patterns to Avoid, Asset Loading (AssetManager), Built-in Visuals (Don't Recreate), Core Architecture, Core Components Reference (30 Total), Core Systems Reference (20 Total), Custom System Priority Guidelines, Entity Parenting & Level Lifecycle (+8 more)
+
+### Community 14 - "Community 14"
+Cohesion: 0.12
+Nodes (15): equator, ground, intensity, sky, equator, ground, intensity, sky (+7 more)
+
+### Community 15 - "Community 15"
+Cohesion: 0.12
+Nodes (15): equator, ground, intensity, sky, equator, ground, intensity, sky (+7 more)
+
+### Community 16 - "Community 16"
+Cohesion: 0.15
+Nodes (12): AWS S3 + CloudFront, Cloudflare Pages, Firebase Hosting, GitHub Pages, Netlify, nginx / Apache on a VPS, Per-host recipes, Publishing to an Existing Host (+4 more)
+
+### Community 17 - "Community 17"
+Cohesion: 0.15
+Nodes (12): AWS S3 + CloudFront, Cloudflare Pages, Firebase Hosting, GitHub Pages, Netlify, nginx / Apache on a VPS, Per-host recipes, Publishing to an Existing Host (+4 more)
+
+### Community 18 - "Community 18"
+Cohesion: 0.15
+Nodes (12): compilerOptions, isolatedModules, jsx, module, moduleResolution, noEmit, resolveJsonModule, skipLibCheck (+4 more)
+
+### Community 19 - "Community 19"
+Cohesion: 0.17
+Nodes (11): 1. Define The Model Contract, 2. Choose The Representation, 3. Build From Large To Small, 4. Validate The Asset, 5. Review And Refine, 6. Hand Off To Scene Composition, Fixed Boundaries, IWSDK Build Model (+3 more)
+
+### Community 20 - "Community 20"
+Cohesion: 0.17
+Nodes (11): 1. Define The Model Contract, 2. Choose The Representation, 3. Build From Large To Small, 4. Validate The Asset, 5. Review And Refine, 6. Hand Off To Scene Composition, Fixed Boundaries, IWSDK Build Model (+3 more)
+
+### Community 21 - "Community 21"
+Cohesion: 0.17
+Nodes (11): Asset manifest contract, Component, Cost, ECS API reference, Field types, Interaction components, IWSDK scoped project guidance, Lifecycle (+3 more)
+
+### Community 22 - "Community 22"
+Cohesion: 0.18
+Nodes (10): Conventions, Deep reference, graphify, IWSDK project, Layout, MCP and CLI are one surface, not two, Skills, Traps that produce silent failures (+2 more)
+
+### Community 23 - "Community 23"
+Cohesion: 0.18
+Nodes (10): Custom domain, Deploy, Find the scope, First run: authentication, Prerequisites, Redeploying, Two URLs come back — only one is usable, Vercel Deployment (+2 more)
+
+### Community 24 - "Community 24"
+Cohesion: 0.18
+Nodes (10): Common Workflows, Complete Example: Physics Playground, Creating a Dynamic Physics Object, Creating a Kinematic Moving Platform, Creating a Static Environment Collider, Custom Physics System Pattern, Explosion Pattern (Radial Force), Making an Object Grabbable with Physics (+2 more)
+
+### Community 25 - "Community 25"
+Cohesion: 0.18
+Nodes (10): PWA Packaging for Meta Horizon, Redeploy vs rebuild, Reference Files, Security, Step 0 — Pick the app mode first, Step 1 — Prepare the app, Step 2 — Get it hosted, Step 3 — Manifest and icons (+2 more)
+
+### Community 26 - "Community 26"
+Cohesion: 0.18
+Nodes (10): Custom domain, Deploy, Find the scope, First run: authentication, Prerequisites, Redeploying, Two URLs come back — only one is usable, Vercel Deployment (+2 more)
+
+### Community 27 - "Community 27"
+Cohesion: 0.18
+Nodes (10): Common Workflows, Complete Example: Physics Playground, Creating a Dynamic Physics Object, Creating a Kinematic Moving Platform, Creating a Static Environment Collider, Custom Physics System Pattern, Explosion Pattern (Radial Force), Making an Object Grabbable with Physics (+2 more)
+
+### Community 28 - "Community 28"
+Cohesion: 0.18
+Nodes (10): PWA Packaging for Meta Horizon, Redeploy vs rebuild, Reference Files, Security, Step 0 — Pick the app mode first, Step 1 — Prepare the app, Step 2 — Get it hosted, Step 3 — Manifest and icons (+2 more)
+
+### Community 29 - "Community 29"
+Cohesion: 0.20
+Nodes (9): 1. Specify, 2. Inventory Assets And Modules, 3. Compose, 4. Validate And Materialize, 5. Review And Refine, 6. Finish, IWSDK Compose Scene: Extended Workflow, Modular Composition (+1 more)
+
+### Community 30 - "Community 30"
+Cohesion: 0.20
+Nodes (9): Assign Reference Roles, Decompose The Visible Scene, Establish The Inspection Context Early, Handle Materials, Image And Hybrid Intake, Infer Depth And Camera, Review Against The Image, Tune Color And Value (+1 more)
+
+### Community 31 - "Community 31"
+Cohesion: 0.20
+Nodes (9): 1. Extract the executable contract, 2. Inspect once, then ground only uncertainty, 3. Implement one coherent vertical slice, 4. Verify the actual contract, 5. Visual quality gate, 6. Targeted closeout, then stop, Budget and stopping rules, Default operating mode (+1 more)
+
+### Community 32 - "Community 32"
+Cohesion: 0.20
+Nodes (9): 1. Ask about hosting before doing anything else, 2. Route A — no host yet: recommend Vercel, 3. Route B — host already chosen: pause and hand off, 4. The contract: what must be reachable, 5. Hosting at a subpath, 6. Redeploy vs rebuild, PWA Hosting, Reference Files (+1 more)
+
+### Community 33 - "Community 33"
+Cohesion: 0.20
+Nodes (9): 1. Verify the app and device, 2. Start the native-control dev session, 3. Install the ADB route and pair the headset, 4. Enter the real immersive session, 5. Run the scenario, 6. Exit and clean up, Safety and scope, Target the headset explicitly (+1 more)
+
+### Community 34 - "Community 34"
+Cohesion: 0.20
+Nodes (9): init is interactive — use the scripted path, Packaging a Quest APK with bubblewrap, Prerequisites — one interactive step, then scriptable, Security, Sideload and test, Step 1 — The signing key: pause and ask, Step 2 — twa-manifest.json, Step 3 — Build (+1 more)
+
+### Community 35 - "Community 35"
+Cohesion: 0.20
+Nodes (9): 1. Specify, 2. Inventory Assets And Modules, 3. Compose, 4. Validate And Materialize, 5. Review And Refine, 6. Finish, IWSDK Compose Scene: Extended Workflow, Modular Composition (+1 more)
+
+### Community 36 - "Community 36"
+Cohesion: 0.20
+Nodes (9): Assign Reference Roles, Decompose The Visible Scene, Establish The Inspection Context Early, Handle Materials, Image And Hybrid Intake, Infer Depth And Camera, Review Against The Image, Tune Color And Value (+1 more)
+
+### Community 37 - "Community 37"
+Cohesion: 0.20
+Nodes (9): 1. Extract the executable contract, 2. Inspect once, then ground only uncertainty, 3. Implement one coherent vertical slice, 4. Verify the actual contract, 5. Visual quality gate, 6. Targeted closeout, then stop, Budget and stopping rules, Default operating mode (+1 more)
+
+### Community 38 - "Community 38"
+Cohesion: 0.20
+Nodes (9): 1. Ask about hosting before doing anything else, 2. Route A — no host yet: recommend Vercel, 3. Route B — host already chosen: pause and hand off, 4. The contract: what must be reachable, 5. Hosting at a subpath, 6. Redeploy vs rebuild, PWA Hosting, Reference Files (+1 more)
+
+### Community 39 - "Community 39"
+Cohesion: 0.20
+Nodes (9): 1. Verify the app and device, 2. Start the native-control dev session, 3. Install the ADB route and pair the headset, 4. Enter the real immersive session, 5. Run the scenario, 6. Exit and clean up, Safety and scope, Target the headset explicitly (+1 more)
+
+### Community 40 - "Community 40"
+Cohesion: 0.20
+Nodes (9): init is interactive — use the scripted path, Packaging a Quest APK with bubblewrap, Prerequisites — one interactive step, then scriptable, Security, Sideload and test, Step 1 — The signing key: pause and ask, Step 2 — twa-manifest.json, Step 3 — Build (+1 more)
+
+### Community 41 - "Community 41"
+Cohesion: 0.22
+Nodes (8): Asset Fit, Defect Record, Final, Inputs, IWSDK Scene Review, Layout, Passes, Stop Rules
+
+### Community 42 - "Community 42"
+Cohesion: 0.22
+Nodes (8): After the upload, Authentication, Before uploading, Get the tool, Other responses worth recognizing, The blocker you should expect first, Upload, Uploading to the Meta Horizon Store
+
+### Community 43 - "Community 43"
+Cohesion: 0.22
+Nodes (8): Asset Fit, Defect Record, Final, Inputs, IWSDK Scene Review, Layout, Passes, Stop Rules
+
+### Community 44 - "Community 44"
+Cohesion: 0.22
+Nodes (8): After the upload, Authentication, Before uploading, Get the tool, Other responses worth recognizing, The blocker you should expect first, Upload, Uploading to the Meta Horizon Store
+
+### Community 45 - "Community 45"
+Cohesion: 0.22
+Nodes (8): Browser hero views and XR spawn framing are distinct, Component keys come in two forms, Imports stop at the authoring boundary, IWSDK scoped project guidance, Scene JSON — things that fail silently, The player materialises at the scene origin, Validation, `visibleNodeIds` is the silent-failure detector
+
+### Community 46 - "Community 46"
+Cohesion: 0.25
+Nodes (7): Camera And Scale, Cost Control, Environment And Lighting, IWSDK Scene Composition Patterns, Modules And Ownership, Review Isolation, Scene-Level Repetition
+
+### Community 47 - "Community 47"
+Cohesion: 0.25
+Nodes (7): Bounded Opening, Extended Workflow, Fast Path, Fixed Boundaries, IWSDK Compose Scene, Route Before Loading References, Small Stateful Interactions
+
+### Community 48 - "Community 48"
+Cohesion: 0.25
+Nodes (7): Efficiency budget, Fast opening, Implementation loop, Iterate path, Operating contract, Stop rule, Visual comparison
+
+### Community 49 - "Community 49"
+Cohesion: 0.25
+Nodes (7): Generating icons, Link it in `index.html`, Multi-origin 2D apps, Subpath hosting, The manifest, Verify before packaging, Web App Manifest and Icons
+
+### Community 50 - "Community 50"
+Cohesion: 0.25
+Nodes (7): Camera And Scale, Cost Control, Environment And Lighting, IWSDK Scene Composition Patterns, Modules And Ownership, Review Isolation, Scene-Level Repetition
+
+### Community 51 - "Community 51"
+Cohesion: 0.25
+Nodes (7): Bounded Opening, Extended Workflow, Fast Path, Fixed Boundaries, IWSDK Compose Scene, Route Before Loading References, Small Stateful Interactions
+
+### Community 52 - "Community 52"
+Cohesion: 0.25
+Nodes (7): Efficiency budget, Fast opening, Implementation loop, Iterate path, Operating contract, Stop rule, Visual comparison
+
+### Community 53 - "Community 53"
+Cohesion: 0.25
+Nodes (7): Generating icons, Link it in `index.html`, Multi-origin 2D apps, Subpath hosting, The manifest, Verify before packaging, Web App Manifest and Icons
+
+### Community 54 - "Community 54"
+Cohesion: 0.25
+Nodes (7): Component, ECS API reference, Field types, Interaction components, Lifecycle, System, XR input
+
+### Community 55 - "Community 55"
+Cohesion: 0.25
+Nodes (7): Browser hero views and XR spawn framing are distinct, Component keys come in two forms, Imports stop at the authoring boundary, Scene JSON — things that fail silently, The player materialises at the scene origin, Validation, `visibleNodeIds` is the silent-failure detector
+
+### Community 56 - "Community 56"
+Cohesion: 0.25
+Nodes (7): Component, ECS API reference, Field types, Interaction components, Lifecycle, System, XR input
+
+### Community 57 - "Community 57"
+Cohesion: 0.25
+Nodes (7): Browser hero views and XR spawn framing are distinct, Component keys come in two forms, Imports stop at the authoring boundary, Scene JSON — things that fail silently, The player materialises at the scene origin, Validation, `visibleNodeIds` is the silent-failure detector
+
+### Community 58 - "Community 58"
+Cohesion: 0.29
+Nodes (6): Define Features, Establish Scale And Coordinates, Extract The Brief, Review Text-Only Output, Select A Representation, Text Intake
+
+### Community 59 - "Community 59"
+Cohesion: 0.29
+Nodes (6): Dimensions by Shape Type, PhysicsBody Component Reference, PhysicsManipulation Component Reference, PhysicsShape Component Reference, PhysicsShapeType Enum, PhysicsState Enum
+
+### Community 60 - "Community 60"
+Cohesion: 0.29
+Nodes (6): Click or UIKit button, Distance grab, Evidence and stopping, IWSDK Ray Interaction, Locate and aim once, Select exactly one branch
+
+### Community 61 - "Community 61"
+Cohesion: 0.29
+Nodes (6): Author the complete first pass, Choose the required surface, Connect runtime behavior, Fast path, IWSDK UI, Verify with a bounded loop
+
+### Community 62 - "Community 62"
+Cohesion: 0.29
+Nodes (6): Define Features, Establish Scale And Coordinates, Extract The Brief, Review Text-Only Output, Select A Representation, Text Intake
+
+### Community 63 - "Community 63"
+Cohesion: 0.29
+Nodes (6): Dimensions by Shape Type, PhysicsBody Component Reference, PhysicsManipulation Component Reference, PhysicsShape Component Reference, PhysicsShapeType Enum, PhysicsState Enum
+
+### Community 64 - "Community 64"
+Cohesion: 0.29
+Nodes (6): Click or UIKit button, Distance grab, Evidence and stopping, IWSDK Ray Interaction, Locate and aim once, Select exactly one branch
+
+### Community 65 - "Community 65"
+Cohesion: 0.29
+Nodes (6): Author the complete first pass, Choose the required surface, Connect runtime behavior, Fast path, IWSDK UI, Verify with a bounded loop
+
+### Community 66 - "Community 66"
+Cohesion: 0.33
+Nodes (5): 2D panel notes, App Modes: Immersive WebXR vs 2D Panel, Auto-enter, in detail (immersive only), Choosing, The classic failure
+
+### Community 67 - "Community 67"
+Cohesion: 0.33
+Nodes (5): 2D panel notes, App Modes: Immersive WebXR vs 2D Panel, Auto-enter, in detail (immersive only), Choosing, The classic failure
+
+### Community 68 - "Community 68"
+Cohesion: 0.40
+Nodes (4): 1. Establish one failing observation, 2. Form and test one hypothesis, 3. Replay the same probe, IWSDK Runtime Debugging
+
+### Community 69 - "Community 69"
+Cohesion: 0.40
+Nodes (4): Material Tuning Guide, Native Scene JSON Configuration, PhysicsSystem Configuration, System Priority Order
+
+### Community 70 - "Community 70"
+Cohesion: 0.40
+Nodes (4): enabledMcpjsonServers, permissions, allow, $schema
+
+### Community 71 - "Community 71"
+Cohesion: 0.40
+Nodes (4): 1. Establish one failing observation, 2. Form and test one hypothesis, 3. Replay the same probe, IWSDK Runtime Debugging
+
+### Community 72 - "Community 72"
+Cohesion: 0.40
+Nodes (4): Material Tuning Guide, Native Scene JSON Configuration, PhysicsSystem Configuration, System Priority Order
+
+### Community 73 - "Community 73"
+Cohesion: 0.50
+Nodes (3): Implement, IWSDK Depth Occlusion, Verify
+
+### Community 74 - "Community 74"
+Cohesion: 0.50
+Nodes (3): Internal handoff, IWSDK Dev, Route
+
+### Community 75 - "Community 75"
+Cohesion: 0.50
+Nodes (3): Evidence and stopping, Execute the requested path, IWSDK Proximity Grab
+
+### Community 76 - "Community 76"
+Cohesion: 0.50
+Nodes (3): Implement the smallest complete physics path, IWSDK Physics, Verify behavior, not just source
+
+### Community 77 - "Community 77"
+Cohesion: 0.50
+Nodes (3): Implement, IWSDK Depth Occlusion, Verify
+
+### Community 78 - "Community 78"
+Cohesion: 0.50
+Nodes (3): Internal handoff, IWSDK Dev, Route
+
+### Community 79 - "Community 79"
+Cohesion: 0.50
+Nodes (3): Evidence and stopping, Execute the requested path, IWSDK Proximity Grab
+
+### Community 80 - "Community 80"
+Cohesion: 0.50
+Nodes (3): Implement the smallest complete physics path, IWSDK Physics, Verify behavior, not just source
+
+### Community 81 - "Community 81"
+Cohesion: 0.50
+Nodes (3): autoRun, allow_instructions, block_instructions
+
+### Community 82 - "Community 82"
+Cohesion: 0.50
+Nodes (3): Asset manifest contract, Cost, Procedural assets
+
+### Community 83 - "Community 83"
+Cohesion: 0.50
+Nodes (3): Asset manifest contract, Cost, Procedural assets
+
+### Community 84 - "Community 84"
+Cohesion: 0.50
+Nodes (3): IWSDK scoped project guidance, Runtime API, UIKitML panels
+
+## Knowledge Gaps
+- **674 isolated node(s):** `$schema`, `allow`, `enabledMcpjsonServers`, `PreToolUse`, `allow_instructions` (+669 more)
+  These have ≤1 connection - possible missing edges or undocumented components.
+- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+
+## Suggested Questions
+_Questions this graph is uniquely positioned to answer:_
+
+- **Why does `Critical Best Practices` connect `Community 1` to `Community 11`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `Critical Best Practices` connect `Community 2` to `Community 13`?**
+  _High betweenness centrality (0.002) - this node is a cross-community bridge._
+- **Why does `ReefEnvironment` connect `Community 8` to `Community 0`?**
+  _High betweenness centrality (0.001) - this node is a cross-community bridge._
+- **What connects `$schema`, `allow`, `enabledMcpjsonServers` to the rest of the system?**
+  _674 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **Should `Community 0` be split into smaller, more focused modules?**
+  _Cohesion score 0.07207792207792207 - nodes in this community are weakly interconnected._
+- **Should `Community 1` be split into smaller, more focused modules?**
+  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
+- **Should `Community 2` be split into smaller, more focused modules?**
+  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._

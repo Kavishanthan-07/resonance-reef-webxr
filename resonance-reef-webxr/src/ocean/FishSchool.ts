@@ -7,6 +7,7 @@ import {
 
 import type { BreathState } from '../breathing/BreathEngine.js';
 import { FishAgent } from './FishAgent.js';
+import type { CurrentSample } from './WaterCurrent.js';
 
 interface FishSpeciesConfig {
   headingOffsetY: number;
@@ -64,6 +65,7 @@ export class FishSchool {
   private readonly boundaryForce = new Vector3();
   private readonly comfortForce = new Vector3();
   private readonly guideComfortForce = new Vector3();
+  private readonly currentForce = new Vector3();
   private readonly lookTarget = new Vector3();
 
   constructor(config: FishSchoolConfig) {
@@ -153,6 +155,7 @@ export class FishSchool {
     state: BreathState,
     deltaSeconds: number,
     timeSeconds: number,
+    current?: CurrentSample,
   ): void {
     if (this.fish.length === 0) {
       return;
@@ -273,6 +276,48 @@ export class FishSchool {
           agent.outwardBias,
           0.45 + breathProgress * 0.58,
         );
+      }
+
+      if (
+        current != null &&
+        current.phase === 'expanding' &&
+        current.strength > 0.002
+      ) {
+        this.currentForce
+          .copy(agent.root.position)
+          .sub(current.origin);
+
+        const currentDistance =
+          this.currentForce.length();
+        const shellOffset =
+          Math.abs(currentDistance - current.radius);
+
+        if (
+          currentDistance > 0.001 &&
+          shellOffset < current.shellThickness
+        ) {
+          const shellFalloff =
+            1 - shellOffset / current.shellThickness;
+          const forwardBias =
+            0.68 +
+            Math.max(
+              0,
+              -this.currentForce.z / currentDistance,
+            ) *
+              0.32;
+          const individualBias =
+            0.82 +
+            Math.sin(agent.phaseOffset) * 0.16;
+
+          this.steering.addScaledVector(
+            this.currentForce.normalize(),
+            shellFalloff *
+              current.strength *
+              forwardBias *
+              individualBias *
+              0.46,
+          );
+        }
       }
 
       this.guideComfortForce
