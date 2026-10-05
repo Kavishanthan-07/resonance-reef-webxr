@@ -66,12 +66,12 @@ function setNoShadows(object: Group): void {
 export class ReefEnvironment {
   readonly root = new Group();
 
-  readonly rockCount = 8;
-  readonly vegetationCount = 18;
-  readonly coralClusterCount = 5;
-  readonly lightShaftCount = 3;
+  readonly rockCount = 10;
+  readonly vegetationCount = 10;
+  readonly coralClusterCount = 8;
+  readonly lightShaftCount = 4;
   readonly particleCount = 180;
-  readonly approximateMeshCount = 92;
+  readonly approximateMeshCount = 126;
 
   private readonly previousBackground:
     | Color
@@ -92,7 +92,7 @@ export class ReefEnvironment {
     world.scene.background =
       new Color(0x062532);
     world.scene.fog =
-      new Fog(0x0a4a58, 3.2, 11.5);
+      new Fog(0x083847, 3.6, 9.8);
 
     this.addLighting();
     this.addSeabed();
@@ -137,21 +137,21 @@ export class ReefEnvironment {
     const hemisphere = new HemisphereLight(
       0x8bd5e4,
       0x06232b,
-      2.25,
+      1.95,
     );
 
     hemisphere.name = 'ReefHemisphereLight';
 
     const ambient = new AmbientLight(
       0x315b65,
-      0.9,
+      0.68,
     );
 
     ambient.name = 'ReefSoftAmbientLight';
 
     const key = new DirectionalLight(
       0xb9f4ff,
-      2.2,
+      2.05,
     );
 
     key.name = 'ReefSurfaceKeyLight';
@@ -180,14 +180,15 @@ export class ReefEnvironment {
   }
 
   private addSeabed(): void {
+    const seabedMaterial = new MeshStandardMaterial({
+      color: 0x486c66,
+      flatShading: true,
+      metalness: 0,
+      roughness: 1,
+    });
     const seabed = new Mesh(
       createSeabedGeometry(),
-      new MeshStandardMaterial({
-        color: 0x486c66,
-        flatShading: true,
-        metalness: 0,
-        roughness: 1,
-      }),
+      seabedMaterial,
     );
 
     seabed.name = 'ReefSeabed';
@@ -195,6 +196,44 @@ export class ReefEnvironment {
     seabed.rotation.x = -Math.PI / 2;
 
     this.root.add(seabed);
+
+    const moundGeometry =
+      new DodecahedronGeometry(1, 0);
+    const moundMaterial =
+      new MeshStandardMaterial({
+        color: 0x3f625d,
+        flatShading: true,
+        roughness: 1,
+      });
+    const mounds = [
+      [-4.7, -0.04, -4.8, 2.2, 0.16, 1.0],
+      [4.4, -0.05, -5.6, 2.0, 0.14, 1.1],
+      [-2.3, -0.06, -7.4, 2.8, 0.18, 0.9],
+      [2.6, -0.07, -7.8, 2.5, 0.16, 0.95],
+      [0.0, -0.08, -8.4, 3.2, 0.18, 0.7],
+    ] as const;
+
+    mounds.forEach((placement, index) => {
+      const mound = new Mesh(
+        moundGeometry,
+        moundMaterial,
+      );
+
+      mound.name = `ReefSeabedMound-${index}`;
+      mound.position.set(
+        placement[0],
+        placement[1],
+        placement[2],
+      );
+      mound.scale.set(
+        placement[3],
+        placement[4],
+        placement[5],
+      );
+      mound.rotation.y = randomRange(0, Math.PI);
+
+      this.root.add(mound);
+    });
   }
 
   private addRocks(): void {
@@ -223,14 +262,16 @@ export class ReefEnvironment {
     ];
 
     const placements = [
-      [-3.6, 0.2, -2.8, 0.8, 0.42, 0.65],
-      [3.3, 0.18, -3.0, 0.72, 0.38, 0.58],
-      [-2.4, 0.28, -4.4, 1.05, 0.62, 0.78],
-      [2.2, 0.32, -4.9, 1.16, 0.7, 0.86],
-      [-3.8, 0.34, -6.1, 1.35, 0.84, 1.02],
-      [3.6, 0.32, -6.4, 1.28, 0.78, 1.0],
-      [-0.8, 0.2, -6.8, 1.0, 0.46, 0.84],
-      [0.9, 0.16, -2.75, 0.55, 0.28, 0.42],
+      [-3.8, 0.16, -2.55, 0.55, 0.24, 0.45],
+      [3.6, 0.14, -2.85, 0.5, 0.22, 0.42],
+      [-2.8, 0.24, -3.8, 0.82, 0.44, 0.62],
+      [2.8, 0.26, -4.1, 0.9, 0.48, 0.7],
+      [-2.1, 0.3, -5.2, 1.12, 0.58, 0.84],
+      [2.0, 0.32, -5.6, 1.2, 0.62, 0.9],
+      [-4.0, 0.35, -6.7, 1.55, 0.82, 1.1],
+      [4.1, 0.34, -6.9, 1.48, 0.78, 1.05],
+      [-0.8, 0.2, -7.4, 1.35, 0.46, 0.9],
+      [0.95, 0.18, -7.7, 1.22, 0.42, 0.82],
     ] as const;
 
     placements.forEach((placement, index) => {
@@ -262,9 +303,13 @@ export class ReefEnvironment {
 
   private addCoral(): void {
     const branchGeometry =
-      new CylinderGeometry(0.025, 0.055, 0.75, 5);
+      new CylinderGeometry(0.018, 0.042, 0.38, 5);
     const tipGeometry =
-      new ConeGeometry(0.055, 0.18, 5);
+      new ConeGeometry(0.042, 0.12, 5);
+    const moundGeometry =
+      new SphereGeometry(0.28, 7, 5);
+    const fanGeometry =
+      new PlaneGeometry(0.34, 0.42, 1, 2);
     const materials: Material[] = [
       new MeshStandardMaterial({
         color: 0x2d807d,
@@ -272,29 +317,37 @@ export class ReefEnvironment {
         roughness: 0.92,
       }),
       new MeshStandardMaterial({
-        color: 0x596493,
+        color: 0x66709c,
         flatShading: true,
         roughness: 0.92,
       }),
       new MeshStandardMaterial({
-        color: 0x8b686e,
+        color: 0x8c6d74,
         flatShading: true,
         roughness: 0.92,
+      }),
+      new MeshStandardMaterial({
+        color: 0x3d676a,
+        flatShading: true,
+        roughness: 0.95,
       }),
     ];
 
     const placements = [
-      [-2.7, 0.18, -3.6, 0.9],
-      [2.9, 0.18, -3.8, 0.82],
-      [-1.8, 0.16, -5.6, 1.05],
-      [1.9, 0.18, -6.0, 1.0],
-      [0.0, 0.14, -6.7, 0.74],
+      [-2.8, 0.1, -3.4, 0.82],
+      [2.7, 0.1, -3.7, 0.78],
+      [-1.55, 0.1, -4.9, 0.94],
+      [1.65, 0.1, -5.2, 0.9],
+      [-3.1, 0.1, -5.9, 1.05],
+      [3.2, 0.1, -6.2, 1.0],
+      [-0.8, 0.08, -7.0, 0.82],
+      [0.95, 0.08, -7.25, 0.76],
     ] as const;
 
     placements.forEach((placement, clusterIndex) => {
       const coral = new Group();
       const branchCount =
-        clusterIndex === 4 ? 3 : 4;
+        3 + (clusterIndex % 3);
 
       coral.name = `ReefCoral-${clusterIndex}`;
       coral.position.set(
@@ -303,6 +356,16 @@ export class ReefEnvironment {
         placement[2],
       );
       coral.scale.setScalar(placement[3]);
+
+      const mound = new Mesh(
+        moundGeometry,
+        materials[(clusterIndex + 3) % materials.length],
+      );
+
+      mound.name = `ReefCoralMound-${clusterIndex}`;
+      mound.position.y = 0.08;
+      mound.scale.set(1, 0.28, 0.76);
+      coral.add(mound);
 
       for (let index = 0; index < branchCount; index += 1) {
         const branchRoot = new Group();
@@ -318,27 +381,46 @@ export class ReefEnvironment {
           Math.sin(angle) * radius,
         );
         branchRoot.rotation.z =
-          Math.cos(angle) * randomRange(0.16, 0.34);
+          Math.cos(angle) * randomRange(0.2, 0.42);
         branchRoot.rotation.x =
-          Math.sin(angle) * randomRange(0.12, 0.28);
+          Math.sin(angle) * randomRange(0.18, 0.36);
 
         const branch = new Mesh(
           branchGeometry,
           materials[(clusterIndex + index) % materials.length],
         );
 
-        branch.position.y = 0.35;
-        branch.scale.y = randomRange(0.7, 1.12);
+        branch.position.y = 0.2;
+        branch.scale.y = randomRange(0.75, 1.22);
 
         const tip = new Mesh(
           tipGeometry,
           materials[(clusterIndex + index) % materials.length],
         );
 
-        tip.position.y = 0.74 * branch.scale.y;
+        tip.position.y = 0.38 * branch.scale.y;
 
         branchRoot.add(branch, tip);
         coral.add(branchRoot);
+      }
+
+      if (clusterIndex % 2 === 1) {
+        const fan = new Mesh(
+          fanGeometry,
+          materials[(clusterIndex + 1) % materials.length],
+        );
+
+        fan.name = `ReefFanCoral-${clusterIndex}`;
+        fan.position.set(0, 0.3, 0.02);
+        fan.rotation.y = randomRange(-0.45, 0.45);
+        fan.rotation.z = randomRange(-0.18, 0.18);
+        fan.scale.set(
+          randomRange(0.75, 1.15),
+          randomRange(0.65, 1.0),
+          1,
+        );
+
+        coral.add(fan);
       }
 
       this.root.add(coral);
@@ -347,47 +429,41 @@ export class ReefEnvironment {
 
   private addVegetation(): void {
     const bladeGeometry =
-      new CylinderGeometry(0.012, 0.026, 0.68, 5, 1);
+      new PlaneGeometry(0.07, 0.72, 1, 2);
     const tallBladeGeometry =
-      new CylinderGeometry(0.015, 0.032, 1.05, 5, 1);
+      new PlaneGeometry(0.085, 1.05, 1, 2);
     const materials = [
       new MeshStandardMaterial({
         color: 0x2f7b71,
         flatShading: true,
         roughness: 0.95,
+        side: DoubleSide,
       }),
       new MeshStandardMaterial({
         color: 0x386c5a,
         flatShading: true,
         roughness: 0.95,
+        side: DoubleSide,
       }),
     ];
 
     const placements = [
-      [-3.8, -0.02, -2.3],
-      [-2.9, -0.03, -2.7],
-      [2.6, -0.03, -2.5],
-      [3.8, -0.02, -2.9],
-      [-4.1, -0.04, -3.9],
-      [4.0, -0.04, -4.2],
-      [-2.8, -0.05, -5.2],
-      [2.7, -0.05, -5.4],
-      [-1.2, -0.06, -6.4],
-      [1.4, -0.06, -6.7],
-      [-3.6, -0.04, -6.9],
-      [3.5, -0.04, -6.8],
-      [-0.65, -0.04, -2.9],
-      [0.72, -0.04, -3.1],
-      [-1.9, -0.05, -4.5],
-      [1.9, -0.05, -4.7],
-      [-0.15, -0.05, -5.6],
-      [0.35, -0.05, -7.2],
+      [-3.7, -0.03, -2.65],
+      [3.6, -0.03, -2.95],
+      [-3.9, -0.04, -4.3],
+      [3.8, -0.04, -4.6],
+      [-2.5, -0.05, -5.5],
+      [2.6, -0.05, -5.8],
+      [-3.5, -0.05, -7.0],
+      [3.4, -0.05, -7.1],
+      [-0.75, -0.05, -6.6],
+      [0.78, -0.05, -7.55],
     ] as const;
 
     placements.forEach((placement, index) => {
       const plant = new Group();
       const bladeCount =
-        index % 3 === 0 ? 3 : 2;
+        3 + (index % 3);
 
       plant.name = `ReefSeagrass-${index}`;
       plant.position.set(
@@ -399,9 +475,11 @@ export class ReefEnvironment {
       plant.scale.setScalar(randomRange(0.82, 1.18));
 
       for (let bladeIndex = 0; bladeIndex < bladeCount; bladeIndex += 1) {
-        const blade = new Mesh(
+        const isTall =
           bladeIndex === 0 &&
-            index % 4 === 0
+          index % 3 === 0;
+        const blade = new Mesh(
+          isTall
             ? tallBladeGeometry
             : bladeGeometry,
           materials[(index + bladeIndex) % materials.length],
@@ -409,18 +487,18 @@ export class ReefEnvironment {
 
         const angle =
           (bladeIndex / bladeCount) * Math.PI * 2;
-        const radius =
-          bladeCount === 2 ? 0.035 : 0.055;
+        const radius = randomRange(0.035, 0.12);
 
         blade.position.set(
           Math.cos(angle) * radius,
-          blade.geometry === tallBladeGeometry ? 0.52 : 0.34,
+          isTall ? 0.52 : 0.36,
           Math.sin(angle) * radius,
         );
+        blade.rotation.y = angle + Math.PI / 2;
         blade.rotation.z =
-          Math.cos(angle) * randomRange(0.08, 0.18);
+          Math.cos(angle) * randomRange(0.12, 0.28);
         blade.rotation.x =
-          Math.sin(angle) * randomRange(0.08, 0.18);
+          Math.sin(angle) * randomRange(0.08, 0.2);
 
         plant.add(blade);
       }
@@ -437,20 +515,27 @@ export class ReefEnvironment {
   }
 
   private addLightShafts(): void {
-    const geometry = new PlaneGeometry(0.7, 5.2);
+    const geometry = new ConeGeometry(
+      0.42,
+      5.4,
+      8,
+      1,
+      true,
+    );
     const material = new MeshBasicMaterial({
       blending: AdditiveBlending,
       color: 0x9bddea,
       depthWrite: false,
-      opacity: 0.065,
+      opacity: 0.035,
       side: DoubleSide,
       transparent: true,
     });
 
     const placements = [
-      [-2.3, 2.1, -4.2, 0.25],
-      [0.4, 2.3, -5.8, -0.12],
-      [2.7, 2.0, -6.6, -0.32],
+      [-2.5, 2.25, -4.1, 0.18, -0.22],
+      [-0.6, 2.45, -5.2, -0.08, 0.14],
+      [1.4, 2.35, -6.0, 0.22, 0.08],
+      [3.0, 2.15, -6.9, -0.28, -0.18],
     ] as const;
 
     placements.forEach((placement, index) => {
@@ -463,9 +548,14 @@ export class ReefEnvironment {
         placement[2],
       );
       shaft.rotation.set(
-        -0.2,
+        placement[4],
         placement[3],
-        0.12,
+        0.08,
+      );
+      shaft.scale.set(
+        randomRange(0.72, 1.08),
+        1,
+        randomRange(0.72, 1.02),
       );
 
       this.root.add(shaft);

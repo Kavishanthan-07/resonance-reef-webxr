@@ -50,8 +50,10 @@ export class FishSchool {
   private readonly fish: FishAgent[] = [];
 
   private readonly userPoint = new Vector3(0, 1.6, 0);
-  private readonly inhaleTarget = new Vector3(0, 1.5, -1.4);
+  private readonly guideCenter = new Vector3(0, 1.55, -2.6);
   private readonly reefCenter = new Vector3(0, 1.5, -3.2);
+  private readonly jellyfishExclusionRadius = 0.65;
+  private readonly userExclusionRadius = 0.9;
 
   private readonly centroid = new Vector3();
   private readonly averageVelocity = new Vector3();
@@ -61,6 +63,7 @@ export class FishSchool {
   private readonly breathForce = new Vector3();
   private readonly boundaryForce = new Vector3();
   private readonly comfortForce = new Vector3();
+  private readonly guideComfortForce = new Vector3();
   private readonly lookTarget = new Vector3();
 
   constructor(config: FishSchoolConfig) {
@@ -87,14 +90,11 @@ export class FishSchool {
       );
 
       const agent = new FishAgent({
+        gatherOffset: this.createGatherOffset(index),
         headingOffsetY: species.headingOffsetY,
         modelScale:
           species.modelScale * randomRange(0.82, 1.12),
-        outwardBias: new Vector3(
-          randomRange(-1, 1),
-          randomRange(-0.22, 0.22),
-          randomRange(-0.9, -0.25),
-        ).normalize(),
+        outwardBias: this.createOutwardBias(index),
         phaseOffset: Math.random() * Math.PI * 2,
         root: fishRoot,
         swimClip: config.swimClip,
@@ -113,6 +113,35 @@ export class FishSchool {
       this.fish.push(agent);
       this.root.add(fishRoot);
     }
+  }
+
+  private createGatherOffset(index: number): Vector3 {
+    const angle =
+      (index / Math.max(1, this.fishCount)) * Math.PI * 2 +
+      randomRange(-0.28, 0.28);
+    const radius = randomRange(0.72, 1.35);
+
+    return new Vector3(
+      Math.cos(angle) * radius,
+      randomRange(-0.5, 0.6),
+      Math.sin(angle) * radius * 0.42 +
+        randomRange(-0.4, 0.5),
+    );
+  }
+
+  private createOutwardBias(index: number): Vector3 {
+    const side =
+      index % 3 === 0
+        ? -1
+        : index % 3 === 1
+          ? 1
+          : Math.sign(randomRange(-1, 1)) || 1;
+
+    return new Vector3(
+      side * randomRange(0.38, 1.15),
+      randomRange(-0.58, 0.62),
+      randomRange(-1.15, -0.24),
+    ).normalize();
   }
 
   update(
@@ -213,7 +242,8 @@ export class FishSchool {
 
       if (state.phase === 'inhale') {
         this.breathForce
-          .copy(this.inhaleTarget)
+          .copy(this.guideCenter)
+          .add(agent.gatherOffset)
           .sub(agent.root.position);
 
         if (this.breathForce.lengthSq() > 0.001) {
@@ -240,6 +270,23 @@ export class FishSchool {
         );
       }
 
+      this.guideComfortForce
+        .copy(agent.root.position)
+        .sub(this.guideCenter);
+
+      const guideDistance =
+        this.guideComfortForce.length();
+
+      if (
+        guideDistance < this.jellyfishExclusionRadius &&
+        guideDistance > 0.001
+      ) {
+        this.steering.addScaledVector(
+          this.guideComfortForce.normalize(),
+          (this.jellyfishExclusionRadius - guideDistance) * 2.6,
+        );
+      }
+
       this.comfortForce
         .copy(agent.root.position)
         .sub(this.userPoint);
@@ -247,10 +294,13 @@ export class FishSchool {
       const userDistance =
         this.comfortForce.length();
 
-      if (userDistance < 0.9 && userDistance > 0.001) {
+      if (
+        userDistance < this.userExclusionRadius &&
+        userDistance > 0.001
+      ) {
         this.steering.addScaledVector(
           this.comfortForce.normalize(),
-          (0.9 - userDistance) * 2.2,
+          (this.userExclusionRadius - userDistance) * 2.2,
         );
       }
 

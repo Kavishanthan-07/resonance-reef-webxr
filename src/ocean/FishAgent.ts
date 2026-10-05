@@ -10,6 +10,7 @@ export interface FishAgentConfig {
   headingOffsetY: number;
   modelScale: number;
   phaseOffset: number;
+  gatherOffset: Vector3;
   outwardBias: Vector3;
   root: Group;
   swimClip: AnimationClip | null;
@@ -21,6 +22,7 @@ export class FishAgent {
   readonly visual: Object3D;
   readonly velocity = new Vector3();
   readonly phaseOffset: number;
+  readonly gatherOffset: Vector3;
   readonly outwardBias: Vector3;
   readonly headingOffsetY: number;
 
@@ -30,6 +32,7 @@ export class FishAgent {
     this.root = config.root;
     this.visual = config.visual;
     this.phaseOffset = config.phaseOffset;
+    this.gatherOffset = config.gatherOffset;
     this.outwardBias = config.outwardBias;
     this.headingOffsetY = config.headingOffsetY;
 

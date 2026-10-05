@@ -70,10 +70,10 @@ export class UnderwaterParticles {
       this.geometry,
       new PointsMaterial({
         blending: AdditiveBlending,
-        color: 0x9edee6,
+        color: 0x8bcbd1,
         depthWrite: false,
-        opacity: 0.18,
-        size: 0.018,
+        opacity: 0.11,
+        size: 0.014,
         sizeAttenuation: true,
         transparent: true,
       }),
