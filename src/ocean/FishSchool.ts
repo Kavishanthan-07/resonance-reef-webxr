@@ -180,12 +180,17 @@ export class FishSchool {
     }
 
     const breathProgress = smoothStep(state.progress);
-    const sessionIntensity =
-      session?.intensity ?? 1;
+    const environmentIntensity =
+      session?.environmentIntensity ?? 1;
+    const sessionLift =
+      Math.max(
+        0,
+        Math.min(1, (environmentIntensity - 0.72) / 0.28),
+      );
     const gatherScale =
-      0.9 + sessionIntensity * 0.12;
+      0.94 + sessionLift * 0.12;
     const spreadScale =
-      0.92 + sessionIntensity * 0.1;
+      0.94 + sessionLift * 0.12;
     const exhaleBoost =
       state.phase === 'exhale'
         ? 1 + breathProgress * 0.28 * spreadScale
@@ -325,7 +330,7 @@ export class FishSchool {
               current.strength *
               forwardBias *
               individualBias *
-              (0.86 + sessionIntensity * 0.18) *
+              (0.94 + sessionLift * 0.12) *
               0.46,
           );
         }

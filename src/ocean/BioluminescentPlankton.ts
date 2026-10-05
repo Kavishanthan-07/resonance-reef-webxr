@@ -63,7 +63,7 @@ export class BioluminescentPlankton {
     new Float32Array(PLANKTON_COUNT);
   private readonly material: PointsMaterial;
   private readonly positionAttribute: Float32BufferAttribute;
-  private sessionIntensity = 0.55;
+  private sessionIntensity = 0.74;
 
   constructor() {
     for (let index = 0; index < PLANKTON_COUNT; index += 1) {
@@ -115,9 +115,12 @@ export class BioluminescentPlankton {
   }
 
   setSessionIntensity(value: number): void {
-    this.sessionIntensity = clamp(value, 0.55, 1);
+    this.sessionIntensity = clamp(value, 0.72, 1);
+    const sessionLift =
+      clamp01((this.sessionIntensity - 0.72) / 0.28);
+
     this.material.opacity =
-      0.12 + this.sessionIntensity * 0.1;
+      0.17 + sessionLift * 0.042;
   }
 
   update(
@@ -128,11 +131,15 @@ export class BioluminescentPlankton {
     session?: SessionState,
   ): void {
     if (session != null) {
-      this.setSessionIntensity(session.intensity);
+      this.setSessionIntensity(
+        session.environmentIntensity,
+      );
     }
 
+    const sessionLift =
+      clamp01((this.sessionIntensity - 0.72) / 0.28);
     const responseScale =
-      0.86 + this.sessionIntensity * 0.22;
+      0.94 + sessionLift * 0.18;
     const inhaleStrength =
       state.phase === 'inhale'
         ? (0.026 + smoothStep(state.progress) * 0.052) *

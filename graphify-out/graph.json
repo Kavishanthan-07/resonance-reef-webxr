@@ -1400,7 +1400,7 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_update",
-      "community": 97,
+      "community": 95,
       "norm_label": ".update()"
     },
     {
@@ -1637,7 +1637,7 @@
       "label": ".createNoiseBuffer()",
       "file_type": "code",
       "source_file": "src/audio/ProceduralAudio.ts",
-      "source_location": "L322",
+      "source_location": "L324",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_createnoisebuffer",
       "community": 95,
@@ -1647,7 +1647,7 @@
       "label": ".createPanner()",
       "file_type": "code",
       "source_file": "src/audio/ProceduralAudio.ts",
-      "source_location": "L348",
+      "source_location": "L350",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_createpanner",
       "community": 95,
@@ -1657,7 +1657,7 @@
       "label": ".createReefCue()",
       "file_type": "code",
       "source_file": "src/audio/ProceduralAudio.ts",
-      "source_location": "L361",
+      "source_location": "L363",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_createreefcue",
       "community": 95,
@@ -1667,7 +1667,7 @@
       "label": ".updateReefCue()",
       "file_type": "code",
       "source_file": "src/audio/ProceduralAudio.ts",
-      "source_location": "L409",
+      "source_location": "L411",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_updatereefcue",
       "community": 95,
@@ -1800,14 +1800,24 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessionstate",
-      "community": 97,
+      "community": 95,
       "norm_label": "sessionstate"
+    },
+    {
+      "label": "INITIAL_STATE",
+      "file_type": "code",
+      "source_file": "src/experience/SessionController.ts",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "experience_sessioncontroller_initial_state",
+      "community": 98,
+      "norm_label": "initial_state"
     },
     {
       "label": "clamp01()",
       "file_type": "code",
       "source_file": "src/experience/SessionController.ts",
-      "source_location": "L23",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "experience_sessioncontroller_clamp01",
       "community": 98,
@@ -1817,7 +1827,7 @@
       "label": "smoothStep()",
       "file_type": "code",
       "source_file": "src/experience/SessionController.ts",
-      "source_location": "L27",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "experience_sessioncontroller_smoothstep",
       "community": 98,
@@ -1827,7 +1837,7 @@
       "label": "getCyclePosition()",
       "file_type": "code",
       "source_file": "src/experience/SessionController.ts",
-      "source_location": "L32",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getcycleposition",
       "community": 98,
@@ -1837,27 +1847,47 @@
       "label": "getStage()",
       "file_type": "code",
       "source_file": "src/experience/SessionController.ts",
-      "source_location": "L41",
+      "source_location": "L50",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getstage",
       "community": 98,
       "norm_label": "getstage()"
     },
     {
+      "label": "interpolate()",
+      "file_type": "code",
+      "source_file": "src/experience/SessionController.ts",
+      "source_location": "L70",
+      "_origin": "ast",
+      "id": "experience_sessioncontroller_interpolate",
+      "community": 98,
+      "norm_label": "interpolate()"
+    },
+    {
       "label": "getStageProgress()",
       "file_type": "code",
       "source_file": "src/experience/SessionController.ts",
-      "source_location": "L61",
+      "source_location": "L78",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getstageprogress",
       "community": 98,
       "norm_label": "getstageprogress()"
     },
     {
+      "label": "getEnvironmentIntensity()",
+      "file_type": "code",
+      "source_file": "src/experience/SessionController.ts",
+      "source_location": "L96",
+      "_origin": "ast",
+      "id": "experience_sessioncontroller_getenvironmentintensity",
+      "community": 98,
+      "norm_label": "getenvironmentintensity()"
+    },
+    {
       "label": "SessionController",
       "file_type": "code",
       "source_file": "src/experience/SessionController.ts",
-      "source_location": "L79",
+      "source_location": "L114",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller",
       "community": 98,
@@ -1867,17 +1897,27 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/experience/SessionController.ts",
-      "source_location": "L83",
+      "source_location": "L119",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_update",
       "community": 98,
       "norm_label": ".update()"
     },
     {
+      "label": ".getState()",
+      "file_type": "code",
+      "source_file": "src/experience/SessionController.ts",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "experience_sessioncontroller_sessioncontroller_getstate",
+      "community": 98,
+      "norm_label": ".getstate()"
+    },
+    {
       "label": ".reset()",
       "file_type": "code",
       "source_file": "src/experience/SessionController.ts",
-      "source_location": "L123",
+      "source_location": "L166",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_reset",
       "community": 98,
@@ -1890,7 +1930,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_index",
-      "community": 0,
+      "community": 99,
       "norm_label": "index.ts"
     },
     {
@@ -1900,7 +1940,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_index_scenecontainer",
-      "community": 0,
+      "community": 99,
       "norm_label": "scenecontainer"
     },
     {
@@ -1987,7 +2027,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/ocean/BioluminescentPlankton.ts",
-      "source_location": "L123",
+      "source_location": "L126",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_update",
       "community": 97,
@@ -2150,7 +2190,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_update",
-      "community": 97,
+      "community": 96,
       "norm_label": ".update()"
     },
     {
@@ -2290,14 +2330,14 @@
       "source_location": "L139",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_update",
-      "community": 97,
+      "community": 95,
       "norm_label": ".update()"
     },
     {
       "label": ".dispose()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L309",
+      "source_location": "L314",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_dispose",
       "community": 8,
@@ -2307,7 +2347,7 @@
       "label": ".addLighting()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L316",
+      "source_location": "L321",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addlighting",
       "community": 8,
@@ -2317,7 +2357,7 @@
       "label": ".addSeabed()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L362",
+      "source_location": "L367",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addseabed",
       "community": 8,
@@ -2327,7 +2367,7 @@
       "label": ".addRocks()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L419",
+      "source_location": "L424",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addrocks",
       "community": 8,
@@ -2337,7 +2377,7 @@
       "label": ".addCoral()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L484",
+      "source_location": "L489",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addcoral",
       "community": 8,
@@ -2347,7 +2387,7 @@
       "label": ".addVegetation()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L635",
+      "source_location": "L640",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addvegetation",
       "community": 8,
@@ -2357,7 +2397,7 @@
       "label": ".addLightShafts()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L729",
+      "source_location": "L734",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addlightshafts",
       "community": 8,
@@ -2430,7 +2470,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_watercurrent",
-      "community": 99,
+      "community": 0,
       "norm_label": "watercurrent.ts"
     },
     {
@@ -2440,7 +2480,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "ocean_watercurrent_currentsample",
-      "community": 97,
+      "community": 95,
       "norm_label": "currentsample"
     },
     {
@@ -2450,7 +2490,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "ocean_watercurrent_clamp01",
-      "community": 99,
+      "community": 0,
       "norm_label": "clamp01()"
     },
     {
@@ -2460,7 +2500,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "ocean_watercurrent_smoothstep",
-      "community": 99,
+      "community": 0,
       "norm_label": "smoothstep()"
     },
     {
@@ -2470,7 +2510,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent",
-      "community": 99,
+      "community": 0,
       "norm_label": "watercurrent"
     },
     {
@@ -2480,7 +2520,7 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent_constructor",
-      "community": 99,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -2490,7 +2530,7 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent_update",
-      "community": 99,
+      "community": 0,
       "norm_label": ".update()"
     },
     {
@@ -2500,7 +2540,7 @@
       "source_location": "L146",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent_startpulse",
-      "community": 99,
+      "community": 0,
       "norm_label": ".startpulse()"
     },
     {
@@ -2510,7 +2550,7 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent_updatevisual",
-      "community": 99,
+      "community": 0,
       "norm_label": ".updatevisual()"
     },
     {
@@ -2530,7 +2570,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_selectfishanimation",
-      "community": 0,
+      "community": 99,
       "norm_label": "selectfishanimation()"
     },
     {
@@ -2540,7 +2580,7 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem",
-      "community": 0,
+      "community": 99,
       "norm_label": "reefbreathingsystem"
     },
     {
@@ -2550,7 +2590,7 @@
       "source_location": "L86",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_init",
-      "community": 0,
+      "community": 99,
       "norm_label": ".init()"
     },
     {
@@ -2560,7 +2600,7 @@
       "source_location": "L139",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_update",
-      "community": 0,
+      "community": 99,
       "norm_label": ".update()"
     },
     {
@@ -2570,7 +2610,7 @@
       "source_location": "L210",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_loadfishschool",
-      "community": 0,
+      "community": 99,
       "norm_label": ".loadfishschool()"
     },
     {
@@ -11586,9 +11626,9 @@
       "source_file": "src/audio/OceanAudio.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "audio_oceanaudio",
-      "target": "experience_sessioncontroller",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller"
     },
     {
       "relation": "imports",
@@ -11597,9 +11637,9 @@
       "source_file": "src/audio/OceanAudio.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "audio_oceanaudio",
-      "target": "experience_sessioncontroller_sessionstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstate"
     },
     {
       "relation": "imports_from",
@@ -11879,9 +11919,9 @@
       "source_file": "src/audio/OceanAudio.ts",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "audio_oceanaudio_oceanaudio_update",
-      "target": "experience_sessioncontroller_sessionstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstate"
     },
     {
       "relation": "references",
@@ -12102,9 +12142,9 @@
       "source_file": "src/audio/ProceduralAudio.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "audio_proceduralaudio",
-      "target": "experience_sessioncontroller",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller"
     },
     {
       "relation": "imports",
@@ -12113,9 +12153,9 @@
       "source_file": "src/audio/ProceduralAudio.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "audio_proceduralaudio",
-      "target": "experience_sessioncontroller_sessionstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstate"
     },
     {
       "relation": "imports_from",
@@ -12138,6 +12178,17 @@
       "confidence_score": 1.0,
       "source": "audio_proceduralaudio",
       "target": "ocean_watercurrent_currentsample"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/ProceduralAudio.ts",
+      "source_location": "L230",
+      "weight": 1.0,
+      "source": "audio_proceduralaudio_proceduralaudio_update",
+      "target": "audio_proceduralaudio_clamp01",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -12402,9 +12453,9 @@
       "source_file": "src/audio/ProceduralAudio.ts",
       "source_location": "L219",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "audio_proceduralaudio_proceduralaudio_update",
-      "target": "experience_sessioncontroller_sessionstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstate"
     },
     {
       "relation": "references",
@@ -12486,9 +12537,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller",
-      "target": "breathing_breathengine",
-      "confidence_score": 1.0
+      "target": "breathing_breathengine"
     },
     {
       "relation": "imports_from",
@@ -12596,9 +12647,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller",
-      "target": "breathing_breathengine_breathstate",
-      "confidence_score": 1.0
+      "target": "breathing_breathengine_breathstate"
     },
     {
       "relation": "references",
@@ -12607,9 +12658,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_sessioncontroller_update",
-      "target": "breathing_breathengine_breathstate",
-      "confidence_score": 1.0
+      "target": "breathing_breathengine_breathstate"
     },
     {
       "relation": "imports",
@@ -12799,9 +12850,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller",
-      "target": "experience_sessioncontroller_clamp01",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_clamp01"
     },
     {
       "relation": "contains",
@@ -12809,8 +12860,18 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L32",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller",
-      "target": "experience_sessioncontroller_getcycleposition",
+      "target": "experience_sessioncontroller_getcycleposition"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/SessionController.ts",
+      "source_location": "L96",
+      "weight": 1.0,
+      "source": "experience_sessioncontroller",
+      "target": "experience_sessioncontroller_getenvironmentintensity",
       "confidence_score": 1.0
     },
     {
@@ -12819,9 +12880,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L41",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller",
-      "target": "experience_sessioncontroller_getstage",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_getstage"
     },
     {
       "relation": "contains",
@@ -12829,8 +12890,28 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L61",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller",
-      "target": "experience_sessioncontroller_getstageprogress",
+      "target": "experience_sessioncontroller_getstageprogress"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/SessionController.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "experience_sessioncontroller",
+      "target": "experience_sessioncontroller_initial_state",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/SessionController.ts",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "experience_sessioncontroller",
+      "target": "experience_sessioncontroller_interpolate",
       "confidence_score": 1.0
     },
     {
@@ -12839,9 +12920,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller",
-      "target": "experience_sessioncontroller_sessioncontroller",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessioncontroller"
     },
     {
       "relation": "contains",
@@ -12849,9 +12930,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller",
-      "target": "experience_sessioncontroller_sessionstage",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstage"
     },
     {
       "relation": "contains",
@@ -12859,9 +12940,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller",
-      "target": "experience_sessioncontroller_sessionstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstate"
     },
     {
       "relation": "contains",
@@ -12869,9 +12950,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller",
-      "target": "experience_sessioncontroller_smoothstep",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_smoothstep"
     },
     {
       "relation": "imports_from",
@@ -12880,9 +12961,9 @@
       "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton",
-      "target": "experience_sessioncontroller",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller"
     },
     {
       "relation": "imports_from",
@@ -12891,9 +12972,9 @@
       "source_file": "src/ocean/FishSchool.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_fishschool",
-      "target": "experience_sessioncontroller",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller"
     },
     {
       "relation": "imports_from",
@@ -12902,9 +12983,9 @@
       "source_file": "src/ocean/ReefEnvironment.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_reefenvironment",
-      "target": "experience_sessioncontroller",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller"
     },
     {
       "relation": "imports_from",
@@ -12913,9 +12994,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem",
-      "target": "experience_sessioncontroller",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller"
     },
     {
       "relation": "imports",
@@ -12924,9 +13005,9 @@
       "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton",
-      "target": "experience_sessioncontroller_sessionstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstate"
     },
     {
       "relation": "references",
@@ -12935,9 +13016,9 @@
       "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton_bioluminescentplankton_update",
-      "target": "experience_sessioncontroller_sessionstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstate"
     },
     {
       "relation": "imports",
@@ -12946,9 +13027,9 @@
       "source_file": "src/ocean/FishSchool.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_fishschool",
-      "target": "experience_sessioncontroller_sessionstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstate"
     },
     {
       "relation": "references",
@@ -12957,9 +13038,9 @@
       "source_file": "src/ocean/FishSchool.ts",
       "source_location": "L155",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_fishschool_fishschool_update",
-      "target": "experience_sessioncontroller_sessionstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstate"
     },
     {
       "relation": "imports",
@@ -12968,9 +13049,9 @@
       "source_file": "src/ocean/ReefEnvironment.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_reefenvironment",
-      "target": "experience_sessioncontroller_sessionstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstate"
     },
     {
       "relation": "references",
@@ -12979,9 +13060,9 @@
       "source_file": "src/ocean/ReefEnvironment.ts",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_reefenvironment_reefenvironment_update",
-      "target": "experience_sessioncontroller_sessionstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstate"
     },
     {
       "relation": "calls",
@@ -12990,9 +13071,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_getstageprogress",
-      "target": "experience_sessioncontroller_clamp01",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_clamp01"
     },
     {
       "relation": "calls",
@@ -13001,9 +13082,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_sessioncontroller_update",
-      "target": "experience_sessioncontroller_clamp01",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_clamp01"
     },
     {
       "relation": "calls",
@@ -13012,8 +13093,19 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_smoothstep",
-      "target": "experience_sessioncontroller_clamp01",
+      "target": "experience_sessioncontroller_clamp01"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/SessionController.ts",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "experience_sessioncontroller_interpolate",
+      "target": "experience_sessioncontroller_smoothstep",
       "confidence_score": 1.0
     },
     {
@@ -13023,9 +13115,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L113",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_sessioncontroller_update",
-      "target": "experience_sessioncontroller_smoothstep",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_smoothstep"
     },
     {
       "relation": "calls",
@@ -13034,9 +13126,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L85",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_sessioncontroller_update",
-      "target": "experience_sessioncontroller_getcycleposition",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_getcycleposition"
     },
     {
       "relation": "calls",
@@ -13045,8 +13137,19 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_sessioncontroller_update",
-      "target": "experience_sessioncontroller_getstage",
+      "target": "experience_sessioncontroller_getstage"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/SessionController.ts",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "experience_sessioncontroller_getenvironmentintensity",
+      "target": "experience_sessioncontroller_interpolate",
       "confidence_score": 1.0
     },
     {
@@ -13056,8 +13159,29 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L116",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_sessioncontroller_update",
-      "target": "experience_sessioncontroller_getstageprogress",
+      "target": "experience_sessioncontroller_getstageprogress"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/SessionController.ts",
+      "source_location": "L127",
+      "weight": 1.0,
+      "source": "experience_sessioncontroller_sessioncontroller_update",
+      "target": "experience_sessioncontroller_getenvironmentintensity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/SessionController.ts",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "experience_sessioncontroller_sessioncontroller",
+      "target": "experience_sessioncontroller_sessioncontroller_getstate",
       "confidence_score": 1.0
     },
     {
@@ -13066,9 +13190,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L123",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_sessioncontroller",
-      "target": "experience_sessioncontroller_sessioncontroller_reset",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessioncontroller_reset"
     },
     {
       "relation": "method",
@@ -13076,9 +13200,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_sessioncontroller",
-      "target": "experience_sessioncontroller_sessioncontroller_update",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessioncontroller_update"
     },
     {
       "relation": "imports",
@@ -13087,9 +13211,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem",
-      "target": "experience_sessioncontroller_sessioncontroller",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessioncontroller"
     },
     {
       "relation": "contains",
@@ -13224,9 +13348,9 @@
       "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton_bioluminescentplankton_setsessionintensity",
-      "target": "ocean_bioluminescentplankton_clamp",
-      "confidence_score": 1.0
+      "target": "ocean_bioluminescentplankton_clamp"
     },
     {
       "relation": "calls",
@@ -13249,6 +13373,28 @@
       "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton_clamp01",
       "target": "ocean_bioluminescentplankton_clamp"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/BioluminescentPlankton.ts",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "ocean_bioluminescentplankton_bioluminescentplankton_setsessionintensity",
+      "target": "ocean_bioluminescentplankton_clamp01",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/BioluminescentPlankton.ts",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "ocean_bioluminescentplankton_bioluminescentplankton_update",
+      "target": "ocean_bioluminescentplankton_clamp01",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -13288,9 +13434,9 @@
       "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L117",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton_bioluminescentplankton",
-      "target": "ocean_bioluminescentplankton_bioluminescentplankton_setsessionintensity",
-      "confidence_score": 1.0
+      "target": "ocean_bioluminescentplankton_bioluminescentplankton_setsessionintensity"
     },
     {
       "relation": "method",
@@ -13331,9 +13477,9 @@
       "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L131",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton_bioluminescentplankton_update",
-      "target": "ocean_bioluminescentplankton_bioluminescentplankton_setsessionintensity",
-      "confidence_score": 1.0
+      "target": "ocean_bioluminescentplankton_bioluminescentplankton_setsessionintensity"
     },
     {
       "relation": "references",
@@ -21275,5 +21421,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "46c31eb0178d01168ddf8b397a72aa6e1845c0dc"
+  "built_at_commit": "b96bcca45887a5b452a9b33a909ba190708be9c9"
 }

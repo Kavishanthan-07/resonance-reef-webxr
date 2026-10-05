@@ -142,10 +142,15 @@ export class ReefEnvironment {
     current?: CurrentSample,
     session?: SessionState,
   ): void {
-    const sessionIntensity =
-      session?.intensity ?? 1;
+    const environmentIntensity =
+      session?.environmentIntensity ?? 1;
+    const sessionLift =
+      Math.max(
+        0,
+        Math.min(1, (environmentIntensity - 0.72) / 0.28),
+      );
     const reefResponseScale =
-      0.82 + sessionIntensity * 0.24;
+      0.94 + sessionLift * 0.12;
 
     for (const target of this.swayTargets) {
       if (target.impact > 0.001) {
@@ -160,7 +165,7 @@ export class ReefEnvironment {
       const sway =
         Math.sin(timeSeconds * target.speed + target.phase) *
         target.amplitude *
-        (1 + target.impact * (0.52 + sessionIntensity * 0.32));
+        (1 + target.impact * (0.64 + sessionLift * 0.2));
 
       if (
         current != null &&
@@ -270,21 +275,21 @@ export class ReefEnvironment {
         Math.min(
           DEBUG_REEF_CURRENT
             ? 0.55
-            : 0.15 + sessionIntensity * 0.09,
+            : 0.17 + sessionLift * 0.07,
           target.impact *
             (DEBUG_REEF_CURRENT
               ? 1.2
-              : 0.52 + sessionIntensity * 0.22),
+              : 0.6 + sessionLift * 0.16),
         );
       const emissiveStrength =
         Math.min(
           DEBUG_REEF_CURRENT
             ? 0.22
-            : 0.045 + sessionIntensity * 0.04,
+            : 0.055 + sessionLift * 0.035,
           target.impact *
             (DEBUG_REEF_CURRENT
               ? 0.48
-              : 0.15 + sessionIntensity * 0.09),
+              : 0.18 + sessionLift * 0.07),
         );
 
       for (
