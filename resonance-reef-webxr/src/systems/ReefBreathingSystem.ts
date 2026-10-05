@@ -209,6 +209,7 @@ export class ReefBreathingSystem extends createSystem({}) {
       time,
       current,
       session,
+      state,
     );
 
     if (isRunning && current != null) {

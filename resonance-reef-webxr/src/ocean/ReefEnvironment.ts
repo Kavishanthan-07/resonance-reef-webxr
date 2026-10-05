@@ -24,33 +24,68 @@ import {
   type World,
 } from '@iwsdk/core';
 
+import type { BreathState } from '../breathing/BreathEngine.js';
 import type { SessionState } from '../experience/SessionController.js';
 import { ReefDecorLayer } from './ReefDecorLayer.js';
 import type {
   CoralTarget,
   SwayTarget,
 } from './ReefResponseTargets.js';
+import {
+  UnderwaterAtmosphere,
+  UNDERWATER_ATMOSPHERE_CONFIG,
+} from './UnderwaterAtmosphere.js';
 import { UnderwaterParticles } from './UnderwaterParticles.js';
 import type { CurrentSample } from './WaterCurrent.js';
 
 const DEBUG_REEF_CURRENT = false;
 const RESPONSE_DECAY_SECONDS = 1.6;
+const SEABED_SIZE_METERS = 100;
+const SEABED_SEGMENTS = 24;
+const SEABED_COMFORT_RADIUS = 1.2;
+const SEABED_VARIATION_FADE_RADIUS = 3.4;
 
 function randomRange(min: number, max: number): number {
   return min + Math.random() * (max - min);
 }
 
+function clamp01(value: number): number {
+  return Math.max(0, Math.min(1, value));
+}
+
+function smoothStep(value: number): number {
+  const t = clamp01(value);
+
+  return t * t * (3 - 2 * t);
+}
+
 function createSeabedGeometry(): PlaneGeometry {
-  const geometry = new PlaneGeometry(12, 10, 10, 8);
+  const geometry = new PlaneGeometry(
+    SEABED_SIZE_METERS,
+    SEABED_SIZE_METERS,
+    SEABED_SEGMENTS,
+    SEABED_SEGMENTS,
+  );
   const position =
     geometry.getAttribute('position');
 
   for (let index = 0; index < position.count; index += 1) {
     const x = position.getX(index);
     const y = position.getY(index);
+    const distanceFromUser =
+      Math.sqrt(x * x + y * y);
+    const comfortFade = smoothStep(
+      (distanceFromUser - SEABED_COMFORT_RADIUS) /
+        (SEABED_VARIATION_FADE_RADIUS -
+          SEABED_COMFORT_RADIUS),
+    );
     const height =
-      Math.sin(x * 0.7 + y * 0.22) * 0.035 +
-      Math.cos(y * 0.55) * 0.025;
+      (
+        Math.sin(x * 0.13 + y * 0.08) * 0.16 +
+        Math.cos(x * 0.045 - y * 0.12) * 0.11 +
+        Math.sin((x + y) * 0.06) * 0.08
+      ) *
+      comfortFade;
 
     position.setZ(index, height);
   }
@@ -86,6 +121,7 @@ export class ReefEnvironment {
   private readonly swayTargets: SwayTarget[] = [];
   private readonly coralTargets: CoralTarget[] = [];
   private readonly decorLayer: ReefDecorLayer;
+  private readonly atmosphere: UnderwaterAtmosphere;
   private readonly particles: UnderwaterParticles;
   private readonly coralGlowColor = new Color(0x67d9d1);
 
@@ -98,11 +134,17 @@ export class ReefEnvironment {
       world.scene.fog;
 
     world.scene.background =
-      new Color(0x062532);
+      new Color(0x041c29);
     world.scene.fog =
-      new Fog(0x083847, 3.6, 9.8);
+      new Fog(
+        0x052f3b,
+        UNDERWATER_ATMOSPHERE_CONFIG.fogNear,
+        UNDERWATER_ATMOSPHERE_CONFIG.fogFar,
+      );
 
     this.addLighting();
+    this.atmosphere =
+      new UnderwaterAtmosphere();
     this.decorLayer =
       new ReefDecorLayer({
         coralTargets: this.coralTargets,
@@ -113,6 +155,7 @@ export class ReefEnvironment {
     this.addRocks();
     this.addCoral();
     this.addVegetation();
+    this.root.add(this.atmosphere.root);
     this.root.add(this.decorLayer.root);
     void this.decorLayer
       .load()
@@ -122,14 +165,13 @@ export class ReefEnvironment {
           error,
         );
       });
-    this.addLightShafts();
 
     this.particles =
       new UnderwaterParticles({
         count: this.particleCount,
-        xRange: [-4.6, 4.6],
-        yRange: [0.45, 2.9],
-        zRange: [-7.8, -1.2],
+        xRange: [-5.0, 5.0],
+        yRange: [0.55, 5.4],
+        zRange: [-10.5, -0.9],
       });
 
     this.root.add(this.particles.points);
@@ -141,6 +183,7 @@ export class ReefEnvironment {
     timeSeconds: number,
     current?: CurrentSample,
     session?: SessionState,
+    breath?: BreathState,
   ): void {
     const environmentIntensity =
       session?.environmentIntensity ?? 1;
@@ -310,6 +353,15 @@ export class ReefEnvironment {
 
     this.particles.update(deltaSeconds, timeSeconds);
     this.decorLayer.update(deltaSeconds);
+
+    if (breath != null) {
+      this.atmosphere.update(
+        deltaSeconds,
+        timeSeconds,
+        breath,
+        current,
+      );
+    }
   }
 
   resetProgression(): void {
@@ -342,6 +394,7 @@ export class ReefEnvironment {
   }
 
   dispose(): void {
+    this.atmosphere.dispose();
     this.world.scene.background =
       this.previousBackground;
     this.world.scene.fog =
@@ -350,38 +403,38 @@ export class ReefEnvironment {
 
   private addLighting(): void {
     const hemisphere = new HemisphereLight(
-      0x8bd5e4,
-      0x06232b,
-      1.95,
+      0x78c8d4,
+      0x041922,
+      1.55,
     );
 
     hemisphere.name = 'ReefHemisphereLight';
 
     const ambient = new AmbientLight(
-      0x315b65,
-      0.68,
+      0x244d58,
+      0.42,
     );
 
     ambient.name = 'ReefSoftAmbientLight';
 
     const key = new DirectionalLight(
-      0xb9f4ff,
-      2.05,
+      0xb2f3ff,
+      2.25,
     );
 
     key.name = 'ReefSurfaceKeyLight';
-    key.position.set(-2.6, 5.2, 1.4);
-    key.target.position.set(0, 1.1, -4.0);
+    key.position.set(-2.0, 7.4, -1.25);
+    key.target.position.set(0.45, 0.65, -5.7);
     key.castShadow = false;
 
     const fill = new DirectionalLight(
-      0x5db7c9,
-      0.55,
+      0x3f91a4,
+      0.32,
     );
 
     fill.name = 'ReefCoolFillLight';
-    fill.position.set(3.2, 2.6, -3.6);
-    fill.target.position.set(0, 1.0, -4.8);
+    fill.position.set(3.8, 2.4, -2.7);
+    fill.target.position.set(-0.2, 0.9, -5.4);
     fill.castShadow = false;
 
     this.root.add(
@@ -402,7 +455,7 @@ export class ReefEnvironment {
     sandTexture.colorSpace = SRGBColorSpace;
     sandTexture.wrapS = RepeatWrapping;
     sandTexture.wrapT = RepeatWrapping;
-    sandTexture.repeat.set(4, 3);
+    sandTexture.repeat.set(24, 24);
 
     const seabedMaterial = new MeshStandardMaterial({
       color: 0xb8aa8f,
@@ -417,7 +470,7 @@ export class ReefEnvironment {
     );
 
     seabed.name = 'ReefSeabed';
-    seabed.position.set(0, -0.08, -4.2);
+    seabed.position.set(0, -0.08, 0);
     seabed.rotation.x = -Math.PI / 2;
 
     this.root.add(seabed);
