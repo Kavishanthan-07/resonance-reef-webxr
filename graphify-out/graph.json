@@ -1320,7 +1320,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "audio_oceanaudio",
-      "community": 0,
+      "community": 97,
       "norm_label": "oceanaudio.ts"
     },
     {
@@ -1330,7 +1330,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "audio_oceanaudio_audiocontextconstructor",
-      "community": 0,
+      "community": 97,
       "norm_label": "audiocontextconstructor"
     },
     {
@@ -1340,7 +1340,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "audio_oceanaudio_audiowindow",
-      "community": 0,
+      "community": 97,
       "norm_label": "audiowindow"
     },
     {
@@ -2814,6 +2814,216 @@
       "norm_label": ".update()"
     },
     {
+      "label": "ReefDecorConfig.ts",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorConfig.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ocean_reefdecorconfig",
+      "community": 8,
+      "norm_label": "reefdecorconfig.ts"
+    },
+    {
+      "label": "Vec3Tuple",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorConfig.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ocean_reefdecorconfig_vec3tuple",
+      "community": 8,
+      "norm_label": "vec3tuple"
+    },
+    {
+      "label": "ReefDecorAssetId",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorConfig.ts",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "ocean_reefdecorconfig_reefdecorassetid",
+      "community": 8,
+      "norm_label": "reefdecorassetid"
+    },
+    {
+      "label": "ReefDecorCategory",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorConfig.ts",
+      "source_location": "L12",
+      "_origin": "ast",
+      "id": "ocean_reefdecorconfig_reefdecorcategory",
+      "community": 8,
+      "norm_label": "reefdecorcategory"
+    },
+    {
+      "label": "ReefDecorPlacement",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorConfig.ts",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "ocean_reefdecorconfig_reefdecorplacement",
+      "community": 8,
+      "norm_label": "reefdecorplacement"
+    },
+    {
+      "label": "REEF_CORAL_PLACEMENTS",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorConfig.ts",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "ocean_reefdecorconfig_reef_coral_placements",
+      "community": 8,
+      "norm_label": "reef_coral_placements"
+    },
+    {
+      "label": "REEF_SEAWEED_PLACEMENTS",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorConfig.ts",
+      "source_location": "L119",
+      "_origin": "ast",
+      "id": "ocean_reefdecorconfig_reef_seaweed_placements",
+      "community": 8,
+      "norm_label": "reef_seaweed_placements"
+    },
+    {
+      "label": "ReefDecorLayer.ts",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer",
+      "community": 8,
+      "norm_label": "reefdecorlayer.ts"
+    },
+    {
+      "label": "ReefDecorLayerTargets",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer_reefdecorlayertargets",
+      "community": 8,
+      "norm_label": "reefdecorlayertargets"
+    },
+    {
+      "label": "setNoShadows()",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer_setnoshadows",
+      "community": 8,
+      "norm_label": "setnoshadows()"
+    },
+    {
+      "label": "collectStandardMaterials()",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L34",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer_collectstandardmaterials",
+      "community": 8,
+      "norm_label": "collectstandardmaterials()"
+    },
+    {
+      "label": "ReefDecorLayer",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer_reefdecorlayer",
+      "community": 8,
+      "norm_label": "reefdecorlayer"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer_reefdecorlayer_constructor",
+      "community": 8,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".load()",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L77",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer_reefdecorlayer_load",
+      "community": 8,
+      "norm_label": ".load()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L83",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer_reefdecorlayer_update",
+      "community": 8,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".loadDecor()",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer_reefdecorlayer_loaddecor",
+      "community": 8,
+      "norm_label": ".loaddecor()"
+    },
+    {
+      "label": ".addPlacement()",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L149",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer_reefdecorlayer_addplacement",
+      "community": 8,
+      "norm_label": ".addplacement()"
+    },
+    {
+      "label": ".addCoralTarget()",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L180",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer_reefdecorlayer_addcoraltarget",
+      "community": 8,
+      "norm_label": ".addcoraltarget()"
+    },
+    {
+      "label": ".addSeaweedTarget()",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L203",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer_reefdecorlayer_addseaweedtarget",
+      "community": 8,
+      "norm_label": ".addseaweedtarget()"
+    },
+    {
+      "label": ".addSeaweedAnimation()",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L222",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer_reefdecorlayer_addseaweedanimation",
+      "community": 8,
+      "norm_label": ".addseaweedanimation()"
+    },
+    {
+      "label": ".logSeaweedAnimations()",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L238",
+      "_origin": "ast",
+      "id": "ocean_reefdecorlayer_reefdecorlayer_logseaweedanimations",
+      "community": 8,
+      "norm_label": ".logseaweedanimations()"
+    },
+    {
       "label": "ReefEnvironment.ts",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
@@ -2824,30 +3034,10 @@
       "norm_label": "reefenvironment.ts"
     },
     {
-      "label": "SwayTarget",
-      "file_type": "code",
-      "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L28",
-      "_origin": "ast",
-      "id": "ocean_reefenvironment_swaytarget",
-      "community": 8,
-      "norm_label": "swaytarget"
-    },
-    {
-      "label": "CoralTarget",
-      "file_type": "code",
-      "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L42",
-      "_origin": "ast",
-      "id": "ocean_reefenvironment_coraltarget",
-      "community": 8,
-      "norm_label": "coraltarget"
-    },
-    {
       "label": "randomRange()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L55",
+      "source_location": "L39",
       "_origin": "ast",
       "id": "ocean_reefenvironment_randomrange",
       "community": 8,
@@ -2857,7 +3047,7 @@
       "label": "createSeabedGeometry()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L59",
+      "source_location": "L43",
       "_origin": "ast",
       "id": "ocean_reefenvironment_createseabedgeometry",
       "community": 8,
@@ -2867,7 +3057,7 @@
       "label": "setNoShadows()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L80",
+      "source_location": "L64",
       "_origin": "ast",
       "id": "ocean_reefenvironment_setnoshadows",
       "community": 8,
@@ -2877,7 +3067,7 @@
       "label": "ReefEnvironment",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L87",
+      "source_location": "L71",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment",
       "community": 8,
@@ -2887,7 +3077,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L107",
+      "source_location": "L92",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_constructor",
       "community": 8,
@@ -2907,7 +3097,7 @@
       "label": ".resetProgression()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L314",
+      "source_location": "L315",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_resetprogression",
       "community": 8,
@@ -2917,7 +3107,7 @@
       "label": ".dispose()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L343",
+      "source_location": "L344",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_dispose",
       "community": 8,
@@ -2927,7 +3117,7 @@
       "label": ".addLighting()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L350",
+      "source_location": "L351",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addlighting",
       "community": 8,
@@ -2937,7 +3127,7 @@
       "label": ".addSeabed()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L396",
+      "source_location": "L397",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addseabed",
       "community": 8,
@@ -2947,7 +3137,7 @@
       "label": ".addRocks()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L453",
+      "source_location": "L464",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addrocks",
       "community": 8,
@@ -2957,7 +3147,7 @@
       "label": ".addCoral()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L518",
+      "source_location": "L529",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addcoral",
       "community": 8,
@@ -2967,7 +3157,7 @@
       "label": ".addVegetation()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L669",
+      "source_location": "L680",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addvegetation",
       "community": 8,
@@ -2977,11 +3167,41 @@
       "label": ".addLightShafts()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L763",
+      "source_location": "L774",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addlightshafts",
       "community": 8,
       "norm_label": ".addlightshafts()"
+    },
+    {
+      "label": "ReefResponseTargets.ts",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefResponseTargets.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ocean_reefresponsetargets",
+      "community": 8,
+      "norm_label": "reefresponsetargets.ts"
+    },
+    {
+      "label": "SwayTarget",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefResponseTargets.ts",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "ocean_reefresponsetargets_swaytarget",
+      "community": 8,
+      "norm_label": "swaytarget"
+    },
+    {
+      "label": "CoralTarget",
+      "file_type": "code",
+      "source_file": "src/ocean/ReefResponseTargets.ts",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "ocean_reefresponsetargets_coraltarget",
+      "community": 8,
+      "norm_label": "coraltarget"
     },
     {
       "label": "UnderwaterParticles.ts",
@@ -12370,9 +12590,9 @@
       "source_file": "src/audio/OceanAudio.ts",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "audio_oceanaudio_oceanaudio",
-      "target": "audio_oceanaudio_oceanaudio_resume",
-      "confidence_score": 1.0
+      "target": "audio_oceanaudio_oceanaudio_resume"
     },
     {
       "relation": "method",
@@ -12517,9 +12737,9 @@
       "source_file": "src/audio/OceanAudio.ts",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "audio_oceanaudio_oceanaudio_resume",
-      "target": "audio_oceanaudio_oceanaudio_tryresume",
-      "confidence_score": 1.0
+      "target": "audio_oceanaudio_oceanaudio_tryresume"
     },
     {
       "relation": "calls",
@@ -13168,9 +13388,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols",
-      "target": "breathing_breathengine",
-      "confidence_score": 1.0
+      "target": "breathing_breathengine"
     },
     {
       "relation": "imports_from",
@@ -13289,9 +13509,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols",
-      "target": "breathing_breathengine_breathstate",
-      "confidence_score": 1.0
+      "target": "breathing_breathengine_breathstate"
     },
     {
       "relation": "references",
@@ -13300,9 +13520,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols_desktopcontrols_update",
-      "target": "breathing_breathengine_breathstate",
-      "confidence_score": 1.0
+      "target": "breathing_breathengine_breathstate"
     },
     {
       "relation": "imports",
@@ -13514,9 +13734,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols",
-      "target": "experience_desktopcontrols_createelement",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols_createelement"
     },
     {
       "relation": "contains",
@@ -13524,9 +13744,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols",
-      "target": "experience_desktopcontrols_desktopcontrols",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols_desktopcontrols"
     },
     {
       "relation": "contains",
@@ -13534,9 +13754,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols",
-      "target": "experience_desktopcontrols_getphaselabel",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols_getphaselabel"
     },
     {
       "relation": "imports_from",
@@ -13545,9 +13765,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols",
-      "target": "experience_experiencecontroller",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller"
     },
     {
       "relation": "imports",
@@ -13556,9 +13776,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols",
-      "target": "experience_experiencecontroller_experiencecontroller",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller"
     },
     {
       "relation": "imports",
@@ -13567,9 +13787,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols",
-      "target": "experience_experiencecontroller_experiencephase",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencephase"
     },
     {
       "relation": "imports_from",
@@ -13578,9 +13798,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols",
-      "target": "experience_sessioncontroller",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller"
     },
     {
       "relation": "imports",
@@ -13589,9 +13809,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols",
-      "target": "experience_sessioncontroller_sessionstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstate"
     },
     {
       "relation": "imports_from",
@@ -13600,9 +13820,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem",
-      "target": "experience_desktopcontrols",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols"
     },
     {
       "relation": "calls",
@@ -13611,9 +13831,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols_desktopcontrols_constructor",
-      "target": "experience_desktopcontrols_createelement",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols_createelement"
     },
     {
       "relation": "calls",
@@ -13622,9 +13842,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L168",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols_desktopcontrols_installstyles",
-      "target": "experience_desktopcontrols_createelement",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols_createelement"
     },
     {
       "relation": "calls",
@@ -13633,9 +13853,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L129",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols_desktopcontrols_update",
-      "target": "experience_desktopcontrols_getphaselabel",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols_getphaselabel"
     },
     {
       "relation": "method",
@@ -13643,9 +13863,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols_desktopcontrols",
-      "target": "experience_desktopcontrols_desktopcontrols_constructor",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols_desktopcontrols_constructor"
     },
     {
       "relation": "method",
@@ -13653,9 +13873,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols_desktopcontrols",
-      "target": "experience_desktopcontrols_desktopcontrols_dispose",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols_desktopcontrols_dispose"
     },
     {
       "relation": "method",
@@ -13663,9 +13883,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L163",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols_desktopcontrols",
-      "target": "experience_desktopcontrols_desktopcontrols_installstyles",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols_desktopcontrols_installstyles"
     },
     {
       "relation": "method",
@@ -13673,9 +13893,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols_desktopcontrols",
-      "target": "experience_desktopcontrols_desktopcontrols_update",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols_desktopcontrols_update"
     },
     {
       "relation": "imports",
@@ -13684,9 +13904,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem",
-      "target": "experience_desktopcontrols_desktopcontrols",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols_desktopcontrols"
     },
     {
       "relation": "references",
@@ -13695,9 +13915,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem",
-      "target": "experience_desktopcontrols_desktopcontrols",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols_desktopcontrols"
     },
     {
       "relation": "calls",
@@ -13706,9 +13926,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L63",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols_desktopcontrols_constructor",
-      "target": "experience_desktopcontrols_desktopcontrols_installstyles",
-      "confidence_score": 1.0
+      "target": "experience_desktopcontrols_desktopcontrols_installstyles"
     },
     {
       "relation": "references",
@@ -13717,9 +13937,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols_desktopcontrols_constructor",
-      "target": "experience_experiencecontroller_experiencecontroller",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller"
     },
     {
       "relation": "references",
@@ -13728,9 +13948,9 @@
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L115",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_desktopcontrols_desktopcontrols_update",
-      "target": "experience_sessioncontroller_sessionstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessionstate"
     },
     {
       "relation": "contains",
@@ -13738,9 +13958,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencecontroller",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller"
     },
     {
       "relation": "contains",
@@ -13748,9 +13968,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencecontrollerhooks",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontrollerhooks"
     },
     {
       "relation": "contains",
@@ -13758,9 +13978,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencephase",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencephase"
     },
     {
       "relation": "contains",
@@ -13768,9 +13988,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencestate",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencestate"
     },
     {
       "relation": "imports_from",
@@ -13779,9 +13999,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols",
-      "target": "experience_experiencecontroller",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller"
     },
     {
       "relation": "imports_from",
@@ -13790,9 +14010,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem",
-      "target": "experience_experiencecontroller",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller"
     },
     {
       "relation": "method",
@@ -13800,9 +14020,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencecontroller_constructor",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_constructor"
     },
     {
       "relation": "method",
@@ -13810,9 +14030,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencecontroller_getstate",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_getstate"
     },
     {
       "relation": "method",
@@ -13820,9 +14040,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencecontroller_markcomplete",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_markcomplete"
     },
     {
       "relation": "method",
@@ -13830,9 +14050,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencecontroller_pause",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_pause"
     },
     {
       "relation": "method",
@@ -13840,9 +14060,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L92",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencecontroller_requestaudiounlock",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_requestaudiounlock"
     },
     {
       "relation": "method",
@@ -13850,9 +14070,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencecontroller_restart",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_restart"
     },
     {
       "relation": "method",
@@ -13860,9 +14080,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencecontroller_resume",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_resume"
     },
     {
       "relation": "method",
@@ -13870,9 +14090,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencecontroller_setmuted",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_setmuted"
     },
     {
       "relation": "method",
@@ -13880,9 +14100,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencecontroller_start",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_start"
     },
     {
       "relation": "method",
@@ -13890,9 +14110,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L88",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller",
-      "target": "experience_experiencecontroller_experiencecontroller_togglemuted",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_togglemuted"
     },
     {
       "relation": "imports",
@@ -13901,9 +14121,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols",
-      "target": "experience_experiencecontroller_experiencecontroller",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller"
     },
     {
       "relation": "references",
@@ -13912,9 +14132,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_experiencexrcontrols_constructor",
-      "target": "experience_experiencecontroller_experiencecontroller",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller"
     },
     {
       "relation": "imports",
@@ -13923,9 +14143,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem",
-      "target": "experience_experiencecontroller_experiencecontroller",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller"
     },
     {
       "relation": "references",
@@ -13934,9 +14154,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem",
-      "target": "experience_experiencecontroller_experiencecontroller",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller"
     },
     {
       "relation": "calls",
@@ -13945,9 +14165,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller_restart",
-      "target": "experience_experiencecontroller_experiencecontroller_start",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_start"
     },
     {
       "relation": "calls",
@@ -13956,9 +14176,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L39",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller_start",
-      "target": "experience_experiencecontroller_experiencecontroller_requestaudiounlock",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_requestaudiounlock"
     },
     {
       "relation": "calls",
@@ -13967,9 +14187,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller_resume",
-      "target": "experience_experiencecontroller_experiencecontroller_requestaudiounlock",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_requestaudiounlock"
     },
     {
       "relation": "calls",
@@ -13978,9 +14198,9 @@
       "source_file": "src/experience/ExperienceController.ts",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencecontroller_experiencecontroller_togglemuted",
-      "target": "experience_experiencecontroller_experiencecontroller_setmuted",
-      "confidence_score": 1.0
+      "target": "experience_experiencecontroller_experiencecontroller_setmuted"
     },
     {
       "relation": "contains",
@@ -13988,9 +14208,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L145",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols",
-      "target": "experience_experiencexrcontrols_experiencexrcontrols",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_experiencexrcontrols"
     },
     {
       "relation": "contains",
@@ -13998,9 +14218,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols",
-      "target": "experience_experiencexrcontrols_xrbutton",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_xrbutton"
     },
     {
       "relation": "contains",
@@ -14008,9 +14228,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols",
-      "target": "experience_experiencexrcontrols_xrbuttonaction",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_xrbuttonaction"
     },
     {
       "relation": "imports_from",
@@ -14019,9 +14239,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem",
-      "target": "experience_experiencexrcontrols",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols"
     },
     {
       "relation": "method",
@@ -14029,9 +14249,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_xrbutton",
-      "target": "experience_experiencexrcontrols_xrbutton_constructor",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_xrbutton_constructor"
     },
     {
       "relation": "method",
@@ -14039,9 +14259,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L90",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_xrbutton",
-      "target": "experience_experiencexrcontrols_xrbutton_dispose",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_xrbutton_dispose"
     },
     {
       "relation": "method",
@@ -14049,9 +14269,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_xrbutton",
-      "target": "experience_experiencexrcontrols_xrbutton_drawtexture",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_xrbutton_drawtexture"
     },
     {
       "relation": "method",
@@ -14059,9 +14279,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_xrbutton",
-      "target": "experience_experiencexrcontrols_xrbutton_setlabel",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_xrbutton_setlabel"
     },
     {
       "relation": "method",
@@ -14069,9 +14289,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_xrbutton",
-      "target": "experience_experiencexrcontrols_xrbutton_update",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_xrbutton_update"
     },
     {
       "relation": "calls",
@@ -14080,9 +14300,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_xrbutton_constructor",
-      "target": "experience_experiencexrcontrols_xrbutton_setlabel",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_xrbutton_setlabel"
     },
     {
       "relation": "calls",
@@ -14091,9 +14311,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L208",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_experiencexrcontrols_update",
-      "target": "experience_experiencexrcontrols_xrbutton_setlabel",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_xrbutton_setlabel"
     },
     {
       "relation": "calls",
@@ -14102,9 +14322,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_xrbutton_setlabel",
-      "target": "experience_experiencexrcontrols_xrbutton_drawtexture",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_xrbutton_drawtexture"
     },
     {
       "relation": "calls",
@@ -14113,9 +14333,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_xrbutton_update",
-      "target": "experience_experiencexrcontrols_xrbutton_drawtexture",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_xrbutton_drawtexture"
     },
     {
       "relation": "calls",
@@ -14124,9 +14344,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L91",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_xrbutton_dispose",
-      "target": "experience_experiencexrcontrols_experiencexrcontrols_dispose",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_experiencexrcontrols_dispose"
     },
     {
       "relation": "method",
@@ -14134,9 +14354,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L154",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_experiencexrcontrols",
-      "target": "experience_experiencexrcontrols_experiencexrcontrols_constructor",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_experiencexrcontrols_constructor"
     },
     {
       "relation": "method",
@@ -14144,9 +14364,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L217",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_experiencexrcontrols",
-      "target": "experience_experiencexrcontrols_experiencexrcontrols_dispose",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_experiencexrcontrols_dispose"
     },
     {
       "relation": "method",
@@ -14154,9 +14374,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L225",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_experiencexrcontrols",
-      "target": "experience_experiencexrcontrols_experiencexrcontrols_layoutready",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_experiencexrcontrols_layoutready"
     },
     {
       "relation": "method",
@@ -14164,9 +14384,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_experiencexrcontrols",
-      "target": "experience_experiencexrcontrols_experiencexrcontrols_update",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_experiencexrcontrols_update"
     },
     {
       "relation": "imports",
@@ -14175,9 +14395,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem",
-      "target": "experience_experiencexrcontrols_experiencexrcontrols",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_experiencexrcontrols"
     },
     {
       "relation": "references",
@@ -14186,9 +14406,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem",
-      "target": "experience_experiencexrcontrols_experiencexrcontrols",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_experiencexrcontrols"
     },
     {
       "relation": "calls",
@@ -14197,9 +14417,9 @@
       "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L200",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_experiencexrcontrols_constructor",
-      "target": "experience_experiencexrcontrols_experiencexrcontrols_layoutready",
-      "confidence_score": 1.0
+      "target": "experience_experiencexrcontrols_experiencexrcontrols_layoutready"
     },
     {
       "relation": "contains",
@@ -14964,9 +15184,9 @@
       "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L285",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles",
-      "target": "ocean_bioluminescentplankton_randomrange",
-      "confidence_score": 1.0
+      "target": "ocean_bioluminescentplankton_randomrange"
     },
     {
       "relation": "calls",
@@ -15061,9 +15281,9 @@
       "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L281",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton_bioluminescentplankton",
-      "target": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles",
-      "confidence_score": 1.0
+      "target": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles"
     },
     {
       "relation": "method",
@@ -15071,9 +15291,9 @@
       "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton_bioluminescentplankton",
-      "target": "ocean_bioluminescentplankton_bioluminescentplankton_reset",
-      "confidence_score": 1.0
+      "target": "ocean_bioluminescentplankton_bioluminescentplankton_reset"
     },
     {
       "relation": "method",
@@ -15124,9 +15344,9 @@
       "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L69",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton_bioluminescentplankton_constructor",
-      "target": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles",
-      "confidence_score": 1.0
+      "target": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles"
     },
     {
       "relation": "calls",
@@ -15135,9 +15355,9 @@
       "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton_bioluminescentplankton_reset",
-      "target": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles",
-      "confidence_score": 1.0
+      "target": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles"
     },
     {
       "relation": "calls",
@@ -15367,9 +15587,9 @@
       "source_file": "src/ocean/FishSchool.ts",
       "source_location": "L458",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_fishschool_fishschool_reset",
-      "target": "ocean_fishschool_randomrange",
-      "confidence_score": 1.0
+      "target": "ocean_fishschool_randomrange"
     },
     {
       "relation": "calls",
@@ -15418,9 +15638,9 @@
       "source_file": "src/ocean/FishSchool.ts",
       "source_location": "L449",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_fishschool_fishschool",
-      "target": "ocean_fishschool_fishschool_reset",
-      "confidence_score": 1.0
+      "target": "ocean_fishschool_fishschool_reset"
     },
     {
       "relation": "method",
@@ -15574,12 +15794,456 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L41",
+      "source_file": "src/ocean/ReefDecorConfig.ts",
+      "source_location": "L26",
       "weight": 1.0,
-      "confidence_score": 1.0,
+      "source": "ocean_reefdecorconfig",
+      "target": "ocean_reefdecorconfig_reef_coral_placements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorConfig.ts",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "ocean_reefdecorconfig",
+      "target": "ocean_reefdecorconfig_reef_seaweed_placements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorConfig.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "ocean_reefdecorconfig",
+      "target": "ocean_reefdecorconfig_reefdecorassetid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorConfig.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "ocean_reefdecorconfig",
+      "target": "ocean_reefdecorconfig_reefdecorcategory",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorConfig.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "ocean_reefdecorconfig",
+      "target": "ocean_reefdecorconfig_reefdecorplacement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorConfig.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "ocean_reefdecorconfig",
+      "target": "ocean_reefdecorconfig_vec3tuple",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer",
+      "target": "ocean_reefdecorconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer",
+      "target": "ocean_reefdecorconfig_reefdecorassetid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer_logseaweedanimations",
+      "target": "ocean_reefdecorconfig_reefdecorassetid",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer",
+      "target": "ocean_reefdecorconfig_reefdecorplacement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer_addcoraltarget",
+      "target": "ocean_reefdecorconfig_reefdecorplacement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer_addplacement",
+      "target": "ocean_reefdecorconfig_reefdecorplacement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer_addseaweedtarget",
+      "target": "ocean_reefdecorconfig_reefdecorplacement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer",
+      "target": "ocean_reefdecorconfig_reef_coral_placements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer",
+      "target": "ocean_reefdecorconfig_reef_seaweed_placements",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer",
+      "target": "ocean_reefdecorlayer_collectstandardmaterials",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer",
+      "target": "ocean_reefdecorlayer_reefdecorlayer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer",
+      "target": "ocean_reefdecorlayer_reefdecorlayertargets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer",
+      "target": "ocean_reefdecorlayer_setnoshadows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer",
+      "target": "ocean_reefresponsetargets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer",
+      "target": "ocean_reefresponsetargets_coraltarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer",
+      "target": "ocean_reefresponsetargets_swaytarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefEnvironment.ts",
+      "source_location": "L28",
+      "weight": 1.0,
       "source": "ocean_reefenvironment",
-      "target": "ocean_reefenvironment_coraltarget"
+      "target": "ocean_reefdecorlayer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayertargets",
+      "target": "ocean_reefresponsetargets_coraltarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayertargets",
+      "target": "ocean_reefresponsetargets_swaytarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer_addplacement",
+      "target": "ocean_reefdecorlayer_setnoshadows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L186",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer_addcoraltarget",
+      "target": "ocean_reefdecorlayer_collectstandardmaterials",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_addcoraltarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_addplacement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L222",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_addseaweedanimation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_addseaweedtarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L77",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_loaddecor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_logseaweedanimations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefEnvironment.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "ocean_reefenvironment",
+      "target": "ocean_reefdecorlayer_reefdecorlayer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefEnvironment.ts",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "ocean_reefenvironment_reefenvironment",
+      "target": "ocean_reefdecorlayer_reefdecorlayer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer_load",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_loaddecor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer_loaddecor",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_addplacement",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer_addplacement",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_addcoraltarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer_addplacement",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_addseaweedanimation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefDecorLayer.ts",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "ocean_reefdecorlayer_reefdecorlayer_addplacement",
+      "target": "ocean_reefdecorlayer_reefdecorlayer_addseaweedtarget",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -15622,14 +16286,37 @@
       "target": "ocean_reefenvironment_setnoshadows"
     },
     {
-      "relation": "contains",
+      "relation": "imports_from",
+      "context": "import",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L27",
+      "source_location": "L29",
       "weight": 1.0,
-      "confidence_score": 1.0,
       "source": "ocean_reefenvironment",
-      "target": "ocean_reefenvironment_swaytarget"
+      "target": "ocean_reefresponsetargets",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefEnvironment.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "ocean_reefenvironment",
+      "target": "ocean_reefresponsetargets_coraltarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefEnvironment.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "ocean_reefenvironment",
+      "target": "ocean_reefresponsetargets_swaytarget",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports_from",
@@ -15794,9 +16481,9 @@
       "source_file": "src/ocean/ReefEnvironment.ts",
       "source_location": "L314",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_reefenvironment_reefenvironment",
-      "target": "ocean_reefenvironment_reefenvironment_resetprogression",
-      "confidence_score": 1.0
+      "target": "ocean_reefenvironment_reefenvironment_resetprogression"
     },
     {
       "relation": "method",
@@ -15807,6 +16494,28 @@
       "confidence_score": 1.0,
       "source": "ocean_reefenvironment_reefenvironment",
       "target": "ocean_reefenvironment_reefenvironment_update"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefEnvironment.ts",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "ocean_reefenvironment_reefenvironment",
+      "target": "ocean_reefresponsetargets_coraltarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefEnvironment.ts",
+      "source_location": "L86",
+      "weight": 1.0,
+      "source": "ocean_reefenvironment_reefenvironment",
+      "target": "ocean_reefresponsetargets_swaytarget",
+      "confidence_score": 1.0
     },
     {
       "relation": "references",
@@ -15917,6 +16626,26 @@
       "confidence_score": 1.0,
       "source": "ocean_reefenvironment_reefenvironment_update",
       "target": "ocean_watercurrent_currentsample"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefResponseTargets.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "ocean_reefresponsetargets",
+      "target": "ocean_reefresponsetargets_coraltarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefResponseTargets.ts",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "ocean_reefresponsetargets",
+      "target": "ocean_reefresponsetargets_swaytarget",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -16079,9 +16808,9 @@
       "source_file": "src/ocean/WaterCurrent.ts",
       "source_location": "L146",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_watercurrent_watercurrent",
-      "target": "ocean_watercurrent_watercurrent_reset",
-      "confidence_score": 1.0
+      "target": "ocean_watercurrent_watercurrent_reset"
     },
     {
       "relation": "method",
@@ -16224,9 +16953,9 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L258",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem",
-      "target": "systems_reefbreathingsystem_reefbreathingsystem_resetexperiencesystems",
-      "confidence_score": 1.0
+      "target": "systems_reefbreathingsystem_reefbreathingsystem_resetexperiencesystems"
     },
     {
       "relation": "method",
@@ -23162,5 +23891,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "ec134b34f7e72a7a344d4cd50c252648094b3a34"
+  "built_at_commit": "22f3a294fb4c1f1b615971cebb9440231a74e0a9"
 }

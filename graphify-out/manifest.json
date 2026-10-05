@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/assets.ts": {
-    "mtime": 1791195445.5049396,
-    "ast_hash": "c3a57c0f0f0d68e5562d92617405e2aa",
+    "mtime": 1791197861.3908074,
+    "ast_hash": "9f5c26cb276812895b00bfed2bc5b500",
     "semantic_hash": ""
   },
   "src/breathing/BreathEngine.ts": {
@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "src/ocean/ReefEnvironment.ts": {
-    "mtime": 1791196112.6243136,
-    "ast_hash": "ce3fe4f4573e62996a4981c8dc76b624",
+    "mtime": 1791197881.4523327,
+    "ast_hash": "796aed4f611c935bf405699333b4e7b0",
     "semantic_hash": ""
   },
   "src/ocean/UnderwaterParticles.ts": {
@@ -577,6 +577,46 @@
   "src/experience/ExperienceXRControls.ts": {
     "mtime": 1791196081.6144679,
     "ast_hash": "ade408a49007d847207db4db2b76e1e3",
+    "semantic_hash": ""
+  },
+  "src/ocean/ReefDecorConfig.ts": {
+    "mtime": 1791197861.8428586,
+    "ast_hash": "9da70968cd1bbad3ef3deaff48ca43d2",
+    "semantic_hash": ""
+  },
+  "src/ocean/ReefDecorLayer.ts": {
+    "mtime": 1791197862.0637498,
+    "ast_hash": "cebf4aff68fa439448c0b931e754c3b3",
+    "semantic_hash": ""
+  },
+  "src/ocean/ReefResponseTargets.ts": {
+    "mtime": 1791197861.6209972,
+    "ast_hash": "0b96fabb8b19a4fc1f7fe27877bc11ae",
+    "semantic_hash": ""
+  },
+  "artifacts/reef-realism-pass1.png": {
+    "mtime": 1791197965.473567,
+    "ast_hash": "7da9aaa8bf09b9a0dc2f894b0c6d2869",
+    "semantic_hash": ""
+  },
+  "public/models/environment/rocks/reef-rock-large/textures/rock_face_01_diff_1k.jpg": {
+    "mtime": 1791197091.1287382,
+    "ast_hash": "98ee9f024a6383d7e6cab44ed41e1f15",
+    "semantic_hash": ""
+  },
+  "public/models/environment/rocks/reef-rock-small/textures/rock_07_diff_1k.jpg": {
+    "mtime": 1791197152.2976632,
+    "ast_hash": "b68ac1824bb3bd3867641b830ad02099",
+    "semantic_hash": ""
+  },
+  "public/textures/seabed/textures/sand_03_diff_1k.jpg": {
+    "mtime": 1791196907.316625,
+    "ast_hash": "84bde2b8bea6351805f67a15682b36b2",
+    "semantic_hash": ""
+  },
+  "public/textures/seabed/textures/sand_03_disp_1k.png": {
+    "mtime": 1791196907.334392,
+    "ast_hash": "a9d505b87ae1c99a695609d47900145b",
     "semantic_hash": ""
   }
 }
