@@ -1,16 +1,16 @@
 # Graph Report - resonance-reef-webxr  (2026-10-05)
 
 ## Corpus Check
-- 102 files · ~103,911 words
+- 103 files · ~104,463 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1016 nodes · 1043 edges · 95 communities (88 shown, 7 thin omitted)
+- 1028 nodes · 1083 edges · 101 communities (93 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5abdcc53`
+- Built from commit: `46c31eb0`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -107,39 +107,45 @@
 - [[_COMMUNITY_Community 89|Community 89]]
 - [[_COMMUNITY_Community 90|Community 90]]
 - [[_COMMUNITY_Community 94|Community 94]]
+- [[_COMMUNITY_Community 95|Community 95]]
+- [[_COMMUNITY_Community 96|Community 96]]
+- [[_COMMUNITY_Community 97|Community 97]]
+- [[_COMMUNITY_Community 98|Community 98]]
+- [[_COMMUNITY_Community 99|Community 99]]
+- [[_COMMUNITY_Community 100|Community 100]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Critical Best Practices` - 32 edges
 2. `Critical Best Practices` - 32 edges
 3. `Review Checklist` - 21 edges
 4. `OceanAudio` - 19 edges
-5. `BreathState` - 13 edges
+5. `BreathState` - 15 edges
 6. `ReefEnvironment` - 13 edges
 7. `CurrentSample` - 12 edges
 8. `ReefBreathingSystem` - 12 edges
 9. `ProceduralAudio` - 11 edges
-10. `compilerOptions` - 11 edges
+10. `SessionState` - 11 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `OceanAudio` --references--> `ProceduralAudio`  [EXTRACTED]
   src/audio/OceanAudio.ts → src/audio/ProceduralAudio.ts
 - `ReefBreathingSystem` --references--> `OceanAudio`  [EXTRACTED]
   src/systems/ReefBreathingSystem.ts → src/audio/OceanAudio.ts
-- `ReefBreathingSystem` --references--> `ReefEnvironment`  [EXTRACTED]
-  src/systems/ReefBreathingSystem.ts → src/ocean/ReefEnvironment.ts
 - `WaterCurrent` --references--> `BreathPhase`  [EXTRACTED]
   src/ocean/WaterCurrent.ts → src/breathing/BreathEngine.ts
-- `ReefBreathingSystem` --references--> `BreathPhase`  [EXTRACTED]
-  src/systems/ReefBreathingSystem.ts → src/breathing/BreathEngine.ts
+- `ReefBreathingSystem` --references--> `BioluminescentPlankton`  [EXTRACTED]
+  src/systems/ReefBreathingSystem.ts → src/ocean/BioluminescentPlankton.ts
+- `ReefBreathingSystem` --references--> `FishSchool`  [EXTRACTED]
+  src/systems/ReefBreathingSystem.ts → src/ocean/FishSchool.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (95 total, 7 thin omitted)
+## Communities (101 total, 8 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.06
-Nodes (36): AudioContextConstructor, AudioWindow, clamp01(), ProceduralAudio, randomRange(), REEF_CUE_POSITIONS, ReefCue, setPannerPosition() (+28 more)
+Cohesion: 0.17
+Nodes (10): AudioContextConstructor, AudioWindow, BreathPhase, BreathState, BreathTiming, JellyfishGuide, smoothStep(), sceneContainer (+2 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.06
@@ -170,7 +176,7 @@ Cohesion: 0.08
 Nodes (23): 2D app stuck on a loading screen, An app secret was committed or published, App loads but assets 404, App mode failures, Auto-enter works on device but breaks the browser, Blank, white, or error page after launch, bubblewrap hangs or exits without doing anything, bubblewrap update fails fetching the manifest (+15 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.14
+Cohesion: 0.15
 Nodes (8): CoralTarget, createSeabedGeometry(), ReefEnvironment, setNoShadows(), SwayTarget, ParticleFieldConfig, randomRange(), UnderwaterParticles
 
 ### Community 9 - "Community 9"
@@ -477,25 +483,45 @@ Nodes (3): Asset manifest contract, Cost, Procedural assets
 Cohesion: 0.50
 Nodes (3): IWSDK scoped project guidance, Runtime API, UIKitML panels
 
+### Community 95 - "Community 95"
+Cohesion: 0.24
+Nodes (8): clamp01(), ProceduralAudio, randomRange(), REEF_CUE_POSITIONS, ReefCue, setPannerPosition(), setParam(), smoothStep()
+
+### Community 96 - "Community 96"
+Cohesion: 0.20
+Nodes (8): FishAgent, FishAgentConfig, DEFAULT_SPECIES, FishSchool, FishSchoolConfig, FishSpeciesConfig, randomRange(), smoothStep()
+
+### Community 97 - "Community 97"
+Cohesion: 0.27
+Nodes (7): SessionState, BioluminescentPlankton, clamp(), clamp01(), randomRange(), smoothStep(), CurrentSample
+
+### Community 98 - "Community 98"
+Cohesion: 0.36
+Nodes (7): clamp01(), getCyclePosition(), getStage(), getStageProgress(), SessionController, SessionStage, smoothStep()
+
+### Community 99 - "Community 99"
+Cohesion: 0.43
+Nodes (3): clamp01(), smoothStep(), WaterCurrent
+
 ## Knowledge Gaps
-- **679 isolated node(s):** `$schema`, `allow`, `enabledMcpjsonServers`, `PreToolUse`, `allow_instructions` (+674 more)
+- **680 isolated node(s):** `$schema`, `allow`, `enabledMcpjsonServers`, `PreToolUse`, `allow_instructions` (+675 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `OceanAudio` connect `Community 94` to `Community 0`?**
+- **Why does `OceanAudio` connect `Community 94` to `Community 0`, `Community 97`, `Community 95`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `Critical Best Practices` connect `Community 1` to `Community 11`?**
+- **Why does `ProceduralAudio` connect `Community 95` to `Community 0`, `Community 94`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
-- **Why does `ReefEnvironment` connect `Community 8` to `Community 0`?**
+- **Why does `ReefEnvironment` connect `Community 8` to `Community 0`, `Community 97`?**
   _High betweenness centrality (0.003) - this node is a cross-community bridge._
 - **What connects `$schema`, `allow`, `enabledMcpjsonServers` to the rest of the system?**
-  _679 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.05578947368421053 - nodes in this community are weakly interconnected._
+  _680 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
   _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
+  _Cohesion score 0.058823529411764705 - nodes in this community are weakly interconnected._

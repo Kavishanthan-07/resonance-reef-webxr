@@ -21,6 +21,7 @@ import {
   type World,
 } from '@iwsdk/core';
 
+import type { SessionState } from '../experience/SessionController.js';
 import { UnderwaterParticles } from './UnderwaterParticles.js';
 import type { CurrentSample } from './WaterCurrent.js';
 
@@ -139,7 +140,13 @@ export class ReefEnvironment {
     deltaSeconds: number,
     timeSeconds: number,
     current?: CurrentSample,
+    session?: SessionState,
   ): void {
+    const sessionIntensity =
+      session?.intensity ?? 1;
+    const reefResponseScale =
+      0.82 + sessionIntensity * 0.24;
+
     for (const target of this.swayTargets) {
       if (target.impact > 0.001) {
         target.impact *= Math.pow(
@@ -153,7 +160,7 @@ export class ReefEnvironment {
       const sway =
         Math.sin(timeSeconds * target.speed + target.phase) *
         target.amplitude *
-        (1 + target.impact * 0.75);
+        (1 + target.impact * (0.52 + sessionIntensity * 0.32));
 
       if (
         current != null &&
@@ -180,6 +187,7 @@ export class ReefEnvironment {
             (1 - shellOffset / current.shellThickness) *
             current.strength *
             target.responsiveness *
+            reefResponseScale *
             (DEBUG_REEF_CURRENT ? 2.4 : 1);
           const forward =
             Math.max(0.28, Math.max(0, -dz / distance));
@@ -189,11 +197,15 @@ export class ReefEnvironment {
             hit,
           );
           target.bendX =
-            -forward * 0.24 * target.responsiveness;
+            -forward *
+            0.24 *
+            target.responsiveness *
+            reefResponseScale;
           target.bendZ =
             (-dx / distance) *
             0.16 *
-            target.responsiveness;
+            target.responsiveness *
+            reefResponseScale;
           target.hitPulseId = current.pulseId;
         }
       }
@@ -243,6 +255,7 @@ export class ReefEnvironment {
             (1 - shellOffset / current.shellThickness) *
             current.strength *
             target.responsiveness *
+            reefResponseScale *
             (DEBUG_REEF_CURRENT ? 2.2 : 1);
 
           target.impact = Math.max(
@@ -255,13 +268,23 @@ export class ReefEnvironment {
 
       const glowMix =
         Math.min(
-          DEBUG_REEF_CURRENT ? 0.55 : 0.22,
-          target.impact * (DEBUG_REEF_CURRENT ? 1.2 : 0.68),
+          DEBUG_REEF_CURRENT
+            ? 0.55
+            : 0.15 + sessionIntensity * 0.09,
+          target.impact *
+            (DEBUG_REEF_CURRENT
+              ? 1.2
+              : 0.52 + sessionIntensity * 0.22),
         );
       const emissiveStrength =
         Math.min(
-          DEBUG_REEF_CURRENT ? 0.22 : 0.07,
-          target.impact * (DEBUG_REEF_CURRENT ? 0.48 : 0.2),
+          DEBUG_REEF_CURRENT
+            ? 0.22
+            : 0.045 + sessionIntensity * 0.04,
+          target.impact *
+            (DEBUG_REEF_CURRENT
+              ? 0.48
+              : 0.15 + sessionIntensity * 0.09),
         );
 
       for (

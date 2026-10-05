@@ -10,6 +10,7 @@ import {
 } from '../breathing/BreathEngine.js';
 
 import { OceanAudio } from '../audio/OceanAudio.js';
+import { SessionController } from '../experience/SessionController.js';
 import { BioluminescentPlankton } from '../ocean/BioluminescentPlankton.js';
 import { FishSchool } from '../ocean/FishSchool.js';
 import { JellyfishGuide } from '../ocean/JellyfishGuide.js';
@@ -50,6 +51,9 @@ export class ReefBreathingSystem extends createSystem({}) {
       inhaleSeconds: 5,
       exhaleSeconds: 5,
     });
+
+  private readonly sessionController =
+    new SessionController();
 
   private jellyfish:
     | JellyfishGuide
@@ -141,6 +145,8 @@ export class ReefBreathingSystem extends createSystem({}) {
      */
     const state =
       this.breathing.update(delta);
+    const session =
+      this.sessionController.update(state);
     const current =
       this.waterCurrent?.update(
         state,
@@ -159,6 +165,7 @@ export class ReefBreathingSystem extends createSystem({}) {
       delta,
       time,
       current,
+      session,
     );
 
     if (current != null) {
@@ -167,6 +174,7 @@ export class ReefBreathingSystem extends createSystem({}) {
         current,
         delta,
         time,
+        session,
       );
 
       this.oceanAudio?.update(
@@ -174,6 +182,7 @@ export class ReefBreathingSystem extends createSystem({}) {
         current,
         delta,
         time,
+        session,
       );
     }
 
@@ -182,6 +191,7 @@ export class ReefBreathingSystem extends createSystem({}) {
       delta,
       time,
       current,
+      session,
     );
 
     if (

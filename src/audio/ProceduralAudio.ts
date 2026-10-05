@@ -1,4 +1,5 @@
 import type { BreathState } from '../breathing/BreathEngine.js';
+import type { SessionState } from '../experience/SessionController.js';
 import type { CurrentSample } from '../ocean/WaterCurrent.js';
 
 interface ReefCue {
@@ -220,8 +221,11 @@ export class ProceduralAudio {
     current: CurrentSample,
     deltaSeconds: number,
     timeSeconds: number,
+    session?: SessionState,
   ): void {
     const now = this.context.currentTime;
+    const sessionIntensity =
+      session?.intensity ?? 1;
     const progress = smoothStep(state.progress);
     const inhale =
       state.phase === 'inhale' ? progress : 0;
@@ -239,19 +243,27 @@ export class ProceduralAudio {
 
     setParam(
       this.ambienceGain.gain,
-      AMBIENCE_GAIN - inhale * 0.035 + exhale * 0.018,
+      AMBIENCE_GAIN -
+        inhale * 0.035 +
+        exhale * 0.018 +
+        (sessionIntensity - 0.55) * 0.025,
       now,
       0.28,
     );
     setParam(
       this.ambienceFilter.frequency,
-      900 - inhale * 180 + exhale * 140,
+      820 +
+        sessionIntensity * 80 -
+        inhale * 180 +
+        exhale * 140,
       now,
       0.32,
     );
     setParam(
       this.toneGain.gain,
-      0.002 + inhale * 0.018,
+      0.002 +
+        inhale * 0.018 +
+        (sessionIntensity - 0.55) * 0.004,
       now,
       0.35,
     );
@@ -269,7 +281,9 @@ export class ProceduralAudio {
     const whooshGain =
       Math.min(
         WHOOSH_GAIN,
-        currentStrength * 0.52,
+        currentStrength *
+          0.52 *
+          (0.88 + sessionIntensity * 0.16),
       ) *
       (0.85 + exhale * 0.15);
 
@@ -300,6 +314,7 @@ export class ProceduralAudio {
         deltaSeconds,
         timeSeconds,
         now,
+        sessionIntensity,
       );
     }
   }
@@ -397,6 +412,7 @@ export class ProceduralAudio {
     deltaSeconds: number,
     timeSeconds: number,
     now: number,
+    sessionIntensity: number,
   ): void {
     cue.impact =
       cue.impact > 0.001
@@ -424,7 +440,8 @@ export class ProceduralAudio {
         cue.impact = Math.max(
           cue.impact,
           (1 - shellOffset / current.shellThickness) *
-            current.strength,
+            current.strength *
+            (0.86 + sessionIntensity * 0.18),
         );
         cue.nextTickTime = Math.min(
           cue.nextTickTime,
@@ -443,7 +460,9 @@ export class ProceduralAudio {
     if (now >= cue.nextTickTime) {
       const intensity =
         0.014 +
-        cue.impact * 0.045 +
+        cue.impact *
+          (0.034 + sessionIntensity * 0.016) +
+        (sessionIntensity - 0.55) * 0.004 +
         Math.sin(
           timeSeconds * 0.17 + cue.seed,
         ) * 0.003;
@@ -475,7 +494,8 @@ export class ProceduralAudio {
       );
 
       const baseInterval =
-        randomRange(1.8, 4.8);
+        randomRange(1.8, 4.8) *
+        (1.08 - sessionIntensity * 0.12);
       const activeInterval =
         randomRange(0.45, 1.35);
       cue.nextTickTime =

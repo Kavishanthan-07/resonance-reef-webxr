@@ -60,8 +60,8 @@
     "semantic_hash": ""
   },
   "src/ocean/FishSchool.ts": {
-    "mtime": 1791179635.0343733,
-    "ast_hash": "f92dba6ea027041ded7ce0c47e35d354",
+    "mtime": 1791183409.6436713,
+    "ast_hash": "cab7f0fabb8bbfd26e674cfe83d6a6a6",
     "semantic_hash": ""
   },
   "src/ocean/JellyfishGuide.ts": {
@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "src/ocean/ReefEnvironment.ts": {
-    "mtime": 1791180180.0881796,
-    "ast_hash": "81db4a6e19696450d88fe8f07bd174c1",
+    "mtime": 1791183499.2467587,
+    "ast_hash": "ce617a5bcf7c6d3b0581f17a7188657c",
     "semantic_hash": ""
   },
   "src/ocean/UnderwaterParticles.ts": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "src/systems/ReefBreathingSystem.ts": {
-    "mtime": 1791180760.4108024,
-    "ast_hash": "17798afd3a298770304980257324bd04",
+    "mtime": 1791183359.874057,
+    "ast_hash": "2615aa61f0966515173eb0c567020a48",
     "semantic_hash": ""
   },
   "src/vite-env.d.ts": {
@@ -535,8 +535,8 @@
     "semantic_hash": ""
   },
   "src/ocean/BioluminescentPlankton.ts": {
-    "mtime": 1791179725.364986,
-    "ast_hash": "4758aea49b05daa871cb4202fbe74e4b",
+    "mtime": 1791183377.2923255,
+    "ast_hash": "f51e719a7d7e1e63ad6943c61c977296",
     "semantic_hash": ""
   },
   "src/ocean/WaterCurrent.ts": {
@@ -545,13 +545,18 @@
     "semantic_hash": ""
   },
   "src/audio/OceanAudio.ts": {
-    "mtime": 1791182477.4253893,
-    "ast_hash": "2bd8d9fec09187aec8996acaeb7c2dd3",
+    "mtime": 1791183435.2431023,
+    "ast_hash": "ce61cd1bf3ed3f82504755dd7b11047a",
     "semantic_hash": ""
   },
   "src/audio/ProceduralAudio.ts": {
-    "mtime": 1791182463.0203247,
-    "ast_hash": "63f2d83e88d55a6016dd84645d1f8ef2",
+    "mtime": 1791183429.622107,
+    "ast_hash": "bbacf6941cb809dadf8138ef8e6b4e94",
+    "semantic_hash": ""
+  },
+  "src/experience/SessionController.ts": {
+    "mtime": 1791183350.501287,
+    "ast_hash": "fcae3d1cc400263873d63484b839253b",
     "semantic_hash": ""
   }
 }

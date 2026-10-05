@@ -6,6 +6,7 @@ import {
 } from '@iwsdk/core';
 
 import type { BreathState } from '../breathing/BreathEngine.js';
+import type { SessionState } from '../experience/SessionController.js';
 import { FishAgent } from './FishAgent.js';
 import type { CurrentSample } from './WaterCurrent.js';
 
@@ -156,6 +157,7 @@ export class FishSchool {
     deltaSeconds: number,
     timeSeconds: number,
     current?: CurrentSample,
+    session?: SessionState,
   ): void {
     if (this.fish.length === 0) {
       return;
@@ -178,8 +180,16 @@ export class FishSchool {
     }
 
     const breathProgress = smoothStep(state.progress);
+    const sessionIntensity =
+      session?.intensity ?? 1;
+    const gatherScale =
+      0.9 + sessionIntensity * 0.12;
+    const spreadScale =
+      0.92 + sessionIntensity * 0.1;
     const exhaleBoost =
-      state.phase === 'exhale' ? 1 + breathProgress * 0.28 : 1;
+      state.phase === 'exhale'
+        ? 1 + breathProgress * 0.28 * spreadScale
+        : 1;
 
     for (
       let fishIndex = 0;
@@ -257,7 +267,7 @@ export class FishSchool {
         if (this.breathForce.lengthSq() > 0.001) {
           this.steering.addScaledVector(
             this.breathForce.normalize(),
-            0.62 + breathProgress * 0.8,
+            (0.62 + breathProgress * 0.8) * gatherScale,
           );
         }
       } else {
@@ -268,13 +278,13 @@ export class FishSchool {
         if (this.breathForce.lengthSq() > 0.001) {
           this.steering.addScaledVector(
             this.breathForce.normalize(),
-            0.7 + breathProgress * 1.2,
+            (0.7 + breathProgress * 1.2) * spreadScale,
           );
         }
 
         this.steering.addScaledVector(
           agent.outwardBias,
-          0.45 + breathProgress * 0.58,
+          (0.45 + breathProgress * 0.58) * spreadScale,
         );
       }
 
@@ -315,6 +325,7 @@ export class FishSchool {
               current.strength *
               forwardBias *
               individualBias *
+              (0.86 + sessionIntensity * 0.18) *
               0.46,
           );
         }

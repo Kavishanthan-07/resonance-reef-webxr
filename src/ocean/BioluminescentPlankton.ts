@@ -7,6 +7,7 @@ import {
 } from '@iwsdk/core';
 
 import type { BreathState } from '../breathing/BreathEngine.js';
+import type { SessionState } from '../experience/SessionController.js';
 import type { CurrentSample } from './WaterCurrent.js';
 
 const PLANKTON_COUNT = 250;
@@ -60,7 +61,9 @@ export class BioluminescentPlankton {
     new Float32Array(PLANKTON_COUNT);
   private readonly phaseOffsets =
     new Float32Array(PLANKTON_COUNT);
+  private readonly material: PointsMaterial;
   private readonly positionAttribute: Float32BufferAttribute;
+  private sessionIntensity = 0.55;
 
   constructor() {
     for (let index = 0; index < PLANKTON_COUNT; index += 1) {
@@ -92,20 +95,29 @@ export class BioluminescentPlankton {
       this.positionAttribute,
     );
 
-    this.points = new Points(
-      geometry,
+    this.material =
       new PointsMaterial({
         blending: AdditiveBlending,
         color: 0x60d7cf,
         depthWrite: false,
-        opacity: 0.19,
+        opacity: 0.175,
         size: 0.018,
         sizeAttenuation: true,
         transparent: true,
-      }),
+      });
+
+    this.points = new Points(
+      geometry,
+      this.material,
     );
 
     this.points.name = 'ResonanceReefBioluminescentPlankton';
+  }
+
+  setSessionIntensity(value: number): void {
+    this.sessionIntensity = clamp(value, 0.55, 1);
+    this.material.opacity =
+      0.12 + this.sessionIntensity * 0.1;
   }
 
   update(
@@ -113,10 +125,18 @@ export class BioluminescentPlankton {
     current: CurrentSample,
     deltaSeconds: number,
     timeSeconds: number,
+    session?: SessionState,
   ): void {
+    if (session != null) {
+      this.setSessionIntensity(session.intensity);
+    }
+
+    const responseScale =
+      0.86 + this.sessionIntensity * 0.22;
     const inhaleStrength =
       state.phase === 'inhale'
-        ? 0.026 + smoothStep(state.progress) * 0.052
+        ? (0.026 + smoothStep(state.progress) * 0.052) *
+          responseScale
         : 0;
     const currentActive =
       current.phase === 'expanding' &&
@@ -190,6 +210,7 @@ export class BioluminescentPlankton {
               shellFalloff *
               current.strength *
               forwardBias *
+              responseScale *
               deltaSeconds *
               0.46;
 
