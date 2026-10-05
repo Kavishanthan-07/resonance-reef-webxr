@@ -9,9 +9,11 @@ import {
   type BreathPhase,
 } from '../breathing/BreathEngine.js';
 
+import { BioluminescentPlankton } from '../ocean/BioluminescentPlankton.js';
 import { FishSchool } from '../ocean/FishSchool.js';
 import { JellyfishGuide } from '../ocean/JellyfishGuide.js';
 import { ReefEnvironment } from '../ocean/ReefEnvironment.js';
+import { WaterCurrent } from '../ocean/WaterCurrent.js';
 
 function selectFishAnimation(
   clips: readonly AnimationClip[],
@@ -60,6 +62,14 @@ export class ReefBreathingSystem extends createSystem({}) {
     | ReefEnvironment
     | null = null;
 
+  private waterCurrent:
+    | WaterCurrent
+    | null = null;
+
+  private plankton:
+    | BioluminescentPlankton
+    | null = null;
+
   private previousPhase:
     | BreathPhase
     | null = null;
@@ -86,6 +96,20 @@ export class ReefBreathingSystem extends createSystem({}) {
       this.jellyfish.root,
     );
 
+    this.waterCurrent =
+      new WaterCurrent();
+
+    this.world.createTransformEntity(
+      this.waterCurrent.root,
+    );
+
+    this.plankton =
+      new BioluminescentPlankton();
+
+    this.world.createTransformEntity(
+      this.plankton.points,
+    );
+
     void this.loadFishSchool();
 
     const initialState =
@@ -108,6 +132,11 @@ export class ReefBreathingSystem extends createSystem({}) {
      */
     const state =
       this.breathing.update(delta);
+    const current =
+      this.waterCurrent?.update(
+        state,
+        delta,
+      );
 
     /*
      * Every environmental system receives the same state.
@@ -120,12 +149,23 @@ export class ReefBreathingSystem extends createSystem({}) {
     this.environment?.update(
       delta,
       time,
+      current,
     );
+
+    if (current != null) {
+      this.plankton?.update(
+        state,
+        current,
+        delta,
+        time,
+      );
+    }
 
     this.fishSchool?.update(
       state,
       delta,
       time,
+      current,
     );
 
     if (

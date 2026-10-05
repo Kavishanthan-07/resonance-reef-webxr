@@ -23,6 +23,7 @@ import {
 } from '@iwsdk/core';
 
 import { UnderwaterParticles } from './UnderwaterParticles.js';
+import type { CurrentSample } from './WaterCurrent.js';
 
 interface SwayTarget {
   root: Group;
@@ -113,14 +114,48 @@ export class ReefEnvironment {
     setNoShadows(this.root);
   }
 
-  update(deltaSeconds: number, timeSeconds: number): void {
+  update(
+    deltaSeconds: number,
+    timeSeconds: number,
+    current?: CurrentSample,
+  ): void {
     for (const target of this.swayTargets) {
       const sway =
         Math.sin(timeSeconds * target.speed + target.phase) *
         target.amplitude;
+      let currentBend = 0;
 
-      target.root.rotation.z = sway;
-      target.root.rotation.x = sway * 0.42;
+      if (
+        current != null &&
+        current.phase === 'expanding' &&
+        current.strength > 0.002
+      ) {
+        const dx =
+          target.root.position.x - current.origin.x;
+        const dy =
+          target.root.position.y - current.origin.y;
+        const dz =
+          target.root.position.z - current.origin.z;
+        const distance =
+          Math.sqrt(dx * dx + dy * dy + dz * dz);
+        const shellOffset =
+          Math.abs(distance - current.radius);
+
+        if (
+          distance > 0.001 &&
+          shellOffset < current.shellThickness
+        ) {
+          currentBend =
+            (1 - shellOffset / current.shellThickness) *
+            current.strength *
+            Math.max(0.35, Math.max(0, -dz / distance)) *
+            0.12;
+        }
+      }
+
+      target.root.rotation.z = sway - currentBend;
+      target.root.rotation.x =
+        sway * 0.42 - currentBend * 0.45;
     }
 
     this.particles.update(deltaSeconds, timeSeconds);
