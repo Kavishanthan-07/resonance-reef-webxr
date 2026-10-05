@@ -17,6 +17,7 @@ export interface CurrentSample {
   radius: number;
   shellThickness: number;
   strength: number;
+  pulseId: number;
   phase: 'inactive' | 'expanding';
 }
 
@@ -49,6 +50,7 @@ export class WaterCurrent {
     radius: START_RADIUS,
     shellThickness: this.shellThickness,
     strength: 0,
+    pulseId: 0,
     phase: 'inactive',
   };
 
@@ -58,6 +60,7 @@ export class WaterCurrent {
   private previousPhase: BreathPhase | null = null;
   private active = false;
   private pulseAge = 0;
+  private pulseId = 0;
 
   constructor() {
     this.root.name = 'ResonanceReefWaterCurrent';
@@ -143,8 +146,10 @@ export class WaterCurrent {
   private startPulse(): void {
     this.active = true;
     this.pulseAge = 0;
+    this.pulseId += 1;
     this.sample.radius = START_RADIUS;
     this.sample.strength = BASE_STRENGTH * 0.4;
+    this.sample.pulseId = this.pulseId;
     this.sample.phase = 'expanding';
 
     if (DEBUG_CURRENT) {

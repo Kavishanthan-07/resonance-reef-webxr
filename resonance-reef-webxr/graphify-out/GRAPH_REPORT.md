@@ -1,16 +1,16 @@
 # Graph Report - resonance-reef-webxr  (2026-10-05)
 
 ## Corpus Check
-- 100 files · ~101,722 words
+- 100 files · ~102,090 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 979 nodes · 960 edges · 94 communities (88 shown, 6 thin omitted)
+- 980 nodes · 961 edges · 94 communities (88 shown, 6 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `3d4c2d85`
+- Built from commit: `122e9af3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -169,8 +169,8 @@ Cohesion: 0.08
 Nodes (23): 2D app stuck on a loading screen, An app secret was committed or published, App loads but assets 404, App mode failures, Auto-enter works on device but breaks the browser, Blank, white, or error page after launch, bubblewrap hangs or exits without doing anything, bubblewrap update fails fetching the manifest (+15 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.15
-Nodes (7): createSeabedGeometry(), ReefEnvironment, setNoShadows(), SwayTarget, ParticleFieldConfig, randomRange(), UnderwaterParticles
+Cohesion: 0.14
+Nodes (8): CoralTarget, createSeabedGeometry(), ReefEnvironment, setNoShadows(), SwayTarget, ParticleFieldConfig, randomRange(), UnderwaterParticles
 
 ### Community 9 - "Community 9"
 Cohesion: 0.10
@@ -477,7 +477,7 @@ Cohesion: 0.50
 Nodes (3): IWSDK scoped project guidance, Runtime API, UIKitML panels
 
 ## Knowledge Gaps
-- **674 isolated node(s):** `$schema`, `allow`, `enabledMcpjsonServers`, `PreToolUse`, `allow_instructions` (+669 more)
+- **675 isolated node(s):** `$schema`, `allow`, `enabledMcpjsonServers`, `PreToolUse`, `allow_instructions` (+670 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
@@ -491,7 +491,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Why does `ReefEnvironment` connect `Community 8` to `Community 0`?**
   _High betweenness centrality (0.001) - this node is a cross-community bridge._
 - **What connects `$schema`, `allow`, `enabledMcpjsonServers` to the rest of the system?**
-  _674 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _675 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
   _Cohesion score 0.07207792207792207 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
