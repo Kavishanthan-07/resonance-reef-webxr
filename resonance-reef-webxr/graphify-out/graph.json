@@ -1400,7 +1400,7 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_update",
-      "community": 95,
+      "community": 0,
       "norm_label": ".update()"
     },
     {
@@ -1510,7 +1510,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "audio_proceduralaudio",
-      "community": 95,
+      "community": 0,
       "norm_label": "proceduralaudio.ts"
     },
     {
@@ -1520,7 +1520,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "audio_proceduralaudio_reefcue",
-      "community": 95,
+      "community": 0,
       "norm_label": "reefcue"
     },
     {
@@ -1530,7 +1530,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "audio_proceduralaudio_reef_cue_positions",
-      "community": 95,
+      "community": 0,
       "norm_label": "reef_cue_positions"
     },
     {
@@ -1540,7 +1540,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "audio_proceduralaudio_clamp01",
-      "community": 95,
+      "community": 0,
       "norm_label": "clamp01()"
     },
     {
@@ -1550,7 +1550,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "audio_proceduralaudio_smoothstep",
-      "community": 95,
+      "community": 0,
       "norm_label": "smoothstep()"
     },
     {
@@ -1560,7 +1560,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "audio_proceduralaudio_randomrange",
-      "community": 95,
+      "community": 0,
       "norm_label": "randomrange()"
     },
     {
@@ -1570,7 +1570,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "audio_proceduralaudio_setparam",
-      "community": 95,
+      "community": 0,
       "norm_label": "setparam()"
     },
     {
@@ -1580,7 +1580,7 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "audio_proceduralaudio_setpannerposition",
-      "community": 95,
+      "community": 0,
       "norm_label": "setpannerposition()"
     },
     {
@@ -1590,7 +1590,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio",
-      "community": 95,
+      "community": 0,
       "norm_label": "proceduralaudio"
     },
     {
@@ -1600,7 +1600,7 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_constructor",
-      "community": 95,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -1610,7 +1610,7 @@
       "source_location": "L187",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_setmuted",
-      "community": 95,
+      "community": 0,
       "norm_label": ".setmuted()"
     },
     {
@@ -1620,7 +1620,7 @@
       "source_location": "L199",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_getdiagnosticsnapshot",
-      "community": 95,
+      "community": 0,
       "norm_label": ".getdiagnosticsnapshot()"
     },
     {
@@ -1630,7 +1630,7 @@
       "source_location": "L219",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_update",
-      "community": 95,
+      "community": 0,
       "norm_label": ".update()"
     },
     {
@@ -1640,7 +1640,7 @@
       "source_location": "L324",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_createnoisebuffer",
-      "community": 95,
+      "community": 0,
       "norm_label": ".createnoisebuffer()"
     },
     {
@@ -1650,7 +1650,7 @@
       "source_location": "L350",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_createpanner",
-      "community": 95,
+      "community": 0,
       "norm_label": ".createpanner()"
     },
     {
@@ -1660,7 +1660,7 @@
       "source_location": "L363",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_createreefcue",
-      "community": 95,
+      "community": 0,
       "norm_label": ".createreefcue()"
     },
     {
@@ -1670,7 +1670,7 @@
       "source_location": "L411",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_updatereefcue",
-      "community": 95,
+      "community": 0,
       "norm_label": ".updatereefcue()"
     },
     {
@@ -1774,13 +1774,183 @@
       "norm_label": ".getphaseduration()"
     },
     {
+      "label": "MantaFinale.ts",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "experience_mantafinale",
+      "community": 95,
+      "norm_label": "mantafinale.ts"
+    },
+    {
+      "label": "FinaleState",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "experience_mantafinale_finalestate",
+      "community": 95,
+      "norm_label": "finalestate"
+    },
+    {
+      "label": "MantaFinaleConfig",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L18",
+      "_origin": "ast",
+      "id": "experience_mantafinale_mantafinaleconfig",
+      "community": 95,
+      "norm_label": "mantafinaleconfig"
+    },
+    {
+      "label": "MantaFinaleAsset",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L25",
+      "_origin": "ast",
+      "id": "experience_mantafinale_mantafinaleasset",
+      "community": 95,
+      "norm_label": "mantafinaleasset"
+    },
+    {
+      "label": "MANTA_FINALE_DEFAULTS",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "experience_mantafinale_manta_finale_defaults",
+      "community": 95,
+      "norm_label": "manta_finale_defaults"
+    },
+    {
+      "label": "MANTA_FINALE_POINTS",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "experience_mantafinale_manta_finale_points",
+      "community": 95,
+      "norm_label": "manta_finale_points"
+    },
+    {
+      "label": "selectMantaAnimation()",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "experience_mantafinale_selectmantaanimation",
+      "community": 95,
+      "norm_label": "selectmantaanimation()"
+    },
+    {
+      "label": "setNoShadows()",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L73",
+      "_origin": "ast",
+      "id": "experience_mantafinale_setnoshadows",
+      "community": 95,
+      "norm_label": "setnoshadows()"
+    },
+    {
+      "label": "MantaFinale",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L80",
+      "_origin": "ast",
+      "id": "experience_mantafinale_mantafinale",
+      "community": 95,
+      "norm_label": "mantafinale"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L99",
+      "_origin": "ast",
+      "id": "experience_mantafinale_mantafinale_constructor",
+      "community": 95,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".currentState()",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L110",
+      "_origin": "ast",
+      "id": "experience_mantafinale_mantafinale_currentstate",
+      "community": 95,
+      "norm_label": ".currentstate()"
+    },
+    {
+      "label": ".isComplete()",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L114",
+      "_origin": "ast",
+      "id": "experience_mantafinale_mantafinale_iscomplete",
+      "community": 95,
+      "norm_label": ".iscomplete()"
+    },
+    {
+      "label": ".setAsset()",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L118",
+      "_origin": "ast",
+      "id": "experience_mantafinale_mantafinale_setasset",
+      "community": 95,
+      "norm_label": ".setasset()"
+    },
+    {
+      "label": ".start()",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L162",
+      "_origin": "ast",
+      "id": "experience_mantafinale_mantafinale_start",
+      "community": 95,
+      "norm_label": ".start()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L185",
+      "_origin": "ast",
+      "id": "experience_mantafinale_mantafinale_update",
+      "community": 95,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".reset()",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L223",
+      "_origin": "ast",
+      "id": "experience_mantafinale_mantafinale_reset",
+      "community": 95,
+      "norm_label": ".reset()"
+    },
+    {
+      "label": ".complete()",
+      "file_type": "code",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L236",
+      "_origin": "ast",
+      "id": "experience_mantafinale_mantafinale_complete",
+      "community": 95,
+      "norm_label": ".complete()"
+    },
+    {
       "label": "SessionController.ts",
       "file_type": "code",
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L1",
       "_origin": "ast",
       "id": "experience_sessioncontroller",
-      "community": 98,
+      "community": 0,
       "norm_label": "sessioncontroller.ts"
     },
     {
@@ -1790,7 +1960,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessionstage",
-      "community": 98,
+      "community": 0,
       "norm_label": "sessionstage"
     },
     {
@@ -1800,7 +1970,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessionstate",
-      "community": 95,
+      "community": 0,
       "norm_label": "sessionstate"
     },
     {
@@ -1810,7 +1980,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "experience_sessioncontroller_initial_state",
-      "community": 98,
+      "community": 0,
       "norm_label": "initial_state"
     },
     {
@@ -1820,7 +1990,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "experience_sessioncontroller_clamp01",
-      "community": 98,
+      "community": 0,
       "norm_label": "clamp01()"
     },
     {
@@ -1830,7 +2000,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "experience_sessioncontroller_smoothstep",
-      "community": 98,
+      "community": 0,
       "norm_label": "smoothstep()"
     },
     {
@@ -1840,7 +2010,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getcycleposition",
-      "community": 98,
+      "community": 0,
       "norm_label": "getcycleposition()"
     },
     {
@@ -1850,7 +2020,7 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getstage",
-      "community": 98,
+      "community": 0,
       "norm_label": "getstage()"
     },
     {
@@ -1860,7 +2030,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "experience_sessioncontroller_interpolate",
-      "community": 98,
+      "community": 0,
       "norm_label": "interpolate()"
     },
     {
@@ -1870,7 +2040,7 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getstageprogress",
-      "community": 98,
+      "community": 0,
       "norm_label": "getstageprogress()"
     },
     {
@@ -1880,7 +2050,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getenvironmentintensity",
-      "community": 98,
+      "community": 0,
       "norm_label": "getenvironmentintensity()"
     },
     {
@@ -1890,7 +2060,7 @@
       "source_location": "L114",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller",
-      "community": 98,
+      "community": 0,
       "norm_label": "sessioncontroller"
     },
     {
@@ -1900,7 +2070,7 @@
       "source_location": "L119",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_update",
-      "community": 98,
+      "community": 0,
       "norm_label": ".update()"
     },
     {
@@ -1910,7 +2080,7 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_getstate",
-      "community": 98,
+      "community": 0,
       "norm_label": ".getstate()"
     },
     {
@@ -1920,7 +2090,7 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_reset",
-      "community": 98,
+      "community": 0,
       "norm_label": ".reset()"
     },
     {
@@ -1930,7 +2100,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_index",
-      "community": 99,
+      "community": 0,
       "norm_label": "index.ts"
     },
     {
@@ -1940,7 +2110,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_index_scenecontainer",
-      "community": 99,
+      "community": 0,
       "norm_label": "scenecontainer"
     },
     {
@@ -1950,7 +2120,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton",
-      "community": 97,
+      "community": 0,
       "norm_label": "bioluminescentplankton.ts"
     },
     {
@@ -1960,7 +2130,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_randomrange",
-      "community": 97,
+      "community": 0,
       "norm_label": "randomrange()"
     },
     {
@@ -1970,7 +2140,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_clamp",
-      "community": 97,
+      "community": 0,
       "norm_label": "clamp()"
     },
     {
@@ -1980,7 +2150,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_clamp01",
-      "community": 97,
+      "community": 0,
       "norm_label": "clamp01()"
     },
     {
@@ -1990,7 +2160,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_smoothstep",
-      "community": 97,
+      "community": 0,
       "norm_label": "smoothstep()"
     },
     {
@@ -2000,7 +2170,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton",
-      "community": 97,
+      "community": 0,
       "norm_label": "bioluminescentplankton"
     },
     {
@@ -2010,7 +2180,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_constructor",
-      "community": 97,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -2020,7 +2190,7 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_setsessionintensity",
-      "community": 97,
+      "community": 0,
       "norm_label": ".setsessionintensity()"
     },
     {
@@ -2030,7 +2200,7 @@
       "source_location": "L126",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_update",
-      "community": 97,
+      "community": 0,
       "norm_label": ".update()"
     },
     {
@@ -2040,7 +2210,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_fishagent",
-      "community": 96,
+      "community": 0,
       "norm_label": "fishagent.ts"
     },
     {
@@ -2050,7 +2220,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagentconfig",
-      "community": 96,
+      "community": 0,
       "norm_label": "fishagentconfig"
     },
     {
@@ -2060,7 +2230,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagent",
-      "community": 96,
+      "community": 0,
       "norm_label": "fishagent"
     },
     {
@@ -2070,7 +2240,7 @@
       "source_location": "L31",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagent_constructor",
-      "community": 96,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -2080,7 +2250,7 @@
       "source_location": "L55",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagent_updateanimation",
-      "community": 96,
+      "community": 0,
       "norm_label": ".updateanimation()"
     },
     {
@@ -2090,7 +2260,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_fishschool",
-      "community": 96,
+      "community": 0,
       "norm_label": "fishschool.ts"
     },
     {
@@ -2100,7 +2270,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "ocean_fishschool_fishspeciesconfig",
-      "community": 96,
+      "community": 0,
       "norm_label": "fishspeciesconfig"
     },
     {
@@ -2110,7 +2280,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschoolconfig",
-      "community": 96,
+      "community": 0,
       "norm_label": "fishschoolconfig"
     },
     {
@@ -2120,7 +2290,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "ocean_fishschool_randomrange",
-      "community": 96,
+      "community": 0,
       "norm_label": "randomrange()"
     },
     {
@@ -2130,7 +2300,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "ocean_fishschool_smoothstep",
-      "community": 96,
+      "community": 0,
       "norm_label": "smoothstep()"
     },
     {
@@ -2140,7 +2310,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "ocean_fishschool_default_species",
-      "community": 96,
+      "community": 0,
       "norm_label": "default_species"
     },
     {
@@ -2150,7 +2320,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool",
-      "community": 96,
+      "community": 0,
       "norm_label": "fishschool"
     },
     {
@@ -2160,7 +2330,7 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_constructor",
-      "community": 96,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -2170,7 +2340,7 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_creategatheroffset",
-      "community": 96,
+      "community": 0,
       "norm_label": ".creategatheroffset()"
     },
     {
@@ -2180,7 +2350,7 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_createoutwardbias",
-      "community": 96,
+      "community": 0,
       "norm_label": ".createoutwardbias()"
     },
     {
@@ -2190,7 +2360,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_update",
-      "community": 96,
+      "community": 0,
       "norm_label": ".update()"
     },
     {
@@ -2330,7 +2500,7 @@
       "source_location": "L139",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_update",
-      "community": 95,
+      "community": 0,
       "norm_label": ".update()"
     },
     {
@@ -2480,7 +2650,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "ocean_watercurrent_currentsample",
-      "community": 95,
+      "community": 0,
       "norm_label": "currentsample"
     },
     {
@@ -2567,50 +2737,60 @@
       "label": "selectFishAnimation()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L20",
+      "source_location": "L21",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_selectfishanimation",
-      "community": 99,
+      "community": 0,
       "norm_label": "selectfishanimation()"
     },
     {
       "label": "ReefBreathingSystem",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L48",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem",
-      "community": 99,
+      "community": 0,
       "norm_label": "reefbreathingsystem"
     },
     {
       "label": ".init()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L86",
+      "source_location": "L91",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_init",
-      "community": 99,
+      "community": 0,
       "norm_label": ".init()"
     },
     {
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L139",
+      "source_location": "L153",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_update",
-      "community": 99,
+      "community": 0,
       "norm_label": ".update()"
+    },
+    {
+      "label": ".loadMantaFinale()",
+      "file_type": "code",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L230",
+      "_origin": "ast",
+      "id": "systems_reefbreathingsystem_reefbreathingsystem_loadmantafinale",
+      "community": 0,
+      "norm_label": ".loadmantafinale()"
     },
     {
       "label": ".loadFishSchool()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L210",
+      "source_location": "L286",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_loadfishschool",
-      "community": 99,
+      "community": 0,
       "norm_label": ".loadfishschool()"
     },
     {
@@ -12186,9 +12366,9 @@
       "source_file": "src/audio/ProceduralAudio.ts",
       "source_location": "L230",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "audio_proceduralaudio_proceduralaudio_update",
-      "target": "audio_proceduralaudio_clamp01",
-      "confidence_score": 1.0
+      "target": "audio_proceduralaudio_clamp01"
     },
     {
       "relation": "calls",
@@ -12847,6 +13027,265 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_finalestate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_manta_finale_defaults",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_manta_finale_points",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L80",
+      "weight": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_mantafinale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_mantafinaleasset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_mantafinaleconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_selectmantaanimation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L73",
+      "weight": 1.0,
+      "source": "experience_mantafinale",
+      "target": "experience_mantafinale_setnoshadows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "experience_mantafinale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L133",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale_setasset",
+      "target": "experience_mantafinale_selectmantaanimation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale_setasset",
+      "target": "experience_mantafinale_setnoshadows",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L236",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_complete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_currentstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_iscomplete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L223",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_reset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_setasset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L185",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale",
+      "target": "experience_mantafinale_mantafinale_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "experience_mantafinale_mantafinale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem_reefbreathingsystem",
+      "target": "experience_mantafinale_mantafinale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L149",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale_setasset",
+      "target": "experience_mantafinale_mantafinale_reset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L152",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale_setasset",
+      "target": "experience_mantafinale_mantafinale_start",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale_start",
+      "target": "experience_mantafinale_mantafinale_reset",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/MantaFinale.ts",
+      "source_location": "L217",
+      "weight": 1.0,
+      "source": "experience_mantafinale_mantafinale_update",
+      "target": "experience_mantafinale_mantafinale_complete",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L23",
       "weight": 1.0,
@@ -12870,9 +13309,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L96",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller",
-      "target": "experience_sessioncontroller_getenvironmentintensity",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_getenvironmentintensity"
     },
     {
       "relation": "contains",
@@ -12900,9 +13339,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller",
-      "target": "experience_sessioncontroller_initial_state",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_initial_state"
     },
     {
       "relation": "contains",
@@ -12910,9 +13349,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller",
-      "target": "experience_sessioncontroller_interpolate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_interpolate"
     },
     {
       "relation": "contains",
@@ -13104,9 +13543,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L75",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_interpolate",
-      "target": "experience_sessioncontroller_smoothstep",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_smoothstep"
     },
     {
       "relation": "calls",
@@ -13148,9 +13587,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L102",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_getenvironmentintensity",
-      "target": "experience_sessioncontroller_interpolate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_interpolate"
     },
     {
       "relation": "calls",
@@ -13170,9 +13609,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L127",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_sessioncontroller_update",
-      "target": "experience_sessioncontroller_getenvironmentintensity",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_getenvironmentintensity"
     },
     {
       "relation": "method",
@@ -13180,9 +13619,9 @@
       "source_file": "src/experience/SessionController.ts",
       "source_location": "L162",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "experience_sessioncontroller_sessioncontroller",
-      "target": "experience_sessioncontroller_sessioncontroller_getstate",
-      "confidence_score": 1.0
+      "target": "experience_sessioncontroller_sessioncontroller_getstate"
     },
     {
       "relation": "method",
@@ -13381,9 +13820,9 @@
       "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L120",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton_bioluminescentplankton_setsessionintensity",
-      "target": "ocean_bioluminescentplankton_clamp01",
-      "confidence_score": 1.0
+      "target": "ocean_bioluminescentplankton_clamp01"
     },
     {
       "relation": "calls",
@@ -13392,9 +13831,9 @@
       "source_file": "src/ocean/BioluminescentPlankton.ts",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton_bioluminescentplankton_update",
-      "target": "ocean_bioluminescentplankton_clamp01",
-      "confidence_score": 1.0
+      "target": "ocean_bioluminescentplankton_clamp01"
     },
     {
       "relation": "calls",
@@ -14502,6 +14941,16 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L230",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem_reefbreathingsystem",
+      "target": "systems_reefbreathingsystem_reefbreathingsystem_loadmantafinale",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L102",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14518,6 +14967,17 @@
       "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem_init",
       "target": "systems_reefbreathingsystem_reefbreathingsystem_loadfishschool"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L140",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem_reefbreathingsystem_init",
+      "target": "systems_reefbreathingsystem_reefbreathingsystem_loadmantafinale",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -21421,5 +21881,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b96bcca45887a5b452a9b33a909ba190708be9c9"
+  "built_at_commit": "d5f81702ddbcc5a2b4244c2adebbaae1f2b5e66d"
 }

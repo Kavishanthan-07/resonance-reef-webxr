@@ -9,6 +9,12 @@ public/models/fish/reef-fish-a.glb
 Original source model:
 Fish1.fbx
 
+Local file:
+public/models/fish/manta-ray.glb
+
+Original source model:
+Manta ray.fbx
+
 License:
 CC0 1.0 Universal (CC0 1.0)
 Public Domain Dedication

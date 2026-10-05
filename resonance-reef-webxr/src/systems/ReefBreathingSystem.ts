@@ -10,6 +10,7 @@ import {
 } from '../breathing/BreathEngine.js';
 
 import { OceanAudio } from '../audio/OceanAudio.js';
+import { MantaFinale } from '../experience/MantaFinale.js';
 import { SessionController } from '../experience/SessionController.js';
 import { BioluminescentPlankton } from '../ocean/BioluminescentPlankton.js';
 import { FishSchool } from '../ocean/FishSchool.js';
@@ -79,6 +80,10 @@ export class ReefBreathingSystem extends createSystem({}) {
     | OceanAudio
     | null = null;
 
+  private mantaFinale:
+    | MantaFinale
+    | null = null;
+
   private previousPhase:
     | BreathPhase
     | null = null;
@@ -94,6 +99,7 @@ export class ReefBreathingSystem extends createSystem({}) {
     this.cleanupFuncs.push(() => {
       this.environment?.dispose();
       this.oceanAudio?.dispose();
+      this.mantaFinale?.reset();
     });
 
     /*
@@ -123,7 +129,15 @@ export class ReefBreathingSystem extends createSystem({}) {
     this.oceanAudio =
       new OceanAudio(this.world);
 
+    this.mantaFinale =
+      new MantaFinale();
+
+    this.world.createTransformEntity(
+      this.mantaFinale.root,
+    );
+
     void this.loadFishSchool();
+    void this.loadMantaFinale();
 
     const initialState =
       this.breathing.getState();
@@ -186,6 +200,12 @@ export class ReefBreathingSystem extends createSystem({}) {
       );
     }
 
+    if (session.finaleTriggered) {
+      this.mantaFinale?.start();
+    }
+
+    this.mantaFinale?.update(delta);
+
     this.fishSchool?.update(
       state,
       delta,
@@ -203,6 +223,62 @@ export class ReefBreathingSystem extends createSystem({}) {
 
       console.log(
         `[Resonance Reef] Breath phase: ${state.phase.toUpperCase()}`,
+      );
+    }
+  }
+
+  private async loadMantaFinale(): Promise<void> {
+    try {
+      const gltf =
+        await AssetManager.loadGLTFById(
+          'manta-ray',
+        );
+
+      console.log(
+        '[Resonance Reef] Loaded manta-ray',
+      );
+
+      const clone =
+        AssetManager.getGLTF(
+          'manta-ray',
+        );
+
+      if (clone == null) {
+        throw new Error(
+          'Cached manta-ray GLTF clone was unavailable.',
+        );
+      }
+
+      const result =
+        this.mantaFinale?.setAsset({
+          animations: gltf.animations,
+          visual: clone.scene,
+        });
+
+      const animationNames =
+        result?.animationNames ?? [];
+
+      console.log(
+        `[Resonance Reef] manta-ray animations: ${
+          animationNames.length > 0
+            ? animationNames.join(', ')
+            : '(none)'
+        }`,
+      );
+
+      if (result?.selectedAnimation == null) {
+        console.warn(
+          '[Resonance Reef] manta-ray has no selected animation; moving static manta.',
+        );
+      } else {
+        console.log(
+          `[Resonance Reef] manta-ray selected animation: ${result.selectedAnimation}`,
+        );
+      }
+    } catch (error: unknown) {
+      console.error(
+        '[Resonance Reef] Failed to load manta-ray GLB.',
+        error,
       );
     }
   }

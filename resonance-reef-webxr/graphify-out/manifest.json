@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/assets.ts": {
-    "mtime": 1791177288.6543467,
-    "ast_hash": "ea04986c59ac86199abae85857f536d8",
+    "mtime": 1791195445.5049396,
+    "ast_hash": "c3a57c0f0f0d68e5562d92617405e2aa",
     "semantic_hash": ""
   },
   "src/breathing/BreathEngine.ts": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "src/systems/ReefBreathingSystem.ts": {
-    "mtime": 1791183359.874057,
-    "ast_hash": "2615aa61f0966515173eb0c567020a48",
+    "mtime": 1791184341.7238705,
+    "ast_hash": "ea7554d50ea4d9e8d820b53bf8cb23f9",
     "semantic_hash": ""
   },
   "src/vite-env.d.ts": {
@@ -500,8 +500,8 @@
     "semantic_hash": ""
   },
   "public/licenses/FISH_ASSETS.md": {
-    "mtime": 1791177289.1629152,
-    "ast_hash": "488dfeefa888af4ebb1c2c8e089cc0a8",
+    "mtime": 1791184315.6514213,
+    "ast_hash": "669c4ca55b2dd24067a87c81547ed697",
     "semantic_hash": ""
   },
   "public/licenses/License.txt": {
@@ -557,6 +557,11 @@
   "src/experience/SessionController.ts": {
     "mtime": 1791183982.6358657,
     "ast_hash": "0d07a82a51488c04a57406ce031fed64",
+    "semantic_hash": ""
+  },
+  "src/experience/MantaFinale.ts": {
+    "mtime": 1791195464.2983243,
+    "ast_hash": "96a1d4231ff14d3a4323172378482657",
     "semantic_hash": ""
   }
 }
