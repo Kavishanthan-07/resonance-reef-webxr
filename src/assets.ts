@@ -14,4 +14,10 @@ export default defineAssets({
     type: AssetType.GLTF,
     url: `${baseUrl}models/fish/reef-fish-a.glb`,
   },
+  'manta-ray': {
+    name: 'Manta Ray',
+    priority: 'lazy',
+    type: AssetType.GLTF,
+    url: `${baseUrl}models/fish/manta-ray.glb`,
+  },
 });
