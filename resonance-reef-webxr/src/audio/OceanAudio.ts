@@ -5,6 +5,7 @@ import {
 } from '@iwsdk/core';
 
 import type { BreathState } from '../breathing/BreathEngine.js';
+import type { SessionState } from '../experience/SessionController.js';
 import type { CurrentSample } from '../ocean/WaterCurrent.js';
 import { ProceduralAudio } from './ProceduralAudio.js';
 
@@ -93,6 +94,7 @@ export class OceanAudio {
     current: CurrentSample,
     deltaSeconds: number,
     timeSeconds: number,
+    session?: SessionState,
   ): void {
     if (
       this.context == null ||
@@ -108,6 +110,7 @@ export class OceanAudio {
       current,
       deltaSeconds,
       timeSeconds,
+      session,
     );
   }
 
