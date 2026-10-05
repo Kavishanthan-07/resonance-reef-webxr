@@ -16,7 +16,6 @@ import {
   MeshStandardMaterial,
   PlaneGeometry,
   SphereGeometry,
-  type Material,
   type Scene,
   type Texture,
   type World,
@@ -30,7 +29,27 @@ interface SwayTarget {
   phase: number;
   amplitude: number;
   speed: number;
+  responsiveness: number;
+  baseRotationX: number;
+  baseRotationZ: number;
+  bendX: number;
+  bendZ: number;
+  impact: number;
+  hitPulseId: number;
 }
+
+interface CoralTarget {
+  root: Group;
+  materials: MeshStandardMaterial[];
+  baseColors: Color[];
+  baseEmissives: Color[];
+  responsiveness: number;
+  impact: number;
+  hitPulseId: number;
+}
+
+const DEBUG_REEF_CURRENT = false;
+const RESPONSE_DECAY_SECONDS = 1.6;
 
 function randomRange(min: number, max: number): number {
   return min + Math.random() * (max - min);
@@ -80,7 +99,9 @@ export class ReefEnvironment {
     | null;
   private readonly previousFog: Scene['fog'];
   private readonly swayTargets: SwayTarget[] = [];
+  private readonly coralTargets: CoralTarget[] = [];
   private readonly particles: UnderwaterParticles;
+  private readonly coralGlowColor = new Color(0x67d9d1);
 
   constructor(private readonly world: World) {
     this.root.name = 'ResonanceReefEnvironment';
@@ -120,15 +141,25 @@ export class ReefEnvironment {
     current?: CurrentSample,
   ): void {
     for (const target of this.swayTargets) {
+      if (target.impact > 0.001) {
+        target.impact *= Math.pow(
+          0.035,
+          deltaSeconds / RESPONSE_DECAY_SECONDS,
+        );
+      } else {
+        target.impact = 0;
+      }
+
       const sway =
         Math.sin(timeSeconds * target.speed + target.phase) *
-        target.amplitude;
-      let currentBend = 0;
+        target.amplitude *
+        (1 + target.impact * 0.75);
 
       if (
         current != null &&
         current.phase === 'expanding' &&
-        current.strength > 0.002
+        current.strength > 0.002 &&
+        target.hitPulseId !== current.pulseId
       ) {
         const dx =
           target.root.position.x - current.origin.x;
@@ -145,17 +176,108 @@ export class ReefEnvironment {
           distance > 0.001 &&
           shellOffset < current.shellThickness
         ) {
-          currentBend =
+          const hit =
             (1 - shellOffset / current.shellThickness) *
             current.strength *
-            Math.max(0.35, Math.max(0, -dz / distance)) *
-            0.12;
+            target.responsiveness *
+            (DEBUG_REEF_CURRENT ? 2.4 : 1);
+          const forward =
+            Math.max(0.28, Math.max(0, -dz / distance));
+
+          target.impact = Math.max(
+            target.impact,
+            hit,
+          );
+          target.bendX =
+            -forward * 0.24 * target.responsiveness;
+          target.bendZ =
+            (-dx / distance) *
+            0.16 *
+            target.responsiveness;
+          target.hitPulseId = current.pulseId;
         }
       }
 
-      target.root.rotation.z = sway - currentBend;
+      target.root.rotation.z =
+        target.baseRotationZ +
+        sway +
+        target.bendZ * target.impact;
       target.root.rotation.x =
-        sway * 0.42 - currentBend * 0.45;
+        target.baseRotationX +
+        sway * 0.42 +
+        target.bendX * target.impact;
+    }
+
+    for (const target of this.coralTargets) {
+      if (target.impact > 0.001) {
+        target.impact *= Math.pow(
+          0.035,
+          deltaSeconds / RESPONSE_DECAY_SECONDS,
+        );
+      } else {
+        target.impact = 0;
+      }
+
+      if (
+        current != null &&
+        current.phase === 'expanding' &&
+        current.strength > 0.002 &&
+        target.hitPulseId !== current.pulseId
+      ) {
+        const dx =
+          target.root.position.x - current.origin.x;
+        const dy =
+          target.root.position.y - current.origin.y;
+        const dz =
+          target.root.position.z - current.origin.z;
+        const distance =
+          Math.sqrt(dx * dx + dy * dy + dz * dz);
+        const shellOffset =
+          Math.abs(distance - current.radius);
+
+        if (
+          distance > 0.001 &&
+          shellOffset < current.shellThickness
+        ) {
+          const hit =
+            (1 - shellOffset / current.shellThickness) *
+            current.strength *
+            target.responsiveness *
+            (DEBUG_REEF_CURRENT ? 2.2 : 1);
+
+          target.impact = Math.max(
+            target.impact,
+            hit,
+          );
+          target.hitPulseId = current.pulseId;
+        }
+      }
+
+      const glowMix =
+        Math.min(
+          DEBUG_REEF_CURRENT ? 0.55 : 0.22,
+          target.impact * (DEBUG_REEF_CURRENT ? 1.2 : 0.68),
+        );
+      const emissiveStrength =
+        Math.min(
+          DEBUG_REEF_CURRENT ? 0.22 : 0.07,
+          target.impact * (DEBUG_REEF_CURRENT ? 0.48 : 0.2),
+        );
+
+      for (
+        let materialIndex = 0;
+        materialIndex < target.materials.length;
+        materialIndex += 1
+      ) {
+        const material = target.materials[materialIndex];
+
+        material.color
+          .copy(target.baseColors[materialIndex])
+          .lerp(this.coralGlowColor, glowMix);
+        material.emissive
+          .copy(target.baseEmissives[materialIndex])
+          .lerp(this.coralGlowColor, emissiveStrength);
+      }
     }
 
     this.particles.update(deltaSeconds, timeSeconds);
@@ -345,7 +467,7 @@ export class ReefEnvironment {
       new SphereGeometry(0.28, 7, 5);
     const fanGeometry =
       new PlaneGeometry(0.34, 0.42, 1, 2);
-    const materials: Material[] = [
+    const materials: MeshStandardMaterial[] = [
       new MeshStandardMaterial({
         color: 0x2d807d,
         flatShading: true,
@@ -381,6 +503,9 @@ export class ReefEnvironment {
 
     placements.forEach((placement, clusterIndex) => {
       const coral = new Group();
+      const clusterMaterials = materials.map((material) =>
+        material.clone(),
+      );
       const branchCount =
         3 + (clusterIndex % 3);
 
@@ -394,7 +519,9 @@ export class ReefEnvironment {
 
       const mound = new Mesh(
         moundGeometry,
-        materials[(clusterIndex + 3) % materials.length],
+        clusterMaterials[
+          (clusterIndex + 3) % clusterMaterials.length
+        ],
       );
 
       mound.name = `ReefCoralMound-${clusterIndex}`;
@@ -422,7 +549,9 @@ export class ReefEnvironment {
 
         const branch = new Mesh(
           branchGeometry,
-          materials[(clusterIndex + index) % materials.length],
+          clusterMaterials[
+            (clusterIndex + index) % clusterMaterials.length
+          ],
         );
 
         branch.position.y = 0.2;
@@ -430,7 +559,9 @@ export class ReefEnvironment {
 
         const tip = new Mesh(
           tipGeometry,
-          materials[(clusterIndex + index) % materials.length],
+          clusterMaterials[
+            (clusterIndex + index) % clusterMaterials.length
+          ],
         );
 
         tip.position.y = 0.38 * branch.scale.y;
@@ -442,7 +573,9 @@ export class ReefEnvironment {
       if (clusterIndex % 2 === 1) {
         const fan = new Mesh(
           fanGeometry,
-          materials[(clusterIndex + 1) % materials.length],
+          clusterMaterials[
+            (clusterIndex + 1) % clusterMaterials.length
+          ],
         );
 
         fan.name = `ReefFanCoral-${clusterIndex}`;
@@ -457,6 +590,20 @@ export class ReefEnvironment {
 
         coral.add(fan);
       }
+
+      this.coralTargets.push({
+        baseColors: clusterMaterials.map((material) =>
+          material.color.clone(),
+        ),
+        baseEmissives: clusterMaterials.map((material) =>
+          material.emissive.clone(),
+        ),
+        hitPulseId: 0,
+        impact: 0,
+        materials: clusterMaterials,
+        responsiveness: randomRange(0.82, 1.16),
+        root: coral,
+      });
 
       this.root.add(coral);
     });
@@ -540,7 +687,14 @@ export class ReefEnvironment {
 
       this.swayTargets.push({
         amplitude: randomRange(0.025, 0.06),
+        baseRotationX: plant.rotation.x,
+        baseRotationZ: plant.rotation.z,
+        bendX: 0,
+        bendZ: 0,
+        hitPulseId: 0,
+        impact: 0,
         phase: Math.random() * Math.PI * 2,
+        responsiveness: randomRange(0.78, 1.22),
         root: plant,
         speed: randomRange(0.26, 0.42),
       });
