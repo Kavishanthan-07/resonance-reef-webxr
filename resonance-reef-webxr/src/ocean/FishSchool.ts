@@ -445,4 +445,28 @@ export class FishSchool {
       agent.updateAnimation(deltaSeconds);
     }
   }
+
+  reset(): void {
+    for (
+      let index = 0;
+      index < this.fish.length;
+      index += 1
+    ) {
+      const agent = this.fish[index];
+
+      agent.root.position.set(
+        randomRange(-1.35, 1.35),
+        randomRange(1.0, 2.05),
+        randomRange(-4.0, -2.1),
+      );
+      agent.velocity
+        .set(
+          randomRange(-0.15, 0.15),
+          randomRange(-0.04, 0.04),
+          randomRange(-0.35, -0.12),
+        )
+        .normalize()
+        .multiplyScalar(randomRange(0.18, 0.3));
+    }
+  }
 }

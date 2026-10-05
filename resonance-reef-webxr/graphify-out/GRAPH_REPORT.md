@@ -1,16 +1,16 @@
 # Graph Report - resonance-reef-webxr  (2026-10-05)
 
 ## Corpus Check
-- 104 files · ~105,284 words
+- 107 files · ~106,750 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1050 nodes · 1120 edges · 97 communities (89 shown, 8 thin omitted)
+- 1093 nodes · 1201 edges · 108 communities (100 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `d5f81702`
+- Built from commit: `ec134b34`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -108,48 +108,59 @@
 - [[_COMMUNITY_Community 90|Community 90]]
 - [[_COMMUNITY_Community 94|Community 94]]
 - [[_COMMUNITY_Community 95|Community 95]]
+- [[_COMMUNITY_Community 96|Community 96]]
+- [[_COMMUNITY_Community 97|Community 97]]
+- [[_COMMUNITY_Community 98|Community 98]]
+- [[_COMMUNITY_Community 99|Community 99]]
 - [[_COMMUNITY_Community 100|Community 100]]
+- [[_COMMUNITY_Community 101|Community 101]]
+- [[_COMMUNITY_Community 102|Community 102]]
+- [[_COMMUNITY_Community 103|Community 103]]
+- [[_COMMUNITY_Community 104|Community 104]]
+- [[_COMMUNITY_Community 105|Community 105]]
+- [[_COMMUNITY_Community 106|Community 106]]
+- [[_COMMUNITY_Community 107|Community 107]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Critical Best Practices` - 32 edges
 2. `Critical Best Practices` - 32 edges
 3. `Review Checklist` - 21 edges
-4. `OceanAudio` - 19 edges
-5. `BreathState` - 15 edges
-6. `ReefBreathingSystem` - 14 edges
-7. `ReefEnvironment` - 13 edges
-8. `CurrentSample` - 12 edges
-9. `ProceduralAudio` - 11 edges
-10. `MantaFinale` - 11 edges
+4. `OceanAudio` - 20 edges
+5. `ReefBreathingSystem` - 18 edges
+6. `BreathState` - 17 edges
+7. `ExperienceController` - 17 edges
+8. `ReefEnvironment` - 14 edges
+9. `SessionState` - 13 edges
+10. `CurrentSample` - 12 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `OceanAudio` --references--> `ProceduralAudio`  [EXTRACTED]
   src/audio/OceanAudio.ts → src/audio/ProceduralAudio.ts
 - `ReefBreathingSystem` --references--> `OceanAudio`  [EXTRACTED]
   src/systems/ReefBreathingSystem.ts → src/audio/OceanAudio.ts
-- `ReefBreathingSystem` --references--> `MantaFinale`  [EXTRACTED]
-  src/systems/ReefBreathingSystem.ts → src/experience/MantaFinale.ts
-- `ReefBreathingSystem` --references--> `ReefEnvironment`  [EXTRACTED]
-  src/systems/ReefBreathingSystem.ts → src/ocean/ReefEnvironment.ts
-- `WaterCurrent` --references--> `BreathPhase`  [EXTRACTED]
-  src/ocean/WaterCurrent.ts → src/breathing/BreathEngine.ts
+- `ReefBreathingSystem` --references--> `BreathPhase`  [EXTRACTED]
+  src/systems/ReefBreathingSystem.ts → src/breathing/BreathEngine.ts
+- `ReefBreathingSystem` --references--> `DesktopControls`  [EXTRACTED]
+  src/systems/ReefBreathingSystem.ts → src/experience/DesktopControls.ts
+- `ReefBreathingSystem` --references--> `ExperienceController`  [EXTRACTED]
+  src/systems/ReefBreathingSystem.ts → src/experience/ExperienceController.ts
 
 ## Import Cycles
 - None detected.
 
-## Communities (97 total, 8 thin omitted)
+## Communities (108 total, 8 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.05
-Nodes (46): AudioContextConstructor, AudioWindow, clamp01(), ProceduralAudio, randomRange(), REEF_CUE_POSITIONS, ReefCue, setPannerPosition() (+38 more)
+Cohesion: 0.17
+Nodes (12): AudioContextConstructor, AudioWindow, clamp01(), ProceduralAudio, randomRange(), REEF_CUE_POSITIONS, ReefCue, setPannerPosition() (+4 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.06
-Nodes (35): 10. Audio System, 11. Physics System, 12. Grabbable Components, 13. Environment/Lighting, 14. Asset Loading, 15. VisibilityState, 16. Locomotion Configuration, 17. Scene Understanding (AR) (+27 more)
+Nodes (31): 10. Audio System, 11. Physics System, 12. Grabbable Components, 13. Environment/Lighting, 14. Asset Loading, 15. VisibilityState, 16. Locomotion Configuration, 17. Scene Understanding (AR) (+23 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.06
-Nodes (35): 10. Audio System, 11. Physics System, 12. Grabbable Components, 13. Environment/Lighting, 14. Asset Loading, 15. VisibilityState, 16. Locomotion Configuration, 17. Scene Understanding (AR) (+27 more)
+Nodes (31): 10. Audio System, 11. Physics System, 12. Grabbable Components, 13. Environment/Lighting, 14. Asset Loading, 15. VisibilityState, 16. Locomotion Configuration, 17. Scene Understanding (AR) (+23 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.06
@@ -172,7 +183,7 @@ Cohesion: 0.08
 Nodes (23): 2D app stuck on a loading screen, An app secret was committed or published, App loads but assets 404, App mode failures, Auto-enter works on device but breaks the browser, Blank, white, or error page after launch, bubblewrap hangs or exits without doing anything, bubblewrap update fails fetching the manifest (+15 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.15
+Cohesion: 0.14
 Nodes (8): CoralTarget, createSeabedGeometry(), ReefEnvironment, setNoShadows(), SwayTarget, ParticleFieldConfig, randomRange(), UnderwaterParticles
 
 ### Community 9 - "Community 9"
@@ -184,16 +195,16 @@ Cohesion: 0.12
 Nodes (16): Asset, Asset Boundary, Authoring And Review, Authoring-Only Imports, Capability First, Components And Constraints, Contents, Document Boundary (+8 more)
 
 ### Community 11 - "Community 11"
-Cohesion: 0.12
-Nodes (16): Anti-Patterns to Avoid, Asset Loading (AssetManager), Built-in Visuals (Don't Recreate), Core Architecture, Core Components Reference (30 Total), Core Systems Reference (20 Total), Custom System Priority Guidelines, Entity Parenting & Level Lifecycle (+8 more)
+Cohesion: 0.18
+Nodes (10): Anti-Patterns to Avoid, Core Architecture, Core Components Reference (30 Total), Core Systems Reference (20 Total), Custom System Priority Guidelines, IWSDK API Reference & Best Practices, Performance Tips, Project manifest authority (+2 more)
 
 ### Community 12 - "Community 12"
 Cohesion: 0.12
 Nodes (16): Asset, Asset Boundary, Authoring And Review, Authoring-Only Imports, Capability First, Components And Constraints, Contents, Document Boundary (+8 more)
 
 ### Community 13 - "Community 13"
-Cohesion: 0.12
-Nodes (16): Anti-Patterns to Avoid, Asset Loading (AssetManager), Built-in Visuals (Don't Recreate), Core Architecture, Core Components Reference (30 Total), Core Systems Reference (20 Total), Custom System Priority Guidelines, Entity Parenting & Level Lifecycle (+8 more)
+Cohesion: 0.18
+Nodes (10): Anti-Patterns to Avoid, Core Architecture, Core Components Reference (30 Total), Core Systems Reference (20 Total), Custom System Priority Guidelines, IWSDK API Reference & Best Practices, Performance Tips, Project manifest authority (+2 more)
 
 ### Community 14 - "Community 14"
 Cohesion: 0.12
@@ -483,25 +494,69 @@ Nodes (3): IWSDK scoped project guidance, Runtime API, UIKitML panels
 Cohesion: 0.16
 Nodes (8): FinaleState, MANTA_FINALE_DEFAULTS, MANTA_FINALE_POINTS, MantaFinale, MantaFinaleAsset, MantaFinaleConfig, selectMantaAnimation(), setNoShadows()
 
+### Community 96 - "Community 96"
+Cohesion: 0.12
+Nodes (4): ExperienceController, ExperienceXRControls, XRButton, XRButtonAction
+
+### Community 97 - "Community 97"
+Cohesion: 0.20
+Nodes (8): BreathPhase, BreathState, BreathTiming, JellyfishGuide, smoothStep(), clamp01(), smoothStep(), WaterCurrent
+
+### Community 98 - "Community 98"
+Cohesion: 0.18
+Nodes (8): FishAgent, FishAgentConfig, DEFAULT_SPECIES, FishSchool, FishSchoolConfig, FishSpeciesConfig, randomRange(), smoothStep()
+
+### Community 99 - "Community 99"
+Cohesion: 0.25
+Nodes (10): clamp01(), getCyclePosition(), getEnvironmentIntensity(), getStage(), getStageProgress(), INITIAL_STATE, interpolate(), SessionController (+2 more)
+
+### Community 101 - "Community 101"
+Cohesion: 0.24
+Nodes (6): createElement(), DesktopControls, getPhaseLabel(), ExperienceControllerHooks, ExperiencePhase, ExperienceState
+
+### Community 102 - "Community 102"
+Cohesion: 0.40
+Nodes (5): BioluminescentPlankton, clamp(), clamp01(), randomRange(), smoothStep()
+
+### Community 103 - "Community 103"
+Cohesion: 0.28
+Nodes (3): sceneContainer, ReefBreathingSystem, selectFishAnimation()
+
+### Community 104 - "Community 104"
+Cohesion: 0.33
+Nodes (6): Asset Loading (AssetManager), Built-in Visuals (Don't Recreate), Entity Parenting & Level Lifecycle, Input & Interaction, Reinvention Risk Table, What IWSDK Provides (Don't Rebuild These)
+
+### Community 105 - "Community 105"
+Cohesion: 0.33
+Nodes (6): Asset Loading (AssetManager), Built-in Visuals (Don't Recreate), Entity Parenting & Level Lifecycle, Input & Interaction, Reinvention Risk Table, What IWSDK Provides (Don't Rebuild These)
+
+### Community 106 - "Community 106"
+Cohesion: 0.50
+Nodes (4): 18. Feature Configuration (Critical!), Feature Decision Matrix, Locomotion Requires Environment Setup, VR vs AR Feature Sets
+
+### Community 107 - "Community 107"
+Cohesion: 0.50
+Nodes (4): 18. Feature Configuration (Critical!), Feature Decision Matrix, Locomotion Requires Environment Setup, VR vs AR Feature Sets
+
 ## Knowledge Gaps
-- **686 isolated node(s):** `$schema`, `allow`, `enabledMcpjsonServers`, `PreToolUse`, `allow_instructions` (+681 more)
+- **689 isolated node(s):** `$schema`, `allow`, `enabledMcpjsonServers`, `PreToolUse`, `allow_instructions` (+684 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `OceanAudio` connect `Community 94` to `Community 0`?**
+- **Why does `OceanAudio` connect `Community 94` to `Community 0`, `Community 97`, `Community 103`?**
+  _High betweenness centrality (0.009) - this node is a cross-community bridge._
+- **Why does `ReefBreathingSystem` connect `Community 103` to `Community 96`, `Community 97`, `Community 98`, `Community 101`, `Community 102`, `Community 8`, `Community 94`, `Community 95`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
+- **Why does `ExperienceController` connect `Community 96` to `Community 97`, `Community 101`, `Community 103`?**
   _High betweenness centrality (0.006) - this node is a cross-community bridge._
-- **Why does `MantaFinale` connect `Community 95` to `Community 0`?**
-  _High betweenness centrality (0.005) - this node is a cross-community bridge._
-- **Why does `ProceduralAudio` connect `Community 0` to `Community 94`?**
-  _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **What connects `$schema`, `allow`, `enabledMcpjsonServers` to the rest of the system?**
-  _686 weakly-connected nodes found - possible documentation gaps or missing edges._
-- **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.05158324821246169 - nodes in this community are weakly interconnected._
+  _689 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06451612903225806 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.05714285714285714 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06451612903225806 - nodes in this community are weakly interconnected._
+- **Should `Community 3` be split into smaller, more focused modules?**
+  _Cohesion score 0.058823529411764705 - nodes in this community are weakly interconnected._

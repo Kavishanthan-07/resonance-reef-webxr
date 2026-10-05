@@ -311,6 +311,35 @@ export class ReefEnvironment {
     this.particles.update(deltaSeconds, timeSeconds);
   }
 
+  resetProgression(): void {
+    for (const target of this.swayTargets) {
+      target.bendX = 0;
+      target.bendZ = 0;
+      target.hitPulseId = 0;
+      target.impact = 0;
+      target.root.rotation.x = target.baseRotationX;
+      target.root.rotation.z = target.baseRotationZ;
+    }
+
+    for (const target of this.coralTargets) {
+      target.hitPulseId = 0;
+      target.impact = 0;
+
+      for (
+        let materialIndex = 0;
+        materialIndex < target.materials.length;
+        materialIndex += 1
+      ) {
+        target.materials[materialIndex].color.copy(
+          target.baseColors[materialIndex],
+        );
+        target.materials[materialIndex].emissive.copy(
+          target.baseEmissives[materialIndex],
+        );
+      }
+    }
+  }
+
   dispose(): void {
     this.world.scene.background =
       this.previousBackground;
