@@ -12,13 +12,22 @@ export interface SessionState {
   completedCycles: number;
   stageProgress: number;
   overallProgress: number;
-  intensity: number;
+  environmentIntensity: number;
   finaleReady: boolean;
-  finaleJustReached: boolean;
+  finaleTriggered: boolean;
 }
 
 const DEBUG_SESSION = false;
 const TARGET_CYCLES = 8;
+const INITIAL_STATE: SessionState = {
+  completedCycles: 0,
+  environmentIntensity: 0.74,
+  finaleReady: false,
+  finaleTriggered: false,
+  overallProgress: 0,
+  stage: 'intro',
+  stageProgress: 0,
+};
 
 function clamp01(value: number): number {
   return Math.max(0, Math.min(1, value));
@@ -58,6 +67,14 @@ function getStage(completedCycles: number): SessionStage {
   return 'intro';
 }
 
+function interpolate(
+  start: number,
+  end: number,
+  progress: number,
+): number {
+  return start + (end - start) * smoothStep(progress);
+}
+
 function getStageProgress(
   stage: SessionStage,
   cyclePosition: number,
@@ -76,22 +93,45 @@ function getStageProgress(
   }
 }
 
+function getEnvironmentIntensity(
+  stage: SessionStage,
+  stageProgress: number,
+): number {
+  switch (stage) {
+    case 'intro':
+      return interpolate(0.74, 0.78, stageProgress);
+    case 'awakening':
+      return interpolate(0.8, 0.85, stageProgress);
+    case 'resonance':
+      return interpolate(0.88, 0.92, stageProgress);
+    case 'full-reef':
+      return interpolate(0.96, 1, stageProgress);
+    case 'finale-ready':
+      return 1;
+  }
+}
+
 export class SessionController {
   private previousStage: SessionStage = 'intro';
-  private finaleTriggered = false;
+  private finaleHasTriggered = false;
+  private state: SessionState = { ...INITIAL_STATE };
 
   update(state: BreathState): SessionState {
     const stage = getStage(state.completedCycles);
     const cyclePosition = getCyclePosition(state);
     const overallProgress =
-      clamp01(cyclePosition / TARGET_CYCLES);
+      clamp01(state.completedCycles / TARGET_CYCLES);
+    const stageProgress =
+      getStageProgress(stage, cyclePosition);
+    const environmentIntensity =
+      getEnvironmentIntensity(stage, stageProgress);
     const finaleReady =
       state.completedCycles >= TARGET_CYCLES;
-    const finaleJustReached =
-      finaleReady && !this.finaleTriggered;
+    const finaleTriggered =
+      finaleReady && !this.finaleHasTriggered;
 
-    if (finaleJustReached) {
-      this.finaleTriggered = true;
+    if (finaleTriggered) {
+      this.finaleHasTriggered = true;
     }
 
     if (stage !== this.previousStage) {
@@ -106,22 +146,26 @@ export class SessionController {
       }
     }
 
-    return {
+    this.state = {
       completedCycles: state.completedCycles,
-      finaleJustReached,
+      environmentIntensity,
       finaleReady,
-      intensity: 0.55 + smoothStep(overallProgress) * 0.45,
+      finaleTriggered,
       overallProgress,
       stage,
-      stageProgress: getStageProgress(
-        stage,
-        cyclePosition,
-      ),
+      stageProgress,
     };
+
+    return this.state;
+  }
+
+  getState(): SessionState {
+    return this.state;
   }
 
   reset(): void {
     this.previousStage = 'intro';
-    this.finaleTriggered = false;
+    this.finaleHasTriggered = false;
+    this.state = { ...INITIAL_STATE };
   }
 }

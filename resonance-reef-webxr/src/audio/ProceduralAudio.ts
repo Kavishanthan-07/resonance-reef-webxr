@@ -224,8 +224,10 @@ export class ProceduralAudio {
     session?: SessionState,
   ): void {
     const now = this.context.currentTime;
-    const sessionIntensity =
-      session?.intensity ?? 1;
+    const environmentIntensity =
+      session?.environmentIntensity ?? 1;
+    const sessionLift =
+      clamp01((environmentIntensity - 0.72) / 0.28);
     const progress = smoothStep(state.progress);
     const inhale =
       state.phase === 'inhale' ? progress : 0;
@@ -243,17 +245,17 @@ export class ProceduralAudio {
 
     setParam(
       this.ambienceGain.gain,
-      AMBIENCE_GAIN -
+        AMBIENCE_GAIN -
         inhale * 0.035 +
         exhale * 0.018 +
-        (sessionIntensity - 0.55) * 0.025,
+        sessionLift * 0.018,
       now,
       0.28,
     );
     setParam(
       this.ambienceFilter.frequency,
       820 +
-        sessionIntensity * 80 -
+        environmentIntensity * 80 -
         inhale * 180 +
         exhale * 140,
       now,
@@ -263,7 +265,7 @@ export class ProceduralAudio {
       this.toneGain.gain,
       0.002 +
         inhale * 0.018 +
-        (sessionIntensity - 0.55) * 0.004,
+        sessionLift * 0.004,
       now,
       0.35,
     );
@@ -283,7 +285,7 @@ export class ProceduralAudio {
         WHOOSH_GAIN,
         currentStrength *
           0.52 *
-          (0.88 + sessionIntensity * 0.16),
+          (0.94 + sessionLift * 0.12),
       ) *
       (0.85 + exhale * 0.15);
 
@@ -314,7 +316,7 @@ export class ProceduralAudio {
         deltaSeconds,
         timeSeconds,
         now,
-        sessionIntensity,
+        sessionLift,
       );
     }
   }
@@ -412,7 +414,7 @@ export class ProceduralAudio {
     deltaSeconds: number,
     timeSeconds: number,
     now: number,
-    sessionIntensity: number,
+    sessionLift: number,
   ): void {
     cue.impact =
       cue.impact > 0.001
@@ -441,7 +443,7 @@ export class ProceduralAudio {
           cue.impact,
           (1 - shellOffset / current.shellThickness) *
             current.strength *
-            (0.86 + sessionIntensity * 0.18),
+            (0.94 + sessionLift * 0.12),
         );
         cue.nextTickTime = Math.min(
           cue.nextTickTime,
@@ -461,8 +463,8 @@ export class ProceduralAudio {
       const intensity =
         0.014 +
         cue.impact *
-          (0.034 + sessionIntensity * 0.016) +
-        (sessionIntensity - 0.55) * 0.004 +
+          (0.038 + sessionLift * 0.012) +
+        sessionLift * 0.004 +
         Math.sin(
           timeSeconds * 0.17 + cue.seed,
         ) * 0.003;
@@ -495,7 +497,7 @@ export class ProceduralAudio {
 
       const baseInterval =
         randomRange(1.8, 4.8) *
-        (1.08 - sessionIntensity * 0.12);
+        (1.03 - sessionLift * 0.07);
       const activeInterval =
         randomRange(0.45, 1.35);
       cue.nextTickTime =
