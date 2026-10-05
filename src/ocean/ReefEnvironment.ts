@@ -69,9 +69,9 @@ export class ReefEnvironment {
   readonly rockCount = 10;
   readonly vegetationCount = 10;
   readonly coralClusterCount = 8;
-  readonly lightShaftCount = 4;
+  readonly lightShaftCount = 3;
   readonly particleCount = 180;
-  readonly approximateMeshCount = 126;
+  readonly approximateMeshCount = 125;
 
   private readonly previousBackground:
     | Color
@@ -516,7 +516,7 @@ export class ReefEnvironment {
 
   private addLightShafts(): void {
     const geometry = new ConeGeometry(
-      0.42,
+      0.28,
       5.4,
       8,
       1,
@@ -526,16 +526,15 @@ export class ReefEnvironment {
       blending: AdditiveBlending,
       color: 0x9bddea,
       depthWrite: false,
-      opacity: 0.035,
+      opacity: 0.022,
       side: DoubleSide,
       transparent: true,
     });
 
     const placements = [
-      [-2.5, 2.25, -4.1, 0.18, -0.22],
-      [-0.6, 2.45, -5.2, -0.08, 0.14],
-      [1.4, 2.35, -6.0, 0.22, 0.08],
-      [3.0, 2.15, -6.9, -0.28, -0.18],
+      [-2.4, 2.25, -4.2, 0.18, -0.24, 0.86],
+      [0.1, 2.45, -5.7, -0.1, 0.12, 1.0],
+      [2.7, 2.12, -6.8, -0.28, -0.18, 0.74],
     ] as const;
 
     placements.forEach((placement, index) => {
@@ -554,7 +553,7 @@ export class ReefEnvironment {
       );
       shaft.scale.set(
         randomRange(0.72, 1.08),
-        1,
+        placement[5],
         randomRange(0.72, 1.02),
       );
 
