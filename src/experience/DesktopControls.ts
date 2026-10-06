@@ -1,6 +1,11 @@
 import type { BreathState } from '../breathing/BreathEngine.js';
 import type { SessionState } from './SessionController.js';
 import {
+  getBreathGuidanceLabel,
+  getBreathGuidanceTargetOpacity,
+  READY_SCREEN_INSTRUCTION,
+} from './BreathGuidance.js';
+import {
   ExperienceController,
   type ExperiencePhase,
 } from './ExperienceController.js';
@@ -40,6 +45,14 @@ export class DesktopControls {
   );
   private readonly status = createElement('div', 'rr-status');
   private readonly progress = createElement('div', 'rr-progress');
+  private readonly readyInstruction = createElement(
+    'div',
+    'rr-ready-instruction',
+  );
+  private readonly breathGuidance = createElement(
+    'div',
+    'rr-breath-guidance',
+  );
   private readonly primaryButton = createElement(
     'button',
     'rr-button rr-primary',
@@ -66,6 +79,12 @@ export class DesktopControls {
     const actions = createElement('div', 'rr-actions');
 
     title.textContent = 'Resonance Reef';
+    this.readyInstruction.textContent =
+      READY_SCREEN_INSTRUCTION;
+    this.breathGuidance.setAttribute(
+      'aria-live',
+      'polite',
+    );
     this.root.setAttribute('aria-label', 'Experience controls');
 
     this.primaryButton.type = 'button';
@@ -107,6 +126,8 @@ export class DesktopControls {
       title,
       this.status,
       this.progress,
+      this.readyInstruction,
+      this.breathGuidance,
       actions,
     );
     document.body.append(this.root);
@@ -131,6 +152,26 @@ export class DesktopControls {
       phase === 'ready'
         ? 'Breath 1 of 8'
         : `Breath ${breathNumber} of 8 - ${breath.phase}`;
+    this.readyInstruction.hidden = phase !== 'ready';
+
+    const guidanceLabel =
+      getBreathGuidanceLabel(breath);
+    const guidanceOpacity =
+      getBreathGuidanceTargetOpacity(
+        breath,
+        phase,
+      );
+
+    if (guidanceLabel != null) {
+      this.breathGuidance.textContent = guidanceLabel;
+    }
+
+    this.breathGuidance.style.opacity =
+      guidanceOpacity.toFixed(3);
+    this.breathGuidance.setAttribute(
+      'aria-hidden',
+      guidanceOpacity > 0 ? 'false' : 'true',
+    );
 
     this.primaryButton.hidden = phase === 'running';
     this.primaryButton.textContent =
@@ -201,6 +242,24 @@ export class DesktopControls {
       .rr-progress {
         color: rgba(233, 251, 255, 0.8);
         font-size: 13px;
+      }
+
+      .rr-ready-instruction {
+        max-width: 260px;
+        color: rgba(233, 251, 255, 0.86);
+        font-size: 13px;
+        line-height: 1.35;
+        white-space: pre-line;
+      }
+
+      .rr-breath-guidance {
+        min-height: 18px;
+        color: #d8f6f8;
+        font-size: 13px;
+        font-weight: 750;
+        letter-spacing: 0;
+        text-shadow: 0 1px 8px rgba(0, 5, 9, 0.9);
+        transition: opacity 260ms ease;
       }
 
       .rr-actions {
