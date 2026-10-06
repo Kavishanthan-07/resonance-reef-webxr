@@ -2470,7 +2470,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_index",
-      "community": 108,
+      "community": 97,
       "norm_label": "index.ts"
     },
     {
@@ -2480,7 +2480,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_index_scenecontainer",
-      "community": 108,
+      "community": 97,
       "norm_label": "scenecontainer"
     },
     {
@@ -2814,6 +2814,196 @@
       "norm_label": ".update()"
     },
     {
+      "label": "MarineLifeConfig.ts",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeConfig.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ocean_marinelifeconfig",
+      "community": 108,
+      "norm_label": "marinelifeconfig.ts"
+    },
+    {
+      "label": "MARINE_LIFE_CONFIG",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeConfig.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ocean_marinelifeconfig_marine_life_config",
+      "community": 108,
+      "norm_label": "marine_life_config"
+    },
+    {
+      "label": "MID_SCHOOL_BOUNDS",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeConfig.ts",
+      "source_location": "L11",
+      "_origin": "ast",
+      "id": "ocean_marinelifeconfig_mid_school_bounds",
+      "community": 108,
+      "norm_label": "mid_school_bounds"
+    },
+    {
+      "label": "MarineLifeLayer.ts",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer",
+      "community": 108,
+      "norm_label": "marinelifelayer.ts"
+    },
+    {
+      "label": "MidFishState",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_midfishstate",
+      "community": 108,
+      "norm_label": "midfishstate"
+    },
+    {
+      "label": "FarFishState",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L35",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_farfishstate",
+      "community": 108,
+      "norm_label": "farfishstate"
+    },
+    {
+      "label": "BubbleState",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L44",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_bubblestate",
+      "community": 108,
+      "norm_label": "bubblestate"
+    },
+    {
+      "label": "randomRange()",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L53",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_randomrange",
+      "community": 108,
+      "norm_label": "randomrange()"
+    },
+    {
+      "label": "smoothStep()",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L57",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_smoothstep",
+      "community": 108,
+      "norm_label": "smoothstep()"
+    },
+    {
+      "label": "MarineLifeLayer",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L63",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_marinelifelayer",
+      "community": 108,
+      "norm_label": "marinelifelayer"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L95",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_marinelifelayer_constructor",
+      "community": 108,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L170",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_marinelifelayer_update",
+      "community": 108,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".createMidFish()",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L180",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_marinelifelayer_createmidfish",
+      "community": 108,
+      "norm_label": ".createmidfish()"
+    },
+    {
+      "label": ".createFarFish()",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L199",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_marinelifelayer_createfarfish",
+      "community": 108,
+      "norm_label": ".createfarfish()"
+    },
+    {
+      "label": ".createBubbles()",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L224",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_marinelifelayer_createbubbles",
+      "community": 108,
+      "norm_label": ".createbubbles()"
+    },
+    {
+      "label": ".addSeabedDetails()",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L259",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_marinelifelayer_addseabeddetails",
+      "community": 108,
+      "norm_label": ".addseabeddetails()"
+    },
+    {
+      "label": ".updateMidFish()",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L325",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_marinelifelayer_updatemidfish",
+      "community": 108,
+      "norm_label": ".updatemidfish()"
+    },
+    {
+      "label": ".updateFarFish()",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L404",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_marinelifelayer_updatefarfish",
+      "community": 108,
+      "norm_label": ".updatefarfish()"
+    },
+    {
+      "label": ".updateBubbles()",
+      "file_type": "code",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L447",
+      "_origin": "ast",
+      "id": "ocean_marinelifelayer_marinelifelayer_updatebubbles",
+      "community": 108,
+      "norm_label": ".updatebubbles()"
+    },
+    {
       "label": "ReefDecorConfig.ts",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorConfig.ts",
@@ -3030,54 +3220,54 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_reefenvironment",
-      "community": 8,
+      "community": 110,
       "norm_label": "reefenvironment.ts"
     },
     {
       "label": "randomRange()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L48",
+      "source_location": "L49",
       "_origin": "ast",
       "id": "ocean_reefenvironment_randomrange",
-      "community": 8,
+      "community": 110,
       "norm_label": "randomrange()"
     },
     {
       "label": "clamp01()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L52",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "ocean_reefenvironment_clamp01",
-      "community": 8,
+      "community": 110,
       "norm_label": "clamp01()"
     },
     {
       "label": "smoothStep()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L56",
+      "source_location": "L57",
       "_origin": "ast",
       "id": "ocean_reefenvironment_smoothstep",
-      "community": 8,
+      "community": 110,
       "norm_label": "smoothstep()"
     },
     {
       "label": "createSeabedGeometry()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L62",
+      "source_location": "L63",
       "_origin": "ast",
       "id": "ocean_reefenvironment_createseabedgeometry",
-      "community": 8,
+      "community": 110,
       "norm_label": "createseabedgeometry()"
     },
     {
       "label": "setNoShadows()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L99",
+      "source_location": "L100",
       "_origin": "ast",
       "id": "ocean_reefenvironment_setnoshadows",
       "community": 8,
@@ -3087,7 +3277,7 @@
       "label": "ReefEnvironment",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L106",
+      "source_location": "L107",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment",
       "community": 8,
@@ -3097,7 +3287,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L128",
+      "source_location": "L130",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_constructor",
       "community": 8,
@@ -3107,7 +3297,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L181",
+      "source_location": "L186",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_update",
       "community": 103,
@@ -3117,7 +3307,7 @@
       "label": ".resetProgression()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L367",
+      "source_location": "L377",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_resetprogression",
       "community": 8,
@@ -3127,7 +3317,7 @@
       "label": ".dispose()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L396",
+      "source_location": "L406",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_dispose",
       "community": 8,
@@ -3137,7 +3327,7 @@
       "label": ".addLighting()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L404",
+      "source_location": "L414",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addlighting",
       "community": 8,
@@ -3147,7 +3337,7 @@
       "label": ".addSeabed()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L450",
+      "source_location": "L460",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addseabed",
       "community": 8,
@@ -3157,7 +3347,7 @@
       "label": ".addRocks()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L517",
+      "source_location": "L527",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addrocks",
       "community": 8,
@@ -3167,7 +3357,7 @@
       "label": ".addCoral()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L582",
+      "source_location": "L592",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addcoral",
       "community": 8,
@@ -3177,7 +3367,7 @@
       "label": ".addVegetation()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L733",
+      "source_location": "L743",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addvegetation",
       "community": 8,
@@ -3187,7 +3377,7 @@
       "label": ".addLightShafts()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L827",
+      "source_location": "L837",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addlightshafts",
       "community": 8,
@@ -3230,7 +3420,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere",
-      "community": 97,
+      "community": 110,
       "norm_label": "underwateratmosphere.ts"
     },
     {
@@ -3240,7 +3430,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwater_atmosphere_config",
-      "community": 8,
+      "community": 110,
       "norm_label": "underwater_atmosphere_config"
     },
     {
@@ -3250,7 +3440,7 @@
       "source_location": "L141",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_randomrange",
-      "community": 97,
+      "community": 110,
       "norm_label": "randomrange()"
     },
     {
@@ -3260,7 +3450,7 @@
       "source_location": "L145",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere",
-      "community": 8,
+      "community": 109,
       "norm_label": "underwateratmosphere"
     },
     {
@@ -3270,7 +3460,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_constructor",
-      "community": 8,
+      "community": 109,
       "norm_label": ".constructor()"
     },
     {
@@ -3290,7 +3480,7 @@
       "source_location": "L216",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_dispose",
-      "community": 8,
+      "community": 109,
       "norm_label": ".dispose()"
     },
     {
@@ -3300,7 +3490,7 @@
       "source_location": "L222",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_createcausticsmaterial",
-      "community": 8,
+      "community": 109,
       "norm_label": ".createcausticsmaterial()"
     },
     {
@@ -3310,7 +3500,7 @@
       "source_location": "L245",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_createsurfacematerial",
-      "community": 8,
+      "community": 109,
       "norm_label": ".createsurfacematerial()"
     },
     {
@@ -3320,7 +3510,7 @@
       "source_location": "L262",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_createshaftmaterial",
-      "community": 8,
+      "community": 109,
       "norm_label": ".createshaftmaterial()"
     },
     {
@@ -3330,7 +3520,7 @@
       "source_location": "L279",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_addcaustics",
-      "community": 8,
+      "community": 109,
       "norm_label": ".addcaustics()"
     },
     {
@@ -3340,7 +3530,7 @@
       "source_location": "L291",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_addsurfacesuggestion",
-      "community": 8,
+      "community": 109,
       "norm_label": ".addsurfacesuggestion()"
     },
     {
@@ -3350,7 +3540,7 @@
       "source_location": "L303",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_addlightshafts",
-      "community": 8,
+      "community": 109,
       "norm_label": ".addlightshafts()"
     },
     {
@@ -3360,7 +3550,7 @@
       "source_location": "L349",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_adddistantreefsilhouettes",
-      "community": 8,
+      "community": 109,
       "norm_label": ".adddistantreefsilhouettes()"
     },
     {
@@ -3540,7 +3730,7 @@
       "source_location": "L23",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_selectfishanimation",
-      "community": 108,
+      "community": 97,
       "norm_label": "selectfishanimation()"
     },
     {
@@ -3550,7 +3740,7 @@
       "source_location": "L51",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem",
-      "community": 108,
+      "community": 97,
       "norm_label": "reefbreathingsystem"
     },
     {
@@ -3560,7 +3750,7 @@
       "source_location": "L101",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_init",
-      "community": 108,
+      "community": 97,
       "norm_label": ".init()"
     },
     {
@@ -3570,7 +3760,7 @@
       "source_location": "L176",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_update",
-      "community": 108,
+      "community": 97,
       "norm_label": ".update()"
     },
     {
@@ -3580,7 +3770,7 @@
       "source_location": "L259",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_resetexperiencesystems",
-      "community": 108,
+      "community": 97,
       "norm_label": ".resetexperiencesystems()"
     },
     {
@@ -3590,7 +3780,7 @@
       "source_location": "L269",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_loadmantafinale",
-      "community": 108,
+      "community": 97,
       "norm_label": ".loadmantafinale()"
     },
     {
@@ -3600,7 +3790,7 @@
       "source_location": "L325",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_loadfishschool",
-      "community": 108,
+      "community": 97,
       "norm_label": ".loadfishschool()"
     },
     {
@@ -13600,6 +13790,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer",
+      "target": "breathing_breathengine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/ocean/ReefEnvironment.ts",
       "source_location": "L27",
       "weight": 1.0,
@@ -13793,6 +13994,39 @@
       "confidence_score": 1.0,
       "source": "ocean_jellyfishguide_jellyfishguide_update",
       "target": "breathing_breathengine_breathstate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer",
+      "target": "breathing_breathengine_breathstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L170",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer_update",
+      "target": "breathing_breathengine_breathstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L325",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer_updatemidfish",
+      "target": "breathing_breathengine_breathstate",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -16020,6 +16254,363 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeConfig.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "ocean_marinelifeconfig",
+      "target": "ocean_marinelifeconfig_marine_life_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeConfig.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "ocean_marinelifeconfig",
+      "target": "ocean_marinelifeconfig_mid_school_bounds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer",
+      "target": "ocean_marinelifeconfig",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer",
+      "target": "ocean_marinelifeconfig_marine_life_config",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer",
+      "target": "ocean_marinelifeconfig_mid_school_bounds",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer",
+      "target": "ocean_marinelifelayer_bubblestate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer",
+      "target": "ocean_marinelifelayer_farfishstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer",
+      "target": "ocean_marinelifelayer_marinelifelayer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer",
+      "target": "ocean_marinelifelayer_midfishstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer",
+      "target": "ocean_marinelifelayer_randomrange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer",
+      "target": "ocean_marinelifelayer_smoothstep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefEnvironment.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "ocean_reefenvironment",
+      "target": "ocean_marinelifelayer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L247",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer_createbubbles",
+      "target": "ocean_marinelifelayer_randomrange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L210",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer_createfarfish",
+      "target": "ocean_marinelifelayer_randomrange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L189",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer_createmidfish",
+      "target": "ocean_marinelifelayer_randomrange",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L331",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer_updatemidfish",
+      "target": "ocean_marinelifelayer_smoothstep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L259",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer",
+      "target": "ocean_marinelifelayer_marinelifelayer_addseabeddetails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L95",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer",
+      "target": "ocean_marinelifelayer_marinelifelayer_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L224",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer",
+      "target": "ocean_marinelifelayer_marinelifelayer_createbubbles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer",
+      "target": "ocean_marinelifelayer_marinelifelayer_createfarfish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer",
+      "target": "ocean_marinelifelayer_marinelifelayer_createmidfish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L170",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer",
+      "target": "ocean_marinelifelayer_marinelifelayer_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L447",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer",
+      "target": "ocean_marinelifelayer_marinelifelayer_updatebubbles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L404",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer",
+      "target": "ocean_marinelifelayer_marinelifelayer_updatefarfish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L325",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer",
+      "target": "ocean_marinelifelayer_marinelifelayer_updatemidfish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefEnvironment.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "ocean_reefenvironment",
+      "target": "ocean_marinelifelayer_marinelifelayer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ReefEnvironment.ts",
+      "source_location": "L126",
+      "weight": 1.0,
+      "source": "ocean_reefenvironment_reefenvironment",
+      "target": "ocean_marinelifelayer_marinelifelayer",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer_constructor",
+      "target": "ocean_marinelifelayer_marinelifelayer_addseabeddetails",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L166",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer_constructor",
+      "target": "ocean_marinelifelayer_marinelifelayer_createbubbles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L165",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer_constructor",
+      "target": "ocean_marinelifelayer_marinelifelayer_createfarfish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer_constructor",
+      "target": "ocean_marinelifelayer_marinelifelayer_createmidfish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer_update",
+      "target": "ocean_marinelifelayer_marinelifelayer_updatebubbles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer_update",
+      "target": "ocean_marinelifelayer_marinelifelayer_updatefarfish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/MarineLifeLayer.ts",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "ocean_marinelifelayer_marinelifelayer_update",
+      "target": "ocean_marinelifelayer_marinelifelayer_updatemidfish",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/ocean/ReefDecorConfig.ts",
       "source_location": "L26",
       "weight": 1.0,
@@ -16477,9 +17068,9 @@
       "source_file": "src/ocean/ReefEnvironment.ts",
       "source_location": "L52",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_reefenvironment",
-      "target": "ocean_reefenvironment_clamp01",
-      "confidence_score": 1.0
+      "target": "ocean_reefenvironment_clamp01"
     },
     {
       "relation": "contains",
@@ -16527,9 +17118,9 @@
       "source_file": "src/ocean/ReefEnvironment.ts",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_reefenvironment",
-      "target": "ocean_reefenvironment_smoothstep",
-      "confidence_score": 1.0
+      "target": "ocean_reefenvironment_smoothstep"
     },
     {
       "relation": "imports_from",
@@ -16659,9 +17250,9 @@
       "source_file": "src/ocean/ReefEnvironment.ts",
       "source_location": "L57",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_reefenvironment_smoothstep",
-      "target": "ocean_reefenvironment_clamp01",
-      "confidence_score": 1.0
+      "target": "ocean_reefenvironment_clamp01"
     },
     {
       "relation": "calls",
@@ -16670,9 +17261,9 @@
       "source_file": "src/ocean/ReefEnvironment.ts",
       "source_location": "L77",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_reefenvironment_createseabedgeometry",
-      "target": "ocean_reefenvironment_smoothstep",
-      "confidence_score": 1.0
+      "target": "ocean_reefenvironment_smoothstep"
     },
     {
       "relation": "calls",
@@ -24443,5 +25034,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d20dd8c8c1b499b9a5174fcd5849c1c752765049"
+  "built_at_commit": "8c569ffee831c51c3cb0328f345d49ff8be78482"
 }

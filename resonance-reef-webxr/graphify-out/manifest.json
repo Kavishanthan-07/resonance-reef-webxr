@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "src/ocean/ReefEnvironment.ts": {
-    "mtime": 1791200961.0728333,
-    "ast_hash": "bce77500d24af088196a282ff3cc2dea",
+    "mtime": 1791201531.0710454,
+    "ast_hash": "ec5d304a4728b881c53cacbb7b86c7ff",
     "semantic_hash": ""
   },
   "src/ocean/UnderwaterParticles.ts": {
@@ -627,6 +627,16 @@
   "artifacts/reef-realism-pass2.png": {
     "mtime": 1791200587.0429559,
     "ast_hash": "a0a0ef1e6b7486ca82936220a9a8ef49",
+    "semantic_hash": ""
+  },
+  "src/ocean/MarineLifeConfig.ts": {
+    "mtime": 1791201514.4175992,
+    "ast_hash": "ca37bea2ccd6b16828443dfe7d97385d",
+    "semantic_hash": ""
+  },
+  "src/ocean/MarineLifeLayer.ts": {
+    "mtime": 1791201530.5922143,
+    "ast_hash": "6fbd97b511baed624eaa1f5dcd9aff20",
     "semantic_hash": ""
   }
 }
