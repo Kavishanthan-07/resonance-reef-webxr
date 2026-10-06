@@ -26,6 +26,7 @@ import {
 
 import type { BreathState } from '../breathing/BreathEngine.js';
 import type { SessionState } from '../experience/SessionController.js';
+import { MarineLifeLayer } from './MarineLifeLayer.js';
 import { ReefDecorLayer } from './ReefDecorLayer.js';
 import type {
   CoralTarget,
@@ -122,6 +123,7 @@ export class ReefEnvironment {
   private readonly coralTargets: CoralTarget[] = [];
   private readonly decorLayer: ReefDecorLayer;
   private readonly atmosphere: UnderwaterAtmosphere;
+  private readonly marineLife: MarineLifeLayer;
   private readonly particles: UnderwaterParticles;
   private readonly coralGlowColor = new Color(0x67d9d1);
 
@@ -145,6 +147,8 @@ export class ReefEnvironment {
     this.addLighting();
     this.atmosphere =
       new UnderwaterAtmosphere();
+    this.marineLife =
+      new MarineLifeLayer();
     this.decorLayer =
       new ReefDecorLayer({
         coralTargets: this.coralTargets,
@@ -156,6 +160,7 @@ export class ReefEnvironment {
     this.addCoral();
     this.addVegetation();
     this.root.add(this.atmosphere.root);
+    this.root.add(this.marineLife.root);
     this.root.add(this.decorLayer.root);
     void this.decorLayer
       .load()
@@ -360,6 +365,11 @@ export class ReefEnvironment {
         timeSeconds,
         breath,
         current,
+      );
+      this.marineLife.update(
+        deltaSeconds,
+        timeSeconds,
+        breath,
       );
     }
   }
