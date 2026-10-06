@@ -52,7 +52,7 @@ export class FishSchool {
   private readonly fish: FishAgent[] = [];
 
   private readonly userPoint = new Vector3(0, 1.6, 0);
-  private readonly guideCenter = new Vector3(0, 1.55, -2.6);
+  private readonly guideCenter = new Vector3(0, 1.68, -2.3);
   private readonly reefCenter = new Vector3(0, 1.5, -3.2);
   private readonly jellyfishExclusionRadius = 0.9;
   private readonly userExclusionRadius = 0.95;

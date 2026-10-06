@@ -1,5 +1,4 @@
 import {
-  AdditiveBlending,
   AmbientLight,
   Color,
   ConeGeometry,
@@ -45,6 +44,113 @@ const SEABED_SIZE_METERS = 100;
 const SEABED_SEGMENTS = 24;
 const SEABED_COMFORT_RADIUS = 1.2;
 const SEABED_VARIATION_FADE_RADIUS = 3.4;
+const ROCK_LARGE_TEXTURE_PATH =
+  'models/environment/rocks/reef-rock-large/textures/rock_face_01_diff_1k.jpg';
+const ROCK_SMALL_TEXTURE_PATH =
+  'models/environment/rocks/reef-rock-small/textures/rock_07_diff_1k.jpg';
+
+interface HeroRockPlacement {
+  geometryIndex: number;
+  materialIndex: number;
+  name: string;
+  position: readonly [number, number, number];
+  role: 'hero' | 'fog';
+  rotation: readonly [number, number, number];
+  scale: readonly [number, number, number];
+}
+
+const REEF_ROCK_PLACEMENTS: readonly HeroRockPlacement[] = [
+  {
+    geometryIndex: 2,
+    materialIndex: 0,
+    name: 'ReefHeroRock-LeftForeground',
+    position: [-4.35, 0.045, -3.28],
+    role: 'hero',
+    rotation: [-0.16, 1.08, 0.14],
+    scale: [0.62, 0.13, 0.52],
+  },
+  {
+    geometryIndex: 2,
+    materialIndex: 1,
+    name: 'ReefHeroRock-RightForeground',
+    position: [4.25, 0.04, -3.48],
+    role: 'hero',
+    rotation: [-0.12, -0.82, -0.12],
+    scale: [0.58, 0.12, 0.48],
+  },
+  {
+    geometryIndex: 1,
+    materialIndex: 2,
+    name: 'ReefHeroRock-LeftMid',
+    position: [-3.35, 0.14, -4.82],
+    role: 'hero',
+    rotation: [0.22, 0.62, -0.2],
+    scale: [0.95, 0.28, 0.76],
+  },
+  {
+    geometryIndex: 1,
+    materialIndex: 3,
+    name: 'ReefHeroRock-RightMid',
+    position: [3.25, 0.15, -5.05],
+    role: 'hero',
+    rotation: [0.18, -0.92, 0.18],
+    scale: [1.0, 0.3, 0.8],
+  },
+  {
+    geometryIndex: 0,
+    materialIndex: 0,
+    name: 'ReefHeroRock-LeftBack',
+    position: [-3.0, 0.17, -6.25],
+    role: 'hero',
+    rotation: [0.2, 1.42, -0.16],
+    scale: [1.16, 0.4, 0.82],
+  },
+  {
+    geometryIndex: 0,
+    materialIndex: 1,
+    name: 'ReefFogRock-RightBack',
+    position: [3.15, 0.18, -6.55],
+    role: 'fog',
+    rotation: [0.16, -1.2, 0.12],
+    scale: [1.18, 0.42, 0.86],
+  },
+  {
+    geometryIndex: 0,
+    materialIndex: 2,
+    name: 'ReefFogRock-LeftRidge',
+    position: [-4.65, 0.24, -7.65],
+    role: 'fog',
+    rotation: [0.18, 0.92, -0.12],
+    scale: [1.55, 0.6, 1.08],
+  },
+  {
+    geometryIndex: 0,
+    materialIndex: 3,
+    name: 'ReefFogRock-RightRidge',
+    position: [4.75, 0.23, -7.85],
+    role: 'fog',
+    rotation: [0.14, -0.72, 0.1],
+    scale: [1.48, 0.58, 1.05],
+  },
+  {
+    geometryIndex: 2,
+    materialIndex: 2,
+    name: 'ReefFogRock-LeftDeep',
+    position: [-2.6, 0.1, -8.35],
+    role: 'fog',
+    rotation: [-0.1, 1.25, -0.08],
+    scale: [1.2, 0.28, 0.86],
+  },
+  {
+    geometryIndex: 2,
+    materialIndex: 3,
+    name: 'ReefFogRock-RightDeep',
+    position: [2.7, 0.09, -8.55],
+    role: 'fog',
+    rotation: [-0.08, -1.4, 0.08],
+    scale: [1.14, 0.26, 0.8],
+  },
+] as const;
 
 function randomRange(min: number, max: number): number {
   return min + Math.random() * (max - min);
@@ -97,6 +203,23 @@ function createSeabedGeometry(): PlaneGeometry {
   return geometry;
 }
 
+function createRepeatingTexture(
+  path: string,
+  repeatX: number,
+  repeatY: number,
+): Texture {
+  const texture = new TextureLoader().load(
+    `${import.meta.env.BASE_URL}${path}`,
+  );
+
+  texture.colorSpace = SRGBColorSpace;
+  texture.wrapS = RepeatWrapping;
+  texture.wrapT = RepeatWrapping;
+  texture.repeat.set(repeatX, repeatY);
+
+  return texture;
+}
+
 function setNoShadows(object: Group): void {
   object.traverse((child) => {
     child.castShadow = false;
@@ -110,7 +233,7 @@ export class ReefEnvironment {
   readonly rockCount = 10;
   readonly vegetationCount = 10;
   readonly coralClusterCount = 8;
-  readonly lightShaftCount = 3;
+  readonly lightShaftCount = 4;
   readonly particleCount = 180;
   readonly approximateMeshCount = 125;
 
@@ -125,7 +248,7 @@ export class ReefEnvironment {
   private readonly atmosphere: UnderwaterAtmosphere;
   private readonly marineLife: MarineLifeLayer;
   private readonly particles: UnderwaterParticles;
-  private readonly coralGlowColor = new Color(0x67d9d1);
+  private readonly coralGlowColor = new Color(0x82b8ad);
 
   constructor(private readonly world: World) {
     this.root.name = 'ResonanceReefEnvironment';
@@ -323,21 +446,21 @@ export class ReefEnvironment {
         Math.min(
           DEBUG_REEF_CURRENT
             ? 0.55
-            : 0.17 + sessionLift * 0.07,
+            : 0.08 + sessionLift * 0.035,
           target.impact *
             (DEBUG_REEF_CURRENT
               ? 1.2
-              : 0.6 + sessionLift * 0.16),
+              : 0.36 + sessionLift * 0.08),
         );
       const emissiveStrength =
         Math.min(
           DEBUG_REEF_CURRENT
             ? 0.22
-            : 0.055 + sessionLift * 0.035,
+            : 0.022 + sessionLift * 0.016,
           target.impact *
             (DEBUG_REEF_CURRENT
               ? 0.48
-              : 0.18 + sessionLift * 0.07),
+              : 0.075 + sessionLift * 0.035),
         );
 
       for (
@@ -415,31 +538,31 @@ export class ReefEnvironment {
     const hemisphere = new HemisphereLight(
       0x78c8d4,
       0x041922,
-      1.55,
+      1.08,
     );
 
     hemisphere.name = 'ReefHemisphereLight';
 
     const ambient = new AmbientLight(
       0x244d58,
-      0.42,
+      0.28,
     );
 
     ambient.name = 'ReefSoftAmbientLight';
 
     const key = new DirectionalLight(
       0xb2f3ff,
-      2.25,
+      0.38,
     );
 
     key.name = 'ReefSurfaceKeyLight';
-    key.position.set(-2.0, 7.4, -1.25);
-    key.target.position.set(0.45, 0.65, -5.7);
+    key.position.set(-3.4, 7.6, -1.6);
+    key.target.position.set(-1.25, 0.9, -6.6);
     key.castShadow = false;
 
     const fill = new DirectionalLight(
       0x3f91a4,
-      0.32,
+      0.18,
     );
 
     fill.name = 'ReefCoolFillLight';
@@ -467,12 +590,10 @@ export class ReefEnvironment {
     sandTexture.wrapT = RepeatWrapping;
     sandTexture.repeat.set(24, 24);
 
-    const seabedMaterial = new MeshStandardMaterial({
-      color: 0xb8aa8f,
+    const seabedMaterial = new MeshBasicMaterial({
+      color: 0x66706c,
+      fog: true,
       map: sandTexture,
-      flatShading: false,
-      metalness: 0,
-      roughness: 0.96,
     });
     const seabed = new Mesh(
       createSeabedGeometry(),
@@ -489,7 +610,7 @@ export class ReefEnvironment {
       new DodecahedronGeometry(1, 0);
     const moundMaterial =
       new MeshStandardMaterial({
-        color: 0x52695f,
+        color: 0x485d55,
         flatShading: true,
         roughness: 1,
       });
@@ -525,6 +646,16 @@ export class ReefEnvironment {
   }
 
   private addRocks(): void {
+    const largeRockTexture = createRepeatingTexture(
+      ROCK_LARGE_TEXTURE_PATH,
+      2.35,
+      2.35,
+    );
+    const smallRockTexture = createRepeatingTexture(
+      ROCK_SMALL_TEXTURE_PATH,
+      1.85,
+      1.85,
+    );
     const geometries = [
       new DodecahedronGeometry(1, 0),
       new IcosahedronGeometry(1, 0),
@@ -533,56 +664,57 @@ export class ReefEnvironment {
 
     const materials = [
       new MeshStandardMaterial({
-        color: 0x314d4b,
+        color: 0x20322e,
         flatShading: true,
+        map: largeRockTexture,
+        metalness: 0,
         roughness: 1,
       }),
       new MeshStandardMaterial({
-        color: 0x415f54,
+        color: 0x293e36,
         flatShading: true,
+        map: smallRockTexture,
+        metalness: 0,
         roughness: 1,
       }),
       new MeshStandardMaterial({
-        color: 0x293f45,
+        color: 0x1f2d33,
         flatShading: true,
+        map: largeRockTexture,
+        metalness: 0,
+        roughness: 1,
+      }),
+      new MeshStandardMaterial({
+        color: 0x263832,
+        flatShading: true,
+        map: smallRockTexture,
+        metalness: 0,
         roughness: 1,
       }),
     ];
 
-    const placements = [
-      [-3.8, 0.16, -2.55, 0.55, 0.24, 0.45],
-      [3.6, 0.14, -2.85, 0.5, 0.22, 0.42],
-      [-2.8, 0.24, -3.8, 0.82, 0.44, 0.62],
-      [2.8, 0.26, -4.1, 0.9, 0.48, 0.7],
-      [-2.1, 0.3, -5.2, 1.12, 0.58, 0.84],
-      [2.0, 0.32, -5.6, 1.2, 0.62, 0.9],
-      [-4.0, 0.35, -6.7, 1.55, 0.82, 1.1],
-      [4.1, 0.34, -6.9, 1.48, 0.78, 1.05],
-      [-0.8, 0.2, -7.4, 1.35, 0.46, 0.9],
-      [0.95, 0.18, -7.7, 1.22, 0.42, 0.82],
-    ] as const;
-
-    placements.forEach((placement, index) => {
+    REEF_ROCK_PLACEMENTS.forEach((placement, index) => {
       const rock = new Mesh(
-        geometries[index % geometries.length],
-        materials[index % materials.length],
+        geometries[placement.geometryIndex],
+        materials[placement.materialIndex],
       );
 
-      rock.name = `ReefRock-${index}`;
+      rock.name = `${placement.name}-${index}`;
+      rock.userData.replacementRole = placement.role;
       rock.position.set(
-        placement[0],
-        placement[1],
-        placement[2],
+        placement.position[0],
+        placement.position[1],
+        placement.position[2],
       );
       rock.scale.set(
-        placement[3],
-        placement[4],
-        placement[5],
+        placement.scale[0],
+        placement.scale[1],
+        placement.scale[2],
       );
       rock.rotation.set(
-        randomRange(-0.25, 0.35),
-        randomRange(0, Math.PI),
-        randomRange(-0.22, 0.22),
+        placement.rotation[0],
+        placement.rotation[1],
+        placement.rotation[2],
       );
 
       this.root.add(rock);
@@ -600,36 +732,36 @@ export class ReefEnvironment {
       new PlaneGeometry(0.34, 0.42, 1, 2);
     const materials: MeshStandardMaterial[] = [
       new MeshStandardMaterial({
-        color: 0x2d807d,
+        color: 0x5f7177,
         flatShading: true,
         roughness: 0.92,
       }),
       new MeshStandardMaterial({
-        color: 0x66709c,
+        color: 0x6e6479,
         flatShading: true,
         roughness: 0.92,
       }),
       new MeshStandardMaterial({
-        color: 0x8c6d74,
+        color: 0x82656b,
         flatShading: true,
         roughness: 0.92,
       }),
       new MeshStandardMaterial({
-        color: 0x3d676a,
+        color: 0x938874,
         flatShading: true,
         roughness: 0.95,
       }),
     ];
 
     const placements = [
-      [-2.8, 0.1, -3.4, 0.82],
-      [2.7, 0.1, -3.7, 0.78],
-      [-1.55, 0.1, -4.9, 0.94],
-      [1.65, 0.1, -5.2, 0.9],
-      [-3.1, 0.1, -5.9, 1.05],
-      [3.2, 0.1, -6.2, 1.0],
-      [-0.8, 0.08, -7.0, 0.82],
-      [0.95, 0.08, -7.25, 0.76],
+      [-3.15, 0.04, -3.95, 0.68],
+      [3.05, 0.04, -4.25, 0.64],
+      [-2.25, 0.045, -5.25, 0.82],
+      [2.35, 0.045, -5.55, 0.78],
+      [-3.45, 0.045, -6.25, 0.9],
+      [3.55, 0.045, -6.55, 0.88],
+      [-1.85, 0.035, -7.45, 0.68],
+      [2.0, 0.035, -7.65, 0.64],
     ] as const;
 
     placements.forEach((placement, clusterIndex) => {
@@ -742,18 +874,18 @@ export class ReefEnvironment {
 
   private addVegetation(): void {
     const bladeGeometry =
-      new PlaneGeometry(0.07, 0.72, 1, 2);
+      new PlaneGeometry(0.052, 0.45, 1, 2);
     const tallBladeGeometry =
-      new PlaneGeometry(0.085, 1.05, 1, 2);
+      new PlaneGeometry(0.062, 0.68, 1, 2);
     const materials = [
       new MeshStandardMaterial({
-        color: 0x2f7b71,
+        color: 0x28685f,
         flatShading: true,
         roughness: 0.95,
         side: DoubleSide,
       }),
       new MeshStandardMaterial({
-        color: 0x386c5a,
+        color: 0x2f594d,
         flatShading: true,
         roughness: 0.95,
         side: DoubleSide,
@@ -761,22 +893,22 @@ export class ReefEnvironment {
     ];
 
     const placements = [
-      [-3.7, -0.03, -2.65],
-      [3.6, -0.03, -2.95],
-      [-3.9, -0.04, -4.3],
-      [3.8, -0.04, -4.6],
-      [-2.5, -0.05, -5.5],
-      [2.6, -0.05, -5.8],
-      [-3.5, -0.05, -7.0],
-      [3.4, -0.05, -7.1],
-      [-0.75, -0.05, -6.6],
-      [0.78, -0.05, -7.55],
+      [-4.45, -0.065, -4.45],
+      [4.35, -0.065, -4.75],
+      [-4.2, -0.07, -5.55],
+      [4.15, -0.07, -5.9],
+      [-3.2, -0.075, -6.35],
+      [3.25, -0.075, -6.7],
+      [-3.85, -0.075, -7.75],
+      [3.75, -0.075, -7.9],
+      [-2.25, -0.075, -7.35],
+      [2.35, -0.075, -8.0],
     ] as const;
 
     placements.forEach((placement, index) => {
       const plant = new Group();
       const bladeCount =
-        3 + (index % 3);
+        2 + (index % 2);
 
       plant.name = `ReefSeagrass-${index}`;
       plant.position.set(
@@ -785,7 +917,7 @@ export class ReefEnvironment {
         placement[2],
       );
       plant.rotation.y = randomRange(0, Math.PI * 2);
-      plant.scale.setScalar(randomRange(0.82, 1.18));
+      plant.scale.setScalar(randomRange(0.48, 0.72));
 
       for (let bladeIndex = 0; bladeIndex < bladeCount; bladeIndex += 1) {
         const isTall =
@@ -804,7 +936,7 @@ export class ReefEnvironment {
 
         blade.position.set(
           Math.cos(angle) * radius,
-          isTall ? 0.52 : 0.36,
+          isTall ? 0.34 : 0.24,
           Math.sin(angle) * radius,
         );
         blade.rotation.y = angle + Math.PI / 2;
@@ -831,53 +963,6 @@ export class ReefEnvironment {
       });
 
       this.root.add(plant);
-    });
-  }
-
-  private addLightShafts(): void {
-    const geometry = new ConeGeometry(
-      0.28,
-      5.4,
-      8,
-      1,
-      true,
-    );
-    const material = new MeshBasicMaterial({
-      blending: AdditiveBlending,
-      color: 0x9bddea,
-      depthWrite: false,
-      opacity: 0.022,
-      side: DoubleSide,
-      transparent: true,
-    });
-
-    const placements = [
-      [-2.4, 2.25, -4.2, 0.18, -0.24, 0.86],
-      [0.1, 2.45, -5.7, -0.1, 0.12, 1.0],
-      [2.7, 2.12, -6.8, -0.28, -0.18, 0.74],
-    ] as const;
-
-    placements.forEach((placement, index) => {
-      const shaft = new Mesh(geometry, material);
-
-      shaft.name = `ReefLightShaft-${index}`;
-      shaft.position.set(
-        placement[0],
-        placement[1],
-        placement[2],
-      );
-      shaft.rotation.set(
-        placement[4],
-        placement[3],
-        0.08,
-      );
-      shaft.scale.set(
-        randomRange(0.72, 1.08),
-        placement[5],
-        randomRange(0.72, 1.02),
-      );
-
-      this.root.add(shaft);
     });
   }
 }

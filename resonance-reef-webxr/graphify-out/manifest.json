@@ -55,23 +55,23 @@
     "semantic_hash": ""
   },
   "src/ocean/FishAgent.ts": {
-    "mtime": 1791178457.7930148,
-    "ast_hash": "26bc8bb148e93c1ba48c3466c0635bc1",
+    "mtime": 1791273865.1715386,
+    "ast_hash": "860ad8a691f42ab2860b179c42c583b6",
     "semantic_hash": ""
   },
   "src/ocean/FishSchool.ts": {
-    "mtime": 1791196112.884534,
-    "ast_hash": "1de06e9dc2bc94fd20250a27bdc60c2d",
+    "mtime": 1791272494.4385006,
+    "ast_hash": "209c15708a379427ad8da580418464df",
     "semantic_hash": ""
   },
   "src/ocean/JellyfishGuide.ts": {
-    "mtime": 1791178473.757595,
-    "ast_hash": "1d072ee31f41cb4a51cac58a065a0000",
+    "mtime": 1791273832.7858927,
+    "ast_hash": "e8970a606fcc91e5027b7c0a333fcc65",
     "semantic_hash": ""
   },
   "src/ocean/ReefEnvironment.ts": {
-    "mtime": 1791201531.0710454,
-    "ast_hash": "ec5d304a4728b881c53cacbb7b86c7ff",
+    "mtime": 1791274479.6795564,
+    "ast_hash": "ef96c753511c2fa7ad615b94982b94af",
     "semantic_hash": ""
   },
   "src/ocean/UnderwaterParticles.ts": {
@@ -580,13 +580,13 @@
     "semantic_hash": ""
   },
   "src/ocean/ReefDecorConfig.ts": {
-    "mtime": 1791197861.8428586,
-    "ast_hash": "9da70968cd1bbad3ef3deaff48ca43d2",
+    "mtime": 1791271853.4606597,
+    "ast_hash": "a527a4e55f8a65ae5226b16a2628b90c",
     "semantic_hash": ""
   },
   "src/ocean/ReefDecorLayer.ts": {
-    "mtime": 1791197862.0637498,
-    "ast_hash": "cebf4aff68fa439448c0b931e754c3b3",
+    "mtime": 1791273876.986925,
+    "ast_hash": "37d17ab8692963cc912fe78f268faafd",
     "semantic_hash": ""
   },
   "src/ocean/ReefResponseTargets.ts": {
@@ -620,8 +620,8 @@
     "semantic_hash": ""
   },
   "src/ocean/UnderwaterAtmosphere.ts": {
-    "mtime": 1791200981.4646368,
-    "ast_hash": "41ac61ce5d241f0bf719f7c6509fd142",
+    "mtime": 1791274402.7988021,
+    "ast_hash": "58573ad7da161d9ef9acc15c046b5584",
     "semantic_hash": ""
   },
   "artifacts/reef-realism-pass2.png": {
@@ -635,8 +635,103 @@
     "semantic_hash": ""
   },
   "src/ocean/MarineLifeLayer.ts": {
-    "mtime": 1791201530.5922143,
-    "ast_hash": "6fbd97b511baed624eaa1f5dcd9aff20",
+    "mtime": 1791272253.8078077,
+    "ast_hash": "5e9bfe384f111c9ebd871d76fc2ec9c9",
+    "semantic_hash": ""
+  },
+  "artifacts/material-polish-browser.png": {
+    "mtime": 1791270065.3088858,
+    "ast_hash": "e57d72e3c698b84c6e14e0053d6a2123",
+    "semantic_hash": ""
+  },
+  "artifacts/material-polish-smoke.png": {
+    "mtime": 1791270022.311337,
+    "ast_hash": "38a3a16d57ea78535241975898d389b4",
+    "semantic_hash": ""
+  },
+  "artifacts/material-polish-xr.png": {
+    "mtime": 1791270074.3557105,
+    "ast_hash": "7f4b802367a61235cd53608398eed6b3",
+    "semantic_hash": ""
+  },
+  "artifacts/material-polish-final-xr.png": {
+    "mtime": 1791270303.741056,
+    "ast_hash": "8a23bd8d7e04e56789a7afb4e24118e6",
+    "semantic_hash": ""
+  },
+  "artifacts/material-polish-final.png": {
+    "mtime": 1791270292.425149,
+    "ast_hash": "b6e2e7a2ad4f7d43d3cbf69e8e1c3bc5",
+    "semantic_hash": ""
+  },
+  "artifacts/material-polish-final-live.png": {
+    "mtime": 1791270501.4631395,
+    "ast_hash": "b38cd60b9385a760e246053bcb0f9a9f",
+    "semantic_hash": ""
+  },
+  "artifacts/visual-realism-cleanup-xr.png": {
+    "mtime": 1791272437.6856365,
+    "ast_hash": "dc2a0606719fe8f693d1b48ed112537d",
+    "semantic_hash": ""
+  },
+  "artifacts/visual-realism-cleanup.png": {
+    "mtime": 1791272426.130475,
+    "ast_hash": "902aadf6c189709e7ad0edd189067644",
+    "semantic_hash": ""
+  },
+  "artifacts/visual-realism-cleanup-final-xr.png": {
+    "mtime": 1791272643.3202531,
+    "ast_hash": "60dc43a00d7b01ae9a0130fe9e3dbbdd",
+    "semantic_hash": ""
+  },
+  "artifacts/visual-realism-cleanup-final.png": {
+    "mtime": 1791272633.6802711,
+    "ast_hash": "780c41c7c24373cdd8e0a1b49362c787",
+    "semantic_hash": ""
+  },
+  "artifacts/visual-realism-cleanup-final-key-xr.png": {
+    "mtime": 1791272817.1984205,
+    "ast_hash": "b18e26a94677fa63de56d6fd88ac73cd",
+    "semantic_hash": ""
+  },
+  "artifacts/visual-realism-cleanup-final-key.png": {
+    "mtime": 1791272808.518586,
+    "ast_hash": "266ed43eab3f4706af90191595fc84ec",
+    "semantic_hash": ""
+  },
+  "artifacts/hero-realism-horizon-xr.png": {
+    "mtime": 1791273990.447733,
+    "ast_hash": "7a5db36acaf9b4e3496ab7ec91c3c973",
+    "semantic_hash": ""
+  },
+  "artifacts/hero-realism-horizon.png": {
+    "mtime": 1791273981.0946138,
+    "ast_hash": "6c8b4afdf3f702b2663acd42356d546b",
+    "semantic_hash": ""
+  },
+  "artifacts/hero-realism-horizon-final-xr.png": {
+    "mtime": 1791274147.19444,
+    "ast_hash": "2b74e069bb9599d10f3843fbd73f6e57",
+    "semantic_hash": ""
+  },
+  "artifacts/hero-realism-horizon-final.png": {
+    "mtime": 1791274136.2472284,
+    "ast_hash": "0eab52c513fdcbc882f600c71a8cd0a1",
+    "semantic_hash": ""
+  },
+  "artifacts/hero-realism-horizon-final-adjusted.png": {
+    "mtime": 1791274456.748456,
+    "ast_hash": "f7537df5cfae8244692ab8e0189af1a7",
+    "semantic_hash": ""
+  },
+  "artifacts/hero-realism-horizon-final-after-key.png": {
+    "mtime": 1791274359.2427557,
+    "ast_hash": "ba7830e57e04d731635ffd7eaefd1a6f",
+    "semantic_hash": ""
+  },
+  "artifacts/hero-realism-horizon-final-seabed-basic.png": {
+    "mtime": 1791274529.3047805,
+    "ast_hash": "363c797bb6ca35f005ba0b03769775ce",
     "semantic_hash": ""
   }
 }
