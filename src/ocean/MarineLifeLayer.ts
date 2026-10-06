@@ -101,12 +101,12 @@ export class MarineLifeLayer {
       new ConeGeometry(0.07, 0.16, 3);
     const midMaterial =
       new MeshBasicMaterial({
-        color: 0x4e8f96,
+        color: 0x2f6269,
         fog: true,
       });
     const midTailMaterial =
       new MeshBasicMaterial({
-        color: 0x3f7780,
+        color: 0x264f56,
         fog: true,
       });
 
@@ -127,7 +127,7 @@ export class MarineLifeLayer {
     this.farFishMesh = new InstancedMesh(
       new ConeGeometry(0.05, 0.22, 3),
       new MeshBasicMaterial({
-        color: 0x0b3f48,
+        color: 0x061f26,
         fog: true,
       }),
       this.farFishCount,
@@ -150,9 +150,9 @@ export class MarineLifeLayer {
       bubbleGeometry,
       new PointsMaterial({
         blending: AdditiveBlending,
-        color: 0xb5eef0,
+        color: 0x9fd9d7,
         depthWrite: false,
-        opacity: 0.22,
+        opacity: 0.18,
         size: 0.022,
         sizeAttenuation: true,
         transparent: true,
@@ -265,7 +265,7 @@ export class MarineLifeLayer {
       new ConeGeometry(0.035, 0.14, 5);
     const shellMaterial =
       new MeshBasicMaterial({
-        color: 0x9b9078,
+        color: 0x817764,
         fog: true,
       });
     const stoneMaterial =
@@ -275,7 +275,7 @@ export class MarineLifeLayer {
       });
     const fragmentMaterial =
       new MeshBasicMaterial({
-        color: 0x5e817b,
+        color: 0x496d66,
         fog: true,
       });
     const placements = [

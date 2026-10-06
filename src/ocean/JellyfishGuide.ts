@@ -16,6 +16,86 @@ function smoothStep(value: number): number {
   return t * t * (3 - 2 * t);
 }
 
+function createOrganicBellGeometry(): SphereGeometry {
+  const geometry = new SphereGeometry(
+    0.34,
+    40,
+    24,
+    0,
+    Math.PI * 2,
+    0,
+    Math.PI * 0.62,
+  );
+  const position =
+    geometry.getAttribute('position');
+
+  for (let index = 0; index < position.count; index += 1) {
+    const x = position.getX(index);
+    const y = position.getY(index);
+    const z = position.getZ(index);
+    const angle = Math.atan2(z, x);
+    const lowerBell = smoothStep((0.12 - y) / 0.32);
+    const wobble =
+      1 +
+      Math.sin(angle * 5 + y * 16) *
+        0.025 *
+        lowerBell;
+    const rimFlare = 1 + lowerBell * 0.26;
+
+    position.setXYZ(
+      index,
+      x * rimFlare * wobble,
+      y * (0.92 - lowerBell * 0.08),
+      z * rimFlare * wobble,
+    );
+  }
+
+  position.needsUpdate = true;
+  geometry.computeVertexNormals();
+
+  return geometry;
+}
+
+function createTentacleGeometry(
+  length: number,
+  phase: number,
+): CylinderGeometry {
+  const geometry = new CylinderGeometry(
+    0.003,
+    0.012,
+    length,
+    5,
+    5,
+    true,
+  );
+  const position =
+    geometry.getAttribute('position');
+
+  for (let index = 0; index < position.count; index += 1) {
+    const x = position.getX(index);
+    const y = position.getY(index);
+    const z = position.getZ(index);
+    const down =
+      smoothStep((length * 0.5 - y) / length);
+    const bend =
+      Math.sin(down * Math.PI + phase) *
+      0.035 *
+      down;
+
+    position.setXYZ(
+      index,
+      x + bend,
+      y,
+      z + Math.cos(phase) * 0.018 * down,
+    );
+  }
+
+  position.needsUpdate = true;
+  geometry.computeVertexNormals();
+
+  return geometry;
+}
+
 /**
  * Procedural bioluminescent breathing guide.
  *
@@ -32,12 +112,12 @@ export class JellyfishGuide {
   private readonly bellMaterial: MeshBasicMaterial;
   private readonly coreMaterial: MeshBasicMaterial;
 
-  private readonly baseY = 1.55;
+  private readonly baseY = 1.68;
 
   constructor() {
     this.root.name = 'ResonanceReefJellyfishGuide';
-    this.root.position.set(0, this.baseY, -2.6);
-    this.root.scale.setScalar(0.47);
+    this.root.position.set(0, this.baseY, -2.3);
+    this.root.scale.setScalar(0.62);
 
     /*
      * Main translucent bell.
@@ -45,21 +125,13 @@ export class JellyfishGuide {
     this.bellMaterial = new MeshBasicMaterial({
       color: 0x79d7df,
       transparent: true,
-      opacity: 0.28,
+      opacity: 0.24,
       side: DoubleSide,
       depthWrite: false,
       blending: AdditiveBlending,
     });
 
-    const bellGeometry = new SphereGeometry(
-      0.34,
-      32,
-      20,
-      0,
-      Math.PI * 2,
-      0,
-      Math.PI * 0.62,
-    );
+    const bellGeometry = createOrganicBellGeometry();
 
     this.bell = new Mesh(bellGeometry, this.bellMaterial);
     this.bell.name = 'JellyfishBell';
@@ -73,7 +145,7 @@ export class JellyfishGuide {
     this.coreMaterial = new MeshBasicMaterial({
       color: 0xbdecef,
       transparent: true,
-      opacity: 0.24,
+      opacity: 0.2,
       depthWrite: false,
       blending: AdditiveBlending,
     });
@@ -94,7 +166,7 @@ export class JellyfishGuide {
     const ringMaterial = new MeshBasicMaterial({
       color: 0x8cdde0,
       transparent: true,
-      opacity: 0.18,
+      opacity: 0.15,
       depthWrite: false,
       blending: AdditiveBlending,
     });
@@ -116,7 +188,7 @@ export class JellyfishGuide {
     const tentacleMaterial = new MeshBasicMaterial({
       color: 0x82cfd8,
       transparent: true,
-      opacity: 0.2,
+      opacity: 0.17,
       depthWrite: false,
       blending: AdditiveBlending,
     });
@@ -127,14 +199,12 @@ export class JellyfishGuide {
       const angle = (index / tentacleCount) * Math.PI * 2;
       const radius = 0.145;
 
+      const tentacleLength =
+        0.54 + (index % 3) * 0.055;
       const tentacle = new Mesh(
-        new CylinderGeometry(
-          0.007,
-          0.014,
-          0.58,
-          6,
-          1,
-          true,
+        createTentacleGeometry(
+          tentacleLength,
+          index * 0.72,
         ),
         tentacleMaterial,
       );
@@ -143,7 +213,7 @@ export class JellyfishGuide {
 
       tentacle.position.set(
         Math.cos(angle) * radius,
-        -0.42,
+        -0.39 - tentacleLength * 0.08,
         Math.sin(angle) * radius,
       );
 
@@ -184,8 +254,8 @@ export class JellyfishGuide {
     const coreScale = 0.88 + expansion * 0.24;
     this.core.scale.setScalar(coreScale);
 
-    this.coreMaterial.opacity = 0.14 + expansion * 0.16;
-    this.bellMaterial.opacity = 0.2 + expansion * 0.08;
+    this.coreMaterial.opacity = 0.12 + expansion * 0.13;
+    this.bellMaterial.opacity = 0.18 + expansion * 0.07;
 
     const ringScale = 0.95 + expansion * 0.11;
     this.ring.scale.setScalar(ringScale);

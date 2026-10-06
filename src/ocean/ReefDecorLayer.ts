@@ -1,8 +1,10 @@
 import {
   AnimationMixer,
   AssetManager,
+  Color,
   Group,
   Mesh,
+  MeshBasicMaterial,
   MeshStandardMaterial,
   type AnimationClip,
   type Object3D,
@@ -22,6 +24,26 @@ import type {
 interface ReefDecorLayerTargets {
   coralTargets: CoralTarget[];
   swayTargets: SwayTarget[];
+}
+
+const CORAL_TINT_BY_ASSET: Record<ReefDecorAssetId, number> = {
+  'coral-a': 0x9a8d78,
+  'coral-c': 0x82666f,
+  'coral-d': 0x66787d,
+  'coral-f': 0x6f6579,
+  'seaweed-a': 0x214f47,
+  'seaweed-b': 0x245447,
+  'seaweed-c': 0x1f4c45,
+};
+
+interface TintableMaterial {
+  color?: Color;
+  emissive?: Color;
+  emissiveIntensity?: number;
+  fog?: boolean;
+  metalness?: number;
+  needsUpdate?: boolean;
+  roughness?: number;
 }
 
 function setNoShadows(object: Object3D): void {
@@ -152,6 +174,8 @@ export class ReefDecorLayer {
     animations: readonly AnimationClip[],
   ): void {
     const root = new Group();
+    const materials =
+      this.polishImportedMaterials(visual, placement);
 
     root.name = placement.name;
     root.position.set(
@@ -170,7 +194,7 @@ export class ReefDecorLayer {
     this.root.add(root);
 
     if (placement.category === 'coral') {
-      this.addCoralTarget(root, visual, placement);
+      this.addCoralTarget(root, placement, materials);
     } else {
       this.addSeaweedTarget(root, placement);
       this.addSeaweedAnimation(root, animations);
@@ -179,12 +203,9 @@ export class ReefDecorLayer {
 
   private addCoralTarget(
     root: Group,
-    visual: Object3D,
     placement: ReefDecorPlacement,
+    materials: MeshStandardMaterial[],
   ): void {
-    const materials =
-      collectStandardMaterials(visual);
-
     this.targets.coralTargets.push({
       baseColors: materials.map((material) =>
         material.color.clone(),
@@ -205,7 +226,7 @@ export class ReefDecorLayer {
     placement: ReefDecorPlacement,
   ): void {
     this.targets.swayTargets.push({
-      amplitude: 0.018 + Math.random() * 0.018,
+      amplitude: 0.012 + Math.random() * 0.012,
       baseRotationX: root.rotation.x,
       baseRotationZ: root.rotation.z,
       bendX: 0,
@@ -215,7 +236,7 @@ export class ReefDecorLayer {
       phase: Math.random() * Math.PI * 2,
       responsiveness: placement.responsiveness,
       root,
-      speed: 0.18 + Math.random() * 0.16,
+      speed: 0.14 + Math.random() * 0.12,
     });
   }
 
@@ -230,9 +251,92 @@ export class ReefDecorLayer {
     const mixer = new AnimationMixer(root);
     const action = mixer.clipAction(animations[0]);
 
-    action.timeScale = 0.55;
+    action.timeScale = 0.42;
     action.play();
     this.mixers.push(mixer);
+  }
+
+  private polishImportedMaterials(
+    visual: Object3D,
+    placement: ReefDecorPlacement,
+  ): MeshStandardMaterial[] {
+    const materials = collectStandardMaterials(visual);
+    const tint = new Color(
+      CORAL_TINT_BY_ASSET[placement.assetId],
+    );
+    const emissiveTint = new Color(
+      placement.category === 'coral'
+        ? 0x071211
+        : 0x03100d,
+    );
+    const tintStrength =
+      placement.category === 'coral' ? 0.72 : 0.78;
+    const minRoughness =
+      placement.category === 'coral' ? 0.88 : 0.94;
+
+    for (const material of materials) {
+      material.color.lerp(tint, tintStrength);
+      material.color.multiplyScalar(
+        placement.category === 'coral' ? 0.82 : 0.9,
+      );
+      material.emissive.lerp(emissiveTint, 0.82);
+      material.emissiveIntensity = Math.min(
+        material.emissiveIntensity,
+        placement.category === 'coral' ? 0.08 : 0.025,
+      );
+      material.metalness = 0;
+      material.roughness = Math.max(
+        material.roughness,
+        minRoughness,
+      );
+      material.needsUpdate = true;
+    }
+
+    visual.traverse((child) => {
+      if (!(child instanceof Mesh)) {
+        return;
+      }
+
+      const childMaterials = Array.isArray(child.material)
+        ? child.material
+        : [child.material];
+
+      for (const material of childMaterials) {
+        const tintable = material as TintableMaterial;
+
+        tintable.color?.lerp(tint, tintStrength);
+        tintable.color?.multiplyScalar(
+          placement.category === 'coral' ? 0.82 : 0.9,
+        );
+        tintable.emissive?.lerp(emissiveTint, 0.88);
+
+        if (tintable.emissiveIntensity != null) {
+          tintable.emissiveIntensity = Math.min(
+            tintable.emissiveIntensity,
+            placement.category === 'coral' ? 0.025 : 0.012,
+          );
+        }
+
+        if (tintable.metalness != null) {
+          tintable.metalness = 0;
+        }
+
+        if (tintable.roughness != null) {
+          tintable.roughness = Math.max(
+            tintable.roughness,
+            minRoughness,
+          );
+        }
+
+        if (material instanceof MeshBasicMaterial) {
+          material.fog = true;
+        }
+
+        tintable.needsUpdate = true;
+      }
+    });
+
+    return materials;
   }
 
   private logSeaweedAnimations(

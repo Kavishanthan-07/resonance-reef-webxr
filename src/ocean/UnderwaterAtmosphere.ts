@@ -20,13 +20,15 @@ import type { CurrentSample } from './WaterCurrent.js';
 export const DEBUG_UNDERWATER = false;
 
 export const UNDERWATER_ATMOSPHERE_CONFIG = {
-  causticsIntensity: 0.16,
+  causticsIntensity: 0.026,
   causticsScale: 14.5,
   causticsSpeed: 0.11,
   fogFar: 28,
   fogNear: 9,
-  shaftOpacity: 0.034,
-  surfaceOpacity: 0.115,
+  horizonHazeOpacity: 0.2,
+  horizonVeilOpacity: 0.2,
+  shaftOpacity: 0.018,
+  surfaceOpacity: 0.095,
 } as const;
 
 const CAUSTICS_VERTEX_SHADER = `
@@ -72,7 +74,7 @@ const CAUSTICS_FRAGMENT_SHADER = `
       smoothstep(1.0, 0.82, vUv.y);
     float alpha = pattern * edgeFade * uIntensity * uBreathCalm;
 
-    gl_FragColor = vec4(0.60, 0.88, 0.90, alpha);
+    gl_FragColor = vec4(0.34, 0.54, 0.56, alpha);
   }
 `;
 
@@ -134,7 +136,57 @@ const SHAFT_FRAGMENT_SHADER = `
       smoothstep(0.0, 0.18, vUv.x) *
       smoothstep(1.0, 0.82, vUv.x);
     float alpha = verticalFade * sideFade * uOpacity;
-    gl_FragColor = vec4(0.54, 0.88, 0.92, alpha);
+    gl_FragColor = vec4(0.42, 0.74, 0.78, alpha);
+  }
+`;
+
+const HORIZON_HAZE_VERTEX_SHADER = `
+  varying vec2 vUv;
+
+  void main() {
+    vUv = uv;
+    gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+  }
+`;
+
+const HORIZON_HAZE_FRAGMENT_SHADER = `
+  uniform float uOpacity;
+  varying vec2 vUv;
+
+  void main() {
+    float lengthFade =
+      smoothstep(0.0, 0.22, vUv.y) *
+      smoothstep(1.0, 0.72, vUv.y);
+    float sideFade =
+      smoothstep(0.0, 0.16, vUv.x) *
+      smoothstep(1.0, 0.84, vUv.x);
+    float lowMist =
+      smoothstep(0.0, 0.42, vUv.y) *
+      smoothstep(1.0, 0.45, vUv.y);
+    float alpha = max(lengthFade * 0.65, lowMist) * sideFade * uOpacity;
+
+    gl_FragColor = vec4(0.035, 0.17, 0.19, alpha);
+  }
+`;
+
+const HORIZON_VEIL_FRAGMENT_SHADER = `
+  uniform float uOpacity;
+  varying vec2 vUv;
+
+  void main() {
+    float verticalFade =
+      smoothstep(0.0, 0.18, vUv.y) *
+      smoothstep(1.0, 0.48, vUv.y);
+    float softTop = smoothstep(1.0, 0.64, vUv.y);
+    float sideFade =
+      smoothstep(0.0, 0.12, vUv.x) *
+      smoothstep(1.0, 0.88, vUv.x);
+    float baseBand =
+      smoothstep(0.0, 0.12, vUv.y) *
+      smoothstep(1.0, 0.36, vUv.y);
+    float alpha = max(verticalFade * softTop, baseBand * 0.72) * sideFade * uOpacity;
+
+    gl_FragColor = vec4(0.018, 0.12, 0.15, alpha);
   }
 `;
 
@@ -148,6 +200,8 @@ export class UnderwaterAtmosphere {
   private readonly causticsMaterial: ShaderMaterial;
   private readonly surfaceMaterial: ShaderMaterial;
   private readonly shaftMaterial: ShaderMaterial;
+  private readonly horizonHazeMaterial: ShaderMaterial;
+  private readonly horizonVeilMaterial: ShaderMaterial;
   private readonly shaftRoots: Group[] = [];
 
   private currentDistortion = 0;
@@ -158,8 +212,11 @@ export class UnderwaterAtmosphere {
     this.causticsMaterial = this.createCausticsMaterial();
     this.surfaceMaterial = this.createSurfaceMaterial();
     this.shaftMaterial = this.createShaftMaterial();
+    this.horizonHazeMaterial = this.createHorizonHazeMaterial();
+    this.horizonVeilMaterial = this.createHorizonVeilMaterial();
 
     this.addCaustics();
+    this.addHorizonHaze();
     this.addSurfaceSuggestion();
     this.addLightShafts();
     this.addDistantReefSilhouettes();
@@ -217,6 +274,8 @@ export class UnderwaterAtmosphere {
     this.causticsMaterial.dispose();
     this.surfaceMaterial.dispose();
     this.shaftMaterial.dispose();
+    this.horizonHazeMaterial.dispose();
+    this.horizonVeilMaterial.dispose();
   }
 
   private createCausticsMaterial(): ShaderMaterial {
@@ -276,6 +335,38 @@ export class UnderwaterAtmosphere {
     });
   }
 
+  private createHorizonHazeMaterial(): ShaderMaterial {
+    return new ShaderMaterial({
+      depthWrite: false,
+      fragmentShader: HORIZON_HAZE_FRAGMENT_SHADER,
+      side: DoubleSide,
+      transparent: true,
+      uniforms: {
+        uOpacity: {
+          value:
+            UNDERWATER_ATMOSPHERE_CONFIG.horizonHazeOpacity,
+        },
+      },
+      vertexShader: HORIZON_HAZE_VERTEX_SHADER,
+    });
+  }
+
+  private createHorizonVeilMaterial(): ShaderMaterial {
+    return new ShaderMaterial({
+      depthWrite: false,
+      fragmentShader: HORIZON_VEIL_FRAGMENT_SHADER,
+      side: DoubleSide,
+      transparent: true,
+      uniforms: {
+        uOpacity: {
+          value:
+            UNDERWATER_ATMOSPHERE_CONFIG.horizonVeilOpacity,
+        },
+      },
+      vertexShader: HORIZON_HAZE_VERTEX_SHADER,
+    });
+  }
+
   private addCaustics(): void {
     const caustics = new Mesh(
       new PlaneGeometry(40, 40, 1, 1),
@@ -286,6 +377,54 @@ export class UnderwaterAtmosphere {
     caustics.position.set(0, -0.035, 0);
     caustics.rotation.x = -Math.PI / 2;
     this.root.add(caustics);
+  }
+
+  private addHorizonHaze(): void {
+    const geometry = new PlaneGeometry(44, 16, 1, 1);
+    const placements = [
+      [0, 0.06, -18.2, 0],
+      [-18.2, 0.06, 0, Math.PI / 2],
+      [18.2, 0.06, 0, -Math.PI / 2],
+    ] as const;
+
+    placements.forEach((placement, index) => {
+      const haze = new Mesh(
+        geometry,
+        this.horizonHazeMaterial,
+      );
+
+      haze.name = `ReefLowHorizonHaze-${index}`;
+      haze.position.set(
+        placement[0],
+        placement[1],
+        placement[2],
+      );
+      haze.rotation.set(-Math.PI / 2, 0, placement[3]);
+      this.root.add(haze);
+    });
+
+    const veilGeometry = new PlaneGeometry(46, 2.8, 1, 1);
+    const veilPlacements = [
+      [0, 0.42, -17.6, 0],
+      [-17.6, 0.42, 0, Math.PI / 2],
+      [17.6, 0.42, 0, -Math.PI / 2],
+    ] as const;
+
+    veilPlacements.forEach((placement, index) => {
+      const veil = new Mesh(
+        veilGeometry,
+        this.horizonVeilMaterial,
+      );
+
+      veil.name = `ReefDistantHorizonVeil-${index}`;
+      veil.position.set(
+        placement[0],
+        placement[1],
+        placement[2],
+      );
+      veil.rotation.y = placement[3];
+      this.root.add(veil);
+    });
   }
 
   private addSurfaceSuggestion(): void {
@@ -302,18 +441,17 @@ export class UnderwaterAtmosphere {
 
   private addLightShafts(): void {
     const geometry = new ConeGeometry(
-      0.52,
-      7.2,
+      0.38,
+      7.0,
       8,
       1,
       true,
     );
     const placements = [
-      [-3.1, 3.1, -3.1, 0.2, -0.32, 0.8],
-      [-1.2, 3.35, -4.8, -0.14, 0.16, 1.1],
-      [1.0, 3.2, -5.5, 0.12, 0.28, 0.9],
-      [2.8, 3.0, -6.8, -0.24, -0.14, 0.74],
-      [0.3, 3.45, -7.5, 0.08, -0.08, 0.58],
+      [-3.1, 3.1, -3.4, 0.2, -0.32, 0.64],
+      [-1.35, 3.35, -5.1, -0.14, 0.16, 0.82],
+      [2.75, 3.0, -6.95, -0.24, -0.14, 0.58],
+      [0.35, 3.45, -7.7, 0.08, -0.08, 0.46],
     ] as const;
 
     placements.forEach((placement, index) => {
