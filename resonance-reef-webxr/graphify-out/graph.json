@@ -1320,7 +1320,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "audio_oceanaudio",
-      "community": 110,
+      "community": 103,
       "norm_label": "oceanaudio.ts"
     },
     {
@@ -1330,7 +1330,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "audio_oceanaudio_audiocontextconstructor",
-      "community": 110,
+      "community": 103,
       "norm_label": "audiocontextconstructor"
     },
     {
@@ -1340,7 +1340,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "audio_oceanaudio_audiowindow",
-      "community": 110,
+      "community": 103,
       "norm_label": "audiowindow"
     },
     {
@@ -1690,7 +1690,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "breathing_breathengine",
-      "community": 110,
+      "community": 103,
       "norm_label": "breathengine.ts"
     },
     {
@@ -1720,7 +1720,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "breathing_breathengine_breathtiming",
-      "community": 110,
+      "community": 103,
       "norm_label": "breathtiming"
     },
     {
@@ -1784,83 +1784,193 @@
       "norm_label": ".getphaseduration()"
     },
     {
+      "label": "BreathGuidance.ts",
+      "file_type": "code",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "experience_breathguidance",
+      "community": 96,
+      "norm_label": "breathguidance.ts"
+    },
+    {
+      "label": "BreathGuidanceLabel",
+      "file_type": "code",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "experience_breathguidance_breathguidancelabel",
+      "community": 96,
+      "norm_label": "breathguidancelabel"
+    },
+    {
+      "label": "clamp01()",
+      "file_type": "code",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L20",
+      "_origin": "ast",
+      "id": "experience_breathguidance_clamp01",
+      "community": 96,
+      "norm_label": "clamp01()"
+    },
+    {
+      "label": "smoothStep()",
+      "file_type": "code",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "experience_breathguidance_smoothstep",
+      "community": 96,
+      "norm_label": "smoothstep()"
+    },
+    {
+      "label": "getBreathGuidanceLabel()",
+      "file_type": "code",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L30",
+      "_origin": "ast",
+      "id": "experience_breathguidance_getbreathguidancelabel",
+      "community": 96,
+      "norm_label": "getbreathguidancelabel()"
+    },
+    {
+      "label": "getBreathGuidanceTargetOpacity()",
+      "file_type": "code",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L42",
+      "_origin": "ast",
+      "id": "experience_breathguidance_getbreathguidancetargetopacity",
+      "community": 96,
+      "norm_label": "getbreathguidancetargetopacity()"
+    },
+    {
+      "label": "BreathGuidance",
+      "file_type": "code",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L60",
+      "_origin": "ast",
+      "id": "experience_breathguidance_breathguidance",
+      "community": 96,
+      "norm_label": "breathguidance"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "experience_breathguidance_breathguidance_constructor",
+      "community": 96,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L97",
+      "_origin": "ast",
+      "id": "experience_breathguidance_breathguidance_update",
+      "community": 96,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".dispose()",
+      "file_type": "code",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L136",
+      "_origin": "ast",
+      "id": "experience_breathguidance_breathguidance_dispose",
+      "community": 96,
+      "norm_label": ".dispose()"
+    },
+    {
+      "label": ".draw()",
+      "file_type": "code",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L142",
+      "_origin": "ast",
+      "id": "experience_breathguidance_breathguidance_draw",
+      "community": 96,
+      "norm_label": ".draw()"
+    },
+    {
       "label": "DesktopControls.ts",
       "file_type": "code",
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L1",
       "_origin": "ast",
       "id": "experience_desktopcontrols",
-      "community": 101,
+      "community": 96,
       "norm_label": "desktopcontrols.ts"
     },
     {
       "label": "createElement()",
       "file_type": "code",
       "source_file": "src/experience/DesktopControls.ts",
-      "source_location": "L10",
+      "source_location": "L15",
       "_origin": "ast",
       "id": "experience_desktopcontrols_createelement",
-      "community": 101,
+      "community": 96,
       "norm_label": "createelement()"
     },
     {
       "label": "getPhaseLabel()",
       "file_type": "code",
       "source_file": "src/experience/DesktopControls.ts",
-      "source_location": "L23",
+      "source_location": "L28",
       "_origin": "ast",
       "id": "experience_desktopcontrols_getphaselabel",
-      "community": 101,
+      "community": 96,
       "norm_label": "getphaselabel()"
     },
     {
       "label": "DesktopControls",
       "file_type": "code",
       "source_file": "src/experience/DesktopControls.ts",
-      "source_location": "L36",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "experience_desktopcontrols_desktopcontrols",
-      "community": 101,
+      "community": 96,
       "norm_label": "desktopcontrols"
     },
     {
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/experience/DesktopControls.ts",
-      "source_location": "L60",
+      "source_location": "L73",
       "_origin": "ast",
       "id": "experience_desktopcontrols_desktopcontrols_constructor",
-      "community": 101,
+      "community": 96,
       "norm_label": ".constructor()"
     },
     {
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/experience/DesktopControls.ts",
-      "source_location": "L115",
+      "source_location": "L136",
       "_origin": "ast",
       "id": "experience_desktopcontrols_desktopcontrols_update",
-      "community": 103,
+      "community": 96,
       "norm_label": ".update()"
     },
     {
       "label": ".dispose()",
       "file_type": "code",
       "source_file": "src/experience/DesktopControls.ts",
-      "source_location": "L159",
+      "source_location": "L200",
       "_origin": "ast",
       "id": "experience_desktopcontrols_desktopcontrols_dispose",
-      "community": 101,
+      "community": 96,
       "norm_label": ".dispose()"
     },
     {
       "label": ".installStyles()",
       "file_type": "code",
       "source_file": "src/experience/DesktopControls.ts",
-      "source_location": "L163",
+      "source_location": "L204",
       "_origin": "ast",
       "id": "experience_desktopcontrols_desktopcontrols_installstyles",
-      "community": 101,
+      "community": 96,
       "norm_label": ".installstyles()"
     },
     {
@@ -1870,7 +1980,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "experience_experiencecontroller",
-      "community": 101,
+      "community": 96,
       "norm_label": "experiencecontroller.ts"
     },
     {
@@ -1880,7 +1990,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencephase",
-      "community": 101,
+      "community": 96,
       "norm_label": "experiencephase"
     },
     {
@@ -1890,7 +2000,7 @@
       "source_location": "L7",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencestate",
-      "community": 101,
+      "community": 96,
       "norm_label": "experiencestate"
     },
     {
@@ -1900,7 +2010,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontrollerhooks",
-      "community": 101,
+      "community": 96,
       "norm_label": "experiencecontrollerhooks"
     },
     {
@@ -2027,7 +2137,7 @@
       "label": "XRButtonAction",
       "file_type": "code",
       "source_file": "src/experience/ExperienceXRControls.ts",
-      "source_location": "L17",
+      "source_location": "L18",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbuttonaction",
       "community": 96,
@@ -2037,7 +2147,7 @@
       "label": "XRButton",
       "file_type": "code",
       "source_file": "src/experience/ExperienceXRControls.ts",
-      "source_location": "L19",
+      "source_location": "L20",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbutton",
       "community": 96,
@@ -2047,7 +2157,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/experience/ExperienceXRControls.ts",
-      "source_location": "L31",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbutton_constructor",
       "community": 96,
@@ -2057,7 +2167,7 @@
       "label": ".setLabel()",
       "file_type": "code",
       "source_file": "src/experience/ExperienceXRControls.ts",
-      "source_location": "L60",
+      "source_location": "L61",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbutton_setlabel",
       "community": 96,
@@ -2067,7 +2177,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/experience/ExperienceXRControls.ts",
-      "source_location": "L69",
+      "source_location": "L70",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbutton_update",
       "community": 96,
@@ -2077,7 +2187,7 @@
       "label": ".dispose()",
       "file_type": "code",
       "source_file": "src/experience/ExperienceXRControls.ts",
-      "source_location": "L90",
+      "source_location": "L91",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbutton_dispose",
       "community": 96,
@@ -2087,9 +2197,59 @@
       "label": ".drawTexture()",
       "file_type": "code",
       "source_file": "src/experience/ExperienceXRControls.ts",
-      "source_location": "L96",
+      "source_location": "L97",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbutton_drawtexture",
+      "community": 96,
+      "norm_label": ".drawtexture()"
+    },
+    {
+      "label": "XRReadyInstruction",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L146",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_xrreadyinstruction",
+      "community": 96,
+      "norm_label": "xrreadyinstruction"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L154",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_xrreadyinstruction_constructor",
+      "community": 96,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L183",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_xrreadyinstruction_update",
+      "community": 96,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".dispose()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L187",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_xrreadyinstruction_dispose",
+      "community": 96,
+      "norm_label": ".dispose()"
+    },
+    {
+      "label": ".drawTexture()",
+      "file_type": "code",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L193",
+      "_origin": "ast",
+      "id": "experience_experiencexrcontrols_xrreadyinstruction_drawtexture",
       "community": 96,
       "norm_label": ".drawtexture()"
     },
@@ -2097,7 +2257,7 @@
       "label": "ExperienceXRControls",
       "file_type": "code",
       "source_file": "src/experience/ExperienceXRControls.ts",
-      "source_location": "L145",
+      "source_location": "L237",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols",
       "community": 96,
@@ -2107,7 +2267,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/experience/ExperienceXRControls.ts",
-      "source_location": "L154",
+      "source_location": "L248",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols_constructor",
       "community": 96,
@@ -2117,7 +2277,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/experience/ExperienceXRControls.ts",
-      "source_location": "L203",
+      "source_location": "L298",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols_update",
       "community": 96,
@@ -2127,7 +2287,7 @@
       "label": ".dispose()",
       "file_type": "code",
       "source_file": "src/experience/ExperienceXRControls.ts",
-      "source_location": "L217",
+      "source_location": "L313",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols_dispose",
       "community": 96,
@@ -2137,7 +2297,7 @@
       "label": ".layoutReady()",
       "file_type": "code",
       "source_file": "src/experience/ExperienceXRControls.ts",
-      "source_location": "L225",
+      "source_location": "L322",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols_layoutready",
       "community": 96,
@@ -2470,7 +2630,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_index",
-      "community": 97,
+      "community": 110,
       "norm_label": "index.ts"
     },
     {
@@ -2480,7 +2640,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_index_scenecontainer",
-      "community": 97,
+      "community": 110,
       "norm_label": "scenecontainer"
     },
     {
@@ -3570,7 +3730,7 @@
       "source_location": "L197",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere",
-      "community": 109,
+      "community": 8,
       "norm_label": "underwateratmosphere"
     },
     {
@@ -3580,7 +3740,7 @@
       "source_location": "L209",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_constructor",
-      "community": 109,
+      "community": 8,
       "norm_label": ".constructor()"
     },
     {
@@ -3600,7 +3760,7 @@
       "source_location": "L273",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_dispose",
-      "community": 109,
+      "community": 8,
       "norm_label": ".dispose()"
     },
     {
@@ -3610,7 +3770,7 @@
       "source_location": "L281",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_createcausticsmaterial",
-      "community": 109,
+      "community": 8,
       "norm_label": ".createcausticsmaterial()"
     },
     {
@@ -3620,7 +3780,7 @@
       "source_location": "L304",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_createsurfacematerial",
-      "community": 109,
+      "community": 8,
       "norm_label": ".createsurfacematerial()"
     },
     {
@@ -3630,7 +3790,7 @@
       "source_location": "L321",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_createshaftmaterial",
-      "community": 109,
+      "community": 8,
       "norm_label": ".createshaftmaterial()"
     },
     {
@@ -3640,7 +3800,7 @@
       "source_location": "L338",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_createhorizonhazematerial",
-      "community": 109,
+      "community": 8,
       "norm_label": ".createhorizonhazematerial()"
     },
     {
@@ -3650,7 +3810,7 @@
       "source_location": "L354",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_createhorizonveilmaterial",
-      "community": 109,
+      "community": 8,
       "norm_label": ".createhorizonveilmaterial()"
     },
     {
@@ -3660,7 +3820,7 @@
       "source_location": "L370",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_addcaustics",
-      "community": 109,
+      "community": 8,
       "norm_label": ".addcaustics()"
     },
     {
@@ -3670,7 +3830,7 @@
       "source_location": "L382",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_addhorizonhaze",
-      "community": 109,
+      "community": 8,
       "norm_label": ".addhorizonhaze()"
     },
     {
@@ -3680,7 +3840,7 @@
       "source_location": "L430",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_addsurfacesuggestion",
-      "community": 109,
+      "community": 8,
       "norm_label": ".addsurfacesuggestion()"
     },
     {
@@ -3690,7 +3850,7 @@
       "source_location": "L442",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_addlightshafts",
-      "community": 109,
+      "community": 8,
       "norm_label": ".addlightshafts()"
     },
     {
@@ -3700,7 +3860,7 @@
       "source_location": "L487",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_adddistantreefsilhouettes",
-      "community": 109,
+      "community": 8,
       "norm_label": ".adddistantreefsilhouettes()"
     },
     {
@@ -3877,70 +4037,70 @@
       "label": "selectFishAnimation()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L23",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_selectfishanimation",
-      "community": 97,
+      "community": 110,
       "norm_label": "selectfishanimation()"
     },
     {
       "label": "ReefBreathingSystem",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L51",
+      "source_location": "L52",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem",
-      "community": 97,
+      "community": 110,
       "norm_label": "reefbreathingsystem"
     },
     {
       "label": ".init()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L101",
+      "source_location": "L106",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_init",
-      "community": 97,
+      "community": 110,
       "norm_label": ".init()"
     },
     {
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L176",
+      "source_location": "L189",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_update",
-      "community": 97,
+      "community": 110,
       "norm_label": ".update()"
     },
     {
       "label": ".resetExperienceSystems()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L259",
+      "source_location": "L277",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_resetexperiencesystems",
-      "community": 97,
+      "community": 110,
       "norm_label": ".resetexperiencesystems()"
     },
     {
       "label": ".loadMantaFinale()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L269",
+      "source_location": "L287",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_loadmantafinale",
-      "community": 97,
+      "community": 110,
       "norm_label": ".loadmantafinale()"
     },
     {
       "label": ".loadFishSchool()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L325",
+      "source_location": "L343",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_loadfishschool",
-      "community": 97,
+      "community": 110,
       "norm_label": ".loadfishschool()"
     },
     {
@@ -13885,6 +14045,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "experience_breathguidance",
+      "target": "breathing_breathengine",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/experience/DesktopControls.ts",
       "source_location": "L1",
       "weight": 1.0,
@@ -14034,6 +14205,28 @@
       "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem",
       "target": "breathing_breathengine_breathphase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "experience_breathguidance",
+      "target": "breathing_breathengine_breathstate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "experience_breathguidance_breathguidance_update",
+      "target": "breathing_breathengine_breathstate",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -14337,6 +14530,315 @@
       "confidence_score": 1.0,
       "source": "breathing_breathengine_breathengine_getstate",
       "target": "breathing_breathengine_breathengine_getphaseduration"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "experience_breathguidance",
+      "target": "experience_breathguidance_breathguidance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "experience_breathguidance",
+      "target": "experience_breathguidance_breathguidancelabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "experience_breathguidance",
+      "target": "experience_breathguidance_clamp01",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "experience_breathguidance",
+      "target": "experience_breathguidance_getbreathguidancelabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "experience_breathguidance",
+      "target": "experience_breathguidance_getbreathguidancetargetopacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "experience_breathguidance",
+      "target": "experience_breathguidance_smoothstep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "experience_breathguidance",
+      "target": "experience_experiencecontroller",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "experience_breathguidance",
+      "target": "experience_experiencecontroller_experiencephase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols",
+      "target": "experience_breathguidance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols",
+      "target": "experience_breathguidance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "experience_breathguidance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "experience_breathguidance_breathguidance_update",
+      "target": "experience_breathguidance_clamp01",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "experience_breathguidance_smoothstep",
+      "target": "experience_breathguidance_clamp01",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "experience_breathguidance_getbreathguidancetargetopacity",
+      "target": "experience_breathguidance_smoothstep",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "experience_breathguidance_breathguidance_update",
+      "target": "experience_breathguidance_getbreathguidancelabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "experience_breathguidance_getbreathguidancetargetopacity",
+      "target": "experience_breathguidance_getbreathguidancelabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols",
+      "target": "experience_breathguidance_getbreathguidancelabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols_desktopcontrols_update",
+      "target": "experience_breathguidance_getbreathguidancelabel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "experience_breathguidance_breathguidance_update",
+      "target": "experience_breathguidance_getbreathguidancetargetopacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols",
+      "target": "experience_breathguidance_getbreathguidancetargetopacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/experience/DesktopControls.ts",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "experience_desktopcontrols_desktopcontrols_update",
+      "target": "experience_breathguidance_getbreathguidancetargetopacity"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "experience_breathguidance_breathguidance",
+      "target": "experience_breathguidance_breathguidance_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "experience_breathguidance_breathguidance",
+      "target": "experience_breathguidance_breathguidance_dispose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "experience_breathguidance_breathguidance",
+      "target": "experience_breathguidance_breathguidance_draw",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "experience_breathguidance_breathguidance",
+      "target": "experience_breathguidance_breathguidance_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "experience_breathguidance_breathguidance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "systems_reefbreathingsystem_reefbreathingsystem",
+      "target": "experience_breathguidance_breathguidance",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "experience_breathguidance_breathguidance_update",
+      "target": "experience_breathguidance_breathguidance_draw",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/BreathGuidance.ts",
+      "source_location": "L97",
+      "weight": 1.0,
+      "source": "experience_breathguidance_breathguidance_update",
+      "target": "experience_experiencecontroller_experiencephase",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",
@@ -14843,6 +15345,16 @@
       "target": "experience_experiencexrcontrols_xrbuttonaction"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L146",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols",
+      "target": "experience_experiencexrcontrols_xrreadyinstruction",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -14941,6 +15453,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrbutton_setlabel",
+      "target": "experience_experiencexrcontrols_xrreadyinstruction_drawtexture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L80",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -14952,11 +15475,84 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrbutton_update",
+      "target": "experience_experiencexrcontrols_xrreadyinstruction_drawtexture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
       "source_location": "L91",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "experience_experiencexrcontrols_xrbutton_dispose",
       "target": "experience_experiencexrcontrols_experiencexrcontrols_dispose"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrreadyinstruction",
+      "target": "experience_experiencexrcontrols_xrreadyinstruction_constructor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L187",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrreadyinstruction",
+      "target": "experience_experiencexrcontrols_xrreadyinstruction_dispose",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L193",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrreadyinstruction",
+      "target": "experience_experiencexrcontrols_xrreadyinstruction_drawtexture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L183",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrreadyinstruction",
+      "target": "experience_experiencexrcontrols_xrreadyinstruction_update",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrreadyinstruction_constructor",
+      "target": "experience_experiencexrcontrols_xrreadyinstruction_drawtexture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/experience/ExperienceXRControls.ts",
+      "source_location": "L188",
+      "weight": 1.0,
+      "source": "experience_experiencexrcontrols_xrreadyinstruction_dispose",
+      "target": "experience_experiencexrcontrols_experiencexrcontrols_dispose",
+      "confidence_score": 1.0
     },
     {
       "relation": "method",
@@ -25455,5 +26051,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a3dd377b3a8bf65ae936f81a064396a2d357d205"
+  "built_at_commit": "85d392f50ca9d4e352ce298d14703fc08fdf223b"
 }

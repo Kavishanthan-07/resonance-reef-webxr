@@ -9,6 +9,7 @@ import {
 } from '../breathing/BreathEngine.js';
 
 import { OceanAudio } from '../audio/OceanAudio.js';
+import { BreathGuidance } from '../experience/BreathGuidance.js';
 import { DesktopControls } from '../experience/DesktopControls.js';
 import { ExperienceController } from '../experience/ExperienceController.js';
 import { ExperienceXRControls } from '../experience/ExperienceXRControls.js';
@@ -98,6 +99,10 @@ export class ReefBreathingSystem extends createSystem({}) {
     | ExperienceXRControls
     | null = null;
 
+  private breathGuidance:
+    | BreathGuidance
+    | null = null;
+
   init(): void {
     this.environment =
       new ReefEnvironment(this.world);
@@ -110,6 +115,7 @@ export class ReefBreathingSystem extends createSystem({}) {
       this.environment?.dispose();
       this.oceanAudio?.dispose();
       this.mantaFinale?.reset();
+      this.breathGuidance?.dispose();
       this.desktopControls?.dispose();
       this.xrControls?.dispose();
     });
@@ -122,6 +128,13 @@ export class ReefBreathingSystem extends createSystem({}) {
 
     this.world.createTransformEntity(
       this.jellyfish.root,
+    );
+
+    this.breathGuidance =
+      new BreathGuidance();
+
+    this.world.createTransformEntity(
+      this.breathGuidance.root,
     );
 
     this.waterCurrent =
@@ -253,6 +266,11 @@ export class ReefBreathingSystem extends createSystem({}) {
     }
 
     this.desktopControls?.update(state, session);
+    this.breathGuidance?.update(
+      state,
+      experience?.phase ?? 'ready',
+      isRunning ? delta : 0,
+    );
     this.xrControls?.update();
   }
 

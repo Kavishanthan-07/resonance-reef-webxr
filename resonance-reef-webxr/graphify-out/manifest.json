@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "src/systems/ReefBreathingSystem.ts": {
-    "mtime": 1791200520.8551588,
-    "ast_hash": "6865d88b78d1a17fe0f3d521af4478fa",
+    "mtime": 1791275092.235788,
+    "ast_hash": "74e1d43d1dbeea912b5f6a1eba930c3f",
     "semantic_hash": ""
   },
   "src/vite-env.d.ts": {
@@ -565,8 +565,8 @@
     "semantic_hash": ""
   },
   "src/experience/DesktopControls.ts": {
-    "mtime": 1791196081.1093037,
-    "ast_hash": "013815269b6d6b5ff4fa2844f32f46ab",
+    "mtime": 1791275058.864405,
+    "ast_hash": "f4784e8c39c9f64bf57a1fe7e6af14c5",
     "semantic_hash": ""
   },
   "src/experience/ExperienceController.ts": {
@@ -575,8 +575,8 @@
     "semantic_hash": ""
   },
   "src/experience/ExperienceXRControls.ts": {
-    "mtime": 1791196081.6144679,
-    "ast_hash": "ade408a49007d847207db4db2b76e1e3",
+    "mtime": 1791275082.2343187,
+    "ast_hash": "7f181771b35b9b9f67448ca9dcf7a4b2",
     "semantic_hash": ""
   },
   "src/ocean/ReefDecorConfig.ts": {
@@ -732,6 +732,31 @@
   "artifacts/hero-realism-horizon-final-seabed-basic.png": {
     "mtime": 1791274529.3047805,
     "ast_hash": "363c797bb6ca35f005ba0b03769775ce",
+    "semantic_hash": ""
+  },
+  "src/experience/BreathGuidance.ts": {
+    "mtime": 1791275483.1749933,
+    "ast_hash": "ebb89884f3416d42d4b485f9804530d2",
+    "semantic_hash": ""
+  },
+  "artifacts/breath-guidance-after-two-cycles-xr.png": {
+    "mtime": 1791297087.5045097,
+    "ast_hash": "c934c67070bec3b84a47a15088ff9039",
+    "semantic_hash": ""
+  },
+  "artifacts/breath-guidance-ready-xr.png": {
+    "mtime": 1791275212.145477,
+    "ast_hash": "82b6dceafeba18255fb3ca91dfaa2aaf",
+    "semantic_hash": ""
+  },
+  "artifacts/breath-guidance-running-final-xr.png": {
+    "mtime": 1791297040.1604846,
+    "ast_hash": "fba703ffa42c8a3623699ce9f55e52e0",
+    "semantic_hash": ""
+  },
+  "artifacts/breath-guidance-running-xr.png": {
+    "mtime": 1791275452.1322055,
+    "ast_hash": "4bfdb0bce9b7578f4a2259a57a771284",
     "semantic_hash": ""
   }
 }
