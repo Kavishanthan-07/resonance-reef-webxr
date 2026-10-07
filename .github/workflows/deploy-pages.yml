@@ -1,6 +1,3 @@
-New-Item -ItemType Directory -Force ".github\workflows" | Out-Null
-
-@'
 name: Deploy Resonance Reef to GitHub Pages
 
 on:
@@ -61,4 +58,3 @@ jobs:
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-'@ | Set-Content ".github\workflows\deploy-pages.yml"
