@@ -1410,7 +1410,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_update",
-      "community": 110,
+      "community": 97,
       "norm_label": ".update()"
     },
     {
@@ -1520,7 +1520,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "audio_proceduralaudio",
-      "community": 110,
+      "community": 101,
       "norm_label": "proceduralaudio.ts"
     },
     {
@@ -1530,7 +1530,7 @@
       "source_location": "L5",
       "_origin": "ast",
       "id": "audio_proceduralaudio_reefcue",
-      "community": 110,
+      "community": 101,
       "norm_label": "reefcue"
     },
     {
@@ -1540,7 +1540,7 @@
       "source_location": "L21",
       "_origin": "ast",
       "id": "audio_proceduralaudio_reef_cue_positions",
-      "community": 110,
+      "community": 101,
       "norm_label": "reef_cue_positions"
     },
     {
@@ -1550,7 +1550,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "audio_proceduralaudio_clamp01",
-      "community": 110,
+      "community": 101,
       "norm_label": "clamp01()"
     },
     {
@@ -1560,7 +1560,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "audio_proceduralaudio_smoothstep",
-      "community": 110,
+      "community": 101,
       "norm_label": "smoothstep()"
     },
     {
@@ -1570,7 +1570,7 @@
       "source_location": "L37",
       "_origin": "ast",
       "id": "audio_proceduralaudio_randomrange",
-      "community": 110,
+      "community": 101,
       "norm_label": "randomrange()"
     },
     {
@@ -1580,7 +1580,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "audio_proceduralaudio_setparam",
-      "community": 110,
+      "community": 101,
       "norm_label": "setparam()"
     },
     {
@@ -1590,7 +1590,7 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "audio_proceduralaudio_setpannerposition",
-      "community": 110,
+      "community": 101,
       "norm_label": "setpannerposition()"
     },
     {
@@ -1600,7 +1600,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio",
-      "community": 110,
+      "community": 101,
       "norm_label": "proceduralaudio"
     },
     {
@@ -1610,7 +1610,7 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_constructor",
-      "community": 110,
+      "community": 101,
       "norm_label": ".constructor()"
     },
     {
@@ -1620,7 +1620,7 @@
       "source_location": "L187",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_setmuted",
-      "community": 110,
+      "community": 101,
       "norm_label": ".setmuted()"
     },
     {
@@ -1630,7 +1630,7 @@
       "source_location": "L199",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_getdiagnosticsnapshot",
-      "community": 110,
+      "community": 101,
       "norm_label": ".getdiagnosticsnapshot()"
     },
     {
@@ -1640,7 +1640,7 @@
       "source_location": "L219",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_update",
-      "community": 110,
+      "community": 101,
       "norm_label": ".update()"
     },
     {
@@ -1650,7 +1650,7 @@
       "source_location": "L324",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_createnoisebuffer",
-      "community": 110,
+      "community": 101,
       "norm_label": ".createnoisebuffer()"
     },
     {
@@ -1660,7 +1660,7 @@
       "source_location": "L350",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_createpanner",
-      "community": 110,
+      "community": 101,
       "norm_label": ".createpanner()"
     },
     {
@@ -1670,7 +1670,7 @@
       "source_location": "L363",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_createreefcue",
-      "community": 110,
+      "community": 101,
       "norm_label": ".createreefcue()"
     },
     {
@@ -1680,7 +1680,7 @@
       "source_location": "L411",
       "_origin": "ast",
       "id": "audio_proceduralaudio_proceduralaudio_updatereefcue",
-      "community": 110,
+      "community": 101,
       "norm_label": ".updatereefcue()"
     },
     {
@@ -1710,7 +1710,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "breathing_breathengine_breathstate",
-      "community": 110,
+      "community": 97,
       "norm_label": "breathstate"
     },
     {
@@ -1910,7 +1910,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "experience_desktopcontrols_createelement",
-      "community": 96,
+      "community": 99,
       "norm_label": "createelement()"
     },
     {
@@ -1930,7 +1930,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "experience_desktopcontrols_desktopcontrols",
-      "community": 96,
+      "community": 99,
       "norm_label": "desktopcontrols"
     },
     {
@@ -1940,7 +1940,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "experience_desktopcontrols_desktopcontrols_constructor",
-      "community": 96,
+      "community": 99,
       "norm_label": ".constructor()"
     },
     {
@@ -1960,7 +1960,7 @@
       "source_location": "L200",
       "_origin": "ast",
       "id": "experience_desktopcontrols_desktopcontrols_dispose",
-      "community": 96,
+      "community": 99,
       "norm_label": ".dispose()"
     },
     {
@@ -1970,7 +1970,7 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "experience_desktopcontrols_desktopcontrols_installstyles",
-      "community": 96,
+      "community": 99,
       "norm_label": ".installstyles()"
     },
     {
@@ -2020,7 +2020,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller",
-      "community": 96,
+      "community": 99,
       "norm_label": "experiencecontroller"
     },
     {
@@ -2030,7 +2030,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_constructor",
-      "community": 96,
+      "community": 99,
       "norm_label": ".constructor()"
     },
     {
@@ -2040,7 +2040,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_getstate",
-      "community": 96,
+      "community": 99,
       "norm_label": ".getstate()"
     },
     {
@@ -2050,7 +2050,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_start",
-      "community": 96,
+      "community": 99,
       "norm_label": ".start()"
     },
     {
@@ -2060,7 +2060,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_pause",
-      "community": 96,
+      "community": 99,
       "norm_label": ".pause()"
     },
     {
@@ -2070,7 +2070,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_resume",
-      "community": 96,
+      "community": 99,
       "norm_label": ".resume()"
     },
     {
@@ -2080,7 +2080,7 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_restart",
-      "community": 96,
+      "community": 99,
       "norm_label": ".restart()"
     },
     {
@@ -2090,7 +2090,7 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_markcomplete",
-      "community": 96,
+      "community": 99,
       "norm_label": ".markcomplete()"
     },
     {
@@ -2100,7 +2100,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_setmuted",
-      "community": 96,
+      "community": 99,
       "norm_label": ".setmuted()"
     },
     {
@@ -2110,7 +2110,7 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_togglemuted",
-      "community": 96,
+      "community": 99,
       "norm_label": ".togglemuted()"
     },
     {
@@ -2120,7 +2120,7 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_requestaudiounlock",
-      "community": 96,
+      "community": 99,
       "norm_label": ".requestaudiounlock()"
     },
     {
@@ -2130,7 +2130,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols",
-      "community": 96,
+      "community": 99,
       "norm_label": "experiencexrcontrols.ts"
     },
     {
@@ -2140,7 +2140,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbuttonaction",
-      "community": 96,
+      "community": 99,
       "norm_label": "xrbuttonaction"
     },
     {
@@ -2150,7 +2150,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbutton",
-      "community": 96,
+      "community": 99,
       "norm_label": "xrbutton"
     },
     {
@@ -2160,7 +2160,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbutton_constructor",
-      "community": 96,
+      "community": 99,
       "norm_label": ".constructor()"
     },
     {
@@ -2170,7 +2170,7 @@
       "source_location": "L61",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbutton_setlabel",
-      "community": 96,
+      "community": 99,
       "norm_label": ".setlabel()"
     },
     {
@@ -2180,7 +2180,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbutton_update",
-      "community": 96,
+      "community": 99,
       "norm_label": ".update()"
     },
     {
@@ -2190,7 +2190,7 @@
       "source_location": "L91",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbutton_dispose",
-      "community": 96,
+      "community": 99,
       "norm_label": ".dispose()"
     },
     {
@@ -2200,7 +2200,7 @@
       "source_location": "L97",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbutton_drawtexture",
-      "community": 96,
+      "community": 99,
       "norm_label": ".drawtexture()"
     },
     {
@@ -2210,7 +2210,7 @@
       "source_location": "L146",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrreadyinstruction",
-      "community": 96,
+      "community": 99,
       "norm_label": "xrreadyinstruction"
     },
     {
@@ -2220,7 +2220,7 @@
       "source_location": "L154",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrreadyinstruction_constructor",
-      "community": 96,
+      "community": 99,
       "norm_label": ".constructor()"
     },
     {
@@ -2230,7 +2230,7 @@
       "source_location": "L183",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrreadyinstruction_update",
-      "community": 96,
+      "community": 99,
       "norm_label": ".update()"
     },
     {
@@ -2240,7 +2240,7 @@
       "source_location": "L187",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrreadyinstruction_dispose",
-      "community": 96,
+      "community": 99,
       "norm_label": ".dispose()"
     },
     {
@@ -2250,7 +2250,7 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrreadyinstruction_drawtexture",
-      "community": 96,
+      "community": 99,
       "norm_label": ".drawtexture()"
     },
     {
@@ -2260,7 +2260,7 @@
       "source_location": "L237",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols",
-      "community": 96,
+      "community": 99,
       "norm_label": "experiencexrcontrols"
     },
     {
@@ -2270,7 +2270,7 @@
       "source_location": "L248",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols_constructor",
-      "community": 96,
+      "community": 99,
       "norm_label": ".constructor()"
     },
     {
@@ -2280,7 +2280,7 @@
       "source_location": "L298",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols_update",
-      "community": 96,
+      "community": 99,
       "norm_label": ".update()"
     },
     {
@@ -2290,7 +2290,7 @@
       "source_location": "L313",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols_dispose",
-      "community": 96,
+      "community": 99,
       "norm_label": ".dispose()"
     },
     {
@@ -2300,7 +2300,7 @@
       "source_location": "L322",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols_layoutready",
-      "community": 96,
+      "community": 99,
       "norm_label": ".layoutready()"
     },
     {
@@ -2480,7 +2480,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "experience_sessioncontroller",
-      "community": 110,
+      "community": 102,
       "norm_label": "sessioncontroller.ts"
     },
     {
@@ -2490,7 +2490,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessionstage",
-      "community": 110,
+      "community": 102,
       "norm_label": "sessionstage"
     },
     {
@@ -2500,7 +2500,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessionstate",
-      "community": 110,
+      "community": 97,
       "norm_label": "sessionstate"
     },
     {
@@ -2510,7 +2510,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "experience_sessioncontroller_initial_state",
-      "community": 110,
+      "community": 102,
       "norm_label": "initial_state"
     },
     {
@@ -2520,7 +2520,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "experience_sessioncontroller_clamp01",
-      "community": 110,
+      "community": 102,
       "norm_label": "clamp01()"
     },
     {
@@ -2530,7 +2530,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "experience_sessioncontroller_smoothstep",
-      "community": 110,
+      "community": 102,
       "norm_label": "smoothstep()"
     },
     {
@@ -2540,7 +2540,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getcycleposition",
-      "community": 110,
+      "community": 102,
       "norm_label": "getcycleposition()"
     },
     {
@@ -2550,7 +2550,7 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getstage",
-      "community": 110,
+      "community": 102,
       "norm_label": "getstage()"
     },
     {
@@ -2560,7 +2560,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "experience_sessioncontroller_interpolate",
-      "community": 110,
+      "community": 102,
       "norm_label": "interpolate()"
     },
     {
@@ -2570,7 +2570,7 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getstageprogress",
-      "community": 110,
+      "community": 102,
       "norm_label": "getstageprogress()"
     },
     {
@@ -2580,7 +2580,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getenvironmentintensity",
-      "community": 110,
+      "community": 102,
       "norm_label": "getenvironmentintensity()"
     },
     {
@@ -2590,7 +2590,7 @@
       "source_location": "L114",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller",
-      "community": 110,
+      "community": 102,
       "norm_label": "sessioncontroller"
     },
     {
@@ -2600,7 +2600,7 @@
       "source_location": "L119",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_update",
-      "community": 110,
+      "community": 102,
       "norm_label": ".update()"
     },
     {
@@ -2610,7 +2610,7 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_getstate",
-      "community": 110,
+      "community": 102,
       "norm_label": ".getstate()"
     },
     {
@@ -2620,7 +2620,7 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_reset",
-      "community": 110,
+      "community": 102,
       "norm_label": ".reset()"
     },
     {
@@ -2630,7 +2630,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_index",
-      "community": 110,
+      "community": 99,
       "norm_label": "index.ts"
     },
     {
@@ -2640,7 +2640,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_index_scenecontainer",
-      "community": 110,
+      "community": 99,
       "norm_label": "scenecontainer"
     },
     {
@@ -2650,7 +2650,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton",
-      "community": 110,
+      "community": 114,
       "norm_label": "bioluminescentplankton.ts"
     },
     {
@@ -2660,7 +2660,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_randomrange",
-      "community": 110,
+      "community": 114,
       "norm_label": "randomrange()"
     },
     {
@@ -2670,7 +2670,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_clamp",
-      "community": 110,
+      "community": 114,
       "norm_label": "clamp()"
     },
     {
@@ -2680,7 +2680,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_clamp01",
-      "community": 110,
+      "community": 114,
       "norm_label": "clamp01()"
     },
     {
@@ -2690,7 +2690,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_smoothstep",
-      "community": 110,
+      "community": 114,
       "norm_label": "smoothstep()"
     },
     {
@@ -2700,7 +2700,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton",
-      "community": 110,
+      "community": 114,
       "norm_label": "bioluminescentplankton"
     },
     {
@@ -2710,7 +2710,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_constructor",
-      "community": 110,
+      "community": 114,
       "norm_label": ".constructor()"
     },
     {
@@ -2720,7 +2720,7 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_reset",
-      "community": 110,
+      "community": 114,
       "norm_label": ".reset()"
     },
     {
@@ -2730,7 +2730,7 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_setsessionintensity",
-      "community": 110,
+      "community": 114,
       "norm_label": ".setsessionintensity()"
     },
     {
@@ -2740,7 +2740,7 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_update",
-      "community": 110,
+      "community": 114,
       "norm_label": ".update()"
     },
     {
@@ -2750,188 +2750,308 @@
       "source_location": "L281",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles",
-      "community": 110,
+      "community": 114,
       "norm_label": ".randomizeparticles()"
     },
     {
-      "label": "CalmFishTest.ts",
+      "label": "ButterflyFishHeroLayer.ts",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "ocean_calmfishtest",
+      "id": "ocean_butterflyfishherolayer",
       "community": 0,
-      "norm_label": "calmfishtest.ts"
+      "norm_label": "butterflyfishherolayer.ts"
     },
     {
-      "label": "BODY_FALLBACK",
+      "label": "ButterflyFishHeroLayerConfig",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L18",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L23",
       "_origin": "ast",
-      "id": "ocean_calmfishtest_body_fallback",
+      "id": "ocean_butterflyfishherolayer_butterflyfishherolayerconfig",
       "community": 0,
-      "norm_label": "body_fallback"
+      "norm_label": "butterflyfishherolayerconfig"
     },
     {
-      "label": "SILVER_FALLBACK",
+      "label": "ButterflyPathConfig",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L19",
-      "_origin": "ast",
-      "id": "ocean_calmfishtest_silver_fallback",
-      "community": 0,
-      "norm_label": "silver_fallback"
-    },
-    {
-      "label": "FIN_FALLBACK",
-      "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L20",
-      "_origin": "ast",
-      "id": "ocean_calmfishtest_fin_fallback",
-      "community": 0,
-      "norm_label": "fin_fallback"
-    },
-    {
-      "label": "CalmFishInstance",
-      "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L22",
-      "_origin": "ast",
-      "id": "ocean_calmfishtest_calmfishinstance",
-      "community": 0,
-      "norm_label": "calmfishinstance"
-    },
-    {
-      "label": "CalmFishTestReport",
-      "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
       "source_location": "L28",
       "_origin": "ast",
-      "id": "ocean_calmfishtest_calmfishtestreport",
+      "id": "ocean_butterflyfishherolayer_butterflypathconfig",
       "community": 0,
-      "norm_label": "calmfishtestreport"
+      "norm_label": "butterflypathconfig"
     },
     {
-      "label": "TintableMaterial",
+      "label": "ButterflyFishInstance",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L41",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L39",
       "_origin": "ast",
-      "id": "ocean_calmfishtest_tintablematerial",
+      "id": "ocean_butterflyfishherolayer_butterflyfishinstance",
       "community": 0,
-      "norm_label": "tintablematerial"
+      "norm_label": "butterflyfishinstance"
     },
     {
-      "label": "selectCalmFishAnimation()",
+      "label": "TextureLike",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L53",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L50",
       "_origin": "ast",
-      "id": "ocean_calmfishtest_selectcalmfishanimation",
+      "id": "ocean_butterflyfishherolayer_texturelike",
       "community": 0,
-      "norm_label": "selectcalmfishanimation()"
+      "norm_label": "texturelike"
     },
     {
-      "label": "isNearlyWhite()",
+      "label": "MaterialLike",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L77",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L58",
       "_origin": "ast",
-      "id": "ocean_calmfishtest_isnearlywhite",
+      "id": "ocean_butterflyfishherolayer_materiallike",
       "community": 0,
-      "norm_label": "isnearlywhite()"
+      "norm_label": "materiallike"
     },
     {
-      "label": "gatherMaterials()",
+      "label": "ButterflyFishMaterialAudit",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L81",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L65",
       "_origin": "ast",
-      "id": "ocean_calmfishtest_gathermaterials",
+      "id": "ocean_butterflyfishherolayer_butterflyfishmaterialaudit",
       "community": 0,
-      "norm_label": "gathermaterials()"
+      "norm_label": "butterflyfishmaterialaudit"
     },
     {
-      "label": "applyFallbackMaterial()",
+      "label": "ButterflyFishHeroLayerReport",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L101",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L76",
       "_origin": "ast",
-      "id": "ocean_calmfishtest_applyfallbackmaterial",
+      "id": "ocean_butterflyfishherolayer_butterflyfishherolayerreport",
       "community": 0,
-      "norm_label": "applyfallbackmaterial()"
+      "norm_label": "butterflyfishherolayerreport"
     },
     {
-      "label": "countMeshes()",
+      "label": "USER_POINT",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L163",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L86",
       "_origin": "ast",
-      "id": "ocean_calmfishtest_countmeshes",
+      "id": "ocean_butterflyfishherolayer_user_point",
       "community": 0,
-      "norm_label": "countmeshes()"
+      "norm_label": "user_point"
     },
     {
-      "label": "calculateScale()",
+      "label": "GUIDE_POINT",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L185",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L87",
       "_origin": "ast",
-      "id": "ocean_calmfishtest_calculatescale",
+      "id": "ocean_butterflyfishherolayer_guide_point",
       "community": 0,
-      "norm_label": "calculatescale()"
+      "norm_label": "guide_point"
     },
     {
-      "label": "CalmFishTest",
+      "label": "HERO_PATHS",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L203",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L89",
       "_origin": "ast",
-      "id": "ocean_calmfishtest_calmfishtest",
+      "id": "ocean_butterflyfishherolayer_hero_paths",
       "community": 0,
-      "norm_label": "calmfishtest"
+      "norm_label": "hero_paths"
+    },
+    {
+      "label": "BODY_COLOR",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L132",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_body_color",
+      "community": 0,
+      "norm_label": "body_color"
+    },
+    {
+      "label": "ACCENT_COLOR",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L137",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_accent_color",
+      "community": 0,
+      "norm_label": "accent_color"
+    },
+    {
+      "label": "MARKING_COLOR",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L142",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_marking_color",
+      "community": 0,
+      "norm_label": "marking_color"
+    },
+    {
+      "label": "textureSize()",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L144",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_texturesize",
+      "community": 0,
+      "norm_label": "texturesize()"
+    },
+    {
+      "label": "isPlaceholderTexture()",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L155",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_isplaceholdertexture",
+      "community": 0,
+      "norm_label": "isplaceholdertexture()"
+    },
+    {
+      "label": "isUsableAnimationClip()",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L164",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_isusableanimationclip",
+      "community": 0,
+      "norm_label": "isusableanimationclip()"
+    },
+    {
+      "label": "selectUsableAnimationClip()",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L170",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_selectusableanimationclip",
+      "community": 0,
+      "norm_label": "selectusableanimationclip()"
+    },
+    {
+      "label": "materialAudit()",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L200",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_materialaudit",
+      "community": 0,
+      "norm_label": "materialaudit()"
+    },
+    {
+      "label": "materialNeedsFallback()",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L217",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_materialneedsfallback",
+      "community": 0,
+      "norm_label": "materialneedsfallback()"
+    },
+    {
+      "label": "tuneBodyMaterial()",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L234",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_tunebodymaterial",
+      "community": 0,
+      "norm_label": "tunebodymaterial()"
+    },
+    {
+      "label": "tuneMarkingMaterial()",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L269",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_tunemarkingmaterial",
+      "community": 0,
+      "norm_label": "tunemarkingmaterial()"
+    },
+    {
+      "label": "cloneAndTuneMaterials()",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L293",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_cloneandtunematerials",
+      "community": 0,
+      "norm_label": "cloneandtunematerials()"
+    },
+    {
+      "label": "breathRadiusScale()",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L337",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_breathradiusscale",
+      "community": 0,
+      "norm_label": "breathradiusscale()"
+    },
+    {
+      "label": "distanceFromUser()",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L351",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_distancefromuser",
+      "community": 0,
+      "norm_label": "distancefromuser()"
+    },
+    {
+      "label": "estimateClosestDistance()",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L355",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_estimateclosestdistance",
+      "community": 0,
+      "norm_label": "estimateclosestdistance()"
+    },
+    {
+      "label": "ButterflyFishHeroLayer",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L373",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_butterflyfishherolayer",
+      "community": 0,
+      "norm_label": "butterflyfishherolayer"
     },
     {
       "label": ".constructor()",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L210",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L380",
       "_origin": "ast",
-      "id": "ocean_calmfishtest_calmfishtest_constructor",
+      "id": "ocean_butterflyfishherolayer_butterflyfishherolayer_constructor",
       "community": 0,
       "norm_label": ".constructor()"
     },
     {
       "label": ".update()",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L256",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L454",
       "_origin": "ast",
-      "id": "ocean_calmfishtest_calmfishtest_update",
+      "id": "ocean_butterflyfishherolayer_butterflyfishherolayer_update",
       "community": 0,
       "norm_label": ".update()"
     },
     {
       "label": ".dispose()",
       "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L284",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L536",
       "_origin": "ast",
-      "id": "ocean_calmfishtest_calmfishtest_dispose",
+      "id": "ocean_butterflyfishherolayer_butterflyfishherolayer_dispose",
       "community": 0,
       "norm_label": ".dispose()"
-    },
-    {
-      "label": ".createInstances()",
-      "file_type": "code",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L289",
-      "_origin": "ast",
-      "id": "ocean_calmfishtest_calmfishtest_createinstances",
-      "community": 0,
-      "norm_label": ".createinstances()"
     },
     {
       "label": "FishAgent.ts",
@@ -2994,10 +3114,20 @@
       "norm_label": "tintablematerial"
     },
     {
+      "label": "createMutedFishMaterial()",
+      "file_type": "code",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "ocean_fishagent_createmutedfishmaterial",
+      "community": 98,
+      "norm_label": "createmutedfishmaterial()"
+    },
+    {
       "label": "tintFishMaterial()",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L38",
+      "source_location": "L53",
       "_origin": "ast",
       "id": "ocean_fishagent_tintfishmaterial",
       "community": 98,
@@ -3007,7 +3137,7 @@
       "label": "polishFishVisual()",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L74",
+      "source_location": "L92",
       "_origin": "ast",
       "id": "ocean_fishagent_polishfishvisual",
       "community": 98,
@@ -3017,7 +3147,7 @@
       "label": "FishAgent",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L114",
+      "source_location": "L143",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagent",
       "community": 98,
@@ -3027,7 +3157,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L125",
+      "source_location": "L154",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagent_constructor",
       "community": 98,
@@ -3037,7 +3167,7 @@
       "label": ".updateAnimation()",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L150",
+      "source_location": "L179",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagent_updateanimation",
       "community": 98,
@@ -3050,7 +3180,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_fishschool",
-      "community": 110,
+      "community": 97,
       "norm_label": "fishschool.ts"
     },
     {
@@ -3060,7 +3190,7 @@
       "source_location": "L13",
       "_origin": "ast",
       "id": "ocean_fishschool_fishspeciesconfig",
-      "community": 110,
+      "community": 97,
       "norm_label": "fishspeciesconfig"
     },
     {
@@ -3070,7 +3200,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschoolconfig",
-      "community": 110,
+      "community": 97,
       "norm_label": "fishschoolconfig"
     },
     {
@@ -3080,7 +3210,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "ocean_fishschool_randomrange",
-      "community": 110,
+      "community": 98,
       "norm_label": "randomrange()"
     },
     {
@@ -3090,7 +3220,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "ocean_fishschool_smoothstep",
-      "community": 110,
+      "community": 97,
       "norm_label": "smoothstep()"
     },
     {
@@ -3100,7 +3230,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "ocean_fishschool_default_species",
-      "community": 110,
+      "community": 97,
       "norm_label": "default_species"
     },
     {
@@ -3110,7 +3240,7 @@
       "source_location": "L45",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool",
-      "community": 110,
+      "community": 98,
       "norm_label": "fishschool"
     },
     {
@@ -3120,7 +3250,7 @@
       "source_location": "L72",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_constructor",
-      "community": 110,
+      "community": 98,
       "norm_label": ".constructor()"
     },
     {
@@ -3130,7 +3260,7 @@
       "source_location": "L121",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_creategatheroffset",
-      "community": 110,
+      "community": 98,
       "norm_label": ".creategatheroffset()"
     },
     {
@@ -3140,7 +3270,7 @@
       "source_location": "L140",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_createoutwardbias",
-      "community": 110,
+      "community": 98,
       "norm_label": ".createoutwardbias()"
     },
     {
@@ -3150,7 +3280,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_update",
-      "community": 110,
+      "community": 97,
       "norm_label": ".update()"
     },
     {
@@ -3160,7 +3290,7 @@
       "source_location": "L449",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_reset",
-      "community": 110,
+      "community": 98,
       "norm_label": ".reset()"
     },
     {
@@ -3170,7 +3300,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_jellyfishguide",
-      "community": 110,
+      "community": 112,
       "norm_label": "jellyfishguide.ts"
     },
     {
@@ -3180,7 +3310,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_smoothstep",
-      "community": 110,
+      "community": 112,
       "norm_label": "smoothstep()"
     },
     {
@@ -3190,7 +3320,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_createorganicbellgeometry",
-      "community": 110,
+      "community": 112,
       "norm_label": "createorganicbellgeometry()"
     },
     {
@@ -3200,7 +3330,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_createtentaclegeometry",
-      "community": 110,
+      "community": 112,
       "norm_label": "createtentaclegeometry()"
     },
     {
@@ -3210,7 +3340,7 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_jellyfishguide",
-      "community": 110,
+      "community": 112,
       "norm_label": "jellyfishguide"
     },
     {
@@ -3220,7 +3350,7 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_jellyfishguide_constructor",
-      "community": 110,
+      "community": 112,
       "norm_label": ".constructor()"
     },
     {
@@ -3230,7 +3360,7 @@
       "source_location": "L225",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_jellyfishguide_update",
-      "community": 110,
+      "community": 112,
       "norm_label": ".update()"
     },
     {
@@ -3417,7 +3547,7 @@
       "label": ".updateBubbles()",
       "file_type": "code",
       "source_file": "src/ocean/MarineLifeLayer.ts",
-      "source_location": "L455",
+      "source_location": "L456",
       "_origin": "ast",
       "id": "ocean_marinelifelayer_marinelifelayer_updatebubbles",
       "community": 108,
@@ -3507,7 +3637,7 @@
       "label": "ReefDecorLayerTargets",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L24",
+      "source_location": "L25",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_reefdecorlayertargets",
       "community": 8,
@@ -3517,7 +3647,7 @@
       "label": "CORAL_TINT_BY_ASSET",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L29",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_coral_tint_by_asset",
       "community": 8,
@@ -3527,7 +3657,7 @@
       "label": "TintableMaterial",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L39",
+      "source_location": "L40",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_tintablematerial",
       "community": 8,
@@ -3537,7 +3667,7 @@
       "label": "setNoShadows()",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L49",
+      "source_location": "L51",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_setnoshadows",
       "community": 8,
@@ -3547,7 +3677,7 @@
       "label": "collectStandardMaterials()",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L56",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_collectstandardmaterials",
       "community": 8,
@@ -3557,7 +3687,7 @@
       "label": "ReefDecorLayer",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L80",
+      "source_location": "L82",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_reefdecorlayer",
       "community": 8,
@@ -3567,7 +3697,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L93",
+      "source_location": "L95",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_reefdecorlayer_constructor",
       "community": 8,
@@ -3577,7 +3707,7 @@
       "label": ".load()",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L99",
+      "source_location": "L101",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_reefdecorlayer_load",
       "community": 8,
@@ -3587,7 +3717,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L105",
+      "source_location": "L107",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_reefdecorlayer_update",
       "community": 8,
@@ -3597,7 +3727,7 @@
       "label": ".loadDecor()",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L117",
+      "source_location": "L119",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_reefdecorlayer_loaddecor",
       "community": 8,
@@ -3607,7 +3737,7 @@
       "label": ".addPlacement()",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L171",
+      "source_location": "L173",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_reefdecorlayer_addplacement",
       "community": 8,
@@ -3617,7 +3747,7 @@
       "label": ".addCoralTarget()",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L204",
+      "source_location": "L206",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_reefdecorlayer_addcoraltarget",
       "community": 8,
@@ -3627,7 +3757,7 @@
       "label": ".addSeaweedTarget()",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L224",
+      "source_location": "L226",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_reefdecorlayer_addseaweedtarget",
       "community": 8,
@@ -3637,7 +3767,7 @@
       "label": ".addSeaweedAnimation()",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L243",
+      "source_location": "L245",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_reefdecorlayer_addseaweedanimation",
       "community": 8,
@@ -3647,7 +3777,7 @@
       "label": ".polishImportedMaterials()",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L259",
+      "source_location": "L261",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_reefdecorlayer_polishimportedmaterials",
       "community": 8,
@@ -3657,7 +3787,7 @@
       "label": ".logSeaweedAnimations()",
       "file_type": "code",
       "source_file": "src/ocean/ReefDecorLayer.ts",
-      "source_location": "L342",
+      "source_location": "L361",
       "_origin": "ast",
       "id": "ocean_reefdecorlayer_reefdecorlayer_logseaweedanimations",
       "community": 8,
@@ -3670,84 +3800,74 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_reefenvironment",
-      "community": 8,
+      "community": 103,
       "norm_label": "reefenvironment.ts"
     },
     {
       "label": "HeroRockPlacement",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L52",
+      "source_location": "L48",
       "_origin": "ast",
       "id": "ocean_reefenvironment_herorockplacement",
-      "community": 8,
+      "community": 103,
       "norm_label": "herorockplacement"
     },
     {
       "label": "REEF_ROCK_PLACEMENTS",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L62",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reef_rock_placements",
-      "community": 8,
+      "community": 103,
       "norm_label": "reef_rock_placements"
     },
     {
       "label": "randomRange()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L155",
+      "source_location": "L151",
       "_origin": "ast",
       "id": "ocean_reefenvironment_randomrange",
-      "community": 8,
+      "community": 103,
       "norm_label": "randomrange()"
     },
     {
       "label": "clamp01()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L159",
+      "source_location": "L155",
       "_origin": "ast",
       "id": "ocean_reefenvironment_clamp01",
-      "community": 8,
+      "community": 103,
       "norm_label": "clamp01()"
     },
     {
       "label": "smoothStep()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L163",
+      "source_location": "L159",
       "_origin": "ast",
       "id": "ocean_reefenvironment_smoothstep",
-      "community": 8,
+      "community": 103,
       "norm_label": "smoothstep()"
     },
     {
       "label": "createSeabedGeometry()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L169",
+      "source_location": "L165",
       "_origin": "ast",
       "id": "ocean_reefenvironment_createseabedgeometry",
-      "community": 8,
+      "community": 103,
       "norm_label": "createseabedgeometry()"
-    },
-    {
-      "label": "createRepeatingTexture()",
-      "file_type": "code",
-      "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L206",
-      "_origin": "ast",
-      "id": "ocean_reefenvironment_createrepeatingtexture",
-      "community": 8,
-      "norm_label": "createrepeatingtexture()"
     },
     {
       "label": "setNoShadows()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L223",
+      "source_location": "L202",
       "_origin": "ast",
       "id": "ocean_reefenvironment_setnoshadows",
       "community": 8,
@@ -3757,7 +3877,7 @@
       "label": "ReefEnvironment",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L230",
+      "source_location": "L209",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment",
       "community": 8,
@@ -3767,7 +3887,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L253",
+      "source_location": "L232",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_constructor",
       "community": 8,
@@ -3777,17 +3897,17 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L309",
+      "source_location": "L288",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_update",
-      "community": 110,
+      "community": 97,
       "norm_label": ".update()"
     },
     {
       "label": ".resetProgression()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L500",
+      "source_location": "L479",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_resetprogression",
       "community": 8,
@@ -3797,7 +3917,7 @@
       "label": ".dispose()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L529",
+      "source_location": "L508",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_dispose",
       "community": 8,
@@ -3807,7 +3927,7 @@
       "label": ".addLighting()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L537",
+      "source_location": "L516",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addlighting",
       "community": 8,
@@ -3817,7 +3937,7 @@
       "label": ".addSeabed()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L583",
+      "source_location": "L562",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addseabed",
       "community": 8,
@@ -3827,7 +3947,7 @@
       "label": ".addRocks()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L648",
+      "source_location": "L627",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addrocks",
       "community": 8,
@@ -3837,7 +3957,7 @@
       "label": ".addCoral()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L724",
+      "source_location": "L681",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addcoral",
       "community": 8,
@@ -3847,7 +3967,7 @@
       "label": ".addVegetation()",
       "file_type": "code",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L875",
+      "source_location": "L840",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_addvegetation",
       "community": 8,
@@ -3890,7 +4010,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere",
-      "community": 8,
+      "community": 103,
       "norm_label": "underwateratmosphere.ts"
     },
     {
@@ -3900,7 +4020,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwater_atmosphere_config",
-      "community": 8,
+      "community": 103,
       "norm_label": "underwater_atmosphere_config"
     },
     {
@@ -3910,7 +4030,7 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_randomrange",
-      "community": 8,
+      "community": 103,
       "norm_label": "randomrange()"
     },
     {
@@ -3940,7 +4060,7 @@
       "source_location": "L225",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_update",
-      "community": 110,
+      "community": 97,
       "norm_label": ".update()"
     },
     {
@@ -4060,7 +4180,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_underwaterparticles",
-      "community": 8,
+      "community": 109,
       "norm_label": "underwaterparticles.ts"
     },
     {
@@ -4070,7 +4190,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "ocean_underwaterparticles_particlefieldconfig",
-      "community": 8,
+      "community": 109,
       "norm_label": "particlefieldconfig"
     },
     {
@@ -4080,7 +4200,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "ocean_underwaterparticles_randomrange",
-      "community": 8,
+      "community": 109,
       "norm_label": "randomrange()"
     },
     {
@@ -4090,7 +4210,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "ocean_underwaterparticles_underwaterparticles",
-      "community": 8,
+      "community": 109,
       "norm_label": "underwaterparticles"
     },
     {
@@ -4100,7 +4220,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "ocean_underwaterparticles_underwaterparticles_constructor",
-      "community": 8,
+      "community": 109,
       "norm_label": ".constructor()"
     },
     {
@@ -4110,7 +4230,7 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "ocean_underwaterparticles_underwaterparticles_update",
-      "community": 8,
+      "community": 109,
       "norm_label": ".update()"
     },
     {
@@ -4130,7 +4250,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "ocean_watercurrent_currentsample",
-      "community": 110,
+      "community": 97,
       "norm_label": "currentsample"
     },
     {
@@ -4227,81 +4347,81 @@
       "label": "selectFishAnimation()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L25",
+      "source_location": "L30",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_selectfishanimation",
-      "community": 110,
+      "community": 99,
       "norm_label": "selectfishanimation()"
     },
     {
       "label": "ReefBreathingSystem",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L53",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem",
-      "community": 110,
+      "community": 99,
       "norm_label": "reefbreathingsystem"
     },
     {
       "label": ".init()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L111",
+      "source_location": "L116",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_init",
-      "community": 110,
+      "community": 99,
       "norm_label": ".init()"
     },
     {
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L196",
+      "source_location": "L201",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_update",
-      "community": 110,
+      "community": 99,
       "norm_label": ".update()"
     },
     {
       "label": ".resetExperienceSystems()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L289",
+      "source_location": "L295",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_resetexperiencesystems",
-      "community": 110,
+      "community": 99,
       "norm_label": ".resetexperiencesystems()"
     },
     {
       "label": ".loadMantaFinale()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L299",
+      "source_location": "L305",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_loadmantafinale",
-      "community": 110,
+      "community": 99,
       "norm_label": ".loadmantafinale()"
-    },
-    {
-      "label": ".loadCalmFishTest()",
-      "file_type": "code",
-      "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L355",
-      "_origin": "ast",
-      "id": "systems_reefbreathingsystem_reefbreathingsystem_loadcalmfishtest",
-      "community": 110,
-      "norm_label": ".loadcalmfishtest()"
     },
     {
       "label": ".loadFishSchool()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L427",
+      "source_location": "L361",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_loadfishschool",
-      "community": 110,
+      "community": 99,
       "norm_label": ".loadfishschool()"
+    },
+    {
+      "label": ".loadButterflyFishHeroLayer()",
+      "file_type": "code",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L432",
+      "_origin": "ast",
+      "id": "systems_reefbreathingsystem_reefbreathingsystem_loadbutterflyfishherolayer",
+      "community": 99,
+      "norm_label": ".loadbutterflyfishherolayer()"
     },
     {
       "label": "vite-env.d.ts",
@@ -14289,6 +14409,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "breathing_breathengine"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/ocean/FishSchool.ts",
       "source_location": "L8",
       "weight": 1.0,
@@ -14492,6 +14623,28 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "ocean_bioluminescentplankton_bioluminescentplankton_update",
+      "target": "breathing_breathengine_breathstate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "breathing_breathengine_breathstate"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L432",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer_butterflyfishherolayer_update",
       "target": "breathing_breathengine_breathstate"
     },
     {
@@ -16790,132 +16943,262 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L101",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L127",
       "weight": 1.0,
-      "source": "ocean_calmfishtest",
-      "target": "ocean_calmfishtest_applyfallbackmaterial",
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_accent_color"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L122",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_body_color"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L337",
+      "weight": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_breathradiusscale",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L18",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L358",
       "weight": 1.0,
-      "source": "ocean_calmfishtest",
-      "target": "ocean_calmfishtest_body_fallback",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_butterflyfishherolayer"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L185",
-      "weight": 1.0,
-      "source": "ocean_calmfishtest",
-      "target": "ocean_calmfishtest_calculatescale",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
       "source_location": "L22",
       "weight": 1.0,
-      "source": "ocean_calmfishtest",
-      "target": "ocean_calmfishtest_calmfishinstance",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_butterflyfishherolayerconfig"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L203",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L72",
       "weight": 1.0,
-      "source": "ocean_calmfishtest",
-      "target": "ocean_calmfishtest_calmfishtest",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_butterflyfishherolayerreport"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L28",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L37",
       "weight": 1.0,
-      "source": "ocean_calmfishtest",
-      "target": "ocean_calmfishtest_calmfishtestreport",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_butterflyfishinstance"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L163",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L61",
       "weight": 1.0,
-      "source": "ocean_calmfishtest",
-      "target": "ocean_calmfishtest_countmeshes",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_butterflyfishmaterialaudit"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L20",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L27",
       "weight": 1.0,
-      "source": "ocean_calmfishtest",
-      "target": "ocean_calmfishtest_fin_fallback",
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_butterflypathconfig"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L283",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_cloneandtunematerials"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L336",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_distancefromuser"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L340",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_estimateclosestdistance"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_guide_point",
       "confidence_score": 1.0
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_hero_paths"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L145",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_isplaceholdertexture"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L154",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_isusableanimationclip"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L132",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_marking_color"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L190",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_materialaudit"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_materiallike"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L207",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_materialneedsfallback"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L160",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_selectusableanimationclip"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_texturelike"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L134",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_texturesize"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L224",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_tunebodymaterial"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L259",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_tunemarkingmaterial"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
       "source_location": "L81",
       "weight": 1.0,
-      "source": "ocean_calmfishtest",
-      "target": "ocean_calmfishtest_gathermaterials",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L77",
-      "weight": 1.0,
-      "source": "ocean_calmfishtest",
-      "target": "ocean_calmfishtest_isnearlywhite",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L53",
-      "weight": 1.0,
-      "source": "ocean_calmfishtest",
-      "target": "ocean_calmfishtest_selectcalmfishanimation",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L19",
-      "weight": 1.0,
-      "source": "ocean_calmfishtest",
-      "target": "ocean_calmfishtest_silver_fallback",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L41",
-      "weight": 1.0,
-      "source": "ocean_calmfishtest",
-      "target": "ocean_calmfishtest_tintablematerial",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_user_point"
     },
     {
       "relation": "imports_from",
@@ -16924,115 +17207,116 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem",
-      "target": "ocean_calmfishtest",
-      "confidence_score": 1.0
+      "target": "ocean_butterflyfishherolayer"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L217",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L199",
       "weight": 1.0,
-      "source": "ocean_calmfishtest_calmfishtest_constructor",
-      "target": "ocean_calmfishtest_selectcalmfishanimation",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer_materialaudit",
+      "target": "ocean_butterflyfishherolayer_texturesize"
     },
     {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L109",
-      "weight": 1.0,
-      "source": "ocean_calmfishtest_applyfallbackmaterial",
-      "target": "ocean_calmfishtest_isnearlywhite",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L220",
-      "weight": 1.0,
-      "source": "ocean_calmfishtest_calmfishtest_constructor",
-      "target": "ocean_calmfishtest_gathermaterials",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L304",
-      "weight": 1.0,
-      "source": "ocean_calmfishtest_calmfishtest_createinstances",
-      "target": "ocean_calmfishtest_gathermaterials",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L233",
-      "weight": 1.0,
-      "source": "ocean_calmfishtest_calmfishtest_constructor",
-      "target": "ocean_calmfishtest_countmeshes",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
       "source_location": "L219",
       "weight": 1.0,
-      "source": "ocean_calmfishtest_calmfishtest_constructor",
-      "target": "ocean_calmfishtest_calculatescale",
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer_materialneedsfallback",
+      "target": "ocean_butterflyfishherolayer_isplaceholdertexture"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L369",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer_butterflyfishherolayer_constructor",
+      "target": "ocean_butterflyfishherolayer_selectusableanimationclip"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L383",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer_butterflyfishherolayer_constructor",
+      "target": "ocean_butterflyfishherolayer_cloneandtunematerials"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L474",
+      "weight": 1.0,
+      "source": "ocean_butterflyfishherolayer_butterflyfishherolayer_update",
+      "target": "ocean_butterflyfishherolayer_breathradiusscale",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L350",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer_estimateclosestdistance",
+      "target": "ocean_butterflyfishherolayer_distancefromuser"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L423",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer_butterflyfishherolayer_constructor",
+      "target": "ocean_butterflyfishherolayer_estimateclosestdistance"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L210",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L365",
       "weight": 1.0,
-      "source": "ocean_calmfishtest_calmfishtest",
-      "target": "ocean_calmfishtest_calmfishtest_constructor",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_butterflyfishherolayer_constructor"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L289",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L494",
       "weight": 1.0,
-      "source": "ocean_calmfishtest_calmfishtest",
-      "target": "ocean_calmfishtest_calmfishtest_createinstances",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_butterflyfishherolayer_dispose"
     },
     {
       "relation": "method",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L284",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L432",
       "weight": 1.0,
-      "source": "ocean_calmfishtest_calmfishtest",
-      "target": "ocean_calmfishtest_calmfishtest_dispose",
-      "confidence_score": 1.0
-    },
-    {
-      "relation": "method",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L256",
-      "weight": 1.0,
-      "source": "ocean_calmfishtest_calmfishtest",
-      "target": "ocean_calmfishtest_calmfishtest_update",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_butterflyfishherolayer_update"
     },
     {
       "relation": "imports",
@@ -17041,31 +17325,30 @@
       "source_file": "src/systems/ReefBreathingSystem.ts",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem",
-      "target": "ocean_calmfishtest_calmfishtest",
-      "confidence_score": 1.0
+      "target": "ocean_butterflyfishherolayer_butterflyfishherolayer"
     },
     {
       "relation": "references",
       "context": "field",
       "confidence": "EXTRACTED",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L71",
+      "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem",
-      "target": "ocean_calmfishtest_calmfishtest",
-      "confidence_score": 1.0
+      "target": "ocean_butterflyfishherolayer_butterflyfishherolayer"
     },
     {
-      "relation": "calls",
-      "context": "call",
+      "relation": "contains",
       "confidence": "EXTRACTED",
-      "source_file": "src/ocean/CalmFishTest.ts",
-      "source_location": "L248",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L39",
       "weight": 1.0,
-      "source": "ocean_calmfishtest_calmfishtest_constructor",
-      "target": "ocean_calmfishtest_calmfishtest_createinstances",
-      "confidence_score": 1.0
+      "confidence_score": 1.0,
+      "source": "ocean_fishagent",
+      "target": "ocean_fishagent_createmutedfishmaterial"
     },
     {
       "relation": "contains",
@@ -18500,16 +18783,6 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L102",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "ocean_reefenvironment",
-      "target": "ocean_reefenvironment_createrepeatingtexture"
-    },
-    {
-      "relation": "contains",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ocean/ReefEnvironment.ts",
       "source_location": "L38",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -18729,17 +19002,6 @@
       "confidence_score": 1.0,
       "source": "ocean_reefenvironment_reefenvironment_addseabed",
       "target": "ocean_reefenvironment_createseabedgeometry"
-    },
-    {
-      "relation": "calls",
-      "context": "call",
-      "confidence": "EXTRACTED",
-      "source_file": "src/ocean/ReefEnvironment.ts",
-      "source_location": "L547",
-      "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "ocean_reefenvironment_reefenvironment_addrocks",
-      "target": "ocean_reefenvironment_createrepeatingtexture"
     },
     {
       "relation": "calls",
@@ -19581,11 +19843,11 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L355",
+      "source_location": "L432",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem",
-      "target": "systems_reefbreathingsystem_reefbreathingsystem_loadcalmfishtest",
-      "confidence_score": 1.0
+      "target": "systems_reefbreathingsystem_reefbreathingsystem_loadbutterflyfishherolayer"
     },
     {
       "relation": "method",
@@ -19632,11 +19894,11 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L192",
+      "source_location": "L197",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "systems_reefbreathingsystem_reefbreathingsystem_init",
-      "target": "systems_reefbreathingsystem_reefbreathingsystem_loadcalmfishtest",
-      "confidence_score": 1.0
+      "target": "systems_reefbreathingsystem_reefbreathingsystem_loadbutterflyfishherolayer"
     },
     {
       "relation": "calls",
@@ -26562,5 +26824,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a7f6d09d74fe181f8dc3e65e3ce3e0bd317b1520"
+  "built_at_commit": "d24649d991ea1af018e64db0da5ca3775e641815"
 }

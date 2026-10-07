@@ -100,12 +100,12 @@ export class MarineLifeLayer {
       new ConeGeometry(0.052, 0.14, 4);
     const midMaterial =
       new MeshBasicMaterial({
-        color: 0x244d54,
+        color: 0x2e5b61,
         fog: true,
       });
     const midTailMaterial =
       new MeshBasicMaterial({
-        color: 0x1b3c42,
+        color: 0x24484e,
         fog: true,
       });
 

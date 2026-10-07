@@ -1,8 +1,6 @@
 import {
   AssetManager,
   createSystem,
-  Mesh,
-  type Object3D,
   type AnimationClip,
 } from '@iwsdk/core';
 
@@ -17,8 +15,13 @@ import { ExperienceController } from '../experience/ExperienceController.js';
 import { ExperienceXRControls } from '../experience/ExperienceXRControls.js';
 import { MantaFinale } from '../experience/MantaFinale.js';
 import { SessionController } from '../experience/SessionController.js';
-import { BassFishTest } from '../ocean/BassFishTest.js';
 import { BioluminescentPlankton } from '../ocean/BioluminescentPlankton.js';
+import {
+  BUTTERFLY_FISH_HEADING_OFFSET_Y,
+  BUTTERFLY_FISH_SCALE,
+  HERO_BUTTERFLY_FISH_COUNT,
+  ButterflyFishHeroLayer,
+} from '../ocean/ButterflyFishHeroLayer.js';
 import { FishSchool } from '../ocean/FishSchool.js';
 import { JellyfishGuide } from '../ocean/JellyfishGuide.js';
 import { ReefEnvironment } from '../ocean/ReefEnvironment.js';
@@ -52,146 +55,6 @@ function selectFishAnimation(
   return clips[0];
 }
 
-type RepresentativeMaterialLabel =
-  | 'coral'
-  | 'seaweed'
-  | 'rock'
-  | 'reefFish';
-
-interface MaterialLike {
-  color?: {
-    getHexString?: () => string;
-  };
-  emissive?: {
-    getHexString?: () => string;
-  };
-  map?: {
-    uuid?: string;
-  } | null;
-  uuid?: string;
-}
-
-interface MaterialState {
-  colorHex: string | null;
-  emissiveHex: string | null;
-  mapUuid: string | null;
-  uuid: string | null;
-}
-
-interface MaterialSnapshot extends MaterialState {
-  material: unknown;
-}
-
-interface RendererState {
-  outputColorSpace: unknown;
-  overrideMaterial: boolean;
-  toneMapping: unknown;
-  toneMappingExposure: unknown;
-}
-
-function colorHex(
-  color: MaterialLike['color'],
-): string | null {
-  if (typeof color?.getHexString !== 'function') {
-    return null;
-  }
-
-  return color.getHexString();
-}
-
-function readMaterialState(
-  material: unknown,
-): MaterialState {
-  const readable = material as MaterialLike;
-
-  return {
-    colorHex: colorHex(readable.color),
-    emissiveHex: colorHex(readable.emissive),
-    mapUuid: readable.map?.uuid ?? null,
-    uuid: readable.uuid ?? null,
-  };
-}
-
-function materialStateUnchanged(
-  snapshot: MaterialSnapshot | null,
-): boolean {
-  if (snapshot == null) {
-    return false;
-  }
-
-  const current =
-    readMaterialState(snapshot.material);
-
-  return (
-    current.uuid === snapshot.uuid &&
-    current.colorHex === snapshot.colorHex &&
-    current.emissiveHex === snapshot.emissiveHex &&
-    current.mapUuid === snapshot.mapUuid
-  );
-}
-
-function objectNamePath(object: Object3D): string {
-  const names: string[] = [];
-  let current: Object3D | null = object;
-
-  while (current != null) {
-    if (current.name.length > 0) {
-      names.push(current.name);
-    }
-
-    current = current.parent;
-  }
-
-  return names.reverse().join('/');
-}
-
-function firstMaterialInRoot(
-  root: Object3D | null,
-  matcher?: (namePath: string) => boolean,
-): unknown | null {
-  if (root == null) {
-    return null;
-  }
-
-  let result: unknown | null = null;
-
-  root.traverse((child) => {
-    if (result != null || !(child instanceof Mesh)) {
-      return;
-    }
-
-    if (
-      matcher != null &&
-      !matcher(objectNamePath(child))
-    ) {
-      return;
-    }
-
-    const mesh = child as Mesh & {
-      material: unknown | unknown[];
-    };
-
-    result = Array.isArray(mesh.material)
-      ? mesh.material[0] ?? null
-      : mesh.material;
-  });
-
-  return result;
-}
-
-function makeMaterialSnapshot(
-  material: unknown | null,
-): MaterialSnapshot | null {
-  if (material == null) {
-    return null;
-  }
-
-  return {
-    material,
-    ...readMaterialState(material),
-  };
-}
-
 export class ReefBreathingSystem extends createSystem({}) {
   private readonly breathing =
     new BreathEngine({
@@ -210,8 +73,8 @@ export class ReefBreathingSystem extends createSystem({}) {
     | FishSchool
     | null = null;
 
-  private bassFishTest:
-    | BassFishTest
+  private butterflyFishHeroLayer:
+    | ButterflyFishHeroLayer
     | null = null;
 
   private environment:
@@ -262,7 +125,7 @@ export class ReefBreathingSystem extends createSystem({}) {
       this.environment?.dispose();
       this.oceanAudio?.dispose();
       this.mantaFinale?.reset();
-      this.bassFishTest?.dispose();
+      this.butterflyFishHeroLayer?.dispose();
       this.breathGuidance?.dispose();
       this.desktopControls?.dispose();
       this.xrControls?.dispose();
@@ -330,9 +193,8 @@ export class ReefBreathingSystem extends createSystem({}) {
         this.experienceController,
       );
 
-    void this.loadFishSchool().then(() =>
-      this.loadBassFishTest(),
-    );
+    void this.loadFishSchool();
+    void this.loadButterflyFishHeroLayer();
     void this.loadMantaFinale();
   }
 
@@ -415,8 +277,9 @@ export class ReefBreathingSystem extends createSystem({}) {
       );
     }
 
-    this.bassFishTest?.update(
-      isRunning ? delta : 0,
+    this.butterflyFishHeroLayer?.update(
+      state,
+      delta,
       time,
     );
 
@@ -566,184 +429,62 @@ export class ReefBreathingSystem extends createSystem({}) {
     }
   }
 
-  private captureRepresentativeMaterials(): Record<
-    RepresentativeMaterialLabel,
-    MaterialSnapshot | null
-  > {
-    return {
-      coral: makeMaterialSnapshot(
-        firstMaterialInRoot(
-          this.environment?.root ?? null,
-          (namePath) =>
-            /ReefCoral|ReefFanCoral/.test(namePath),
-        ),
-      ),
-      seaweed: makeMaterialSnapshot(
-        firstMaterialInRoot(
-          this.environment?.root ?? null,
-          (namePath) =>
-            /ReefSeagrass/.test(namePath),
-        ),
-      ),
-      rock: makeMaterialSnapshot(
-        firstMaterialInRoot(
-          this.environment?.root ?? null,
-          (namePath) =>
-            /ReefHeroRock|ReefFogRock/.test(namePath),
-        ),
-      ),
-      reefFish: makeMaterialSnapshot(
-        firstMaterialInRoot(
-          this.fishSchool?.root ?? null,
-        ),
-      ),
-    };
-  }
-
-  private captureRendererState(): RendererState {
-    const rendererWithState =
-      this.renderer as typeof this.renderer & {
-        outputColorSpace?: unknown;
-        toneMappingExposure?: unknown;
-      };
-    const sceneWithOverride =
-      this.world.scene as typeof this.world.scene & {
-        overrideMaterial?: unknown;
-      };
-
-    return {
-      outputColorSpace:
-        rendererWithState.outputColorSpace ?? 'n/a',
-      overrideMaterial:
-        sceneWithOverride.overrideMaterial != null,
-      toneMapping: this.renderer.toneMapping,
-      toneMappingExposure:
-        rendererWithState.toneMappingExposure ?? 'n/a',
-    };
-  }
-
-  private async loadBassFishTest(): Promise<void> {
+  private async loadButterflyFishHeroLayer(): Promise<void> {
     try {
-      const materialSnapshots =
-        this.captureRepresentativeMaterials();
-      const rendererBefore =
-        this.captureRendererState();
       const gltf =
         await AssetManager.loadGLTFById(
-          'bass-fish',
+          'butterfly-fish',
         );
 
       console.log(
-        '[Resonance Reef] Loaded bass-fish',
+        '[Resonance Reef] Loaded butterfly-fish hero asset',
       );
 
-      const animationNames = gltf.animations.map(
-        (clip) => clip.name,
-      );
-
-      console.log(
-        `[Resonance Reef] bass-fish animations: ${
-          animationNames.length > 0
-            ? animationNames.join(', ')
-            : '(none)'
-        }`,
-      );
-
-      this.bassFishTest =
-        new BassFishTest(
-          () => {
+      this.butterflyFishHeroLayer =
+        new ButterflyFishHeroLayer({
+          animations: gltf.animations,
+          visualFactory: () => {
             const clone =
               AssetManager.getGLTF(
-                'bass-fish',
+                'butterfly-fish',
               );
 
             if (clone == null) {
               throw new Error(
-                'Cached bass-fish GLTF clone was unavailable.',
+                'Cached butterfly-fish GLTF clone was unavailable.',
               );
             }
 
             return clone.scene;
           },
-          gltf.animations,
-        );
-
-      if (
-        this.bassFishTest.report.selectedAnimationName == null
-      ) {
-        console.warn(
-          '[Resonance Reef] bass-fish has no animation clips; rendering static A/B test fish.',
-        );
-      } else {
-        console.log(
-          `[Resonance Reef] bass-fish selected animation: ${this.bassFishTest.report.selectedAnimationName}`,
-        );
-      }
+        });
 
       this.world.createTransformEntity(
-        this.bassFishTest.root,
+        this.butterflyFishHeroLayer.root,
       );
 
-      const rendererAfter =
-        this.captureRendererState();
-      const isolationCheck = {
-        coral:
-          materialStateUnchanged(
-            materialSnapshots.coral,
-          ),
-        seaweed:
-          materialStateUnchanged(
-            materialSnapshots.seaweed,
-          ),
-        rock:
-          materialStateUnchanged(
-            materialSnapshots.rock,
-          ),
-        reefFish:
-          materialStateUnchanged(
-            materialSnapshots.reefFish,
-          ),
-      };
-
-      console.log(
-        `[Resonance Reef] Bass material isolation check:
-coral unchanged: ${isolationCheck.coral}
-seaweed unchanged: ${isolationCheck.seaweed}
-rock unchanged: ${isolationCheck.rock}
-reef fish unchanged: ${isolationCheck.reefFish}`,
-      );
-
-      const bassFishReport =
-        this.bassFishTest.report;
-      const materialNames =
-        bassFishReport.materialAudits
-          .map((material) => material.name)
-          .join(', ');
-      const materialTypes =
-        bassFishReport.materialAudits
-          .map((material) => material.type)
-          .join(', ');
-      const materialMaps =
-        bassFishReport.materialAudits
+      const report =
+        this.butterflyFishHeroLayer.report;
+      const materialSummary =
+        report.materialAudits
           .map((material) =>
-            material.hasMap ? 'map' : 'no-map',
-          )
-          .join(', ');
-      const materialClones =
-        bassFishReport.materialAudits
-          .map((material) =>
-            material.cloned ? 'cloned' : 'not-cloned',
+            `${material.materialName}:${material.materialType}:map=${material.mapName ?? 'none'}:${material.mapSize ?? 'unknown'}:normal=${material.normalMapName ?? 'none'}:${material.normalMapSize ?? 'unknown'}`,
           )
           .join(', ');
 
       console.log(
-        `[Resonance Reef] bass-fish test report: objects=${bassFishReport.bassObjectNames.join(', ')}, meshes=${bassFishReport.meshCount}, skinnedMeshes=${bassFishReport.skinnedMeshCount}, materials=${bassFishReport.materialCount}, materialNames=${materialNames || '(none)'}, materialTypes=${materialTypes || '(none)'}, materialMaps=${materialMaps || '(none)'}, materialCloned=${materialClones || '(none)'}, textureMaps=${bassFishReport.originalTextureMapsPresent ? 'present' : 'missing'}, bodyColor=${bassFishReport.bodyColor}, detail=${bassFishReport.detailColor}, roughness=${bassFishReport.roughness.toFixed(2)}, metalness=${bassFishReport.metalness.toFixed(2)}, emissive=${bassFishReport.emissive}, emissiveIntensity=${bassFishReport.emissiveIntensity}, scale=${bassFishReport.scale.toFixed(4)}, headingOffsetY=${bassFishReport.headingOffsetY}, animationSpeed=${bassFishReport.speedRange[0].toFixed(2)}-${bassFishReport.speedRange[1].toFixed(2)}, dedicatedMaterial=${bassFishReport.materialTreatmentApplied ? 'applied' : 'not-applied'}, separateFinMaterial=${bassFishReport.separateFinMaterialFound ? 'found' : 'not-found'}, rendererBeforeToneMapping=${rendererBefore.toneMapping}, rendererAfterToneMapping=${rendererAfter.toneMapping}, rendererBeforeToneMappingExposure=${rendererBefore.toneMappingExposure}, rendererAfterToneMappingExposure=${rendererAfter.toneMappingExposure}, rendererBeforeOutputColorSpace=${rendererBefore.outputColorSpace}, rendererAfterOutputColorSpace=${rendererAfter.outputColorSpace}, worldSceneOverrideMaterial=${rendererAfter.overrideMaterial}`,
+        `[Resonance Reef] butterfly-fish hero layer: instances=${HERO_BUTTERFLY_FISH_COUNT}, animations=${
+          report.animationNames.length > 0
+            ? report.animationNames.join(', ')
+            : '(none)'
+        }, selectedAnimation=${report.selectedAnimationName ?? '(none)'}, scale=${BUTTERFLY_FISH_SCALE.toFixed(3)}, headingOffsetY=${BUTTERFLY_FISH_HEADING_OFFSET_Y.toFixed(3)}, breathResponse=${(report.breathResponseRange[0] * 100).toFixed(1)}%-${(report.breathResponseRange[1] * 100).toFixed(1)}%, closestDistance=${report.closestDistanceMeters.toFixed(2)}m, fallbackMaterialCorrection=${report.fallbackMaterialCorrectionUsed ? 'used' : 'not-used'}, materials=${materialSummary || '(none)'}`,
       );
     } catch (error: unknown) {
       console.error(
-        '[Resonance Reef] Failed to load bass-fish GLB.',
+        '[Resonance Reef] Failed to load butterfly-fish GLB.',
         error,
       );
     }
   }
+
 }

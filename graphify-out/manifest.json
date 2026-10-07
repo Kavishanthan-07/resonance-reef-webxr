@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/assets.ts": {
-    "mtime": 1791300584.0636165,
-    "ast_hash": "1ec40faf31a350e9c52a794632efde83",
+    "mtime": 1791342896.2285924,
+    "ast_hash": "5f5e23313d7727a9db00874201216cdf",
     "semantic_hash": ""
   },
   "src/breathing/BreathEngine.ts": {
@@ -55,13 +55,13 @@
     "semantic_hash": ""
   },
   "src/ocean/FishAgent.ts": {
-    "mtime": 1791298355.69518,
-    "ast_hash": "f32214c51bf224186e09e2aa50f2e7a1",
+    "mtime": 1791347124.634978,
+    "ast_hash": "9969b8f6e0ea3a519f730b1ef0ecd31c",
     "semantic_hash": ""
   },
   "src/ocean/FishSchool.ts": {
-    "mtime": 1791297829.891085,
-    "ast_hash": "3193e35025dbd1eaf7c37103814e7337",
+    "mtime": 1791344853.6841352,
+    "ast_hash": "900b04e8cfc85f8ec8a245bf0eb22e98",
     "semantic_hash": ""
   },
   "src/ocean/JellyfishGuide.ts": {
@@ -70,8 +70,8 @@
     "semantic_hash": ""
   },
   "src/ocean/ReefEnvironment.ts": {
-    "mtime": 1791274479.6795564,
-    "ast_hash": "ef96c753511c2fa7ad615b94982b94af",
+    "mtime": 1791320193.2469006,
+    "ast_hash": "aed55a4eec1c0bee903ba1dc824a4fcc",
     "semantic_hash": ""
   },
   "src/ocean/UnderwaterParticles.ts": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "src/systems/ReefBreathingSystem.ts": {
-    "mtime": 1791300701.553871,
-    "ast_hash": "1a3fb4b8f5cfe36bb0f137d0b8aa667a",
+    "mtime": 1791347147.780622,
+    "ast_hash": "6dc924288a8bd373adf7d0b8382d9baf",
     "semantic_hash": ""
   },
   "src/vite-env.d.ts": {
@@ -585,8 +585,8 @@
     "semantic_hash": ""
   },
   "src/ocean/ReefDecorLayer.ts": {
-    "mtime": 1791273876.986925,
-    "ast_hash": "37d17ab8692963cc912fe78f268faafd",
+    "mtime": 1791320035.713343,
+    "ast_hash": "6802fd679b64e022d0f18fc69f0c6fbd",
     "semantic_hash": ""
   },
   "src/ocean/ReefResponseTargets.ts": {
@@ -620,8 +620,8 @@
     "semantic_hash": ""
   },
   "src/ocean/UnderwaterAtmosphere.ts": {
-    "mtime": 1791274402.7988021,
-    "ast_hash": "58573ad7da161d9ef9acc15c046b5584",
+    "mtime": 1791319879.2361934,
+    "ast_hash": "4aad47cc7048a078f2c35542a7252909",
     "semantic_hash": ""
   },
   "artifacts/reef-realism-pass2.png": {
@@ -630,13 +630,13 @@
     "semantic_hash": ""
   },
   "src/ocean/MarineLifeConfig.ts": {
-    "mtime": 1791297847.461843,
-    "ast_hash": "603d45f08c6d6433aa3185557ebedd31",
+    "mtime": 1791319482.7051373,
+    "ast_hash": "ab44421aa7564a8fe3b4f842f137288b",
     "semantic_hash": ""
   },
   "src/ocean/MarineLifeLayer.ts": {
-    "mtime": 1791298366.7254224,
-    "ast_hash": "65818759753759c8f6e957370f492fc9",
+    "mtime": 1791347128.9348023,
+    "ast_hash": "564ba96ad362a452289dec96d93a8884",
     "semantic_hash": ""
   },
   "artifacts/material-polish-browser.png": {
@@ -764,11 +764,6 @@
     "ast_hash": "267de50277c7be1dbc6acdc4341d61b0",
     "semantic_hash": ""
   },
-  "src/ocean/CalmFishTest.ts": {
-    "mtime": 1791300637.1749153,
-    "ast_hash": "dca735036223f1861fabf13b424c95ce",
-    "semantic_hash": ""
-  },
   "public/licenses/fish/scardinius-license.txt": {
     "mtime": 1791299373.071821,
     "ast_hash": "d4d50ebc953122f496c0f0585f0c3f14",
@@ -777,6 +772,96 @@
   "artifacts/calm-fish-ab-test-xr.png": {
     "mtime": 1791300787.6794634,
     "ast_hash": "3760ba981383a7dd6a38906da73442eb",
+    "semantic_hash": ""
+  },
+  "artifacts/bass-fish-ab-test-xr.png": {
+    "mtime": 1791302008.3867779,
+    "ast_hash": "ad91915abd46ab0b24334035fff0bfcf",
+    "semantic_hash": ""
+  },
+  "artifacts/bass-fish-isolated-material-xr.png": {
+    "mtime": 1791318370.0206845,
+    "ast_hash": "1b6ee14f885d0b9c18a95f7ca3bfbe78",
+    "semantic_hash": ""
+  },
+  "artifacts/bass-fish-material-fix-xr.png": {
+    "mtime": 1791304671.373019,
+    "ast_hash": "655a1078968f2beedf6535e088c4f271",
+    "semantic_hash": ""
+  },
+  "artifacts/recovered-3bass.png": {
+    "mtime": 1791319673.7866638,
+    "ast_hash": "c7884af39f879aed124f52bce9fdc147",
+    "semantic_hash": ""
+  },
+  "artifacts/recovered-caustics-3bass.png": {
+    "mtime": 1791319901.3329034,
+    "ast_hash": "4f81f7e3cafccca464962629554bdccf",
+    "semantic_hash": ""
+  },
+  "artifacts/recovered-local-materials-3bass.png": {
+    "mtime": 1791319963.3953521,
+    "ast_hash": "3623199da51d48be57d4802b5d09da39",
+    "semantic_hash": ""
+  },
+  "artifacts/recovered-materials-3bass.png": {
+    "mtime": 1791319752.9425256,
+    "ast_hash": "7a61aab7aa8736c400b361711fe27fbb",
+    "semantic_hash": ""
+  },
+  "artifacts/recovered-muted-3bass.png": {
+    "mtime": 1791319808.782981,
+    "ast_hash": "5de617b7451c54ad591e5b719010a9f2",
+    "semantic_hash": ""
+  },
+  "artifacts/recovered-muted-key-3bass.png": {
+    "mtime": 1791319854.9861448,
+    "ast_hash": "99080cdacc39c9b1dd81a6a6091f7328",
+    "semantic_hash": ""
+  },
+  "artifacts/recovered-replaced-local-materials-3bass.png": {
+    "mtime": 1791320057.5270653,
+    "ast_hash": "42c74fe1f379416dba37b8dc33db06a0",
+    "semantic_hash": ""
+  },
+  "artifacts/validation-bass-0.png": {
+    "mtime": 1791320100.5591683,
+    "ast_hash": "c69fe50743d0e8c382130d40e85233e8",
+    "semantic_hash": ""
+  },
+  "artifacts/validation-bass-1.png": {
+    "mtime": 1791320139.600883,
+    "ast_hash": "5cb73f760aaf8bbedac38b41315a12b5",
+    "semantic_hash": ""
+  },
+  "artifacts/validation-bass-3-final.png": {
+    "mtime": 1791320171.7178118,
+    "ast_hash": "c38154060ba26ea26ce269ba867bc856",
+    "semantic_hash": ""
+  },
+  "artifacts/butterfly-fish-visual-test-running.png": {
+    "mtime": 1791343049.3623574,
+    "ast_hash": "f10486990a53b199aebf158a5c856c26",
+    "semantic_hash": ""
+  },
+  "artifacts/butterfly-fish-visual-test-runtime.png": {
+    "mtime": 1791343011.6185892,
+    "ast_hash": "fc8c6620fbacccadc79aa2ba53f6e52d",
+    "semantic_hash": ""
+  },
+  "src/ocean/ButterflyFishHeroLayer.ts": {
+    "mtime": 1791347117.3770902,
+    "ast_hash": "2b2d9f62d4ce3f6c9f2420e70aae670d",
+    "semantic_hash": ""
+  },
+  "artifacts/butterfly-fish-hero-layer-final.png": {
+    "mtime": 1791345009.48545,
+    "ast_hash": "f2828d6752035f6ae4f704641031896b",
+    "semantic_hash": ""
+  },
+  "artifacts/butterfly-fish-hero-layer-running.png": {
+    "mtime": 1791344945.2476294,
+    "ast_hash": "3a7d13112f5fe7e6f9109e8587e2b449",
     "semantic_hash": ""
   }
 }

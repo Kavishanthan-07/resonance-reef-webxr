@@ -52,8 +52,8 @@ export class FishSchool {
   private readonly fish: FishAgent[] = [];
 
   private readonly userPoint = new Vector3(0, 1.6, 0);
-  private readonly guideCenter = new Vector3(0, 1.68, -2.3);
-  private readonly reefCenter = new Vector3(0, 1.5, -3.2);
+  private readonly guideCenter = new Vector3(0, 1.68, -4.7);
+  private readonly reefCenter = new Vector3(0, 1.5, -5.2);
   private readonly jellyfishExclusionRadius = 0.9;
   private readonly userExclusionRadius = 0.95;
 
@@ -87,9 +87,9 @@ export class FishSchool {
 
       fishRoot.name = `Fish-${index}`;
       fishRoot.position.set(
-        randomRange(-1.35, 1.35),
-        randomRange(1.0, 2.05),
-        randomRange(-4.0, -2.1),
+        randomRange(-2.25, 2.25),
+        randomRange(0.9, 2.35),
+        randomRange(-6.8, -3.5),
       );
 
       const agent = new FishAgent({
@@ -125,10 +125,10 @@ export class FishSchool {
     const radius = randomRange(1.1, 1.8);
     const depthOffset =
       index % 3 === 0
-        ? randomRange(-1.35, -0.62)
+        ? randomRange(-1.35, -0.42)
         : index % 3 === 1
-          ? randomRange(-0.45, 0.18)
-          : randomRange(0.1, 0.55);
+          ? randomRange(-0.36, 0.28)
+          : randomRange(0.18, 0.88);
 
     return new Vector3(
       Math.cos(angle) * radius,
@@ -371,11 +371,11 @@ export class FishSchool {
       }
 
       const outsideBoundary =
-        Math.abs(agent.root.position.x) > 4.2 ||
+      Math.abs(agent.root.position.x) > 4.2 ||
         agent.root.position.y < 0.35 ||
         agent.root.position.y > 3.1 ||
-        agent.root.position.z < -6.0 ||
-        agent.root.position.z > -0.8;
+        agent.root.position.z < -7.4 ||
+        agent.root.position.z > -2.8;
 
       if (outsideBoundary) {
         this.boundaryForce
@@ -455,9 +455,9 @@ export class FishSchool {
       const agent = this.fish[index];
 
       agent.root.position.set(
-        randomRange(-1.35, 1.35),
-        randomRange(1.0, 2.05),
-        randomRange(-4.0, -2.1),
+        randomRange(-2.25, 2.25),
+        randomRange(0.9, 2.35),
+        randomRange(-6.8, -3.5),
       );
       agent.velocity
         .set(
