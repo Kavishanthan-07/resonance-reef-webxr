@@ -21,8 +21,8 @@ export interface FishAgentConfig {
   visual: Object3D;
 }
 
-const PRIMARY_FISH_TINT = new Color(0x4f8588);
-const PRIMARY_FISH_SILVER_TINT = new Color(0x85a9ac);
+const PRIMARY_FISH_TINT = new Color(0x587f83);
+const PRIMARY_FISH_SILVER_TINT = new Color(0x668b8d);
 const PRIMARY_FISH_EMISSIVE_TINT = new Color(0x041514);
 
 interface TintableMaterial {
@@ -42,7 +42,7 @@ function createMutedFishMaterial(): MeshBasicMaterial {
     0.12,
   );
 
-  color.multiplyScalar(0.72);
+  color.multiplyScalar(0.66);
 
   return new MeshBasicMaterial({
     color,
@@ -57,7 +57,7 @@ function tintFishMaterial(material: unknown): void {
     PRIMARY_FISH_SILVER_TINT,
     0.08,
   );
-  tintable.color?.multiplyScalar(0.66);
+  tintable.color?.multiplyScalar(0.62);
   tintable.map = null;
   tintable.emissive?.lerp(
     PRIMARY_FISH_EMISSIVE_TINT,
@@ -107,7 +107,7 @@ function polishFishVisual(visual: Object3D): void {
           PRIMARY_FISH_SILVER_TINT,
           0.12,
         );
-        material.color.multiplyScalar(0.72);
+        material.color.multiplyScalar(0.66);
         material.map = null;
         material.emissive.lerp(
           PRIMARY_FISH_EMISSIVE_TINT,
@@ -128,7 +128,7 @@ function polishFishVisual(visual: Object3D): void {
           PRIMARY_FISH_SILVER_TINT,
           0.12,
         );
-        material.color.multiplyScalar(0.72);
+        material.color.multiplyScalar(0.66);
         material.fog = true;
         material.needsUpdate = true;
       }
