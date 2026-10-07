@@ -2,6 +2,7 @@ import {
   AnimationMixer,
   AssetManager,
   Color,
+  DoubleSide,
   Group,
   Mesh,
   MeshBasicMaterial,
@@ -41,6 +42,7 @@ interface TintableMaterial {
   emissive?: Color;
   emissiveIntensity?: number;
   fog?: boolean;
+  map?: unknown;
   metalness?: number;
   needsUpdate?: boolean;
   roughness?: number;
@@ -270,15 +272,15 @@ export class ReefDecorLayer {
         : 0x03100d,
     );
     const tintStrength =
-      placement.category === 'coral' ? 0.72 : 0.78;
+      placement.category === 'coral' ? 0.82 : 0.86;
     const minRoughness =
       placement.category === 'coral' ? 0.88 : 0.94;
 
     for (const material of materials) {
-      material.color.lerp(tint, tintStrength);
-      material.color.multiplyScalar(
-        placement.category === 'coral' ? 0.82 : 0.9,
+      material.color.copy(tint).multiplyScalar(
+        placement.category === 'coral' ? 0.58 : 0.68,
       );
+      material.map = null;
       material.emissive.lerp(emissiveTint, 0.82);
       material.emissiveIntensity = Math.min(
         material.emissiveIntensity,
@@ -304,10 +306,10 @@ export class ReefDecorLayer {
       for (const material of childMaterials) {
         const tintable = material as TintableMaterial;
 
-        tintable.color?.lerp(tint, tintStrength);
-        tintable.color?.multiplyScalar(
-          placement.category === 'coral' ? 0.82 : 0.9,
+        tintable.color?.copy(tint).multiplyScalar(
+          placement.category === 'coral' ? 0.58 : 0.68,
         );
+        tintable.map = null;
         tintable.emissive?.lerp(emissiveTint, 0.88);
 
         if (tintable.emissiveIntensity != null) {
@@ -334,6 +336,23 @@ export class ReefDecorLayer {
 
         tintable.needsUpdate = true;
       }
+
+      const mutedColor = tint.clone().multiplyScalar(
+        placement.category === 'coral' ? 0.58 : 0.68,
+      );
+      const createMutedMaterial = () =>
+        new MeshBasicMaterial({
+          color: mutedColor,
+          fog: true,
+          side:
+            placement.category === 'seaweed'
+              ? DoubleSide
+              : undefined,
+        });
+
+      child.material = Array.isArray(child.material)
+        ? childMaterials.map(() => createMutedMaterial())
+        : createMutedMaterial();
     });
 
     return materials;

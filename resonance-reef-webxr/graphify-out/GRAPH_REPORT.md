@@ -1,16 +1,16 @@
 # Graph Report - resonance-reef-webxr  (2026-10-06)
 
 ## Corpus Check
-- 114 files · ~391,325 words
+- 115 files · ~404,461 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1181 nodes · 1391 edges · 109 communities (101 shown, 8 thin omitted)
+- 1201 nodes · 1421 edges · 105 communities (97 shown, 8 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `85d392f5`
+- Built from commit: `a7f6d09d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -110,25 +110,21 @@
 - [[_COMMUNITY_Community 95|Community 95]]
 - [[_COMMUNITY_Community 96|Community 96]]
 - [[_COMMUNITY_Community 98|Community 98]]
-- [[_COMMUNITY_Community 99|Community 99]]
 - [[_COMMUNITY_Community 100|Community 100]]
-- [[_COMMUNITY_Community 102|Community 102]]
-- [[_COMMUNITY_Community 103|Community 103]]
 - [[_COMMUNITY_Community 104|Community 104]]
 - [[_COMMUNITY_Community 105|Community 105]]
 - [[_COMMUNITY_Community 106|Community 106]]
 - [[_COMMUNITY_Community 107|Community 107]]
 - [[_COMMUNITY_Community 108|Community 108]]
 - [[_COMMUNITY_Community 110|Community 110]]
-- [[_COMMUNITY_Community 111|Community 111]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Critical Best Practices` - 32 edges
 2. `Critical Best Practices` - 32 edges
 3. `BreathState` - 26 edges
-4. `Review Checklist` - 21 edges
-5. `OceanAudio` - 20 edges
-6. `ReefBreathingSystem` - 19 edges
+4. `ReefBreathingSystem` - 21 edges
+5. `Review Checklist` - 21 edges
+6. `OceanAudio` - 20 edges
 7. `ReefEnvironment` - 18 edges
 8. `ExperienceController` - 17 edges
 9. `UnderwaterAtmosphere` - 16 edges
@@ -149,11 +145,11 @@
 ## Import Cycles
 - None detected.
 
-## Communities (109 total, 8 thin omitted)
+## Communities (105 total, 8 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.24
-Nodes (8): clamp01(), ProceduralAudio, randomRange(), REEF_CUE_POSITIONS, ReefCue, setPannerPosition(), setParam(), smoothStep()
+Cohesion: 0.16
+Nodes (13): applyFallbackMaterial(), BODY_FALLBACK, calculateScale(), CalmFishInstance, CalmFishTest, CalmFishTestReport, countMeshes(), FIN_FALLBACK (+5 more)
 
 ### Community 1 - "Community 1"
 Cohesion: 0.06
@@ -184,7 +180,7 @@ Cohesion: 0.08
 Nodes (23): 2D app stuck on a loading screen, An app secret was committed or published, App loads but assets 404, App mode failures, Auto-enter works on device but breaks the browser, Blank, white, or error page after launch, bubblewrap hangs or exits without doing anything, bubblewrap update fails fetching the manifest (+15 more)
 
 ### Community 8 - "Community 8"
-Cohesion: 0.06
+Cohesion: 0.05
 Nodes (27): REEF_CORAL_PLACEMENTS, REEF_SEAWEED_PLACEMENTS, ReefDecorAssetId, ReefDecorCategory, ReefDecorPlacement, Vec3Tuple, collectStandardMaterials(), CORAL_TINT_BY_ASSET (+19 more)
 
 ### Community 9 - "Community 9"
@@ -500,20 +496,8 @@ Cohesion: 0.07
 Nodes (17): BreathGuidance, BreathGuidanceLabel, clamp01(), getBreathGuidanceLabel(), getBreathGuidanceTargetOpacity(), smoothStep(), createElement(), DesktopControls (+9 more)
 
 ### Community 98 - "Community 98"
-Cohesion: 0.17
-Nodes (8): FishAgent, FishAgentConfig, polishFishVisual(), PRIMARY_FISH_EMISSIVE_TINT, PRIMARY_FISH_TINT, TintableMaterial, FishSchool, randomRange()
-
-### Community 99 - "Community 99"
-Cohesion: 0.25
-Nodes (10): clamp01(), getCyclePosition(), getEnvironmentIntensity(), getStage(), getStageProgress(), INITIAL_STATE, interpolate(), SessionController (+2 more)
-
-### Community 102 - "Community 102"
-Cohesion: 0.40
-Nodes (5): BioluminescentPlankton, clamp(), clamp01(), randomRange(), smoothStep()
-
-### Community 103 - "Community 103"
-Cohesion: 0.19
-Nodes (10): AudioContextConstructor, AudioWindow, BreathState, BreathTiming, SessionState, DEFAULT_SPECIES, FishSchoolConfig, FishSpeciesConfig (+2 more)
+Cohesion: 0.20
+Nodes (7): FishAgent, FishAgentConfig, polishFishVisual(), PRIMARY_FISH_EMISSIVE_TINT, PRIMARY_FISH_SILVER_TINT, PRIMARY_FISH_TINT, TintableMaterial
 
 ### Community 104 - "Community 104"
 Cohesion: 0.33
@@ -536,29 +520,25 @@ Cohesion: 0.18
 Nodes (8): MARINE_LIFE_CONFIG, MID_SCHOOL_BOUNDS, BubbleState, FarFishState, MarineLifeLayer, MidFishState, randomRange(), smoothStep()
 
 ### Community 110 - "Community 110"
-Cohesion: 0.17
-Nodes (7): BreathPhase, clamp01(), smoothStep(), WaterCurrent, sceneContainer, ReefBreathingSystem, selectFishAnimation()
-
-### Community 111 - "Community 111"
-Cohesion: 0.52
-Nodes (4): createOrganicBellGeometry(), createTentacleGeometry(), JellyfishGuide, smoothStep()
+Cohesion: 0.05
+Nodes (46): AudioContextConstructor, AudioWindow, clamp01(), ProceduralAudio, randomRange(), REEF_CUE_POSITIONS, ReefCue, setPannerPosition() (+38 more)
 
 ## Knowledge Gaps
-- **700 isolated node(s):** `$schema`, `allow`, `enabledMcpjsonServers`, `PreToolUse`, `allow_instructions` (+695 more)
+- **707 isolated node(s):** `$schema`, `allow`, `enabledMcpjsonServers`, `PreToolUse`, `allow_instructions` (+702 more)
   These have ≤1 connection - possible missing edges or undocumented components.
 - **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `OceanAudio` connect `Community 94` to `Community 0`, `Community 110`, `Community 103`?**
+- **Why does `OceanAudio` connect `Community 94` to `Community 110`?**
   _High betweenness centrality (0.011) - this node is a cross-community bridge._
-- **Why does `BreathState` connect `Community 103` to `Community 0`, `Community 96`, `Community 99`, `Community 102`, `Community 8`, `Community 108`, `Community 110`, `Community 111`?**
+- **Why does `BreathState` connect `Community 110` to `Community 96`, `Community 8`, `Community 108`?**
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `ReefBreathingSystem` connect `Community 110` to `Community 96`, `Community 0`, `Community 8`, `Community 94`, `Community 95`?**
   _High betweenness centrality (0.008) - this node is a cross-community bridge._
-- **Why does `ReefBreathingSystem` connect `Community 110` to `Community 96`, `Community 98`, `Community 102`, `Community 8`, `Community 111`, `Community 94`, `Community 95`?**
-  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `$schema`, `allow`, `enabledMcpjsonServers` to the rest of the system?**
-  _700 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _707 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 1` be split into smaller, more focused modules?**
   _Cohesion score 0.06451612903225806 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
