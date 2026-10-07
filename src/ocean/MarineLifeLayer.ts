@@ -5,7 +5,6 @@ import {
   DodecahedronGeometry,
   Float32BufferAttribute,
   Group,
-  IcosahedronGeometry,
   InstancedMesh,
   Matrix4,
   Mesh,
@@ -96,17 +95,17 @@ export class MarineLifeLayer {
     this.root.name = 'ResonanceReefMarineLifeLayer';
 
     const midBodyGeometry =
-      new IcosahedronGeometry(0.12, 0);
+      new SphereGeometry(0.1, 8, 5);
     const midTailGeometry =
-      new ConeGeometry(0.07, 0.16, 3);
+      new ConeGeometry(0.052, 0.14, 4);
     const midMaterial =
       new MeshBasicMaterial({
-        color: 0x2f6269,
+        color: 0x244d54,
         fog: true,
       });
     const midTailMaterial =
       new MeshBasicMaterial({
-        color: 0x264f56,
+        color: 0x1b3c42,
         fog: true,
       });
 
@@ -127,8 +126,10 @@ export class MarineLifeLayer {
     this.farFishMesh = new InstancedMesh(
       new ConeGeometry(0.05, 0.22, 3),
       new MeshBasicMaterial({
-        color: 0x061f26,
+        color: 0x04171d,
         fog: true,
+        opacity: 0.48,
+        transparent: true,
       }),
       this.farFishCount,
     );
@@ -189,9 +190,9 @@ export class MarineLifeLayer {
           randomRange(-0.28, 0.28),
         depthPhase: randomRange(0, Math.PI * 2),
         heightPhase: randomRange(0, Math.PI * 2),
-        radiusScale: randomRange(0.78, 1.14),
-        scale: randomRange(0.72, 0.98),
-        speed: randomRange(0.07, 0.12),
+        radiusScale: randomRange(0.84, 1.18),
+        scale: randomRange(0.58, 0.86),
+        speed: randomRange(0.045, 0.078),
       });
     }
   }
@@ -213,10 +214,10 @@ export class MarineLifeLayer {
           MARINE_LIFE_CONFIG.farFishMinDistance,
           MARINE_LIFE_CONFIG.farFishMaxDistance,
         ),
-        height: randomRange(1.2, 3.1),
+        height: randomRange(1.35, 3.0),
         phase: randomRange(0, Math.PI * 2),
-        scale: randomRange(0.52, 1.1),
-        speed: randomRange(0.012, 0.032),
+        scale: randomRange(0.34, 0.76),
+        speed: randomRange(0.008, 0.02),
       });
     }
   }
@@ -328,8 +329,8 @@ export class MarineLifeLayer {
   ): void {
     const breathOffset =
       breath.phase === 'exhale'
-        ? smoothStep(breath.progress) * 0.08
-        : -smoothStep(breath.progress) * 0.045;
+        ? smoothStep(breath.progress) * 0.045
+        : -smoothStep(breath.progress) * 0.024;
 
     for (
       let index = 0;
@@ -372,9 +373,9 @@ export class MarineLifeLayer {
         this.tempLook.normalize(),
       );
       this.tempScale.set(
-        fish.scale * 1.45,
-        fish.scale * 0.78,
-        fish.scale * 0.52,
+        fish.scale * 1.65,
+        fish.scale * 0.58,
+        fish.scale * 0.46,
       );
       this.dummy.scale.copy(this.tempScale);
       this.dummy.updateMatrix();
@@ -414,7 +415,7 @@ export class MarineLifeLayer {
           0.22;
       const lateral =
         Math.sin(timeSeconds * fish.speed * 0.7 + fish.phase) *
-        1.2;
+        0.78;
 
       this.tempPosition.set(
         Math.cos(angle) * fish.distance + lateral,
@@ -423,6 +424,14 @@ export class MarineLifeLayer {
             0.18,
         Math.sin(angle) * fish.distance,
       );
+
+      if (
+        this.tempPosition.z < -8 &&
+        Math.abs(this.tempPosition.x) < 1.9
+      ) {
+        this.tempPosition.x += index % 2 === 0 ? 2.35 : -2.35;
+      }
+
       this.tempLook.set(
         -Math.sin(angle),
         0.02,

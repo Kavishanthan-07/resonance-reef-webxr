@@ -21,24 +21,44 @@ export interface FishAgentConfig {
   visual: Object3D;
 }
 
-const PRIMARY_FISH_TINT = new Color(0x346766);
-const PRIMARY_FISH_EMISSIVE_TINT = new Color(0x061817);
+const PRIMARY_FISH_TINT = new Color(0x4f8588);
+const PRIMARY_FISH_SILVER_TINT = new Color(0x85a9ac);
+const PRIMARY_FISH_EMISSIVE_TINT = new Color(0x041514);
 
 interface TintableMaterial {
   color?: Color;
   emissive?: Color;
   emissiveIntensity?: number;
   fog?: boolean;
+  map?: unknown;
   metalness?: number;
   needsUpdate?: boolean;
   roughness?: number;
 }
 
+function createMutedFishMaterial(): MeshBasicMaterial {
+  const color = PRIMARY_FISH_TINT.clone().lerp(
+    PRIMARY_FISH_SILVER_TINT,
+    0.12,
+  );
+
+  color.multiplyScalar(0.72);
+
+  return new MeshBasicMaterial({
+    color,
+    fog: true,
+  });
+}
+
 function tintFishMaterial(material: unknown): void {
   const tintable = material as TintableMaterial;
 
-  tintable.color?.lerp(PRIMARY_FISH_TINT, 0.94);
-  tintable.color?.multiplyScalar(0.72);
+  tintable.color?.copy(PRIMARY_FISH_TINT).lerp(
+    PRIMARY_FISH_SILVER_TINT,
+    0.08,
+  );
+  tintable.color?.multiplyScalar(0.66);
+  tintable.map = null;
   tintable.emissive?.lerp(
     PRIMARY_FISH_EMISSIVE_TINT,
     0.92,
@@ -47,7 +67,7 @@ function tintFishMaterial(material: unknown): void {
   if (tintable.emissiveIntensity != null) {
     tintable.emissiveIntensity = Math.min(
       tintable.emissiveIntensity,
-      0.015,
+      0.008,
     );
   }
 
@@ -83,29 +103,40 @@ function polishFishVisual(visual: Object3D): void {
       tintFishMaterial(material);
 
       if (material instanceof MeshStandardMaterial) {
-        material.color.lerp(PRIMARY_FISH_TINT, 0.1);
-        material.color.multiplyScalar(0.88);
+        material.color.copy(PRIMARY_FISH_TINT).lerp(
+          PRIMARY_FISH_SILVER_TINT,
+          0.12,
+        );
+        material.color.multiplyScalar(0.72);
+        material.map = null;
         material.emissive.lerp(
           PRIMARY_FISH_EMISSIVE_TINT,
           0.82,
         );
         material.emissiveIntensity = Math.min(
           material.emissiveIntensity,
-          0.035,
+          0.012,
         );
         material.metalness = 0;
         material.roughness = Math.max(
           material.roughness,
-          0.86,
+          0.9,
         );
         material.needsUpdate = true;
       } else if (material instanceof MeshBasicMaterial) {
-        material.color.lerp(PRIMARY_FISH_TINT, 0.1);
-        material.color.multiplyScalar(0.88);
+        material.color.copy(PRIMARY_FISH_TINT).lerp(
+          PRIMARY_FISH_SILVER_TINT,
+          0.12,
+        );
+        material.color.multiplyScalar(0.72);
         material.fog = true;
         material.needsUpdate = true;
       }
     }
+
+    child.material = Array.isArray(child.material)
+      ? materials.map(() => createMutedFishMaterial())
+      : createMutedFishMaterial();
   });
 }
 
@@ -140,7 +171,7 @@ export class FishAgent {
     if (this.mixer != null && config.swimClip != null) {
       const action = this.mixer.clipAction(config.swimClip);
 
-      action.timeScale = 0.9 + Math.random() * 0.2;
+      action.timeScale = 0.72 + Math.random() * 0.16;
       action.play();
     }
   }

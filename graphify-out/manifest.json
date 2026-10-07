@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "src/assets.ts": {
-    "mtime": 1791197861.3908074,
-    "ast_hash": "9f5c26cb276812895b00bfed2bc5b500",
+    "mtime": 1791300584.0636165,
+    "ast_hash": "1ec40faf31a350e9c52a794632efde83",
     "semantic_hash": ""
   },
   "src/breathing/BreathEngine.ts": {
@@ -55,13 +55,13 @@
     "semantic_hash": ""
   },
   "src/ocean/FishAgent.ts": {
-    "mtime": 1791273865.1715386,
-    "ast_hash": "860ad8a691f42ab2860b179c42c583b6",
+    "mtime": 1791298355.69518,
+    "ast_hash": "f32214c51bf224186e09e2aa50f2e7a1",
     "semantic_hash": ""
   },
   "src/ocean/FishSchool.ts": {
-    "mtime": 1791272494.4385006,
-    "ast_hash": "209c15708a379427ad8da580418464df",
+    "mtime": 1791297829.891085,
+    "ast_hash": "3193e35025dbd1eaf7c37103814e7337",
     "semantic_hash": ""
   },
   "src/ocean/JellyfishGuide.ts": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "src/systems/ReefBreathingSystem.ts": {
-    "mtime": 1791275092.235788,
-    "ast_hash": "74e1d43d1dbeea912b5f6a1eba930c3f",
+    "mtime": 1791300701.553871,
+    "ast_hash": "1a3fb4b8f5cfe36bb0f137d0b8aa667a",
     "semantic_hash": ""
   },
   "src/vite-env.d.ts": {
@@ -630,13 +630,13 @@
     "semantic_hash": ""
   },
   "src/ocean/MarineLifeConfig.ts": {
-    "mtime": 1791201514.4175992,
-    "ast_hash": "ca37bea2ccd6b16828443dfe7d97385d",
+    "mtime": 1791297847.461843,
+    "ast_hash": "603d45f08c6d6433aa3185557ebedd31",
     "semantic_hash": ""
   },
   "src/ocean/MarineLifeLayer.ts": {
-    "mtime": 1791272253.8078077,
-    "ast_hash": "5e9bfe384f111c9ebd871d76fc2ec9c9",
+    "mtime": 1791298366.7254224,
+    "ast_hash": "65818759753759c8f6e957370f492fc9",
     "semantic_hash": ""
   },
   "artifacts/material-polish-browser.png": {
@@ -757,6 +757,26 @@
   "artifacts/breath-guidance-running-xr.png": {
     "mtime": 1791275452.1322055,
     "ast_hash": "4bfdb0bce9b7578f4a2259a57a771284",
+    "semantic_hash": ""
+  },
+  "artifacts/fish-experience-pass-xr.png": {
+    "mtime": 1791298015.1752656,
+    "ast_hash": "267de50277c7be1dbc6acdc4341d61b0",
+    "semantic_hash": ""
+  },
+  "src/ocean/CalmFishTest.ts": {
+    "mtime": 1791300637.1749153,
+    "ast_hash": "dca735036223f1861fabf13b424c95ce",
+    "semantic_hash": ""
+  },
+  "public/licenses/fish/scardinius-license.txt": {
+    "mtime": 1791299373.071821,
+    "ast_hash": "d4d50ebc953122f496c0f0585f0c3f14",
+    "semantic_hash": ""
+  },
+  "artifacts/calm-fish-ab-test-xr.png": {
+    "mtime": 1791300787.6794634,
+    "ast_hash": "3760ba981383a7dd6a38906da73442eb",
     "semantic_hash": ""
   }
 }

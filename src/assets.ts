@@ -14,6 +14,12 @@ export default defineAssets({
     type: AssetType.GLTF,
     url: `${baseUrl}models/fish/reef-fish-a.glb`,
   },
+  'bass-fish': {
+    name: 'Bass Fish',
+    priority: 'lazy',
+    type: AssetType.GLTF,
+    url: `${baseUrl}models/fish/bass-fish.glb`,
+  },
   'manta-ray': {
     name: 'Manta Ray',
     priority: 'lazy',

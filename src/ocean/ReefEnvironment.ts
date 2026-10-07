@@ -44,10 +44,6 @@ const SEABED_SIZE_METERS = 100;
 const SEABED_SEGMENTS = 24;
 const SEABED_COMFORT_RADIUS = 1.2;
 const SEABED_VARIATION_FADE_RADIUS = 3.4;
-const ROCK_LARGE_TEXTURE_PATH =
-  'models/environment/rocks/reef-rock-large/textures/rock_face_01_diff_1k.jpg';
-const ROCK_SMALL_TEXTURE_PATH =
-  'models/environment/rocks/reef-rock-small/textures/rock_07_diff_1k.jpg';
 
 interface HeroRockPlacement {
   geometryIndex: number;
@@ -201,23 +197,6 @@ function createSeabedGeometry(): PlaneGeometry {
   geometry.computeVertexNormals();
 
   return geometry;
-}
-
-function createRepeatingTexture(
-  path: string,
-  repeatX: number,
-  repeatY: number,
-): Texture {
-  const texture = new TextureLoader().load(
-    `${import.meta.env.BASE_URL}${path}`,
-  );
-
-  texture.colorSpace = SRGBColorSpace;
-  texture.wrapS = RepeatWrapping;
-  texture.wrapT = RepeatWrapping;
-  texture.repeat.set(repeatX, repeatY);
-
-  return texture;
 }
 
 function setNoShadows(object: Group): void {
@@ -591,7 +570,7 @@ export class ReefEnvironment {
     sandTexture.repeat.set(24, 24);
 
     const seabedMaterial = new MeshBasicMaterial({
-      color: 0x66706c,
+      color: 0x817c6f,
       fog: true,
       map: sandTexture,
     });
@@ -610,7 +589,7 @@ export class ReefEnvironment {
       new DodecahedronGeometry(1, 0);
     const moundMaterial =
       new MeshStandardMaterial({
-        color: 0x485d55,
+        color: 0x2f423d,
         flatShading: true,
         roughness: 1,
       });
@@ -646,16 +625,6 @@ export class ReefEnvironment {
   }
 
   private addRocks(): void {
-    const largeRockTexture = createRepeatingTexture(
-      ROCK_LARGE_TEXTURE_PATH,
-      2.35,
-      2.35,
-    );
-    const smallRockTexture = createRepeatingTexture(
-      ROCK_SMALL_TEXTURE_PATH,
-      1.85,
-      1.85,
-    );
     const geometries = [
       new DodecahedronGeometry(1, 0),
       new IcosahedronGeometry(1, 0),
@@ -663,33 +632,21 @@ export class ReefEnvironment {
     ];
 
     const materials = [
-      new MeshStandardMaterial({
-        color: 0x20322e,
-        flatShading: true,
-        map: largeRockTexture,
-        metalness: 0,
-        roughness: 1,
+      new MeshBasicMaterial({
+        color: 0x14231f,
+        fog: true,
       }),
-      new MeshStandardMaterial({
-        color: 0x293e36,
-        flatShading: true,
-        map: smallRockTexture,
-        metalness: 0,
-        roughness: 1,
+      new MeshBasicMaterial({
+        color: 0x192a24,
+        fog: true,
       }),
-      new MeshStandardMaterial({
-        color: 0x1f2d33,
-        flatShading: true,
-        map: largeRockTexture,
-        metalness: 0,
-        roughness: 1,
+      new MeshBasicMaterial({
+        color: 0x121f25,
+        fog: true,
       }),
-      new MeshStandardMaterial({
-        color: 0x263832,
-        flatShading: true,
-        map: smallRockTexture,
-        metalness: 0,
-        roughness: 1,
+      new MeshBasicMaterial({
+        color: 0x172721,
+        fog: true,
       }),
     ];
 
@@ -732,23 +689,31 @@ export class ReefEnvironment {
       new PlaneGeometry(0.34, 0.42, 1, 2);
     const materials: MeshStandardMaterial[] = [
       new MeshStandardMaterial({
-        color: 0x5f7177,
+        color: 0x2e4449,
+        emissive: 0x000000,
         flatShading: true,
+        metalness: 0,
         roughness: 0.92,
       }),
       new MeshStandardMaterial({
-        color: 0x6e6479,
+        color: 0x4b4058,
+        emissive: 0x000000,
         flatShading: true,
+        metalness: 0,
         roughness: 0.92,
       }),
       new MeshStandardMaterial({
-        color: 0x82656b,
+        color: 0x593f49,
+        emissive: 0x000000,
         flatShading: true,
+        metalness: 0,
         roughness: 0.92,
       }),
       new MeshStandardMaterial({
-        color: 0x938874,
+        color: 0x554f45,
+        emissive: 0x000000,
         flatShading: true,
+        metalness: 0,
         roughness: 0.95,
       }),
     ];
@@ -878,16 +843,14 @@ export class ReefEnvironment {
     const tallBladeGeometry =
       new PlaneGeometry(0.062, 0.68, 1, 2);
     const materials = [
-      new MeshStandardMaterial({
-        color: 0x28685f,
-        flatShading: true,
-        roughness: 0.95,
+      new MeshBasicMaterial({
+        color: 0x143c38,
+        fog: true,
         side: DoubleSide,
       }),
-      new MeshStandardMaterial({
-        color: 0x2f594d,
-        flatShading: true,
-        roughness: 0.95,
+      new MeshBasicMaterial({
+        color: 0x18342e,
+        fog: true,
         side: DoubleSide,
       }),
     ];
