@@ -22,8 +22,16 @@ export const BUTTERFLY_FISH_EXHALE_RADIUS_DELTA = 0.14;
 
 interface ButterflyFishHeroLayerConfig {
   animations: readonly AnimationClip[];
+  fishCount?: number;
+  headingOffsetY?: number;
+  materialStyle?: ButterflyFishMaterialStyle;
+  modelScale?: number;
   visualFactory: () => Object3D;
 }
+
+export type ButterflyFishMaterialStyle =
+  | 'legacy-muted'
+  | 'natural-hero';
 
 interface ButterflyPathConfig {
   breathResponse: number;
@@ -37,6 +45,8 @@ interface ButterflyPathConfig {
 }
 
 interface BreathTintTarget {
+  accentStrength: number;
+  brightnessStrength: number;
   material: MeshBasicMaterial | MeshStandardMaterial;
   restingColor: Color;
 }
@@ -59,6 +69,7 @@ interface ButterflyFishInstance {
   path: ButterflyPathConfig;
   previousPosition: Vector3;
   smoothedBreathScale: number;
+  headingOffsetY: number;
   smoothedHeading: Vector3;
 }
 
@@ -192,6 +203,9 @@ function selectUsableAnimationClip(
   }
 
   const priorities = [
+    'swimming_normal',
+    'swim_normal',
+    'normal',
     'swim',
     'swimming',
     'idle',
@@ -305,7 +319,98 @@ function tuneMarkingMaterial(
   }
 }
 
-function cloneAndTuneMaterials(visual: Object3D): {
+function tuneNaturalHeroMaterial(
+  material: Material,
+): BreathTintTarget | null {
+  const readable = material as MaterialLike;
+  const name = readable.name?.toLowerCase() ?? '';
+  const isEye = name.includes('eye');
+  const isDark =
+    name.includes('dark') ||
+    name.includes('black');
+  const isLight =
+    name.includes('light') ||
+    name.includes('white');
+  const isMain = name.includes('main');
+
+  if (material instanceof MeshStandardMaterial) {
+    if (isEye) {
+      material.color.set(0x050604);
+      material.emissive.set(0x000000);
+      material.emissiveIntensity = 0;
+      material.metalness = 0;
+      material.roughness = Math.max(material.roughness, 0.38);
+      material.needsUpdate = true;
+
+      return null;
+    }
+
+    if (isDark) {
+      material.color.set(0x11120d);
+    } else if (isLight) {
+      material.color.lerp(new Color(0xd8cfaa), 0.5);
+    } else if (isMain) {
+      material.color.lerp(new Color(0xc8b36a), 0.62);
+    } else {
+      material.color.multiplyScalar(1.08);
+    }
+
+    material.emissive.set(0x000000);
+    material.emissiveIntensity = 0;
+    material.metalness = 0;
+    material.roughness = Math.max(
+      material.roughness,
+      isDark ? 0.82 : 0.74,
+    );
+    material.transparent = false;
+    material.opacity = 1;
+    material.needsUpdate = true;
+
+    return {
+      accentStrength: isDark ? 0.08 : isMain ? 0.24 : 0.18,
+      brightnessStrength: isDark ? 0.04 : 0.12,
+      material,
+      restingColor: material.color.clone(),
+    };
+  }
+
+  if (material instanceof MeshBasicMaterial) {
+    if (isEye) {
+      material.color.set(0x050604);
+      material.fog = true;
+      material.needsUpdate = true;
+
+      return null;
+    }
+
+    if (isDark) {
+      material.color.set(0x11120d);
+    } else if (isMain) {
+      material.color.lerp(new Color(0xc8b36a), 0.62);
+    } else {
+      material.color.multiplyScalar(1.08);
+    }
+
+    material.fog = true;
+    material.transparent = false;
+    material.opacity = 1;
+    material.needsUpdate = true;
+
+    return {
+      accentStrength: isDark ? 0.08 : isMain ? 0.24 : 0.18,
+      brightnessStrength: isDark ? 0.04 : 0.12,
+      material,
+      restingColor: material.color.clone(),
+    };
+  }
+
+  return null;
+}
+
+function cloneAndTuneMaterials(
+  visual: Object3D,
+  style: ButterflyFishMaterialStyle,
+): {
   audits: ButterflyFishMaterialAudit[];
   fallbackUsed: boolean;
   tintTargets: BreathTintTarget[];
@@ -332,20 +437,31 @@ function cloneAndTuneMaterials(visual: Object3D): {
     for (const material of clonedMaterials) {
       audits.push(materialAudit(material));
 
-      if (materialNeedsFallback(material)) {
-        fallbackUsed = true;
-      }
+      if (style === 'natural-hero') {
+        const tintTarget =
+          tuneNaturalHeroMaterial(material);
 
-      tuneBodyMaterial(material);
-      tuneMarkingMaterial(material);
-      // Record unique cloned body materials, but leave eyes dark.
-      if (!material.name.toLowerCase().includes('eye') &&
-          (material instanceof MeshBasicMaterial ||
-           material instanceof MeshStandardMaterial)) {
-        tintTargets.push({
-          material,
-          restingColor: material.color.clone(),
-        });
+        if (tintTarget != null) {
+          tintTargets.push(tintTarget);
+        }
+      } else {
+        if (materialNeedsFallback(material)) {
+          fallbackUsed = true;
+        }
+
+        tuneBodyMaterial(material);
+        tuneMarkingMaterial(material);
+        // Record unique cloned body materials, but leave eyes dark.
+        if (!material.name.toLowerCase().includes('eye') &&
+            (material instanceof MeshBasicMaterial ||
+             material instanceof MeshStandardMaterial)) {
+          tintTargets.push({
+            accentStrength: 0.55,
+            brightnessStrength: 0,
+            material,
+            restingColor: material.color.clone(),
+          });
+        }
       }
     }
 
@@ -409,20 +525,28 @@ export class ButterflyFishHeroLayer {
 
     this.selectedAnimation =
       selectUsableAnimationClip(config.animations);
+    const fishCount =
+      config.fishCount ?? HERO_BUTTERFLY_FISH_COUNT;
+    const modelScale =
+      config.modelScale ?? BUTTERFLY_FISH_SCALE;
+    const headingOffsetY =
+      config.headingOffsetY ?? BUTTERFLY_FISH_HEADING_OFFSET_Y;
+    const materialStyle =
+      config.materialStyle ?? 'legacy-muted';
 
     let fallbackMaterialCorrectionUsed = false;
     const materialAudits: ButterflyFishMaterialAudit[] = [];
 
     for (
       let index = 0;
-      index < HERO_BUTTERFLY_FISH_COUNT;
+      index < fishCount;
       index += 1
     ) {
-      const path = HERO_PATHS[index];
+      const path = HERO_PATHS[index % HERO_PATHS.length];
       const group = new Group();
       const visual = config.visualFactory();
       const materialResult =
-        cloneAndTuneMaterials(visual);
+        cloneAndTuneMaterials(visual, materialStyle);
       const mixer =
         this.selectedAnimation == null
           ? null
@@ -430,7 +554,7 @@ export class ButterflyFishHeroLayer {
 
       group.name = `ButterflyFishHero-${index}`;
       group.position.copy(path.center);
-      visual.scale.setScalar(BUTTERFLY_FISH_SCALE);
+      visual.scale.setScalar(modelScale);
       group.add(visual);
 
       if (mixer != null && this.selectedAnimation != null) {
@@ -459,6 +583,7 @@ export class ButterflyFishHeroLayer {
         path,
         previousPosition: path.center.clone(),
         smoothedBreathScale: 1,
+        headingOffsetY,
         smoothedHeading: new Vector3(0, 0, -1),
       });
       this.root.add(group);
@@ -476,7 +601,7 @@ export class ButterflyFishHeroLayer {
       ],
       closestDistanceMeters: estimateClosestDistance(),
       fallbackMaterialCorrectionUsed,
-      fishCount: HERO_BUTTERFLY_FISH_COUNT,
+      fishCount,
       materialAudits,
       selectedAnimationName:
         this.selectedAnimation?.name ?? null,
@@ -558,7 +683,7 @@ export class ButterflyFishHeroLayer {
           .add(instance.smoothedHeading);
         instance.group.lookAt(instance.lookTarget);
         instance.group.rotation.y +=
-          BUTTERFLY_FISH_HEADING_OFFSET_Y;
+          instance.headingOffsetY;
         instance.group.rotation.z +=
           MathUtils.clamp(
             -instance.smoothedHeading.x * 0.16,
@@ -572,7 +697,13 @@ export class ButterflyFishHeroLayer {
       for (const target of instance.breathTintTargets) {
         instance.tintScratch
           .copy(target.restingColor)
-          .lerp(instance.breathAccentColor, colorBreath * 0.55);
+          .lerp(
+            instance.breathAccentColor,
+            colorBreath * target.accentStrength,
+          )
+          .multiplyScalar(
+            1 + colorBreath * target.brightnessStrength,
+          );
         target.material.color.lerp(
           instance.tintScratch,
           colorDamping,

@@ -31,18 +31,27 @@ import { WaterCurrent } from '../ocean/WaterCurrent.js';
 function selectFishAnimation(
   clips: readonly AnimationClip[],
 ): AnimationClip | null {
-  if (clips.length === 0) {
+  const usableClips = clips.filter(
+    (clip) =>
+      clip.duration > 0 &&
+      clip.tracks.length > 0,
+  );
+
+  if (usableClips.length === 0) {
     return null;
   }
 
   const priorities = [
+    'swimming_normal',
+    'swim_normal',
+    'normal',
     'swim',
     'swimming',
     'idle',
   ];
 
   for (const priority of priorities) {
-    const clip = clips.find((candidate) =>
+    const clip = usableClips.find((candidate) =>
       candidate.name
         .toLowerCase()
         .includes(priority),
@@ -53,10 +62,30 @@ function selectFishAnimation(
     }
   }
 
-  return clips[0];
+  return usableClips[0];
+}
+
+type FishVisualMode = 'legacy' | 'stage2a';
+
+function readFishVisualMode(): FishVisualMode {
+  if (typeof window === 'undefined') {
+    return 'legacy';
+  }
+
+  const value =
+    new URLSearchParams(window.location.search)
+      .get('fishVisual')
+      ?.toLowerCase() ??
+    '';
+
+  return value === 'stage2a'
+    ? 'stage2a'
+    : 'legacy';
 }
 
 export class ReefBreathingSystem extends createSystem({}) {
+  private readonly fishVisualMode = readFishVisualMode();
+
   private readonly breathing =
     new BreathEngine({
       inhaleSeconds: 5,
@@ -369,14 +398,19 @@ export class ReefBreathingSystem extends createSystem({}) {
   }
 
   private async loadFishSchool(): Promise<void> {
+    const assetId =
+      this.fishVisualMode === 'stage2a'
+        ? 'cardinal-fish-stage2a'
+        : 'reef-fish-a';
+
     try {
       const gltf =
         await AssetManager.loadGLTFById(
-          'reef-fish-a',
+          assetId,
         );
 
       console.log(
-        '[Resonance Reef] Loaded reef-fish-a',
+        `[Resonance Reef] Loaded ${assetId}`,
       );
 
       const animationNames = gltf.animations.map(
@@ -384,7 +418,7 @@ export class ReefBreathingSystem extends createSystem({}) {
       );
 
       console.log(
-        `[Resonance Reef] reef-fish-a animations: ${
+        `[Resonance Reef] ${assetId} animations: ${
           animationNames.length > 0
             ? animationNames.join(', ')
             : '(none)'
@@ -396,31 +430,41 @@ export class ReefBreathingSystem extends createSystem({}) {
 
       if (selectedAnimation == null) {
         console.warn(
-          '[Resonance Reef] reef-fish-a has no animation clips; rendering static fish.',
+          `[Resonance Reef] ${assetId} has no animation clips; rendering static fish.`,
         );
       } else {
         console.log(
-          `[Resonance Reef] reef-fish-a selected animation: ${selectedAnimation.name}`,
+          `[Resonance Reef] ${assetId} selected animation: ${selectedAnimation.name}`,
         );
       }
 
       this.fishSchool =
         new FishSchool({
-          count: 8,
+          count:
+            this.fishVisualMode === 'stage2a'
+              ? 5
+              : 8,
           species: {
             headingOffsetY: 0,
-            modelScale: 0.105,
+            modelScale:
+              this.fishVisualMode === 'stage2a'
+                ? 0.075
+                : 0.105,
           },
           swimClip: selectedAnimation,
+          visualStyle:
+            this.fishVisualMode === 'stage2a'
+              ? 'natural-support'
+              : 'legacy-muted',
           visualFactory: () => {
             const clone =
               AssetManager.getGLTF(
-                'reef-fish-a',
+                assetId,
               );
 
             if (clone == null) {
               throw new Error(
-                'Cached reef-fish-a GLTF clone was unavailable.',
+                `Cached ${assetId} GLTF clone was unavailable.`,
               );
             }
 
@@ -433,35 +477,56 @@ export class ReefBreathingSystem extends createSystem({}) {
       );
     } catch (error: unknown) {
       console.error(
-        '[Resonance Reef] Failed to load reef-fish-a GLB.',
+        `[Resonance Reef] Failed to load ${assetId} GLB.`,
         error,
       );
     }
   }
 
   private async loadButterflyFishHeroLayer(): Promise<void> {
+    const assetId =
+      this.fishVisualMode === 'stage2a'
+        ? 'moorish-idol-stage2a'
+        : 'butterfly-fish';
+
     try {
       const gltf =
         await AssetManager.loadGLTFById(
-          'butterfly-fish',
+          assetId,
         );
 
       console.log(
-        '[Resonance Reef] Loaded butterfly-fish hero asset',
+        `[Resonance Reef] Loaded ${assetId} hero asset`,
       );
 
       this.butterflyFishHeroLayer =
         new ButterflyFishHeroLayer({
           animations: gltf.animations,
+          fishCount:
+            this.fishVisualMode === 'stage2a'
+              ? 3
+              : HERO_BUTTERFLY_FISH_COUNT,
+          headingOffsetY:
+            this.fishVisualMode === 'stage2a'
+              ? 0
+              : BUTTERFLY_FISH_HEADING_OFFSET_Y,
+          materialStyle:
+            this.fishVisualMode === 'stage2a'
+              ? 'natural-hero'
+              : 'legacy-muted',
+          modelScale:
+            this.fishVisualMode === 'stage2a'
+              ? 0.08
+              : BUTTERFLY_FISH_SCALE,
           visualFactory: () => {
             const clone =
               AssetManager.getGLTF(
-                'butterfly-fish',
+                assetId,
               );
 
             if (clone == null) {
               throw new Error(
-                'Cached butterfly-fish GLTF clone was unavailable.',
+                `Cached ${assetId} GLTF clone was unavailable.`,
               );
             }
 
@@ -483,15 +548,15 @@ export class ReefBreathingSystem extends createSystem({}) {
           .join(', ');
 
       console.log(
-        `[Resonance Reef] butterfly-fish hero layer: instances=${HERO_BUTTERFLY_FISH_COUNT}, animations=${
+        `[Resonance Reef] ${assetId} hero layer: instances=${report.fishCount}, animations=${
           report.animationNames.length > 0
             ? report.animationNames.join(', ')
             : '(none)'
-        }, selectedAnimation=${report.selectedAnimationName ?? '(none)'}, scale=${BUTTERFLY_FISH_SCALE.toFixed(3)}, headingOffsetY=${BUTTERFLY_FISH_HEADING_OFFSET_Y.toFixed(3)}, breathResponse=${(report.breathResponseRange[0] * 100).toFixed(1)}%-${(report.breathResponseRange[1] * 100).toFixed(1)}%, closestDistance=${report.closestDistanceMeters.toFixed(2)}m, fallbackMaterialCorrection=${report.fallbackMaterialCorrectionUsed ? 'used' : 'not-used'}, materials=${materialSummary || '(none)'}`,
+        }, selectedAnimation=${report.selectedAnimationName ?? '(none)'}, scale=${(this.fishVisualMode === 'stage2a' ? 0.08 : BUTTERFLY_FISH_SCALE).toFixed(3)}, headingOffsetY=${(this.fishVisualMode === 'stage2a' ? 0 : BUTTERFLY_FISH_HEADING_OFFSET_Y).toFixed(3)}, breathResponse=${(report.breathResponseRange[0] * 100).toFixed(1)}%-${(report.breathResponseRange[1] * 100).toFixed(1)}%, closestDistance=${report.closestDistanceMeters.toFixed(2)}m, fallbackMaterialCorrection=${report.fallbackMaterialCorrectionUsed ? 'used' : 'not-used'}, materials=${materialSummary || '(none)'}`,
       );
     } catch (error: unknown) {
       console.error(
-        '[Resonance Reef] Failed to load butterfly-fish GLB.',
+        `[Resonance Reef] Failed to load ${assetId} GLB.`,
         error,
       );
     }

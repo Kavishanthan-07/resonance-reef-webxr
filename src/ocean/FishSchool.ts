@@ -1,5 +1,6 @@
 import {
   AnimationClip,
+  Color,
   Group,
   MathUtils,
   Vector3,
@@ -8,6 +9,7 @@ import {
 import type { BreathState } from '../breathing/BreathEngine.js';
 import type { SessionState } from '../experience/SessionController.js';
 import { FishAgent } from './FishAgent.js';
+import type { FishVisualStyle } from './FishAgent.js';
 import type { CurrentSample } from './WaterCurrent.js';
 
 interface FishSpeciesConfig {
@@ -20,6 +22,7 @@ interface FishSchoolConfig {
   species?: FishSpeciesConfig;
   swimClip: AnimationClip | null;
   visualFactory: () => Group;
+  visualStyle?: FishVisualStyle;
 }
 
 function randomRange(min: number, max: number): number {
@@ -35,6 +38,18 @@ const DEFAULT_SPECIES: FishSpeciesConfig = {
   headingOffsetY: 0,
   modelScale: 0.105,
 };
+const SUPPORT_FISH_PALETTE = [
+  0x5f9f9a,
+  0x4f8f98,
+  0x6aa8a1,
+  0x508a84,
+  0x76aaa5,
+] as const;
+const SUPPORT_FISH_ACCENTS = [
+  0x96d0c2,
+  0x86beb7,
+  0xa2d4c9,
+] as const;
 
 /**
  * Breath-responsive GLB fish school.
@@ -102,6 +117,17 @@ export class FishSchool {
         root: fishRoot,
         swimClip: config.swimClip,
         visual,
+        visualStyle: config.visualStyle,
+        paletteTint: new Color(
+          SUPPORT_FISH_PALETTE[
+            index % SUPPORT_FISH_PALETTE.length
+          ],
+        ),
+        breathAccentColor: new Color(
+          SUPPORT_FISH_ACCENTS[
+            index % SUPPORT_FISH_ACCENTS.length
+          ],
+        ),
       });
 
       agent.velocity
@@ -442,7 +468,7 @@ export class FishSchool {
           );
       }
 
-      agent.updateAnimation(deltaSeconds);
+      agent.updateAnimation(deltaSeconds, state);
     }
   }
 

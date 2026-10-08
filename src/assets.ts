@@ -26,6 +26,18 @@ export default defineAssets({
     type: AssetType.GLTF,
     url: `${baseUrl}models/fish/butterfly-fish.glb`,
   },
+  'moorish-idol-stage2a': {
+    name: 'Moorish Idol Stage 2A',
+    priority: 'lazy',
+    type: AssetType.GLTF,
+    url: `${baseUrl}models/fish/moorish-idol-stage2a.glb`,
+  },
+  'cardinal-fish-stage2a': {
+    name: 'Cardinal Fish Stage 2A',
+    priority: 'lazy',
+    type: AssetType.GLTF,
+    url: `${baseUrl}models/fish/cardinal-fish-stage2a.glb`,
+  },
   'manta-ray': {
     name: 'Manta Ray',
     priority: 'lazy',
