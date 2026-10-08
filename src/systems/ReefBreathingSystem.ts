@@ -9,6 +9,7 @@ import {
 } from '../breathing/BreathEngine.js';
 
 import { OceanAudio } from '../audio/OceanAudio.js';
+import { BreathVoice } from '../audio/BreathVoice.js';
 import { BreathGuidance } from '../experience/BreathGuidance.js';
 import { DesktopControls } from '../experience/DesktopControls.js';
 import { ExperienceController } from '../experience/ExperienceController.js';
@@ -93,6 +94,8 @@ export class ReefBreathingSystem extends createSystem({}) {
     | OceanAudio
     | null = null;
 
+  private breathVoice: BreathVoice | null = null;
+
   private mantaFinale:
     | MantaFinale
     | null = null;
@@ -124,6 +127,7 @@ export class ReefBreathingSystem extends createSystem({}) {
     this.cleanupFuncs.push(() => {
       this.environment?.dispose();
       this.oceanAudio?.dispose();
+      this.breathVoice?.dispose();
       this.mantaFinale?.reset();
       this.butterflyFishHeroLayer?.dispose();
       this.breathGuidance?.dispose();
@@ -164,6 +168,7 @@ export class ReefBreathingSystem extends createSystem({}) {
 
     this.oceanAudio =
       new OceanAudio(this.world);
+    this.breathVoice = new BreathVoice();
 
     this.mantaFinale =
       new MantaFinale();
@@ -178,10 +183,13 @@ export class ReefBreathingSystem extends createSystem({}) {
           this.resetExperienceSystems();
         },
         resumeAudio: async () => {
+          // Speak synchronously on Start/Resume user gesture.
+          this.breathVoice?.announce(this.breathing.getState());
           await this.oceanAudio?.resume();
         },
         setMuted: (muted) => {
           this.oceanAudio?.setMuted(muted);
+          this.breathVoice?.setMuted(muted);
         },
       });
 
@@ -283,6 +291,7 @@ export class ReefBreathingSystem extends createSystem({}) {
       time,
     );
 
+    this.breathVoice?.update(state, isRunning);
     this.desktopControls?.update(state, session);
     this.breathGuidance?.update(
       state,
@@ -294,6 +303,7 @@ export class ReefBreathingSystem extends createSystem({}) {
 
   private resetExperienceSystems(): void {
     this.breathing.reset();
+    this.breathVoice?.reset();
     this.sessionController.reset();
     this.waterCurrent?.reset();
     this.environment?.resetProgression();

@@ -36,7 +36,22 @@ interface ButterflyPathConfig {
   verticalPhase: number;
 }
 
+interface BreathTintTarget {
+  material: MeshBasicMaterial | MeshStandardMaterial;
+  restingColor: Color;
+}
+
+const BREATH_ACCENT_COLORS = [
+  0xd8ba79,
+  0xa1cabc,
+  0xe1c68d,
+  0x95b9ad,
+] as const;
+
 interface ButterflyFishInstance {
+  breathTintTargets: BreathTintTarget[];
+  breathAccentColor: Color;
+  tintScratch: Color;
   group: Group;
   guideBias: Vector3;
   lookTarget: Vector3;
@@ -293,8 +308,10 @@ function tuneMarkingMaterial(
 function cloneAndTuneMaterials(visual: Object3D): {
   audits: ButterflyFishMaterialAudit[];
   fallbackUsed: boolean;
+  tintTargets: BreathTintTarget[];
 } {
   const audits: ButterflyFishMaterialAudit[] = [];
+  const tintTargets: BreathTintTarget[] = [];
   let fallbackUsed = false;
 
   visual.traverse((child) => {
@@ -321,6 +338,15 @@ function cloneAndTuneMaterials(visual: Object3D): {
 
       tuneBodyMaterial(material);
       tuneMarkingMaterial(material);
+      // Record unique cloned body materials, but leave eyes dark.
+      if (!material.name.toLowerCase().includes('eye') &&
+          (material instanceof MeshBasicMaterial ||
+           material instanceof MeshStandardMaterial)) {
+        tintTargets.push({
+          material,
+          restingColor: material.color.clone(),
+        });
+      }
     }
 
     child.material = Array.isArray(child.material)
@@ -331,6 +357,7 @@ function cloneAndTuneMaterials(visual: Object3D): {
   return {
     audits,
     fallbackUsed,
+    tintTargets,
   };
 }
 
@@ -420,6 +447,11 @@ export class ButterflyFishHeroLayer {
       materialAudits.push(...materialResult.audits);
 
       this.instances.push({
+        breathTintTargets: materialResult.tintTargets,
+        breathAccentColor: new Color(
+          BREATH_ACCENT_COLORS[index % BREATH_ACCENT_COLORS.length] ?? 0xa1cabc,
+        ),
+        tintScratch: new Color(),
         group,
         guideBias: new Vector3(),
         lookTarget: new Vector3(),
@@ -460,6 +492,12 @@ export class ButterflyFishHeroLayer {
       Math.min(Math.max(deltaSeconds, 0), 0.05);
     const breathDamping =
       1 - Math.exp(-clampedDelta * 1.8);
+    const colorDamping =
+      1 - Math.exp(-clampedDelta * 4);
+    const eased = MathUtils.smoothstep(state.progress, 0, 1);
+    const colorBreath = state.phase === 'inhale'
+      ? eased
+      : 1 - eased;
 
     for (
       let index = 0;
@@ -527,6 +565,18 @@ export class ButterflyFishHeroLayer {
             -0.08,
             0.08,
           );
+      }
+
+      // Maintain texture/eye markings while brightening only the
+      // butterflyfish body colors through each breathing cycle.
+      for (const target of instance.breathTintTargets) {
+        instance.tintScratch
+          .copy(target.restingColor)
+          .lerp(instance.breathAccentColor, colorBreath * 0.55);
+        target.material.color.lerp(
+          instance.tintScratch,
+          colorDamping,
+        );
       }
 
       instance.mixer?.update(clampedDelta);
