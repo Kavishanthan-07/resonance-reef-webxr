@@ -24,6 +24,7 @@ import {
   ButterflyFishHeroLayer,
 } from '../ocean/ButterflyFishHeroLayer.js';
 import { FishSchool } from '../ocean/FishSchool.js';
+import { HandFishInteractor } from '../ocean/HandFishInteractor.js';
 import { JellyfishGuide } from '../ocean/JellyfishGuide.js';
 import { ReefEnvironment } from '../ocean/ReefEnvironment.js';
 import { WaterCurrent } from '../ocean/WaterCurrent.js';
@@ -69,7 +70,7 @@ type FishVisualMode = 'legacy' | 'stage2a';
 
 function readFishVisualMode(): FishVisualMode {
   if (typeof window === 'undefined') {
-    return 'legacy';
+    return 'stage2a';
   }
 
   const value =
@@ -78,13 +79,25 @@ function readFishVisualMode(): FishVisualMode {
       ?.toLowerCase() ??
     '';
 
-  return value === 'stage2a'
-    ? 'stage2a'
-    : 'legacy';
+  return value === 'legacy'
+    ? 'legacy'
+    : 'stage2a';
+}
+
+function readHandDemoEnabled(): boolean {
+  if (typeof window === 'undefined') {
+    return false;
+  }
+
+  const params =
+    new URLSearchParams(window.location.search);
+
+  return params.get('handDemo') === '1';
 }
 
 export class ReefBreathingSystem extends createSystem({}) {
   private readonly fishVisualMode = readFishVisualMode();
+  private readonly handDemoEnabled = readHandDemoEnabled();
 
   private readonly breathing =
     new BreathEngine({
@@ -145,6 +158,10 @@ export class ReefBreathingSystem extends createSystem({}) {
     | BreathGuidance
     | null = null;
 
+  private handFishInteractor:
+    | HandFishInteractor
+    | null = null;
+
   init(): void {
     this.environment =
       new ReefEnvironment(this.world);
@@ -159,6 +176,7 @@ export class ReefBreathingSystem extends createSystem({}) {
       this.breathVoice?.dispose();
       this.mantaFinale?.reset();
       this.butterflyFishHeroLayer?.dispose();
+      this.handFishInteractor?.dispose();
       this.breathGuidance?.dispose();
       this.desktopControls?.dispose();
       this.xrControls?.dispose();
@@ -194,6 +212,18 @@ export class ReefBreathingSystem extends createSystem({}) {
     this.world.createTransformEntity(
       this.plankton.points,
     );
+
+    if (this.fishVisualMode === 'stage2a') {
+      this.handFishInteractor =
+        new HandFishInteractor(
+          this.world,
+          this.handDemoEnabled,
+        );
+
+      this.world.createTransformEntity(
+        this.handFishInteractor.root,
+      );
+    }
 
     this.oceanAudio =
       new OceanAudio(this.world);
@@ -255,6 +285,8 @@ export class ReefBreathingSystem extends createSystem({}) {
           delta,
         )
       : undefined;
+    const handInteraction =
+      this.handFishInteractor?.update(delta, time);
 
     /*
      * Every environmental system receives the same state.
@@ -311,6 +343,7 @@ export class ReefBreathingSystem extends createSystem({}) {
         time,
         current,
         session,
+        handInteraction,
       );
     }
 

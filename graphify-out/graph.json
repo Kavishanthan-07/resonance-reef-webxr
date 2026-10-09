@@ -1314,13 +1314,93 @@
       "norm_label": "assets.ts"
     },
     {
+      "label": "BreathVoice.ts",
+      "file_type": "code",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "audio_breathvoice",
+      "community": 96,
+      "norm_label": "breathvoice.ts"
+    },
+    {
+      "label": "BreathVoice",
+      "file_type": "code",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L9",
+      "_origin": "ast",
+      "id": "audio_breathvoice_breathvoice",
+      "community": 96,
+      "norm_label": "breathvoice"
+    },
+    {
+      "label": ".setMuted()",
+      "file_type": "code",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "audio_breathvoice_breathvoice_setmuted",
+      "community": 96,
+      "norm_label": ".setmuted()"
+    },
+    {
+      "label": ".announce()",
+      "file_type": "code",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "audio_breathvoice_breathvoice_announce",
+      "community": 96,
+      "norm_label": ".announce()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L50",
+      "_origin": "ast",
+      "id": "audio_breathvoice_breathvoice_update",
+      "community": 96,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".pause()",
+      "file_type": "code",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L61",
+      "_origin": "ast",
+      "id": "audio_breathvoice_breathvoice_pause",
+      "community": 96,
+      "norm_label": ".pause()"
+    },
+    {
+      "label": ".reset()",
+      "file_type": "code",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "audio_breathvoice_breathvoice_reset",
+      "community": 96,
+      "norm_label": ".reset()"
+    },
+    {
+      "label": ".dispose()",
+      "file_type": "code",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L74",
+      "_origin": "ast",
+      "id": "audio_breathvoice_breathvoice_dispose",
+      "community": 96,
+      "norm_label": ".dispose()"
+    },
+    {
       "label": "OceanAudio.ts",
       "file_type": "code",
       "source_file": "src/audio/OceanAudio.ts",
       "source_location": "L1",
       "_origin": "ast",
       "id": "audio_oceanaudio",
-      "community": 110,
+      "community": 101,
       "norm_label": "oceanaudio.ts"
     },
     {
@@ -1330,7 +1410,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "audio_oceanaudio_audiocontextconstructor",
-      "community": 110,
+      "community": 101,
       "norm_label": "audiocontextconstructor"
     },
     {
@@ -1340,7 +1420,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "audio_oceanaudio_audiowindow",
-      "community": 110,
+      "community": 101,
       "norm_label": "audiowindow"
     },
     {
@@ -1410,7 +1490,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "audio_oceanaudio_oceanaudio_update",
-      "community": 97,
+      "community": 94,
       "norm_label": ".update()"
     },
     {
@@ -1690,7 +1770,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "breathing_breathengine",
-      "community": 110,
+      "community": 96,
       "norm_label": "breathengine.ts"
     },
     {
@@ -1700,7 +1780,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "breathing_breathengine_breathphase",
-      "community": 110,
+      "community": 96,
       "norm_label": "breathphase"
     },
     {
@@ -1710,7 +1790,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "breathing_breathengine_breathstate",
-      "community": 97,
+      "community": 96,
       "norm_label": "breathstate"
     },
     {
@@ -1720,7 +1800,7 @@
       "source_location": "L11",
       "_origin": "ast",
       "id": "breathing_breathengine_breathtiming",
-      "community": 110,
+      "community": 96,
       "norm_label": "breathtiming"
     },
     {
@@ -1910,7 +1990,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "experience_desktopcontrols_createelement",
-      "community": 99,
+      "community": 96,
       "norm_label": "createelement()"
     },
     {
@@ -1930,7 +2010,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "experience_desktopcontrols_desktopcontrols",
-      "community": 99,
+      "community": 96,
       "norm_label": "desktopcontrols"
     },
     {
@@ -1940,7 +2020,7 @@
       "source_location": "L73",
       "_origin": "ast",
       "id": "experience_desktopcontrols_desktopcontrols_constructor",
-      "community": 99,
+      "community": 96,
       "norm_label": ".constructor()"
     },
     {
@@ -1960,7 +2040,7 @@
       "source_location": "L200",
       "_origin": "ast",
       "id": "experience_desktopcontrols_desktopcontrols_dispose",
-      "community": 99,
+      "community": 96,
       "norm_label": ".dispose()"
     },
     {
@@ -1970,7 +2050,7 @@
       "source_location": "L204",
       "_origin": "ast",
       "id": "experience_desktopcontrols_desktopcontrols_installstyles",
-      "community": 99,
+      "community": 96,
       "norm_label": ".installstyles()"
     },
     {
@@ -2020,7 +2100,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller",
-      "community": 99,
+      "community": 96,
       "norm_label": "experiencecontroller"
     },
     {
@@ -2030,7 +2110,7 @@
       "source_location": "L25",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_constructor",
-      "community": 99,
+      "community": 96,
       "norm_label": ".constructor()"
     },
     {
@@ -2040,7 +2120,7 @@
       "source_location": "L29",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_getstate",
-      "community": 99,
+      "community": 96,
       "norm_label": ".getstate()"
     },
     {
@@ -2050,7 +2130,7 @@
       "source_location": "L33",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_start",
-      "community": 99,
+      "community": 96,
       "norm_label": ".start()"
     },
     {
@@ -2060,7 +2140,7 @@
       "source_location": "L42",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_pause",
-      "community": 99,
+      "community": 96,
       "norm_label": ".pause()"
     },
     {
@@ -2070,7 +2150,7 @@
       "source_location": "L53",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_resume",
-      "community": 99,
+      "community": 96,
       "norm_label": ".resume()"
     },
     {
@@ -2080,7 +2160,7 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_restart",
-      "community": 99,
+      "community": 96,
       "norm_label": ".restart()"
     },
     {
@@ -2090,7 +2170,7 @@
       "source_location": "L69",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_markcomplete",
-      "community": 99,
+      "community": 96,
       "norm_label": ".markcomplete()"
     },
     {
@@ -2100,7 +2180,7 @@
       "source_location": "L80",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_setmuted",
-      "community": 99,
+      "community": 96,
       "norm_label": ".setmuted()"
     },
     {
@@ -2110,7 +2190,7 @@
       "source_location": "L88",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_togglemuted",
-      "community": 99,
+      "community": 96,
       "norm_label": ".togglemuted()"
     },
     {
@@ -2120,7 +2200,7 @@
       "source_location": "L92",
       "_origin": "ast",
       "id": "experience_experiencecontroller_experiencecontroller_requestaudiounlock",
-      "community": 99,
+      "community": 96,
       "norm_label": ".requestaudiounlock()"
     },
     {
@@ -2130,7 +2210,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols",
-      "community": 99,
+      "community": 96,
       "norm_label": "experiencexrcontrols.ts"
     },
     {
@@ -2140,7 +2220,7 @@
       "source_location": "L18",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_xrbuttonaction",
-      "community": 99,
+      "community": 96,
       "norm_label": "xrbuttonaction"
     },
     {
@@ -2260,7 +2340,7 @@
       "source_location": "L237",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols",
-      "community": 99,
+      "community": 96,
       "norm_label": "experiencexrcontrols"
     },
     {
@@ -2270,7 +2350,7 @@
       "source_location": "L248",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols_constructor",
-      "community": 99,
+      "community": 96,
       "norm_label": ".constructor()"
     },
     {
@@ -2280,7 +2360,7 @@
       "source_location": "L298",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols_update",
-      "community": 99,
+      "community": 96,
       "norm_label": ".update()"
     },
     {
@@ -2300,7 +2380,7 @@
       "source_location": "L322",
       "_origin": "ast",
       "id": "experience_experiencexrcontrols_experiencexrcontrols_layoutready",
-      "community": 99,
+      "community": 96,
       "norm_label": ".layoutready()"
     },
     {
@@ -2480,7 +2560,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "experience_sessioncontroller",
-      "community": 102,
+      "community": 101,
       "norm_label": "sessioncontroller.ts"
     },
     {
@@ -2490,7 +2570,7 @@
       "source_location": "L3",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessionstage",
-      "community": 102,
+      "community": 101,
       "norm_label": "sessionstage"
     },
     {
@@ -2500,7 +2580,7 @@
       "source_location": "L10",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessionstate",
-      "community": 97,
+      "community": 101,
       "norm_label": "sessionstate"
     },
     {
@@ -2510,7 +2590,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "experience_sessioncontroller_initial_state",
-      "community": 102,
+      "community": 101,
       "norm_label": "initial_state"
     },
     {
@@ -2520,7 +2600,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "experience_sessioncontroller_clamp01",
-      "community": 102,
+      "community": 101,
       "norm_label": "clamp01()"
     },
     {
@@ -2530,7 +2610,7 @@
       "source_location": "L36",
       "_origin": "ast",
       "id": "experience_sessioncontroller_smoothstep",
-      "community": 102,
+      "community": 101,
       "norm_label": "smoothstep()"
     },
     {
@@ -2540,7 +2620,7 @@
       "source_location": "L41",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getcycleposition",
-      "community": 102,
+      "community": 101,
       "norm_label": "getcycleposition()"
     },
     {
@@ -2550,7 +2630,7 @@
       "source_location": "L50",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getstage",
-      "community": 102,
+      "community": 101,
       "norm_label": "getstage()"
     },
     {
@@ -2560,7 +2640,7 @@
       "source_location": "L70",
       "_origin": "ast",
       "id": "experience_sessioncontroller_interpolate",
-      "community": 102,
+      "community": 101,
       "norm_label": "interpolate()"
     },
     {
@@ -2570,7 +2650,7 @@
       "source_location": "L78",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getstageprogress",
-      "community": 102,
+      "community": 101,
       "norm_label": "getstageprogress()"
     },
     {
@@ -2580,7 +2660,7 @@
       "source_location": "L96",
       "_origin": "ast",
       "id": "experience_sessioncontroller_getenvironmentintensity",
-      "community": 102,
+      "community": 101,
       "norm_label": "getenvironmentintensity()"
     },
     {
@@ -2590,7 +2670,7 @@
       "source_location": "L114",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller",
-      "community": 102,
+      "community": 101,
       "norm_label": "sessioncontroller"
     },
     {
@@ -2600,7 +2680,7 @@
       "source_location": "L119",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_update",
-      "community": 102,
+      "community": 101,
       "norm_label": ".update()"
     },
     {
@@ -2610,7 +2690,7 @@
       "source_location": "L162",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_getstate",
-      "community": 102,
+      "community": 101,
       "norm_label": ".getstate()"
     },
     {
@@ -2620,7 +2700,7 @@
       "source_location": "L166",
       "_origin": "ast",
       "id": "experience_sessioncontroller_sessioncontroller_reset",
-      "community": 102,
+      "community": 101,
       "norm_label": ".reset()"
     },
     {
@@ -2630,7 +2710,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "src_index",
-      "community": 99,
+      "community": 96,
       "norm_label": "index.ts"
     },
     {
@@ -2640,7 +2720,7 @@
       "source_location": "L12",
       "_origin": "ast",
       "id": "src_index_scenecontainer",
-      "community": 99,
+      "community": 96,
       "norm_label": "scenecontainer"
     },
     {
@@ -2650,7 +2730,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton",
-      "community": 114,
+      "community": 101,
       "norm_label": "bioluminescentplankton.ts"
     },
     {
@@ -2660,7 +2740,7 @@
       "source_location": "L28",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_randomrange",
-      "community": 114,
+      "community": 101,
       "norm_label": "randomrange()"
     },
     {
@@ -2670,7 +2750,7 @@
       "source_location": "L32",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_clamp",
-      "community": 114,
+      "community": 101,
       "norm_label": "clamp()"
     },
     {
@@ -2680,7 +2760,7 @@
       "source_location": "L40",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_clamp01",
-      "community": 114,
+      "community": 101,
       "norm_label": "clamp01()"
     },
     {
@@ -2690,7 +2770,7 @@
       "source_location": "L44",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_smoothstep",
-      "community": 114,
+      "community": 101,
       "norm_label": "smoothstep()"
     },
     {
@@ -2700,7 +2780,7 @@
       "source_location": "L49",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton",
-      "community": 114,
+      "community": 101,
       "norm_label": "bioluminescentplankton"
     },
     {
@@ -2710,7 +2790,7 @@
       "source_location": "L68",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_constructor",
-      "community": 114,
+      "community": 101,
       "norm_label": ".constructor()"
     },
     {
@@ -2720,7 +2800,7 @@
       "source_location": "L99",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_reset",
-      "community": 114,
+      "community": 101,
       "norm_label": ".reset()"
     },
     {
@@ -2730,7 +2810,7 @@
       "source_location": "L106",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_setsessionintensity",
-      "community": 114,
+      "community": 101,
       "norm_label": ".setsessionintensity()"
     },
     {
@@ -2740,7 +2820,7 @@
       "source_location": "L115",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_update",
-      "community": 114,
+      "community": 101,
       "norm_label": ".update()"
     },
     {
@@ -2750,7 +2830,7 @@
       "source_location": "L281",
       "_origin": "ast",
       "id": "ocean_bioluminescentplankton_bioluminescentplankton_randomizeparticles",
-      "community": 114,
+      "community": 101,
       "norm_label": ".randomizeparticles()"
     },
     {
@@ -2774,20 +2854,50 @@
       "norm_label": "butterflyfishherolayerconfig"
     },
     {
+      "label": "ButterflyFishMaterialStyle",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L32",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_butterflyfishmaterialstyle",
+      "community": 0,
+      "norm_label": "butterflyfishmaterialstyle"
+    },
+    {
       "label": "ButterflyPathConfig",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L28",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_butterflypathconfig",
       "community": 0,
       "norm_label": "butterflypathconfig"
     },
     {
+      "label": "BreathTintTarget",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_breathtinttarget",
+      "community": 0,
+      "norm_label": "breathtinttarget"
+    },
+    {
+      "label": "BREATH_ACCENT_COLORS",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_breath_accent_colors",
+      "community": 0,
+      "norm_label": "breath_accent_colors"
+    },
+    {
       "label": "ButterflyFishInstance",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L39",
+      "source_location": "L61",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_butterflyfishinstance",
       "community": 0,
@@ -2797,7 +2907,7 @@
       "label": "TextureLike",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L50",
+      "source_location": "L76",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_texturelike",
       "community": 0,
@@ -2807,7 +2917,7 @@
       "label": "MaterialLike",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L58",
+      "source_location": "L84",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_materiallike",
       "community": 0,
@@ -2817,7 +2927,7 @@
       "label": "ButterflyFishMaterialAudit",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L65",
+      "source_location": "L91",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_butterflyfishmaterialaudit",
       "community": 0,
@@ -2827,7 +2937,7 @@
       "label": "ButterflyFishHeroLayerReport",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L76",
+      "source_location": "L102",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_butterflyfishherolayerreport",
       "community": 0,
@@ -2837,7 +2947,7 @@
       "label": "USER_POINT",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L86",
+      "source_location": "L112",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_user_point",
       "community": 0,
@@ -2847,7 +2957,7 @@
       "label": "GUIDE_POINT",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L87",
+      "source_location": "L113",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_guide_point",
       "community": 0,
@@ -2857,7 +2967,7 @@
       "label": "HERO_PATHS",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L89",
+      "source_location": "L115",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_hero_paths",
       "community": 0,
@@ -2867,7 +2977,7 @@
       "label": "BODY_COLOR",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L132",
+      "source_location": "L158",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_body_color",
       "community": 0,
@@ -2877,7 +2987,7 @@
       "label": "ACCENT_COLOR",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L137",
+      "source_location": "L163",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_accent_color",
       "community": 0,
@@ -2887,7 +2997,7 @@
       "label": "MARKING_COLOR",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L142",
+      "source_location": "L168",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_marking_color",
       "community": 0,
@@ -2897,7 +3007,7 @@
       "label": "textureSize()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L144",
+      "source_location": "L170",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_texturesize",
       "community": 0,
@@ -2907,7 +3017,7 @@
       "label": "isPlaceholderTexture()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L155",
+      "source_location": "L181",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_isplaceholdertexture",
       "community": 0,
@@ -2917,7 +3027,7 @@
       "label": "isUsableAnimationClip()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L164",
+      "source_location": "L190",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_isusableanimationclip",
       "community": 0,
@@ -2927,7 +3037,7 @@
       "label": "selectUsableAnimationClip()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L170",
+      "source_location": "L196",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_selectusableanimationclip",
       "community": 0,
@@ -2937,7 +3047,7 @@
       "label": "materialAudit()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L200",
+      "source_location": "L229",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_materialaudit",
       "community": 0,
@@ -2947,7 +3057,7 @@
       "label": "materialNeedsFallback()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L217",
+      "source_location": "L246",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_materialneedsfallback",
       "community": 0,
@@ -2957,7 +3067,7 @@
       "label": "tuneBodyMaterial()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L234",
+      "source_location": "L263",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_tunebodymaterial",
       "community": 0,
@@ -2967,17 +3077,27 @@
       "label": "tuneMarkingMaterial()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L269",
+      "source_location": "L298",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_tunemarkingmaterial",
       "community": 0,
       "norm_label": "tunemarkingmaterial()"
     },
     {
+      "label": "tuneNaturalHeroMaterial()",
+      "file_type": "code",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L322",
+      "_origin": "ast",
+      "id": "ocean_butterflyfishherolayer_tunenaturalheromaterial",
+      "community": 0,
+      "norm_label": "tunenaturalheromaterial()"
+    },
+    {
       "label": "cloneAndTuneMaterials()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L293",
+      "source_location": "L410",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_cloneandtunematerials",
       "community": 0,
@@ -2987,7 +3107,7 @@
       "label": "breathRadiusScale()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L337",
+      "source_location": "L480",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_breathradiusscale",
       "community": 0,
@@ -2997,7 +3117,7 @@
       "label": "distanceFromUser()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L351",
+      "source_location": "L494",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_distancefromuser",
       "community": 0,
@@ -3007,7 +3127,7 @@
       "label": "estimateClosestDistance()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L355",
+      "source_location": "L498",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_estimateclosestdistance",
       "community": 0,
@@ -3017,7 +3137,7 @@
       "label": "ButterflyFishHeroLayer",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L373",
+      "source_location": "L516",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_butterflyfishherolayer",
       "community": 0,
@@ -3027,7 +3147,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L380",
+      "source_location": "L523",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_butterflyfishherolayer_constructor",
       "community": 0,
@@ -3037,7 +3157,7 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L454",
+      "source_location": "L611",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_butterflyfishherolayer_update",
       "community": 0,
@@ -3047,7 +3167,7 @@
       "label": ".dispose()",
       "file_type": "code",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
-      "source_location": "L536",
+      "source_location": "L717",
       "_origin": "ast",
       "id": "ocean_butterflyfishherolayer_butterflyfishherolayer_dispose",
       "community": 0,
@@ -3067,17 +3187,27 @@
       "label": "FishAgentConfig",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L13",
+      "source_location": "L17",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagentconfig",
       "community": 98,
       "norm_label": "fishagentconfig"
     },
     {
+      "label": "FishVisualStyle",
+      "file_type": "code",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L31",
+      "_origin": "ast",
+      "id": "ocean_fishagent_fishvisualstyle",
+      "community": 98,
+      "norm_label": "fishvisualstyle"
+    },
+    {
       "label": "PRIMARY_FISH_TINT",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L24",
+      "source_location": "L35",
       "_origin": "ast",
       "id": "ocean_fishagent_primary_fish_tint",
       "community": 98,
@@ -3087,7 +3217,7 @@
       "label": "PRIMARY_FISH_SILVER_TINT",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L25",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "ocean_fishagent_primary_fish_silver_tint",
       "community": 98,
@@ -3097,17 +3227,47 @@
       "label": "PRIMARY_FISH_EMISSIVE_TINT",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L26",
+      "source_location": "L37",
       "_origin": "ast",
       "id": "ocean_fishagent_primary_fish_emissive_tint",
       "community": 98,
       "norm_label": "primary_fish_emissive_tint"
     },
     {
+      "label": "DEFAULT_SUPPORT_TINT",
+      "file_type": "code",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L38",
+      "_origin": "ast",
+      "id": "ocean_fishagent_default_support_tint",
+      "community": 98,
+      "norm_label": "default_support_tint"
+    },
+    {
+      "label": "DEFAULT_SUPPORT_ACCENT",
+      "file_type": "code",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L39",
+      "_origin": "ast",
+      "id": "ocean_fishagent_default_support_accent",
+      "community": 98,
+      "norm_label": "default_support_accent"
+    },
+    {
+      "label": "BreathTintTarget",
+      "file_type": "code",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L41",
+      "_origin": "ast",
+      "id": "ocean_fishagent_breathtinttarget",
+      "community": 98,
+      "norm_label": "breathtinttarget"
+    },
+    {
       "label": "TintableMaterial",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L28",
+      "source_location": "L47",
       "_origin": "ast",
       "id": "ocean_fishagent_tintablematerial",
       "community": 98,
@@ -3117,7 +3277,7 @@
       "label": "createMutedFishMaterial()",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L39",
+      "source_location": "L58",
       "_origin": "ast",
       "id": "ocean_fishagent_createmutedfishmaterial",
       "community": 98,
@@ -3127,27 +3287,47 @@
       "label": "tintFishMaterial()",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L53",
+      "source_location": "L72",
       "_origin": "ast",
       "id": "ocean_fishagent_tintfishmaterial",
       "community": 98,
       "norm_label": "tintfishmaterial()"
     },
     {
-      "label": "polishFishVisual()",
+      "label": "polishLegacyFishVisual()",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L92",
+      "source_location": "L111",
       "_origin": "ast",
-      "id": "ocean_fishagent_polishfishvisual",
+      "id": "ocean_fishagent_polishlegacyfishvisual",
       "community": 98,
-      "norm_label": "polishfishvisual()"
+      "norm_label": "polishlegacyfishvisual()"
+    },
+    {
+      "label": "tuneNaturalSupportMaterial()",
+      "file_type": "code",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L164",
+      "_origin": "ast",
+      "id": "ocean_fishagent_tunenaturalsupportmaterial",
+      "community": 98,
+      "norm_label": "tunenaturalsupportmaterial()"
+    },
+    {
+      "label": "polishNaturalSupportVisual()",
+      "file_type": "code",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L245",
+      "_origin": "ast",
+      "id": "ocean_fishagent_polishnaturalsupportvisual",
+      "community": 98,
+      "norm_label": "polishnaturalsupportvisual()"
     },
     {
       "label": "FishAgent",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L143",
+      "source_location": "L288",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagent",
       "community": 98,
@@ -3157,7 +3337,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L154",
+      "source_location": "L302",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagent_constructor",
       "community": 98,
@@ -3167,7 +3347,7 @@
       "label": ".updateAnimation()",
       "file_type": "code",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L179",
+      "source_location": "L336",
       "_origin": "ast",
       "id": "ocean_fishagent_fishagent_updateanimation",
       "community": 98,
@@ -3180,34 +3360,34 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_fishschool",
-      "community": 97,
+      "community": 98,
       "norm_label": "fishschool.ts"
     },
     {
       "label": "FishSpeciesConfig",
       "file_type": "code",
       "source_file": "src/ocean/FishSchool.ts",
-      "source_location": "L13",
+      "source_location": "L19",
       "_origin": "ast",
       "id": "ocean_fishschool_fishspeciesconfig",
-      "community": 97,
+      "community": 98,
       "norm_label": "fishspeciesconfig"
     },
     {
       "label": "FishSchoolConfig",
       "file_type": "code",
       "source_file": "src/ocean/FishSchool.ts",
-      "source_location": "L18",
+      "source_location": "L24",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschoolconfig",
-      "community": 97,
+      "community": 98,
       "norm_label": "fishschoolconfig"
     },
     {
       "label": "randomRange()",
       "file_type": "code",
       "source_file": "src/ocean/FishSchool.ts",
-      "source_location": "L25",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "ocean_fishschool_randomrange",
       "community": 98,
@@ -3217,27 +3397,67 @@
       "label": "smoothStep()",
       "file_type": "code",
       "source_file": "src/ocean/FishSchool.ts",
-      "source_location": "L29",
+      "source_location": "L36",
       "_origin": "ast",
       "id": "ocean_fishschool_smoothstep",
-      "community": 97,
+      "community": 98,
       "norm_label": "smoothstep()"
     },
     {
       "label": "DEFAULT_SPECIES",
       "file_type": "code",
       "source_file": "src/ocean/FishSchool.ts",
-      "source_location": "L34",
+      "source_location": "L41",
       "_origin": "ast",
       "id": "ocean_fishschool_default_species",
-      "community": 97,
+      "community": 98,
       "norm_label": "default_species"
+    },
+    {
+      "label": "SUPPORT_FISH_PALETTE",
+      "file_type": "code",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L45",
+      "_origin": "ast",
+      "id": "ocean_fishschool_support_fish_palette",
+      "community": 98,
+      "norm_label": "support_fish_palette"
+    },
+    {
+      "label": "SUPPORT_FISH_ACCENTS",
+      "file_type": "code",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "ocean_fishschool_support_fish_accents",
+      "community": 98,
+      "norm_label": "support_fish_accents"
+    },
+    {
+      "label": "HAND_INTERACTION",
+      "file_type": "code",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "ocean_fishschool_hand_interaction",
+      "community": 98,
+      "norm_label": "hand_interaction"
+    },
+    {
+      "label": "FishHandInteractionState",
+      "file_type": "code",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "ocean_fishschool_fishhandinteractionstate",
+      "community": 98,
+      "norm_label": "fishhandinteractionstate"
     },
     {
       "label": "FishSchool",
       "file_type": "code",
       "source_file": "src/ocean/FishSchool.ts",
-      "source_location": "L45",
+      "source_location": "L80",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool",
       "community": 98,
@@ -3247,7 +3467,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "src/ocean/FishSchool.ts",
-      "source_location": "L72",
+      "source_location": "L116",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_constructor",
       "community": 98,
@@ -3257,7 +3477,7 @@
       "label": ".createGatherOffset()",
       "file_type": "code",
       "source_file": "src/ocean/FishSchool.ts",
-      "source_location": "L121",
+      "source_location": "L176",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_creategatheroffset",
       "community": 98,
@@ -3267,7 +3487,7 @@
       "label": ".createOutwardBias()",
       "file_type": "code",
       "source_file": "src/ocean/FishSchool.ts",
-      "source_location": "L140",
+      "source_location": "L195",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_createoutwardbias",
       "community": 98,
@@ -3277,21 +3497,431 @@
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/ocean/FishSchool.ts",
-      "source_location": "L155",
+      "source_location": "L210",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_update",
-      "community": 97,
+      "community": 98,
       "norm_label": ".update()"
     },
     {
       "label": ".reset()",
       "file_type": "code",
       "source_file": "src/ocean/FishSchool.ts",
-      "source_location": "L449",
+      "source_location": "L525",
       "_origin": "ast",
       "id": "ocean_fishschool_fishschool_reset",
       "community": 98,
       "norm_label": ".reset()"
+    },
+    {
+      "label": ".selectHandTarget()",
+      "file_type": "code",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L549",
+      "_origin": "ast",
+      "id": "ocean_fishschool_fishschool_selecthandtarget",
+      "community": 98,
+      "norm_label": ".selecthandtarget()"
+    },
+    {
+      "label": ".prepareHandResponders()",
+      "file_type": "code",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L585",
+      "_origin": "ast",
+      "id": "ocean_fishschool_fishschool_preparehandresponders",
+      "community": 98,
+      "norm_label": ".preparehandresponders()"
+    },
+    {
+      "label": ".getHandState()",
+      "file_type": "code",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L647",
+      "_origin": "ast",
+      "id": "ocean_fishschool_fishschool_gethandstate",
+      "community": 98,
+      "norm_label": ".gethandstate()"
+    },
+    {
+      "label": ".applyHandSteering()",
+      "file_type": "code",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L690",
+      "_origin": "ast",
+      "id": "ocean_fishschool_fishschool_applyhandsteering",
+      "community": 98,
+      "norm_label": ".applyhandsteering()"
+    },
+    {
+      "label": "HandFishInteractor.ts",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor",
+      "community": 103,
+      "norm_label": "handfishinteractor.ts"
+    },
+    {
+      "label": "Handedness",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L16",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handedness",
+      "community": 103,
+      "norm_label": "handedness"
+    },
+    {
+      "label": "HandSource",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L17",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handsource",
+      "community": 103,
+      "norm_label": "handsource"
+    },
+    {
+      "label": "DesktopFishMode",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_desktopfishmode",
+      "community": 103,
+      "norm_label": "desktopfishmode"
+    },
+    {
+      "label": "XRSessionWithTrackedSources",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L23",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_xrsessionwithtrackedsources",
+      "community": 103,
+      "norm_label": "xrsessionwithtrackedsources"
+    },
+    {
+      "label": "FishHandTarget",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_fishhandtarget",
+      "community": 98,
+      "norm_label": "fishhandtarget"
+    },
+    {
+      "label": "FishHandInteractionSnapshot",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L37",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_fishhandinteractionsnapshot",
+      "community": 98,
+      "norm_label": "fishhandinteractionsnapshot"
+    },
+    {
+      "label": "CAMERA_PITCH_LIMIT",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L52",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_camera_pitch_limit",
+      "community": 103,
+      "norm_label": "camera_pitch_limit"
+    },
+    {
+      "label": "createHandTarget()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L58",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_createhandtarget",
+      "community": 103,
+      "norm_label": "createhandtarget()"
+    },
+    {
+      "label": "clamp01()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L72",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_clamp01",
+      "community": 103,
+      "norm_label": "clamp01()"
+    },
+    {
+      "label": "createDebugLabelTexture()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L76",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_createdebuglabeltexture",
+      "community": 103,
+      "norm_label": "createdebuglabeltexture()"
+    },
+    {
+      "label": "createXRHintTexture()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L117",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_createxrhinttexture",
+      "community": 103,
+      "norm_label": "createxrhinttexture()"
+    },
+    {
+      "label": "shouldIgnorePointerTarget()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L155",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_shouldignorepointertarget",
+      "community": 103,
+      "norm_label": "shouldignorepointertarget()"
+    },
+    {
+      "label": "storageSaysIntroDismissed()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L168",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_storagesaysintrodismissed",
+      "community": 103,
+      "norm_label": "storagesaysintrodismissed()"
+    },
+    {
+      "label": "rememberIntroDismissed()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L178",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_rememberintrodismissed",
+      "community": 103,
+      "norm_label": "rememberintrodismissed()"
+    },
+    {
+      "label": "HandFishInteractor",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L186",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor",
+      "community": 103,
+      "norm_label": "handfishinteractor"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L258",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_constructor",
+      "community": 103,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".update()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L274",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_update",
+      "community": 103,
+      "norm_label": ".update()"
+    },
+    {
+      "label": ".dispose()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L301",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_dispose",
+      "community": 103,
+      "norm_label": ".dispose()"
+    },
+    {
+      "label": ".installDesktopVisual()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L326",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_installdesktopvisual",
+      "community": 103,
+      "norm_label": ".installdesktopvisual()"
+    },
+    {
+      "label": ".installXRHint()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L351",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_installxrhint",
+      "community": 103,
+      "norm_label": ".installxrhint()"
+    },
+    {
+      "label": ".installDesktopControls()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L359",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_installdesktopcontrols",
+      "community": 103,
+      "norm_label": ".installdesktopcontrols()"
+    },
+    {
+      "label": ".installDesktopUi()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L370",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_installdesktopui",
+      "community": 103,
+      "norm_label": ".installdesktopui()"
+    },
+    {
+      "label": ".installDesktopStyles()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L434",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_installdesktopstyles",
+      "community": 103,
+      "norm_label": ".installdesktopstyles()"
+    },
+    {
+      "label": ".setDesktopMode()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L546",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_setdesktopmode",
+      "community": 103,
+      "norm_label": ".setdesktopmode()"
+    },
+    {
+      "label": ".updateModeUi()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L557",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_updatemodeui",
+      "community": 103,
+      "norm_label": ".updatemodeui()"
+    },
+    {
+      "label": ".updateDesktopUi()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L584",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_updatedesktopui",
+      "community": 103,
+      "norm_label": ".updatedesktopui()"
+    },
+    {
+      "label": ".initializeCameraControl()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L708",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_initializecameracontrol",
+      "community": 103,
+      "norm_label": ".initializecameracontrol()"
+    },
+    {
+      "label": ".applyCameraLook()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L719",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_applycameralook",
+      "community": 103,
+      "norm_label": ".applycameralook()"
+    },
+    {
+      "label": ".resetTarget()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L728",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_resettarget",
+      "community": 103,
+      "norm_label": ".resettarget()"
+    },
+    {
+      "label": ".sampleTrackedHands()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L734",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_sampletrackedhands",
+      "community": 103,
+      "norm_label": ".sampletrackedhands()"
+    },
+    {
+      "label": ".sampleInputSources()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L762",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_sampleinputsources",
+      "community": 103,
+      "norm_label": ".sampleinputsources()"
+    },
+    {
+      "label": ".sampleIndexFallback()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L813",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_sampleindexfallback",
+      "community": 103,
+      "norm_label": ".sampleindexfallback()"
+    },
+    {
+      "label": ".setPinchFromDistance()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L837",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_setpinchfromdistance",
+      "community": 103,
+      "norm_label": ".setpinchfromdistance()"
+    },
+    {
+      "label": ".updateDesktopTarget()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L856",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_updatedesktoptarget",
+      "community": 103,
+      "norm_label": ".updatedesktoptarget()"
+    },
+    {
+      "label": ".updateDesktopVisual()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L906",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_updatedesktopvisual",
+      "community": 103,
+      "norm_label": ".updatedesktopvisual()"
+    },
+    {
+      "label": ".updateXRHint()",
+      "file_type": "code",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L937",
+      "_origin": "ast",
+      "id": "ocean_handfishinteractor_handfishinteractor_updatexrhint",
+      "community": 103,
+      "norm_label": ".updatexrhint()"
     },
     {
       "label": "JellyfishGuide.ts",
@@ -3300,7 +3930,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_jellyfishguide",
-      "community": 112,
+      "community": 96,
       "norm_label": "jellyfishguide.ts"
     },
     {
@@ -3310,7 +3940,7 @@
       "source_location": "L14",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_smoothstep",
-      "community": 112,
+      "community": 96,
       "norm_label": "smoothstep()"
     },
     {
@@ -3320,7 +3950,7 @@
       "source_location": "L19",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_createorganicbellgeometry",
-      "community": 112,
+      "community": 96,
       "norm_label": "createorganicbellgeometry()"
     },
     {
@@ -3330,7 +3960,7 @@
       "source_location": "L59",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_createtentaclegeometry",
-      "community": 112,
+      "community": 96,
       "norm_label": "createtentaclegeometry()"
     },
     {
@@ -3340,7 +3970,7 @@
       "source_location": "L104",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_jellyfishguide",
-      "community": 112,
+      "community": 96,
       "norm_label": "jellyfishguide"
     },
     {
@@ -3350,7 +3980,7 @@
       "source_location": "L117",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_jellyfishguide_constructor",
-      "community": 112,
+      "community": 96,
       "norm_label": ".constructor()"
     },
     {
@@ -3360,7 +3990,7 @@
       "source_location": "L225",
       "_origin": "ast",
       "id": "ocean_jellyfishguide_jellyfishguide_update",
-      "community": 112,
+      "community": 96,
       "norm_label": ".update()"
     },
     {
@@ -3800,7 +4430,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_reefenvironment",
-      "community": 103,
+      "community": 8,
       "norm_label": "reefenvironment.ts"
     },
     {
@@ -3810,7 +4440,7 @@
       "source_location": "L48",
       "_origin": "ast",
       "id": "ocean_reefenvironment_herorockplacement",
-      "community": 103,
+      "community": 8,
       "norm_label": "herorockplacement"
     },
     {
@@ -3820,7 +4450,7 @@
       "source_location": "L58",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reef_rock_placements",
-      "community": 103,
+      "community": 8,
       "norm_label": "reef_rock_placements"
     },
     {
@@ -3830,7 +4460,7 @@
       "source_location": "L151",
       "_origin": "ast",
       "id": "ocean_reefenvironment_randomrange",
-      "community": 103,
+      "community": 8,
       "norm_label": "randomrange()"
     },
     {
@@ -3840,7 +4470,7 @@
       "source_location": "L155",
       "_origin": "ast",
       "id": "ocean_reefenvironment_clamp01",
-      "community": 103,
+      "community": 8,
       "norm_label": "clamp01()"
     },
     {
@@ -3850,7 +4480,7 @@
       "source_location": "L159",
       "_origin": "ast",
       "id": "ocean_reefenvironment_smoothstep",
-      "community": 103,
+      "community": 8,
       "norm_label": "smoothstep()"
     },
     {
@@ -3860,7 +4490,7 @@
       "source_location": "L165",
       "_origin": "ast",
       "id": "ocean_reefenvironment_createseabedgeometry",
-      "community": 103,
+      "community": 8,
       "norm_label": "createseabedgeometry()"
     },
     {
@@ -3900,7 +4530,7 @@
       "source_location": "L288",
       "_origin": "ast",
       "id": "ocean_reefenvironment_reefenvironment_update",
-      "community": 97,
+      "community": 101,
       "norm_label": ".update()"
     },
     {
@@ -4010,7 +4640,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere",
-      "community": 103,
+      "community": 8,
       "norm_label": "underwateratmosphere.ts"
     },
     {
@@ -4020,7 +4650,7 @@
       "source_location": "L22",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwater_atmosphere_config",
-      "community": 103,
+      "community": 8,
       "norm_label": "underwater_atmosphere_config"
     },
     {
@@ -4030,7 +4660,7 @@
       "source_location": "L193",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_randomrange",
-      "community": 103,
+      "community": 8,
       "norm_label": "randomrange()"
     },
     {
@@ -4060,7 +4690,7 @@
       "source_location": "L225",
       "_origin": "ast",
       "id": "ocean_underwateratmosphere_underwateratmosphere_update",
-      "community": 97,
+      "community": 101,
       "norm_label": ".update()"
     },
     {
@@ -4180,7 +4810,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_underwaterparticles",
-      "community": 109,
+      "community": 8,
       "norm_label": "underwaterparticles.ts"
     },
     {
@@ -4190,7 +4820,7 @@
       "source_location": "L9",
       "_origin": "ast",
       "id": "ocean_underwaterparticles_particlefieldconfig",
-      "community": 109,
+      "community": 8,
       "norm_label": "particlefieldconfig"
     },
     {
@@ -4200,7 +4830,7 @@
       "source_location": "L16",
       "_origin": "ast",
       "id": "ocean_underwaterparticles_randomrange",
-      "community": 109,
+      "community": 8,
       "norm_label": "randomrange()"
     },
     {
@@ -4210,7 +4840,7 @@
       "source_location": "L20",
       "_origin": "ast",
       "id": "ocean_underwaterparticles_underwaterparticles",
-      "community": 109,
+      "community": 8,
       "norm_label": "underwaterparticles"
     },
     {
@@ -4220,7 +4850,7 @@
       "source_location": "L35",
       "_origin": "ast",
       "id": "ocean_underwaterparticles_underwaterparticles_constructor",
-      "community": 109,
+      "community": 8,
       "norm_label": ".constructor()"
     },
     {
@@ -4230,7 +4860,7 @@
       "source_location": "L85",
       "_origin": "ast",
       "id": "ocean_underwaterparticles_underwaterparticles_update",
-      "community": 109,
+      "community": 8,
       "norm_label": ".update()"
     },
     {
@@ -4240,7 +4870,7 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "ocean_watercurrent",
-      "community": 110,
+      "community": 96,
       "norm_label": "watercurrent.ts"
     },
     {
@@ -4250,7 +4880,7 @@
       "source_location": "L15",
       "_origin": "ast",
       "id": "ocean_watercurrent_currentsample",
-      "community": 97,
+      "community": 101,
       "norm_label": "currentsample"
     },
     {
@@ -4260,7 +4890,7 @@
       "source_location": "L30",
       "_origin": "ast",
       "id": "ocean_watercurrent_clamp01",
-      "community": 110,
+      "community": 96,
       "norm_label": "clamp01()"
     },
     {
@@ -4270,7 +4900,7 @@
       "source_location": "L34",
       "_origin": "ast",
       "id": "ocean_watercurrent_smoothstep",
-      "community": 110,
+      "community": 96,
       "norm_label": "smoothstep()"
     },
     {
@@ -4280,7 +4910,7 @@
       "source_location": "L39",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent",
-      "community": 110,
+      "community": 96,
       "norm_label": "watercurrent"
     },
     {
@@ -4290,7 +4920,7 @@
       "source_location": "L65",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent_constructor",
-      "community": 110,
+      "community": 96,
       "norm_label": ".constructor()"
     },
     {
@@ -4300,7 +4930,7 @@
       "source_location": "L89",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent_update",
-      "community": 110,
+      "community": 96,
       "norm_label": ".update()"
     },
     {
@@ -4310,7 +4940,7 @@
       "source_location": "L146",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent_reset",
-      "community": 110,
+      "community": 96,
       "norm_label": ".reset()"
     },
     {
@@ -4320,7 +4950,7 @@
       "source_location": "L163",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent_startpulse",
-      "community": 110,
+      "community": 96,
       "norm_label": ".startpulse()"
     },
     {
@@ -4330,7 +4960,7 @@
       "source_location": "L179",
       "_origin": "ast",
       "id": "ocean_watercurrent_watercurrent_updatevisual",
-      "community": 110,
+      "community": 96,
       "norm_label": ".updatevisual()"
     },
     {
@@ -4340,87 +4970,117 @@
       "source_location": "L1",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem",
-      "community": 110,
+      "community": 96,
       "norm_label": "reefbreathingsystem.ts"
     },
     {
       "label": "selectFishAnimation()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L30",
+      "source_location": "L32",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_selectfishanimation",
-      "community": 99,
+      "community": 96,
       "norm_label": "selectfishanimation()"
+    },
+    {
+      "label": "FishVisualMode",
+      "file_type": "code",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L69",
+      "_origin": "ast",
+      "id": "systems_reefbreathingsystem_fishvisualmode",
+      "community": 96,
+      "norm_label": "fishvisualmode"
+    },
+    {
+      "label": "readFishVisualMode()",
+      "file_type": "code",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L71",
+      "_origin": "ast",
+      "id": "systems_reefbreathingsystem_readfishvisualmode",
+      "community": 96,
+      "norm_label": "readfishvisualmode()"
+    },
+    {
+      "label": "readHandDemoEnabled()",
+      "file_type": "code",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L87",
+      "_origin": "ast",
+      "id": "systems_reefbreathingsystem_readhanddemoenabled",
+      "community": 96,
+      "norm_label": "readhanddemoenabled()"
     },
     {
       "label": "ReefBreathingSystem",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L58",
+      "source_location": "L98",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem",
-      "community": 99,
+      "community": 96,
       "norm_label": "reefbreathingsystem"
     },
     {
       "label": ".init()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L116",
+      "source_location": "L165",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_init",
-      "community": 99,
+      "community": 96,
       "norm_label": ".init()"
     },
     {
       "label": ".update()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L201",
+      "source_location": "L268",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_update",
-      "community": 99,
+      "community": 96,
       "norm_label": ".update()"
     },
     {
       "label": ".resetExperienceSystems()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L295",
+      "source_location": "L366",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_resetexperiencesystems",
-      "community": 99,
+      "community": 96,
       "norm_label": ".resetexperiencesystems()"
     },
     {
       "label": ".loadMantaFinale()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L305",
+      "source_location": "L377",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_loadmantafinale",
-      "community": 99,
+      "community": 96,
       "norm_label": ".loadmantafinale()"
     },
     {
       "label": ".loadFishSchool()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L361",
+      "source_location": "L433",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_loadfishschool",
-      "community": 99,
+      "community": 96,
       "norm_label": ".loadfishschool()"
     },
     {
       "label": ".loadButterflyFishHeroLayer()",
       "file_type": "code",
       "source_file": "src/systems/ReefBreathingSystem.ts",
-      "source_location": "L432",
+      "source_location": "L519",
       "_origin": "ast",
       "id": "systems_reefbreathingsystem_reefbreathingsystem_loadbutterflyfishherolayer",
-      "community": 99,
+      "community": 96,
       "norm_label": ".loadbutterflyfishherolayer()"
     },
     {
@@ -11844,24 +12504,114 @@
       "norm_label": "readme.md"
     },
     {
-      "label": "IWSDK App",
+      "label": "Resonance Reef",
       "file_type": "document",
       "source_file": "README.md",
       "source_location": "L1",
       "_origin": "ast",
-      "id": "readme_iwsdk_app",
+      "id": "readme_resonance_reef",
       "community": 87,
-      "norm_label": "iwsdk app"
+      "norm_label": "resonance reef"
     },
     {
-      "label": "Starter content",
+      "label": "Features",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L15",
+      "source_location": "L7",
       "_origin": "ast",
-      "id": "readme_starter_content",
+      "id": "readme_features",
       "community": 87,
-      "norm_label": "starter content"
+      "norm_label": "features"
+    },
+    {
+      "label": "Technology",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "_origin": "ast",
+      "id": "readme_technology",
+      "community": 87,
+      "norm_label": "technology"
+    },
+    {
+      "label": "Run Locally",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "_origin": "ast",
+      "id": "readme_run_locally",
+      "community": 87,
+      "norm_label": "run locally"
+    },
+    {
+      "label": "Desktop Use",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L47",
+      "_origin": "ast",
+      "id": "readme_desktop_use",
+      "community": 87,
+      "norm_label": "desktop use"
+    },
+    {
+      "label": "Meta Quest Use",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L56",
+      "_origin": "ast",
+      "id": "readme_meta_quest_use",
+      "community": 87,
+      "norm_label": "meta quest use"
+    },
+    {
+      "label": "Hand Interaction",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L66",
+      "_origin": "ast",
+      "id": "readme_hand_interaction",
+      "community": 87,
+      "norm_label": "hand interaction"
+    },
+    {
+      "label": "Demonstration URLs",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L94",
+      "_origin": "ast",
+      "id": "readme_demonstration_urls",
+      "community": 87,
+      "norm_label": "demonstration urls"
+    },
+    {
+      "label": "Asset Credits And Licenses",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L106",
+      "_origin": "ast",
+      "id": "readme_asset_credits_and_licenses",
+      "community": 87,
+      "norm_label": "asset credits and licenses"
+    },
+    {
+      "label": "Known Limitations",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L116",
+      "_origin": "ast",
+      "id": "readme_known_limitations",
+      "community": 87,
+      "norm_label": "known limitations"
+    },
+    {
+      "label": "Release Build",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L123",
+      "_origin": "ast",
+      "id": "readme_release_build",
+      "community": 87,
+      "norm_label": "release build"
     },
     {
       "label": "FISH_ASSETS.md",
@@ -11882,6 +12632,36 @@
       "id": "licenses_fish_assets_fish_assets",
       "community": 90,
       "norm_label": "fish assets"
+    },
+    {
+      "label": "Legacy Fish And Manta Ray",
+      "file_type": "document",
+      "source_file": "public/licenses/FISH_ASSETS.md",
+      "source_location": "L3",
+      "_origin": "ast",
+      "id": "licenses_fish_assets_legacy_fish_and_manta_ray",
+      "community": 90,
+      "norm_label": "legacy fish and manta ray"
+    },
+    {
+      "label": "Default Moorish Idol And Cardinal Fish",
+      "file_type": "document",
+      "source_file": "public/licenses/FISH_ASSETS.md",
+      "source_location": "L27",
+      "_origin": "ast",
+      "id": "licenses_fish_assets_default_moorish_idol_and_cardinal_fish",
+      "community": 90,
+      "norm_label": "default moorish idol and cardinal fish"
+    },
+    {
+      "label": "Additional Local License Note",
+      "file_type": "document",
+      "source_file": "public/licenses/FISH_ASSETS.md",
+      "source_location": "L54",
+      "_origin": "ast",
+      "id": "licenses_fish_assets_additional_local_license_note",
+      "community": 90,
+      "norm_label": "additional local license note"
     },
     {
       "label": "AGENTS.md",
@@ -13358,6 +14138,219 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice",
+      "target": "audio_breathvoice_breathvoice"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice",
+      "target": "breathing_breathengine"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice",
+      "target": "breathing_breathengine_breathphase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice",
+      "target": "breathing_breathengine_breathstate"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "audio_breathvoice"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice_breathvoice",
+      "target": "audio_breathvoice_breathvoice_announce"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L74",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice_breathvoice",
+      "target": "audio_breathvoice_breathvoice_dispose"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice_breathvoice",
+      "target": "audio_breathvoice_breathvoice_pause"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice_breathvoice",
+      "target": "audio_breathvoice_breathvoice_reset"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice_breathvoice",
+      "target": "audio_breathvoice_breathvoice_setmuted"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice_breathvoice",
+      "target": "audio_breathvoice_breathvoice_update"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice_breathvoice",
+      "target": "breathing_breathengine_breathphase"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "audio_breathvoice_breathvoice"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L139",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "systems_reefbreathingsystem_reefbreathingsystem",
+      "target": "audio_breathvoice_breathvoice"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice_breathvoice_announce",
+      "target": "breathing_breathengine_breathstate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice_breathvoice_update",
+      "target": "audio_breathvoice_breathvoice_announce"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice_breathvoice_update",
+      "target": "audio_breathvoice_breathvoice_pause"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice_breathvoice_update",
+      "target": "breathing_breathengine_breathstate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice_breathvoice_reset",
+      "target": "audio_breathvoice_breathvoice_pause"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/audio/BreathVoice.ts",
+      "source_location": "L75",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "audio_breathvoice_breathvoice_dispose",
+      "target": "audio_breathvoice_breathvoice_reset"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "src/audio/OceanAudio.ts",
       "source_location": "L11",
       "weight": 1.0,
@@ -14420,6 +15413,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishagent",
+      "target": "breathing_breathengine"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "src/ocean/FishSchool.ts",
       "source_location": "L8",
       "weight": 1.0,
@@ -14645,6 +15649,28 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "ocean_butterflyfishherolayer_butterflyfishherolayer_update",
+      "target": "breathing_breathengine_breathstate"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishagent",
+      "target": "breathing_breathengine_breathstate"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L336",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishagent_fishagent_updateanimation",
       "target": "breathing_breathengine_breathstate"
     },
     {
@@ -16964,11 +17990,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_breath_accent_colors"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
       "source_location": "L337",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_butterflyfishherolayer",
-      "target": "ocean_butterflyfishherolayer_breathradiusscale",
-      "confidence_score": 1.0
+      "target": "ocean_butterflyfishherolayer_breathradiusscale"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_breathtinttarget"
     },
     {
       "relation": "contains",
@@ -17024,6 +18070,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_butterflyfishmaterialstyle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
       "source_location": "L27",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -17066,9 +18122,9 @@
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_butterflyfishherolayer",
-      "target": "ocean_butterflyfishherolayer_guide_point",
-      "confidence_score": 1.0
+      "target": "ocean_butterflyfishherolayer_guide_point"
     },
     {
       "relation": "contains",
@@ -17194,6 +18250,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
+      "source_location": "L322",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_butterflyfishherolayer",
+      "target": "ocean_butterflyfishherolayer_tunenaturalheromaterial"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
       "source_location": "L81",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -17262,9 +18328,9 @@
       "source_file": "src/ocean/ButterflyFishHeroLayer.ts",
       "source_location": "L474",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "ocean_butterflyfishherolayer_butterflyfishherolayer_update",
-      "target": "ocean_butterflyfishherolayer_breathradiusscale",
-      "confidence_score": 1.0
+      "target": "ocean_butterflyfishherolayer_breathradiusscale"
     },
     {
       "relation": "calls",
@@ -17344,11 +18410,41 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishagent",
+      "target": "ocean_fishagent_breathtinttarget"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishAgent.ts",
       "source_location": "L39",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "ocean_fishagent",
       "target": "ocean_fishagent_createmutedfishmaterial"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishagent",
+      "target": "ocean_fishagent_default_support_accent"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishagent",
+      "target": "ocean_fishagent_default_support_tint"
     },
     {
       "relation": "contains",
@@ -17374,11 +18470,31 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L27",
+      "source_location": "L31",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "ocean_fishagent",
-      "target": "ocean_fishagent_polishfishvisual"
+      "target": "ocean_fishagent_fishvisualstyle"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L111",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishagent",
+      "target": "ocean_fishagent_polishlegacyfishvisual"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L245",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishagent",
+      "target": "ocean_fishagent_polishnaturalsupportvisual"
     },
     {
       "relation": "contains",
@@ -17431,6 +18547,16 @@
       "target": "ocean_fishagent_tintfishmaterial"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L164",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishagent",
+      "target": "ocean_fishagent_tunenaturalsupportmaterial"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -17442,15 +18568,48 @@
       "target": "ocean_fishagent"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool",
+      "target": "ocean_fishagent_fishvisualstyle"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschoolconfig",
+      "target": "ocean_fishagent_fishvisualstyle"
+    },
+    {
       "relation": "calls",
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/FishAgent.ts",
-      "source_location": "L83",
+      "source_location": "L320",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "ocean_fishagent_fishagent_constructor",
-      "target": "ocean_fishagent_polishfishvisual"
+      "target": "ocean_fishagent_polishlegacyfishvisual"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishAgent.ts",
+      "source_location": "L313",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishagent_fishagent_constructor",
+      "target": "ocean_fishagent_polishnaturalsupportvisual"
     },
     {
       "relation": "method",
@@ -17495,6 +18654,17 @@
       "target": "ocean_fishagent_fishagent"
     },
     {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L690",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool_applyhandsteering",
+      "target": "ocean_fishagent_fishagent"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/FishSchool.ts",
@@ -17503,6 +18673,16 @@
       "confidence_score": 1.0,
       "source": "ocean_fishschool",
       "target": "ocean_fishschool_default_species"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool",
+      "target": "ocean_fishschool_fishhandinteractionstate"
     },
     {
       "relation": "contains",
@@ -17538,6 +18718,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool",
+      "target": "ocean_fishschool_hand_interaction"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
       "source_location": "L23",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -17553,6 +18743,59 @@
       "confidence_score": 1.0,
       "source": "ocean_fishschool",
       "target": "ocean_fishschool_smoothstep"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool",
+      "target": "ocean_fishschool_support_fish_accents"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L45",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool",
+      "target": "ocean_fishschool_support_fish_palette"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool",
+      "target": "ocean_handfishinteractor"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool",
+      "target": "ocean_handfishinteractor_fishhandinteractionsnapshot"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool",
+      "target": "ocean_handfishinteractor_fishhandtarget"
     },
     {
       "relation": "imports_from",
@@ -17646,6 +18889,16 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L690",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool",
+      "target": "ocean_fishschool_fishschool_applyhandsteering"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
       "source_location": "L69",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -17676,11 +18929,41 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L647",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool",
+      "target": "ocean_fishschool_fishschool_gethandstate"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L585",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool",
+      "target": "ocean_fishschool_fishschool_preparehandresponders"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
       "source_location": "L449",
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "ocean_fishschool_fishschool",
       "target": "ocean_fishschool_fishschool_reset"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L549",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool",
+      "target": "ocean_fishschool_fishschool_selecthandtarget"
     },
     {
       "relation": "method",
@@ -17737,6 +19020,61 @@
       "target": "ocean_fishschool_fishschool_createoutwardbias"
     },
     {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L402",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool_update",
+      "target": "ocean_fishschool_fishschool_applyhandsteering"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L266",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool_update",
+      "target": "ocean_fishschool_fishschool_gethandstate"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L257",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool_update",
+      "target": "ocean_fishschool_fishschool_preparehandresponders"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L255",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool_update",
+      "target": "ocean_fishschool_fishschool_selecthandtarget"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L210",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool_update",
+      "target": "ocean_handfishinteractor_fishhandinteractionsnapshot"
+    },
+    {
       "relation": "references",
       "context": "parameter_type",
       "confidence": "EXTRACTED",
@@ -17746,6 +19084,652 @@
       "confidence_score": 1.0,
       "source": "ocean_fishschool_fishschool_update",
       "target": "ocean_watercurrent_currentsample"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L549",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool_selecthandtarget",
+      "target": "ocean_handfishinteractor_fishhandinteractionsnapshot"
+    },
+    {
+      "relation": "references",
+      "context": "return_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L549",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool_selecthandtarget",
+      "target": "ocean_handfishinteractor_fishhandtarget"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L585",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool_preparehandresponders",
+      "target": "ocean_handfishinteractor_fishhandtarget"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L647",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool_gethandstate",
+      "target": "ocean_handfishinteractor_fishhandtarget"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/FishSchool.ts",
+      "source_location": "L690",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_fishschool_fishschool_applyhandsteering",
+      "target": "ocean_handfishinteractor_fishhandtarget"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_camera_pitch_limit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_clamp01"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_createdebuglabeltexture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_createhandtarget"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_createxrhinttexture",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_desktopfishmode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L31",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_fishhandinteractionsnapshot"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_fishhandtarget"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_handedness"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L100",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_handsource"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L178",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_rememberintrodismissed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L155",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_shouldignorepointertarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_storagesaysintrodismissed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor",
+      "target": "ocean_handfishinteractor_xrsessionwithtrackedsources"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "ocean_handfishinteractor"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L391",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_setpinchfromdistance",
+      "target": "ocean_handfishinteractor_clamp01"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L373",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_installdesktopui",
+      "target": "ocean_handfishinteractor_storagesaysintrodismissed",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L719",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_applycameralook",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L137",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_constructor"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L170",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_dispose"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L708",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_initializecameracontrol",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L359",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_installdesktopcontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L434",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_installdesktopstyles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L370",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_installdesktopui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L326",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_installdesktopvisual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L351",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_installxrhint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L269",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_resettarget"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L354",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_sampleindexfallback"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L303",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_sampleinputsources"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L275",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_sampletrackedhands"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L546",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_setdesktopmode",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L378",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_setpinchfromdistance"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L151",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_update"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L856",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_updatedesktoptarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L584",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_updatedesktopui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L906",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_updatedesktopvisual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L557",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_updatemodeui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L937",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor",
+      "target": "ocean_handfishinteractor_handfishinteractor_updatexrhint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "ocean_handfishinteractor_handfishinteractor"
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L161",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "systems_reefbreathingsystem_reefbreathingsystem",
+      "target": "ocean_handfishinteractor_handfishinteractor"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L270",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_constructor",
+      "target": "ocean_handfishinteractor_handfishinteractor_installdesktopcontrols",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L271",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_constructor",
+      "target": "ocean_handfishinteractor_handfishinteractor_installdesktopui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L268",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_constructor",
+      "target": "ocean_handfishinteractor_handfishinteractor_installdesktopvisual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L269",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_constructor",
+      "target": "ocean_handfishinteractor_handfishinteractor_installxrhint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L158",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_update",
+      "target": "ocean_handfishinteractor_handfishinteractor_resettarget"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L160",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_update",
+      "target": "ocean_handfishinteractor_handfishinteractor_sampletrackedhands"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L288",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_update",
+      "target": "ocean_handfishinteractor_handfishinteractor_updatedesktoptarget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L295",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_update",
+      "target": "ocean_handfishinteractor_handfishinteractor_updatedesktopui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L289",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_update",
+      "target": "ocean_handfishinteractor_handfishinteractor_updatedesktopvisual",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L296",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_update",
+      "target": "ocean_handfishinteractor_handfishinteractor_updatexrhint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L371",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_installdesktopui",
+      "target": "ocean_handfishinteractor_handfishinteractor_installdesktopstyles",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L431",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_installdesktopui",
+      "target": "ocean_handfishinteractor_handfishinteractor_updatemodeui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L554",
+      "weight": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_setdesktopmode",
+      "target": "ocean_handfishinteractor_handfishinteractor_updatemodeui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L285",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_sampletrackedhands",
+      "target": "ocean_handfishinteractor_handfishinteractor_sampleindexfallback"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L290",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_sampletrackedhands",
+      "target": "ocean_handfishinteractor_handfishinteractor_sampleinputsources"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/ocean/HandFishInteractor.ts",
+      "source_location": "L348",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "ocean_handfishinteractor_handfishinteractor_sampleinputsources",
+      "target": "ocean_handfishinteractor_handfishinteractor_setpinchfromdistance"
     },
     {
       "relation": "contains",
@@ -19797,6 +21781,36 @@
       "confidence_score": 1.0,
       "source": "ocean_watercurrent_watercurrent_update",
       "target": "ocean_watercurrent_watercurrent_updatevisual"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "systems_reefbreathingsystem_fishvisualmode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "systems_reefbreathingsystem_readfishvisualmode"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/systems/ReefBreathingSystem.ts",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "systems_reefbreathingsystem",
+      "target": "systems_reefbreathingsystem_readhanddemoenabled"
     },
     {
       "relation": "contains",
@@ -26580,17 +28594,107 @@
       "weight": 1.0,
       "confidence_score": 1.0,
       "source": "readme",
-      "target": "readme_iwsdk_app"
+      "target": "readme_resonance_reef"
     },
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "README.md",
-      "source_location": "L15",
+      "source_location": "L101",
       "weight": 1.0,
       "confidence_score": 1.0,
-      "source": "readme_iwsdk_app",
-      "target": "readme_starter_content"
+      "source": "readme_resonance_reef",
+      "target": "readme_asset_credits_and_licenses"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L89",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_resonance_reef",
+      "target": "readme_demonstration_urls"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_resonance_reef",
+      "target": "readme_desktop_use"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_resonance_reef",
+      "target": "readme_features"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_resonance_reef",
+      "target": "readme_hand_interaction"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L111",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_resonance_reef",
+      "target": "readme_known_limitations"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_resonance_reef",
+      "target": "readme_meta_quest_use"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L118",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_resonance_reef",
+      "target": "readme_release_build"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_resonance_reef",
+      "target": "readme_run_locally"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L19",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "readme_resonance_reef",
+      "target": "readme_technology"
     },
     {
       "relation": "contains",
@@ -26601,6 +28705,36 @@
       "confidence_score": 1.0,
       "source": "licenses_fish_assets",
       "target": "licenses_fish_assets_fish_assets"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/licenses/FISH_ASSETS.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "licenses_fish_assets_fish_assets",
+      "target": "licenses_fish_assets_additional_local_license_note"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/licenses/FISH_ASSETS.md",
+      "source_location": "L27",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "licenses_fish_assets_fish_assets",
+      "target": "licenses_fish_assets_default_moorish_idol_and_cardinal_fish"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "public/licenses/FISH_ASSETS.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "licenses_fish_assets_fish_assets",
+      "target": "licenses_fish_assets_legacy_fish_and_manta_ray"
     },
     {
       "relation": "contains",
@@ -26824,5 +28958,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d24649d991ea1af018e64db0da5ca3775e641815"
+  "built_at_commit": "2c83e76c6a0cf65c69fcb8ca46b0fb4f6ec3998c"
 }

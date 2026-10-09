@@ -1,867 +1,882 @@
 {
   ".claude/settings.json": {
-    "mtime": 1791174354.660012,
-    "ast_hash": "80ad8bb778ee063732be6b724dde1e17",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "7262b4ab9882daf51e6aea3ab08b9dff",
     "semantic_hash": ""
   },
   ".codex/hooks.json": {
-    "mtime": 1791178367.2575102,
+    "mtime": 1791390872.5492415,
     "ast_hash": "f58ce1b9cfe1b15ff81f53d12173e5a4",
     "semantic_hash": ""
   },
   ".cursor/permissions.json": {
-    "mtime": 1791174354.6698253,
-    "ast_hash": "d9aa4e638b0f8be22c77670574054f6b",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "8468b5b59889a48e2dc8d8dc205ab8e2",
     "semantic_hash": ""
   },
   "iwsdk.config.json": {
-    "mtime": 1791177361.987092,
-    "ast_hash": "5b10fb1a69cb8f50b57dbba6cbb9a15e",
+    "mtime": 1791390872.6222575,
+    "ast_hash": "1329865424a4674799b3a0d2c9deee91",
     "semantic_hash": ""
   },
   "opencode.json": {
-    "mtime": 1791174354.6557095,
-    "ast_hash": "062ac7548635c822a574f707a9eda0c2",
+    "mtime": 1791390872.6222575,
+    "ast_hash": "893ca738e164d895261e472d3d19ccd3",
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "58530483db1b0554ca5a42f297743f85",
+    "mtime": 1791390872.6222575,
+    "ast_hash": "b8d67cf45f6eb1d705db1b7edfe57aa0",
     "semantic_hash": ""
   },
   "public/scenes/main.iwsdk.scene.json": {
-    "mtime": 1791174801.3835156,
-    "ast_hash": "f1ad4a922ac78874173fbba208248ef2",
+    "mtime": 1791390872.6849165,
+    "ast_hash": "dd04924f07921f5272cd15d839f0d153",
     "semantic_hash": ""
   },
   "public/scenes/main.iwsdk.scene.original.json": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "02d82a85247ad25ad007e593ca90f0bc",
+    "mtime": 1791390872.6849165,
+    "ast_hash": "2bccdadc0ce35865e3532faebd56e55e",
     "semantic_hash": ""
   },
   "src/assets.ts": {
-    "mtime": 1791342896.2285924,
-    "ast_hash": "5f5e23313d7727a9db00874201216cdf",
+    "mtime": 1791434588.7693138,
+    "ast_hash": "b41122e187721ebc5c8886b15f5b90b1",
     "semantic_hash": ""
   },
   "src/breathing/BreathEngine.ts": {
-    "mtime": 1791175179.0278454,
+    "mtime": 1791390872.7100227,
     "ast_hash": "9929741bb891c39047dc0add06298581",
     "semantic_hash": ""
   },
   "src/index.ts": {
-    "mtime": 1791175223.3034768,
-    "ast_hash": "b02ab144852708f086803c563e4bc7d0",
+    "mtime": 1791390872.714585,
+    "ast_hash": "b8214adaf896ee6ef8b60d1dfbab577c",
     "semantic_hash": ""
   },
   "src/ocean/FishAgent.ts": {
-    "mtime": 1791347124.634978,
-    "ast_hash": "9969b8f6e0ea3a519f730b1ef0ecd31c",
+    "mtime": 1791434630.3043804,
+    "ast_hash": "d93b6088a63761b9b886c2b27b434f0c",
     "semantic_hash": ""
   },
   "src/ocean/FishSchool.ts": {
-    "mtime": 1791344853.6841352,
-    "ast_hash": "900b04e8cfc85f8ec8a245bf0eb22e98",
+    "mtime": 1791437214.8554018,
+    "ast_hash": "271a97a4359d8f901040fb914cc55e6d",
     "semantic_hash": ""
   },
   "src/ocean/JellyfishGuide.ts": {
-    "mtime": 1791273832.7858927,
-    "ast_hash": "e8970a606fcc91e5027b7c0a333fcc65",
+    "mtime": 1791390872.7185988,
+    "ast_hash": "8cc35a44014588cffa3d07b8cb0f9c0d",
     "semantic_hash": ""
   },
   "src/ocean/ReefEnvironment.ts": {
-    "mtime": 1791320193.2469006,
-    "ast_hash": "aed55a4eec1c0bee903ba1dc824a4fcc",
+    "mtime": 1791390872.7206054,
+    "ast_hash": "60bdfcddd8a36d4b5ab0e814722f4732",
     "semantic_hash": ""
   },
   "src/ocean/UnderwaterParticles.ts": {
-    "mtime": 1791200521.1012914,
-    "ast_hash": "fc3f4961fe9c3ee242de3fa480b4a111",
+    "mtime": 1791390872.7206054,
+    "ast_hash": "8e80424eee52025399a2ddb6f82e70c6",
     "semantic_hash": ""
   },
   "src/systems/ReefBreathingSystem.ts": {
-    "mtime": 1791347147.780622,
-    "ast_hash": "6dc924288a8bd373adf7d0b8382d9baf",
+    "mtime": 1791437214.3512568,
+    "ast_hash": "67ee6602f81d9d8374c411ce14319f72",
     "semantic_hash": ""
   },
   "src/vite-env.d.ts": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "7efec9ee85849fdbf0f3537da33e019a",
+    "mtime": 1791390872.7226129,
+    "ast_hash": "ace697b0ad01431e0c42b4cfac1d53b5",
     "semantic_hash": ""
   },
   "tsconfig.json": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "381d41361f9baf2d24778517411aa5ff",
+    "mtime": 1791390872.7226129,
+    "ast_hash": "d9cbb127d934ad4eabb9cd63914f942e",
     "semantic_hash": ""
   },
   "vite.config.ts": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "1f2a9ce335536971ce2739e7daacf862",
+    "mtime": 1791390872.7226129,
+    "ast_hash": "2fecb4850f7cd61967c2ff8e12bf5153",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-build-model/SKILL.md": {
-    "mtime": 1791174224.7149422,
-    "ast_hash": "b5cb5db163cf4c09b530e75e29d3f660",
+    "mtime": 1791390872.5312624,
+    "ast_hash": "d694a1aa116042a2443507ee1aecc67e",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-build-model/agents/openai.yaml": {
-    "mtime": 1791174224.713938,
-    "ast_hash": "c1e0fb15a8e500c0214b68e3827cc285",
+    "mtime": 1791390872.5312624,
+    "ast_hash": "a458fd87ec28169a3c1adef7d0af67dd",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-compose-scene/SKILL.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "3e7ac32cd4d393ff7bd6d176ab28fd15",
+    "mtime": 1791390872.5312624,
+    "ast_hash": "5f860b1b794ef900b9263d56ce59d092",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-compose-scene/agents/openai.yaml": {
-    "mtime": 1791174224.7149422,
-    "ast_hash": "46e4dee9e33fb818f9881a8dda7d43b1",
+    "mtime": 1791390872.5312624,
+    "ast_hash": "6aaa869ac94ed3ae16e6f480b422ce8e",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-compose-scene/references/extended-workflow.md": {
-    "mtime": 1791174224.7149422,
-    "ast_hash": "19cd7a6f32face9e398c7ebb52051814",
+    "mtime": 1791390872.5312624,
+    "ast_hash": "475ceeabae024100e4078af8f12ba8b8",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-compose-scene/references/image-intake.md": {
-    "mtime": 1791174224.7149422,
-    "ast_hash": "6d1144b0607f5102900b49d0de951a03",
+    "mtime": 1791390872.5312624,
+    "ast_hash": "fb1e08574a0f6ae8b5c276fcb25e38be",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-compose-scene/references/scene-composition.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "e955a9b285d5efca132a0e95aeca8c9b",
+    "mtime": 1791390872.5312624,
+    "ast_hash": "e13a338f76f5bacaf33d0728c91c0aa6",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-compose-scene/references/scene-format.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "a4f2ffe4cbe7f1d9dd2821a69030ea9d",
+    "mtime": 1791390872.5312624,
+    "ast_hash": "391a263fd0cfedabfce253314993c563",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-compose-scene/references/scene-review.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "046d37b49f46d6114d297399d2f8240c",
+    "mtime": 1791390872.5312624,
+    "ast_hash": "6f2e04989277710e4195d75417e30a7f",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-compose-scene/references/text-intake.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "b46879995e5e110021b4b74c95dd0eaf",
+    "mtime": 1791390872.5312624,
+    "ast_hash": "e6a43d8c8cc274f999ccae2110fb296f",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-debug/SKILL.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "a36cedb33d1412f1e0dec9ff9acbd012",
+    "mtime": 1791390872.5312624,
+    "ast_hash": "3d65aff222c1081d220f5e427041fe77",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-depth-occlusion/SKILL.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "a2ad0bcaa9c7cfefd2053a01287e1cfc",
+    "mtime": 1791390872.5312624,
+    "ast_hash": "3864d8a0a5ad3c64dce393742081eb06",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-dev/SKILL.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "d66a74cb3b25e7fe2326bfe94a558f3a",
+    "mtime": 1791390872.5312624,
+    "ast_hash": "0494db4190cbc9540506eb994be83970",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-dev/references/api-reference.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "9303e54bd5a35f6129edac6e744da328",
+    "mtime": 1791390872.542972,
+    "ast_hash": "248b4151b3a6e29efef4e7f1a4ccbbc6",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-dev/references/iterate.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "b87577e1514476fd80d2de99d7e3fc6f",
+    "mtime": 1791390872.542972,
+    "ast_hash": "e8db3921cd987468194609c34dc7f305",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-dev/references/planner.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "06b2df466251c4b68a422beebac68493",
+    "mtime": 1791390872.542972,
+    "ast_hash": "00c87b274ab728986b736050496d52b1",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-grab/SKILL.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "2afb5fe228cf4f88ccd4a7e5d597a885",
+    "mtime": 1791390872.542972,
+    "ast_hash": "9498be5cfec17594af1f573c773a81f4",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-hosting/SKILL.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "77890e36b931045404b5f3c1f152e645",
+    "mtime": 1791390872.542972,
+    "ast_hash": "5719194e03fae031fbc4f7e566410e66",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-hosting/references/existing-hosts.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "8135ad3cae8a033e5392605e0029dd5f",
+    "mtime": 1791390872.542972,
+    "ast_hash": "84c4f185f2c605de1b489e61aa8b14bb",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-hosting/references/vercel.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "d2274b72db49f51e4a042729b80cad67",
+    "mtime": 1791390872.542972,
+    "ast_hash": "c9115805d65d83d002c1a4693ad0b7b4",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-native-xr-test/SKILL.md": {
-    "mtime": 1791174224.716333,
-    "ast_hash": "bc6e6d60b16f9ed42d69310777a99e0f",
+    "mtime": 1791390872.542972,
+    "ast_hash": "44deb80e514b4152ae1a656ac4a53954",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-physics/SKILL.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "95185cfefb682fd726e1b3b8867886ad",
+    "mtime": 1791390872.542972,
+    "ast_hash": "d2fe5b2083ef426e7f998558d37740f9",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-physics/references/component-reference.md": {
-    "mtime": 1791174224.721105,
-    "ast_hash": "75d14607b573a3ab3e1b0113eb3ed23d",
+    "mtime": 1791390872.542972,
+    "ast_hash": "5fbb4861326a3146756182e91e28570b",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-physics/references/tuning-and-config.md": {
-    "mtime": 1791174224.721105,
-    "ast_hash": "53a69af2225708120bcd20013b554726",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "4ce5307fc55745f64d6faac0cc7c670d",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-physics/references/workflows.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "35e1eadedcd6958e94491fc715a00bf3",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "13ff5052e13a2010b5bf3415524a394a",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-pwa-packaging/SKILL.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "512d06b8231227ef3a0d55bb2bbe6234",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "fcbbc8107e60625a0449f35cc39b2a95",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-pwa-packaging/references/app-modes.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "e03f5f4d330106f60cc20d2ed3d0ffcf",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "642b4a1105d6b748e0770bde78ec2a65",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-pwa-packaging/references/bubblewrap.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "dc5142d9bb6aa29cac526306f088f183",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "1f57ab69eae0d837668cb94b164f258c",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-pwa-packaging/references/manifest-and-icons.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "8e0fc316b57793e67a284e7b6b9be31f",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "a8b90c3c7308a9f63fe73df3754d4dd9",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-pwa-packaging/references/store-upload.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "b0507c1b352401aaa4b08dd3182a1212",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "9d3457da826d9e8843efbf707750af91",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-pwa-packaging/references/troubleshooting.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "a9529bbf17295371421daaa39e9481aa",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "6c6bf5fede3095abc05f6e238f453115",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-ray/SKILL.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "332309240c3e4cbd258306d4a203e3fe",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "8279867534dfe43f6043c6a7365b0247",
     "semantic_hash": ""
   },
   ".agents/skills/iwsdk-ui/SKILL.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "bf7d2ce1d83bd3087ea5c0fef5a5a99b",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "a52e8e81222eee9fa3ccb24b66659246",
     "semantic_hash": ""
   },
   ".claude/agents/iwsdk-project-code-reviewer.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "028f767f2cad66bb0339312f9c37a537",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "e57d50d6f0c17ef5db213e2dd70b311e",
     "semantic_hash": ""
   },
   ".claude/rules/assets-and-manifest.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "0fa0bacca01fd8a599d276bfc478e44d",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "0138ad18cd4cff15989f08da01bc14f3",
     "semantic_hash": ""
   },
   ".claude/rules/ecs-api.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "6c4fabbfc0222f7a35c08b4ccbdee9c2",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "60cbee86d1f1a68ed3c6e31976dd1339",
     "semantic_hash": ""
   },
   ".claude/rules/scene-json.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "a44b25291aad8c1c42e428952dd90467",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "6fe854d1e7481d9381578068aede930e",
     "semantic_hash": ""
   },
   ".claude/rules/uikitml.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "308fe516cc24e822f2c0abb187a0a4d9",
+    "mtime": 1791390872.5459719,
+    "ast_hash": "a29b069b71bc7fbbc8c91b493e6b436f",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-build-model/SKILL.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "b5cb5db163cf4c09b530e75e29d3f660",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "d694a1aa116042a2443507ee1aecc67e",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-build-model/agents/openai.yaml": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "c1e0fb15a8e500c0214b68e3827cc285",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "a458fd87ec28169a3c1adef7d0af67dd",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-compose-scene/SKILL.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "3e7ac32cd4d393ff7bd6d176ab28fd15",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "5f860b1b794ef900b9263d56ce59d092",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-compose-scene/agents/openai.yaml": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "46e4dee9e33fb818f9881a8dda7d43b1",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "6aaa869ac94ed3ae16e6f480b422ce8e",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-compose-scene/references/extended-workflow.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "19cd7a6f32face9e398c7ebb52051814",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "475ceeabae024100e4078af8f12ba8b8",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-compose-scene/references/image-intake.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "6d1144b0607f5102900b49d0de951a03",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "fb1e08574a0f6ae8b5c276fcb25e38be",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-compose-scene/references/scene-composition.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "e955a9b285d5efca132a0e95aeca8c9b",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "e13a338f76f5bacaf33d0728c91c0aa6",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-compose-scene/references/scene-format.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "a4f2ffe4cbe7f1d9dd2821a69030ea9d",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "391a263fd0cfedabfce253314993c563",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-compose-scene/references/scene-review.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "046d37b49f46d6114d297399d2f8240c",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "6f2e04989277710e4195d75417e30a7f",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-compose-scene/references/text-intake.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "b46879995e5e110021b4b74c95dd0eaf",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "e6a43d8c8cc274f999ccae2110fb296f",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-debug/SKILL.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "a36cedb33d1412f1e0dec9ff9acbd012",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "3d65aff222c1081d220f5e427041fe77",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-depth-occlusion/SKILL.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "a2ad0bcaa9c7cfefd2053a01287e1cfc",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "3864d8a0a5ad3c64dce393742081eb06",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-dev/SKILL.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "d66a74cb3b25e7fe2326bfe94a558f3a",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "0494db4190cbc9540506eb994be83970",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-dev/references/api-reference.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "9303e54bd5a35f6129edac6e744da328",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "248b4151b3a6e29efef4e7f1a4ccbbc6",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-dev/references/iterate.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "b87577e1514476fd80d2de99d7e3fc6f",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "e8db3921cd987468194609c34dc7f305",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-dev/references/planner.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "06b2df466251c4b68a422beebac68493",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "00c87b274ab728986b736050496d52b1",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-grab/SKILL.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "2afb5fe228cf4f88ccd4a7e5d597a885",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "9498be5cfec17594af1f573c773a81f4",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-hosting/SKILL.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "77890e36b931045404b5f3c1f152e645",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "5719194e03fae031fbc4f7e566410e66",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-hosting/references/existing-hosts.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "8135ad3cae8a033e5392605e0029dd5f",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "84c4f185f2c605de1b489e61aa8b14bb",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-hosting/references/vercel.md": {
-    "mtime": 1791174224.7216089,
-    "ast_hash": "d2274b72db49f51e4a042729b80cad67",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "c9115805d65d83d002c1a4693ad0b7b4",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-native-xr-test/SKILL.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "bc6e6d60b16f9ed42d69310777a99e0f",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "44deb80e514b4152ae1a656ac4a53954",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-physics/SKILL.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "95185cfefb682fd726e1b3b8867886ad",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "d2fe5b2083ef426e7f998558d37740f9",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-physics/references/component-reference.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "75d14607b573a3ab3e1b0113eb3ed23d",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "5fbb4861326a3146756182e91e28570b",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-physics/references/tuning-and-config.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "53a69af2225708120bcd20013b554726",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "4ce5307fc55745f64d6faac0cc7c670d",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-physics/references/workflows.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "35e1eadedcd6958e94491fc715a00bf3",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "13ff5052e13a2010b5bf3415524a394a",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-pwa-packaging/SKILL.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "512d06b8231227ef3a0d55bb2bbe6234",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "fcbbc8107e60625a0449f35cc39b2a95",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-pwa-packaging/references/app-modes.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "e03f5f4d330106f60cc20d2ed3d0ffcf",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "642b4a1105d6b748e0770bde78ec2a65",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-pwa-packaging/references/bubblewrap.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "dc5142d9bb6aa29cac526306f088f183",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "1f57ab69eae0d837668cb94b164f258c",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-pwa-packaging/references/manifest-and-icons.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "8e0fc316b57793e67a284e7b6b9be31f",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "a8b90c3c7308a9f63fe73df3754d4dd9",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-pwa-packaging/references/store-upload.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "b0507c1b352401aaa4b08dd3182a1212",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "9d3457da826d9e8843efbf707750af91",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-pwa-packaging/references/troubleshooting.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "a9529bbf17295371421daaa39e9481aa",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "6c6bf5fede3095abc05f6e238f453115",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-ray/SKILL.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "332309240c3e4cbd258306d4a203e3fe",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "8279867534dfe43f6043c6a7365b0247",
     "semantic_hash": ""
   },
   ".claude/skills/iwsdk-ui/SKILL.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "bf7d2ce1d83bd3087ea5c0fef5a5a99b",
+    "mtime": 1791390872.5492415,
+    "ast_hash": "a52e8e81222eee9fa3ccb24b66659246",
     "semantic_hash": ""
   },
   ".github/instructions/assets-and-manifest.instructions.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "1f2c64a0f81b2a405190577f3a4633e2",
+    "mtime": 1791390872.5586405,
+    "ast_hash": "32643f1c4e14d63e49ff305e4437106d",
     "semantic_hash": ""
   },
   ".github/instructions/ecs-api.instructions.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "d13eb58a73dc7528783d13279cdb9f14",
+    "mtime": 1791390872.5586405,
+    "ast_hash": "2f918b0a6dbdacf92f2b36c316261daf",
     "semantic_hash": ""
   },
   ".github/instructions/scene-json.instructions.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "f11dbb9519d94480d25cd513e121f6a6",
+    "mtime": 1791390872.5586405,
+    "ast_hash": "a63bdd079830f8e2597607f61e6b6fe7",
     "semantic_hash": ""
   },
   ".github/instructions/uikitml.instructions.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "0aa44869da9eb157dc692b0c32a57040",
+    "mtime": 1791390872.5586405,
+    "ast_hash": "e47f62717c06f1e6aaa11d003e3439ae",
     "semantic_hash": ""
   },
   "AGENTS.md": {
-    "mtime": 1791178367.254426,
+    "mtime": 1791390872.5586405,
     "ast_hash": "4066ad04b8236e13ca7681c319d4d097",
     "semantic_hash": ""
   },
   "CLAUDE.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "a958c5b544a5bb48e6ae3de0fef6a64c",
+    "mtime": 1791390872.5586405,
+    "ast_hash": "4f511d0abe229daddd24dde49c1def08",
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "14f7ac9822103c3d556934d3dc52cf72",
+    "mtime": 1791438475.1157453,
+    "ast_hash": "554bde37be699bfca7ad211db775413e",
     "semantic_hash": ""
   },
   "index.html": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "b38e12b52d0ad910fb215d9cf5a801b3",
+    "mtime": 1791390872.6222575,
+    "ast_hash": "38af3fc40281e75370e4aa0d98efd9e0",
     "semantic_hash": ""
   },
   "pnpm-workspace.yaml": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "b2918e94025afda1c38b5c89f89bcc8c",
+    "mtime": 1791390872.6222575,
+    "ast_hash": "9d9f69a5de61be0cf1ee9cb13b477fc0",
     "semantic_hash": ""
   },
   "public/licenses/FISH_ASSETS.md": {
-    "mtime": 1791184315.6514213,
-    "ast_hash": "669c4ca55b2dd24067a87c81547ed697",
+    "mtime": 1791437255.49416,
+    "ast_hash": "421b4bb5107680ff9ec5bcd935334340",
     "semantic_hash": ""
   },
   "public/licenses/License.txt": {
-    "mtime": 1791176542.582277,
+    "mtime": 1791390872.6222575,
     "ast_hash": "b1d071d6f3c3180b2bdfe91b33fed797",
     "semantic_hash": ""
   },
   "public/scenes/AGENTS.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "da5284c9e3f8e7e13a933c8d1ccc3bf8",
+    "mtime": 1791390872.6849165,
+    "ast_hash": "4acd3577feeb657bb4f75b88eaf81597",
     "semantic_hash": ""
   },
   "public/ui/AGENTS.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "998c350d1cefc2944ada78ecf9e5121b",
+    "mtime": 1791390872.7100227,
+    "ast_hash": "28ea9635c9e836762851baae8e9b2a29",
     "semantic_hash": ""
   },
   "src/AGENTS.md": {
-    "mtime": 1791174224.7321932,
-    "ast_hash": "dc22443dbf68e4564322b737de2e31f3",
+    "mtime": 1791390872.7100227,
+    "ast_hash": "26a139c0c8564ae57bd15ff0049ad356",
     "semantic_hash": ""
   },
   "public/textures/webxr.png": {
-    "mtime": 1791174224.7321932,
+    "mtime": 1791390872.7080176,
     "ast_hash": "c1c8ee9074ce4f5353c3d83ed11e1610",
     "semantic_hash": ""
   },
   "public/audio/chime.mp3": {
-    "mtime": 1791174224.7321932,
+    "mtime": 1791390872.6222575,
     "ast_hash": "fdb435a69e9b1a2d4d91f52eb39daf15",
     "semantic_hash": ""
   },
   "src/ocean/BioluminescentPlankton.ts": {
-    "mtime": 1791196112.3836162,
-    "ast_hash": "f4f8aae7d2d35a3f8ec3eae30bc3eb71",
+    "mtime": 1791390872.7165923,
+    "ast_hash": "89abef295d72c7d0ade4abf532087e2e",
     "semantic_hash": ""
   },
   "src/ocean/WaterCurrent.ts": {
-    "mtime": 1791196112.1329558,
-    "ast_hash": "d3a1ad1f9867c0fad9aad6caf2c974ea",
+    "mtime": 1791390872.7226129,
+    "ast_hash": "f944043c42377b249ee3f1d17b2aa06c",
     "semantic_hash": ""
   },
   "src/audio/OceanAudio.ts": {
-    "mtime": 1791196111.900521,
-    "ast_hash": "409a2e2f2ca21adfa7595e1d83a1150c",
+    "mtime": 1791390872.7100227,
+    "ast_hash": "0466f4126c8645395232db5271a0db27",
     "semantic_hash": ""
   },
   "src/audio/ProceduralAudio.ts": {
-    "mtime": 1791184027.568723,
-    "ast_hash": "07abbac28036dc369d5dc04dcde53748",
+    "mtime": 1791390872.7100227,
+    "ast_hash": "7bb017f3e14713b79a79e282f0195ab6",
     "semantic_hash": ""
   },
   "src/experience/SessionController.ts": {
-    "mtime": 1791183982.6358657,
-    "ast_hash": "0d07a82a51488c04a57406ce031fed64",
+    "mtime": 1791390872.714585,
+    "ast_hash": "5e7b6de2a1ad97def5f504a01e4d50dd",
     "semantic_hash": ""
   },
   "src/experience/MantaFinale.ts": {
-    "mtime": 1791195464.2983243,
-    "ast_hash": "96a1d4231ff14d3a4323172378482657",
+    "mtime": 1791390872.7100227,
+    "ast_hash": "f0379f497285628ae4be69097706d5da",
     "semantic_hash": ""
   },
   "src/experience/DesktopControls.ts": {
-    "mtime": 1791275058.864405,
-    "ast_hash": "f4784e8c39c9f64bf57a1fe7e6af14c5",
+    "mtime": 1791390872.7100227,
+    "ast_hash": "062fcc191bb5f9e5177bedacf01b8603",
     "semantic_hash": ""
   },
   "src/experience/ExperienceController.ts": {
-    "mtime": 1791196080.6398492,
-    "ast_hash": "c4bd4f72570991ad67306d1b7f08de2f",
+    "mtime": 1791390872.7100227,
+    "ast_hash": "ed76dc3270211a72b0c57524e659f310",
     "semantic_hash": ""
   },
   "src/experience/ExperienceXRControls.ts": {
-    "mtime": 1791275082.2343187,
-    "ast_hash": "7f181771b35b9b9f67448ca9dcf7a4b2",
+    "mtime": 1791390872.7100227,
+    "ast_hash": "bce978c4d5ec873dcc9fbb148b6a4789",
     "semantic_hash": ""
   },
   "src/ocean/ReefDecorConfig.ts": {
-    "mtime": 1791271853.4606597,
-    "ast_hash": "a527a4e55f8a65ae5226b16a2628b90c",
+    "mtime": 1791390872.7185988,
+    "ast_hash": "94e973710958e9cd440c9f9e7661ab34",
     "semantic_hash": ""
   },
   "src/ocean/ReefDecorLayer.ts": {
-    "mtime": 1791320035.713343,
-    "ast_hash": "6802fd679b64e022d0f18fc69f0c6fbd",
+    "mtime": 1791390872.7206054,
+    "ast_hash": "da3a0a67600446a26e44456f982e2b69",
     "semantic_hash": ""
   },
   "src/ocean/ReefResponseTargets.ts": {
-    "mtime": 1791197861.6209972,
-    "ast_hash": "0b96fabb8b19a4fc1f7fe27877bc11ae",
+    "mtime": 1791390872.7206054,
+    "ast_hash": "877bdd6371a2a5c408aac4b37ced796f",
     "semantic_hash": ""
   },
   "artifacts/reef-realism-pass1.png": {
-    "mtime": 1791197965.473567,
+    "mtime": 1791390872.590355,
     "ast_hash": "7da9aaa8bf09b9a0dc2f894b0c6d2869",
     "semantic_hash": ""
   },
   "public/models/environment/rocks/reef-rock-large/textures/rock_face_01_diff_1k.jpg": {
-    "mtime": 1791197091.1287382,
+    "mtime": 1791390872.637422,
     "ast_hash": "98ee9f024a6383d7e6cab44ed41e1f15",
     "semantic_hash": ""
   },
   "public/models/environment/rocks/reef-rock-small/textures/rock_07_diff_1k.jpg": {
-    "mtime": 1791197152.2976632,
+    "mtime": 1791390872.6597645,
     "ast_hash": "b68ac1824bb3bd3867641b830ad02099",
     "semantic_hash": ""
   },
   "public/textures/seabed/textures/sand_03_diff_1k.jpg": {
-    "mtime": 1791196907.316625,
+    "mtime": 1791390872.69113,
     "ast_hash": "84bde2b8bea6351805f67a15682b36b2",
     "semantic_hash": ""
   },
   "public/textures/seabed/textures/sand_03_disp_1k.png": {
-    "mtime": 1791196907.334392,
+    "mtime": 1791390872.6964705,
     "ast_hash": "a9d505b87ae1c99a695609d47900145b",
     "semantic_hash": ""
   },
   "src/ocean/UnderwaterAtmosphere.ts": {
-    "mtime": 1791319879.2361934,
-    "ast_hash": "4aad47cc7048a078f2c35542a7252909",
+    "mtime": 1791390872.7206054,
+    "ast_hash": "4233f0403e81d641dad94f249b20135d",
     "semantic_hash": ""
   },
   "artifacts/reef-realism-pass2.png": {
-    "mtime": 1791200587.0429559,
+    "mtime": 1791390872.590355,
     "ast_hash": "a0a0ef1e6b7486ca82936220a9a8ef49",
     "semantic_hash": ""
   },
   "src/ocean/MarineLifeConfig.ts": {
-    "mtime": 1791319482.7051373,
-    "ast_hash": "ab44421aa7564a8fe3b4f842f137288b",
+    "mtime": 1791390872.7185988,
+    "ast_hash": "3e2db4afac5375d62c95a5be1c2dd64c",
     "semantic_hash": ""
   },
   "src/ocean/MarineLifeLayer.ts": {
-    "mtime": 1791347128.9348023,
-    "ast_hash": "564ba96ad362a452289dec96d93a8884",
+    "mtime": 1791390872.7185988,
+    "ast_hash": "b7d9d3fd8dfe5511ef7cc6fae8676142",
     "semantic_hash": ""
   },
   "artifacts/material-polish-browser.png": {
-    "mtime": 1791270065.3088858,
+    "mtime": 1791390872.5807445,
     "ast_hash": "e57d72e3c698b84c6e14e0053d6a2123",
     "semantic_hash": ""
   },
   "artifacts/material-polish-smoke.png": {
-    "mtime": 1791270022.311337,
+    "mtime": 1791390872.5827491,
     "ast_hash": "38a3a16d57ea78535241975898d389b4",
     "semantic_hash": ""
   },
   "artifacts/material-polish-xr.png": {
-    "mtime": 1791270074.3557105,
+    "mtime": 1791390872.5847538,
     "ast_hash": "7f4b802367a61235cd53608398eed6b3",
     "semantic_hash": ""
   },
   "artifacts/material-polish-final-xr.png": {
-    "mtime": 1791270303.741056,
+    "mtime": 1791390872.5807445,
     "ast_hash": "8a23bd8d7e04e56789a7afb4e24118e6",
     "semantic_hash": ""
   },
   "artifacts/material-polish-final.png": {
-    "mtime": 1791270292.425149,
+    "mtime": 1791390872.5827491,
     "ast_hash": "b6e2e7a2ad4f7d43d3cbf69e8e1c3bc5",
     "semantic_hash": ""
   },
   "artifacts/material-polish-final-live.png": {
-    "mtime": 1791270501.4631395,
+    "mtime": 1791390872.5807445,
     "ast_hash": "b38cd60b9385a760e246053bcb0f9a9f",
     "semantic_hash": ""
   },
   "artifacts/visual-realism-cleanup-xr.png": {
-    "mtime": 1791272437.6856365,
+    "mtime": 1791390872.601725,
     "ast_hash": "dc2a0606719fe8f693d1b48ed112537d",
     "semantic_hash": ""
   },
   "artifacts/visual-realism-cleanup.png": {
-    "mtime": 1791272426.130475,
+    "mtime": 1791390872.601725,
     "ast_hash": "902aadf6c189709e7ad0edd189067644",
     "semantic_hash": ""
   },
   "artifacts/visual-realism-cleanup-final-xr.png": {
-    "mtime": 1791272643.3202531,
+    "mtime": 1791390872.5997217,
     "ast_hash": "60dc43a00d7b01ae9a0130fe9e3dbbdd",
     "semantic_hash": ""
   },
   "artifacts/visual-realism-cleanup-final.png": {
-    "mtime": 1791272633.6802711,
+    "mtime": 1791390872.601725,
     "ast_hash": "780c41c7c24373cdd8e0a1b49362c787",
     "semantic_hash": ""
   },
   "artifacts/visual-realism-cleanup-final-key-xr.png": {
-    "mtime": 1791272817.1984205,
+    "mtime": 1791390872.590355,
     "ast_hash": "b18e26a94677fa63de56d6fd88ac73cd",
     "semantic_hash": ""
   },
   "artifacts/visual-realism-cleanup-final-key.png": {
-    "mtime": 1791272808.518586,
+    "mtime": 1791390872.5997217,
     "ast_hash": "266ed43eab3f4706af90191595fc84ec",
     "semantic_hash": ""
   },
   "artifacts/hero-realism-horizon-xr.png": {
-    "mtime": 1791273990.447733,
+    "mtime": 1791390872.5787394,
     "ast_hash": "7a5db36acaf9b4e3496ab7ec91c3c973",
     "semantic_hash": ""
   },
   "artifacts/hero-realism-horizon.png": {
-    "mtime": 1791273981.0946138,
+    "mtime": 1791390872.5787394,
     "ast_hash": "6c8b4afdf3f702b2663acd42356d546b",
     "semantic_hash": ""
   },
   "artifacts/hero-realism-horizon-final-xr.png": {
-    "mtime": 1791274147.19444,
+    "mtime": 1791390872.5767343,
     "ast_hash": "2b74e069bb9599d10f3843fbd73f6e57",
     "semantic_hash": ""
   },
   "artifacts/hero-realism-horizon-final.png": {
-    "mtime": 1791274136.2472284,
+    "mtime": 1791390872.5787394,
     "ast_hash": "0eab52c513fdcbc882f600c71a8cd0a1",
     "semantic_hash": ""
   },
   "artifacts/hero-realism-horizon-final-adjusted.png": {
-    "mtime": 1791274456.748456,
+    "mtime": 1791390872.5744905,
     "ast_hash": "f7537df5cfae8244692ab8e0189af1a7",
     "semantic_hash": ""
   },
   "artifacts/hero-realism-horizon-final-after-key.png": {
-    "mtime": 1791274359.2427557,
+    "mtime": 1791390872.5767343,
     "ast_hash": "ba7830e57e04d731635ffd7eaefd1a6f",
     "semantic_hash": ""
   },
   "artifacts/hero-realism-horizon-final-seabed-basic.png": {
-    "mtime": 1791274529.3047805,
+    "mtime": 1791390872.5767343,
     "ast_hash": "363c797bb6ca35f005ba0b03769775ce",
     "semantic_hash": ""
   },
   "src/experience/BreathGuidance.ts": {
-    "mtime": 1791275483.1749933,
-    "ast_hash": "ebb89884f3416d42d4b485f9804530d2",
+    "mtime": 1791390872.7100227,
+    "ast_hash": "3aafa3d28c6e1b4591364c94dc23133d",
     "semantic_hash": ""
   },
   "artifacts/breath-guidance-after-two-cycles-xr.png": {
-    "mtime": 1791297087.5045097,
+    "mtime": 1791390872.563051,
     "ast_hash": "c934c67070bec3b84a47a15088ff9039",
     "semantic_hash": ""
   },
   "artifacts/breath-guidance-ready-xr.png": {
-    "mtime": 1791275212.145477,
+    "mtime": 1791390872.563051,
     "ast_hash": "82b6dceafeba18255fb3ca91dfaa2aaf",
     "semantic_hash": ""
   },
   "artifacts/breath-guidance-running-final-xr.png": {
-    "mtime": 1791297040.1604846,
+    "mtime": 1791390872.563051,
     "ast_hash": "fba703ffa42c8a3623699ce9f55e52e0",
     "semantic_hash": ""
   },
   "artifacts/breath-guidance-running-xr.png": {
-    "mtime": 1791275452.1322055,
+    "mtime": 1791390872.563051,
     "ast_hash": "4bfdb0bce9b7578f4a2259a57a771284",
     "semantic_hash": ""
   },
   "artifacts/fish-experience-pass-xr.png": {
-    "mtime": 1791298015.1752656,
+    "mtime": 1791390872.5744905,
     "ast_hash": "267de50277c7be1dbc6acdc4341d61b0",
     "semantic_hash": ""
   },
   "public/licenses/fish/scardinius-license.txt": {
-    "mtime": 1791299373.071821,
-    "ast_hash": "d4d50ebc953122f496c0f0585f0c3f14",
+    "mtime": 1791390872.6222575,
+    "ast_hash": "0826d1c3aff18cf9a0620ddeaa589305",
     "semantic_hash": ""
   },
   "artifacts/calm-fish-ab-test-xr.png": {
-    "mtime": 1791300787.6794634,
+    "mtime": 1791390872.5744905,
     "ast_hash": "3760ba981383a7dd6a38906da73442eb",
     "semantic_hash": ""
   },
   "artifacts/bass-fish-ab-test-xr.png": {
-    "mtime": 1791302008.3867779,
+    "mtime": 1791390872.5586405,
     "ast_hash": "ad91915abd46ab0b24334035fff0bfcf",
     "semantic_hash": ""
   },
   "artifacts/bass-fish-isolated-material-xr.png": {
-    "mtime": 1791318370.0206845,
+    "mtime": 1791390872.563051,
     "ast_hash": "1b6ee14f885d0b9c18a95f7ca3bfbe78",
     "semantic_hash": ""
   },
   "artifacts/bass-fish-material-fix-xr.png": {
-    "mtime": 1791304671.373019,
+    "mtime": 1791390872.563051,
     "ast_hash": "655a1078968f2beedf6535e088c4f271",
     "semantic_hash": ""
   },
   "artifacts/recovered-3bass.png": {
-    "mtime": 1791319673.7866638,
+    "mtime": 1791390872.5847538,
     "ast_hash": "c7884af39f879aed124f52bce9fdc147",
     "semantic_hash": ""
   },
   "artifacts/recovered-caustics-3bass.png": {
-    "mtime": 1791319901.3329034,
+    "mtime": 1791390872.5847538,
     "ast_hash": "4f81f7e3cafccca464962629554bdccf",
     "semantic_hash": ""
   },
   "artifacts/recovered-local-materials-3bass.png": {
-    "mtime": 1791319963.3953521,
+    "mtime": 1791390872.5847538,
     "ast_hash": "3623199da51d48be57d4802b5d09da39",
     "semantic_hash": ""
   },
   "artifacts/recovered-materials-3bass.png": {
-    "mtime": 1791319752.9425256,
+    "mtime": 1791390872.590355,
     "ast_hash": "7a61aab7aa8736c400b361711fe27fbb",
     "semantic_hash": ""
   },
   "artifacts/recovered-muted-3bass.png": {
-    "mtime": 1791319808.782981,
+    "mtime": 1791390872.590355,
     "ast_hash": "5de617b7451c54ad591e5b719010a9f2",
     "semantic_hash": ""
   },
   "artifacts/recovered-muted-key-3bass.png": {
-    "mtime": 1791319854.9861448,
+    "mtime": 1791390872.590355,
     "ast_hash": "99080cdacc39c9b1dd81a6a6091f7328",
     "semantic_hash": ""
   },
   "artifacts/recovered-replaced-local-materials-3bass.png": {
-    "mtime": 1791320057.5270653,
+    "mtime": 1791390872.590355,
     "ast_hash": "42c74fe1f379416dba37b8dc33db06a0",
     "semantic_hash": ""
   },
   "artifacts/validation-bass-0.png": {
-    "mtime": 1791320100.5591683,
+    "mtime": 1791390872.590355,
     "ast_hash": "c69fe50743d0e8c382130d40e85233e8",
     "semantic_hash": ""
   },
   "artifacts/validation-bass-1.png": {
-    "mtime": 1791320139.600883,
+    "mtime": 1791390872.590355,
     "ast_hash": "5cb73f760aaf8bbedac38b41315a12b5",
     "semantic_hash": ""
   },
   "artifacts/validation-bass-3-final.png": {
-    "mtime": 1791320171.7178118,
+    "mtime": 1791390872.590355,
     "ast_hash": "c38154060ba26ea26ce269ba867bc856",
     "semantic_hash": ""
   },
   "artifacts/butterfly-fish-visual-test-running.png": {
-    "mtime": 1791343049.3623574,
+    "mtime": 1791390872.5696762,
     "ast_hash": "f10486990a53b199aebf158a5c856c26",
     "semantic_hash": ""
   },
   "artifacts/butterfly-fish-visual-test-runtime.png": {
-    "mtime": 1791343011.6185892,
+    "mtime": 1791390872.5727513,
     "ast_hash": "fc8c6620fbacccadc79aa2ba53f6e52d",
     "semantic_hash": ""
   },
   "src/ocean/ButterflyFishHeroLayer.ts": {
-    "mtime": 1791347117.3770902,
-    "ast_hash": "2b2d9f62d4ce3f6c9f2420e70aae670d",
+    "mtime": 1791434629.7269325,
+    "ast_hash": "33f9d8a05c92ba99e247ab1fd2400e42",
     "semantic_hash": ""
   },
   "artifacts/butterfly-fish-hero-layer-final.png": {
-    "mtime": 1791345009.48545,
+    "mtime": 1791390872.563051,
     "ast_hash": "f2828d6752035f6ae4f704641031896b",
     "semantic_hash": ""
   },
   "artifacts/butterfly-fish-hero-layer-running.png": {
-    "mtime": 1791344945.2476294,
+    "mtime": 1791390872.5696762,
     "ast_hash": "3a7d13112f5fe7e6f9109e8587e2b449",
+    "semantic_hash": ""
+  },
+  "src/audio/BreathVoice.ts": {
+    "mtime": 1791432411.6862593,
+    "ast_hash": "588acad22988adf03e4997127e2dc676",
+    "semantic_hash": ""
+  },
+  "src/ocean/HandFishInteractor.ts": {
+    "mtime": 1791438463.5937011,
+    "ast_hash": "8cd401f52f1e8d268eb75aaa33cf53a7",
+    "semantic_hash": ""
+  },
+  ".github/workflows/deploy-pages.yml": {
+    "mtime": 1791390872.5586405,
+    "ast_hash": "78abdf9612d2d16571c89d186d1bb833",
     "semantic_hash": ""
   }
 }

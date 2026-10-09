@@ -10,6 +10,10 @@ import type { BreathState } from '../breathing/BreathEngine.js';
 import type { SessionState } from '../experience/SessionController.js';
 import { FishAgent } from './FishAgent.js';
 import type { FishVisualStyle } from './FishAgent.js';
+import type {
+  FishHandInteractionSnapshot,
+  FishHandTarget,
+} from './HandFishInteractor.js';
 import type { CurrentSample } from './WaterCurrent.js';
 
 interface FishSpeciesConfig {
@@ -51,6 +55,22 @@ const SUPPORT_FISH_ACCENTS = [
   0xa2d4c9,
 ] as const;
 
+const HAND_INTERACTION = {
+  avoidAcceleration: 1.55,
+  avoidDistance: 0.44,
+  curiousAcceleration: 0.34,
+  curiousDistance: 1.65,
+  headExclusionRadius: 1.2,
+  maxResponders: 3,
+  pinchAvoidAcceleration: 1.18,
+  safeHandDistance: 0.68,
+} as const;
+
+export type FishHandInteractionState =
+  | 'curious'
+  | 'avoid'
+  | 'return';
+
 /**
  * Breath-responsive GLB fish school.
  *
@@ -70,7 +90,6 @@ export class FishSchool {
   private readonly guideCenter = new Vector3(0, 1.68, -4.7);
   private readonly reefCenter = new Vector3(0, 1.5, -5.2);
   private readonly jellyfishExclusionRadius = 0.9;
-  private readonly userExclusionRadius = 0.95;
 
   private readonly centroid = new Vector3();
   private readonly averageVelocity = new Vector3();
@@ -83,6 +102,16 @@ export class FishSchool {
   private readonly guideComfortForce = new Vector3();
   private readonly currentForce = new Vector3();
   private readonly lookTarget = new Vector3();
+  private readonly handForce = new Vector3();
+  private readonly handDifference = new Vector3();
+  private readonly handTangent = new Vector3();
+  private readonly viewerPoint = new Vector3();
+  private readonly responderIndices = [-1, -1, -1];
+  private readonly responderDistances = [
+    Number.POSITIVE_INFINITY,
+    Number.POSITIVE_INFINITY,
+    Number.POSITIVE_INFINITY,
+  ];
 
   constructor(config: FishSchoolConfig) {
     const count = config.count ?? 10;
@@ -184,6 +213,7 @@ export class FishSchool {
     timeSeconds: number,
     current?: CurrentSample,
     session?: SessionState,
+    handInteraction?: FishHandInteractionSnapshot,
   ): void {
     if (this.fish.length === 0) {
       return;
@@ -221,6 +251,10 @@ export class FishSchool {
       state.phase === 'exhale'
         ? 1 + breathProgress * 0.28 * spreadScale
         : 1;
+    const activeHandTarget =
+      this.selectHandTarget(handInteraction);
+
+    this.prepareHandResponders(activeHandTarget);
 
     for (
       let fishIndex = 0;
@@ -228,6 +262,8 @@ export class FishSchool {
       fishIndex += 1
     ) {
       const agent = this.fish[fishIndex];
+      const handState =
+        this.getHandState(fishIndex, activeHandTarget);
 
       this.steering.set(0, 0, 0);
       this.separation.set(0, 0, 0);
@@ -362,6 +398,14 @@ export class FishSchool {
         }
       }
 
+      if (activeHandTarget != null && handState !== 'return') {
+        this.applyHandSteering(
+          agent,
+          activeHandTarget,
+          handState,
+        );
+      }
+
       this.guideComfortForce
         .copy(agent.root.position)
         .sub(this.guideCenter);
@@ -381,23 +425,23 @@ export class FishSchool {
 
       this.comfortForce
         .copy(agent.root.position)
-        .sub(this.userPoint);
+        .sub(this.viewerPoint);
 
       const userDistance =
         this.comfortForce.length();
 
       if (
-        userDistance < this.userExclusionRadius &&
+        userDistance < HAND_INTERACTION.headExclusionRadius &&
         userDistance > 0.001
       ) {
         this.steering.addScaledVector(
           this.comfortForce.normalize(),
-          (this.userExclusionRadius - userDistance) * 2.2,
+          (HAND_INTERACTION.headExclusionRadius - userDistance) * 2.8,
         );
       }
 
       const outsideBoundary =
-      Math.abs(agent.root.position.x) > 4.2 ||
+        Math.abs(agent.root.position.x) > 4.2 ||
         agent.root.position.y < 0.35 ||
         agent.root.position.y > 3.1 ||
         agent.root.position.z < -7.4 ||
@@ -422,7 +466,13 @@ export class FishSchool {
       );
 
       const maxSpeed =
-        state.phase === 'inhale' ? 0.58 : 0.95;
+        handState === 'avoid'
+          ? 0.82
+          : handState === 'curious'
+            ? 0.52
+            : state.phase === 'inhale'
+              ? 0.58
+              : 0.95;
       const minSpeed =
         state.phase === 'inhale' ? 0.1 : 0.16;
       const currentSpeed =
@@ -494,5 +544,226 @@ export class FishSchool {
         .normalize()
         .multiplyScalar(randomRange(0.18, 0.3));
     }
+  }
+
+  private selectHandTarget(
+    interaction?: FishHandInteractionSnapshot,
+  ): FishHandTarget | null {
+    this.viewerPoint.copy(this.userPoint);
+
+    if (interaction == null) {
+      return null;
+    }
+
+    this.viewerPoint.copy(interaction.viewerPosition);
+
+    const left = interaction.left.active
+      ? interaction.left
+      : null;
+    const right = interaction.right.active
+      ? interaction.right
+      : null;
+
+    if (left == null && right == null) {
+      return null;
+    }
+
+    if (left == null) {
+      return right;
+    }
+
+    if (right == null) {
+      return left;
+    }
+
+    return left.indexTip.distanceToSquared(this.centroid) <
+      right.indexTip.distanceToSquared(this.centroid)
+      ? left
+      : right;
+  }
+
+  private prepareHandResponders(
+    target: FishHandTarget | null,
+  ): void {
+    for (
+      let index = 0;
+      index < this.responderIndices.length;
+      index += 1
+    ) {
+      this.responderIndices[index] = -1;
+      this.responderDistances[index] =
+        Number.POSITIVE_INFINITY;
+    }
+
+    if (target == null) {
+      return;
+    }
+
+    for (
+      let fishIndex = 0;
+      fishIndex < this.fish.length;
+      fishIndex += 1
+    ) {
+      const distanceSquared =
+        this.fish[fishIndex].root.position.distanceToSquared(
+          target.indexTip,
+        );
+
+      if (
+        distanceSquared >
+        HAND_INTERACTION.curiousDistance *
+          HAND_INTERACTION.curiousDistance
+      ) {
+        continue;
+      }
+
+      for (
+        let slot = 0;
+        slot < this.responderIndices.length;
+        slot += 1
+      ) {
+        if (distanceSquared >= this.responderDistances[slot]) {
+          continue;
+        }
+
+        for (
+          let shift = this.responderIndices.length - 1;
+          shift > slot;
+          shift -= 1
+        ) {
+          this.responderDistances[shift] =
+            this.responderDistances[shift - 1];
+          this.responderIndices[shift] =
+            this.responderIndices[shift - 1];
+        }
+
+        this.responderDistances[slot] = distanceSquared;
+        this.responderIndices[slot] = fishIndex;
+        break;
+      }
+    }
+  }
+
+  private getHandState(
+    fishIndex: number,
+    target: FishHandTarget | null,
+  ): FishHandInteractionState {
+    if (target == null) {
+      return 'return';
+    }
+
+    let selected = false;
+
+    for (
+      let index = 0;
+      index < HAND_INTERACTION.maxResponders;
+      index += 1
+    ) {
+      selected =
+        selected ||
+        this.responderIndices[index] === fishIndex;
+    }
+
+    if (!selected) {
+      return 'return';
+    }
+
+    const distance =
+      this.fish[fishIndex].root.position.distanceTo(
+        target.indexTip,
+      );
+
+    if (
+      target.pinching ||
+      distance < HAND_INTERACTION.avoidDistance
+    ) {
+      return 'avoid';
+    }
+
+    if (distance < HAND_INTERACTION.curiousDistance) {
+      return 'curious';
+    }
+
+    return 'return';
+  }
+
+  private applyHandSteering(
+    agent: FishAgent,
+    target: FishHandTarget,
+    handState: FishHandInteractionState,
+  ): void {
+    this.handDifference
+      .copy(target.indexTip)
+      .sub(agent.root.position);
+
+    const handDistance =
+      this.handDifference.length();
+
+    if (handDistance < 0.001) {
+      return;
+    }
+
+    if (handState === 'avoid') {
+      const avoidStrength =
+        HAND_INTERACTION.avoidAcceleration *
+          (1 -
+            Math.min(
+              1,
+              handDistance /
+                HAND_INTERACTION.avoidDistance,
+            )) +
+        HAND_INTERACTION.pinchAvoidAcceleration *
+          target.pinchStrength;
+
+      this.handForce
+        .copy(agent.root.position)
+        .sub(target.indexTip)
+        .normalize();
+      this.steering.addScaledVector(
+        this.handForce,
+        avoidStrength,
+      );
+      return;
+    }
+
+    if (
+      handDistance <=
+      HAND_INTERACTION.safeHandDistance
+    ) {
+      this.handForce
+        .copy(agent.root.position)
+        .sub(target.indexTip)
+        .normalize();
+      this.steering.addScaledVector(this.handForce, 0.52);
+      return;
+    }
+
+    this.handForce
+      .copy(this.handDifference)
+      .normalize();
+    this.handTangent
+      .set(-this.handForce.z, 0, this.handForce.x)
+      .normalize();
+
+    const approach =
+      Math.min(
+        1,
+        (handDistance -
+          HAND_INTERACTION.safeHandDistance) /
+          Math.max(
+            0.001,
+            HAND_INTERACTION.curiousDistance -
+              HAND_INTERACTION.safeHandDistance,
+          ),
+      );
+
+    this.steering.addScaledVector(
+      this.handForce,
+      HAND_INTERACTION.curiousAcceleration * approach,
+    );
+    this.steering.addScaledVector(
+      this.handTangent,
+      0.12 * Math.sin(agent.phaseOffset),
+    );
   }
 }
