@@ -44,4 +44,4 @@ pids/
 .vscode/mcp.json
 .codex/config.toml
 
-graphify-out/
+**/graphify-out/
