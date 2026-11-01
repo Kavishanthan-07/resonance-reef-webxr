@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-10-31T09:33:14.858Z",
+  "package": "Lumen Grove 2026-10-31 isolated preview candidate",
+  "sources": [
+    {
+      "publishedPaths": [
+        "models/lumen-grove/**"
+      ],
+      "source": "Poly Haven",
+      "license": "CC0 1.0 Universal",
+      "notice": "licenses/LUMEN_GROVE_ASSETS.txt",
+      "assets": [
+        "Fir Tree 01",
+        "Fir Sapling Medium",
+        "Fern 02",
+        "Tree Stump 01",
+        "Rock Moss Set 02",
+        "Forest Ground 01"
+      ]
+    },
+    {
+      "publishedPaths": [
+        "webxr-input-profiles/profiles/**"
+      ],
+      "source": "@webxr-input-profiles/assets@1.0.20",
+      "sourceTarballSha1": "54b31d7b58f36216e3f246a139def54e7dd572a3",
+      "sourceIntegrity": "sha512-V/8NB4Ywgm//TBVMgo0TgJ9DtxsBoo0iiaF8AdfiP0F0cgbwkuQycEZAIOsplyd/iZ8L3mrFYNJBC6rzQb4tJA==",
+      "upstream": "https://github.com/immersive-web/webxr-input-profiles",
+      "license": "MIT",
+      "notice": "licenses/WEBXR_INPUT_PROFILES_LICENSE.md",
+      "assets": [
+        "generic-hand",
+        "meta-quest-touch-plus",
+        "meta-quest-touch-plus-v2"
+      ]
+    },
+    {
+      "publishedPaths": [
+        "assets/**"
+      ],
+      "source": "Locally compiled Mindverve Lumen Grove and licensed IWSDK runtime dependencies",
+      "license": "Application code plus licenses enumerated in licenses/THIRD_PARTY_NOTICES.txt",
+      "notice": "licenses/THIRD_PARTY_NOTICES.txt"
+    }
+  ],
+  "excluded": [
+    "Resonance Reef GLBs/textures/audio/scenes",
+    "unused source fir GLBs",
+    ".blend files",
+    "UIKitML source/markup",
+    "source maps",
+    "private reports and authoring tools"
+  ]
+}

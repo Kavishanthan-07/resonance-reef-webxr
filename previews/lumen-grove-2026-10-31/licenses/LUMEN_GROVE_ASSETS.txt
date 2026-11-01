@@ -1,0 +1,22 @@
+Lumen Grove — local forest upgrade
+
+Publisher: Poly Haven. All assets below are CC0 1.0 Universal.
+License: https://polyhaven.com/license
+CC0 legal text: https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Fir Tree 01: https://polyhaven.com/a/fir_tree_01
+Fir Sapling Medium: https://polyhaven.com/a/fir_sapling_medium
+Fern 02: https://polyhaven.com/a/fern_02
+Tree Stump 01: https://polyhaven.com/a/tree_stump_01
+Rock Moss Set 02: https://polyhaven.com/a/rock_moss_set_02
+Forest Ground 01: https://polyhaven.com/a/forrest_ground_01
+
+Models were simplified locally and textures resized/repacked to 1K.
+Adult fir uses the source's authored A variant with near/middle/far meshes.
+Original source files, API file listings, checksums, conversion scripts and
+measurements are retained privately under artifacts/lumen-photoreal/.
+Runtime models and textures are served locally; the app does not use the API.
+Bark Brown 01 was evaluated and downloaded but is not used by the runtime;
+the imported trees retain their supplied bark textures.
+
+These notices do not resolve the separate Resonance Reef redistribution hold.

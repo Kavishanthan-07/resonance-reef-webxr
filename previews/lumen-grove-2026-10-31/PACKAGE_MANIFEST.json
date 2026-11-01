@@ -1,0 +1,243 @@
+{
+  "package": "lumen-grove-2026-10-31",
+  "sourceHead": "f8c88cc8c18a3e28d51730347f24b7b5a8ec342b",
+  "fileCountExcludingManifest": 47,
+  "totalBytesExcludingManifest": 25360595,
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "assets/BreathEngine-CVG8WkwA.js",
+      "bytes": 2019251,
+      "sha256": "c0bfaa0eb3897a9e69871644deb0ca6abcf4b226e506b5ad95bee5844515a990"
+    },
+    {
+      "path": "assets/index-DEHA4eP2.js",
+      "bytes": 63775,
+      "sha256": "4a4d4fbabb365b120031cd50afae429ec4e655c35caef2677a34b7e60e6ca6a3"
+    },
+    {
+      "path": "assets/index-tWAyGzX7.js",
+      "bytes": 21267,
+      "sha256": "f8c2b899a5d06e849ab23567dbba2e7379092200dde558f12b54261b91abc745"
+    },
+    {
+      "path": "assets/physics-runtime-C194i0Fo.js",
+      "bytes": 6347,
+      "sha256": "e7fdd557b98ef6df9ef886265dca134770fdb694166d4ace401eb52248ba1aeb"
+    },
+    {
+      "path": "assets/physics-worker-C0UdwKyG.js",
+      "bytes": 7150,
+      "sha256": "a6b2f06867a7755507638b019158e21edf25cf51f37ac6a1754ace0f75c8e13b"
+    },
+    {
+      "path": "assets/worker-BkRtSCqm.js",
+      "bytes": 198824,
+      "sha256": "74b3fbbc47142ea53249ee92af5a7b03da129eb0fd46dcc053383b738bd78af4"
+    },
+    {
+      "path": "assets/worker-_Lh8Vt-i.js",
+      "bytes": 41907,
+      "sha256": "430e4c9e12f79a4c6c5fb3c410bcd85d4661151d098080713b5df3ac8b275001"
+    },
+    {
+      "path": "assets/world-initializer-Zb4uM_LC.js",
+      "bytes": 45168,
+      "sha256": "b2d246c7e7e67bad41eb9d47f32d23ccd623c7028a28bdc12f0288cf6da5b1cc"
+    },
+    {
+      "path": "fireflies/index.html",
+      "bytes": 971,
+      "sha256": "0e46088d48b4690ccde93cf4119f8345f4acc746b3847eb365fc91566b7bb67d"
+    },
+    {
+      "path": "index.html",
+      "bytes": 969,
+      "sha256": "c073cc01f7a92c166da77183630265953d504ee56ed9182b52c818d9a74c0cff"
+    },
+    {
+      "path": "licenses/ASSET_PROVENANCE.json",
+      "bytes": 1653,
+      "sha256": "709c6d533b328b78ccbe9c5899f21c2d161b23562553cd4d0e903c08e8deb21e"
+    },
+    {
+      "path": "licenses/LUMEN_GROVE_ASSETS.txt",
+      "bytes": 1121,
+      "sha256": "c4ad8c79efd4bae9a540b1db5dd67839e13be74c2f44c824b5b6aef157e49613"
+    },
+    {
+      "path": "licenses/THIRD_PARTY_NOTICES.txt",
+      "bytes": 45336,
+      "sha256": "893b92a30f58057513de59907f7f3c31a69e5f33d84758f131e5aba37a258d91"
+    },
+    {
+      "path": "licenses/WEBXR_INPUT_PROFILES_LICENSE.md",
+      "bytes": 1094,
+      "sha256": "0ef0c87e8ffdd0681f332dc3b39f284dee2166d1f853fabc3853884fe81a6f30"
+    },
+    {
+      "path": "models/lumen-grove/fern_02.glb",
+      "bytes": 1256432,
+      "sha256": "a2a58f02e2dc3539de6d0e1c5df4f8985fa5f48bf98b469b475ac01d5e258b04"
+    },
+    {
+      "path": "models/lumen-grove/fir-shared/0609a46ab58d3202a181cebaa1f7789fb7d0ef59c6d45a294958f8608ff85740.png",
+      "bytes": 1196724,
+      "sha256": "0609a46ab58d3202a181cebaa1f7789fb7d0ef59c6d45a294958f8608ff85740"
+    },
+    {
+      "path": "models/lumen-grove/fir-shared/3f20abbce8ea2cde5c6450187a3e2e0e9ea222bde6f703201025def6755a2a48.jpg",
+      "bytes": 192185,
+      "sha256": "3f20abbce8ea2cde5c6450187a3e2e0e9ea222bde6f703201025def6755a2a48"
+    },
+    {
+      "path": "models/lumen-grove/fir-shared/4a93dcd8bf6971bef3418f68bfdf1256754f82a3b5c79c88a8d8ee9ae428d4ef.jpg",
+      "bytes": 419922,
+      "sha256": "4a93dcd8bf6971bef3418f68bfdf1256754f82a3b5c79c88a8d8ee9ae428d4ef"
+    },
+    {
+      "path": "models/lumen-grove/fir-shared/813d73a3e5ea788130551d6bf9ed6a867d1a12bef44be24853120a3d002e95f8.jpg",
+      "bytes": 233672,
+      "sha256": "813d73a3e5ea788130551d6bf9ed6a867d1a12bef44be24853120a3d002e95f8"
+    },
+    {
+      "path": "models/lumen-grove/fir-shared/955ca1c40c81ee5e08840f8a44e2b75369395853886c6b1c8a540aa165f33780.png",
+      "bytes": 2191086,
+      "sha256": "955ca1c40c81ee5e08840f8a44e2b75369395853886c6b1c8a540aa165f33780"
+    },
+    {
+      "path": "models/lumen-grove/fir-shared/96af54cc654eff53fe6860af3183807f8c795d84eba02f7e281841e5937b1d92.jpg",
+      "bytes": 141414,
+      "sha256": "96af54cc654eff53fe6860af3183807f8c795d84eba02f7e281841e5937b1d92"
+    },
+    {
+      "path": "models/lumen-grove/fir-shared/f453cc1d7cf5771482902c680c53a96e3bcd90360791b6f5e7e22b0f2acba769.png",
+      "bytes": 1805217,
+      "sha256": "f453cc1d7cf5771482902c680c53a96e3bcd90360791b6f5e7e22b0f2acba769"
+    },
+    {
+      "path": "models/lumen-grove/fir-shared/f5cfad42d097f216625b0894b40fb4a9733df6a2c41996384d68b18655da2f9f.jpg",
+      "bytes": 369423,
+      "sha256": "f5cfad42d097f216625b0894b40fb4a9733df6a2c41996384d68b18655da2f9f"
+    },
+    {
+      "path": "models/lumen-grove/fir-shared/f8dea6b9fa275816f7ec5aed6831538de0eda588e1f49bcf166570cbd1d0699c.jpg",
+      "bytes": 243239,
+      "sha256": "f8dea6b9fa275816f7ec5aed6831538de0eda588e1f49bcf166570cbd1d0699c"
+    },
+    {
+      "path": "models/lumen-grove/fir_sapling_medium.glb",
+      "bytes": 4208004,
+      "sha256": "cfd3cab7f5ba1e44575ee2c69a4c7110f75c866e4cf594dc1774fb3292c8770b"
+    },
+    {
+      "path": "models/lumen-grove/fir_tree_01-a-0.bin",
+      "bytes": 1176028,
+      "sha256": "2c319daef12caeca6c36d29f0cd9db2b56f97d79c4b2f998e1cc35c055402b26"
+    },
+    {
+      "path": "models/lumen-grove/fir_tree_01-a-far-0.bin",
+      "bytes": 92736,
+      "sha256": "0c091d2244f2db43ca1a38f1a00effbf71b0306b62c2651d00f172d36306682a"
+    },
+    {
+      "path": "models/lumen-grove/fir_tree_01-a-far.gltf",
+      "bytes": 6789,
+      "sha256": "793cf0d0ccdcca2d44654ede59fcf903be49a375de6f19767f1a0e5d81836bd3"
+    },
+    {
+      "path": "models/lumen-grove/fir_tree_01-a-middle-0.bin",
+      "bytes": 345984,
+      "sha256": "6871f58477a3ce63207961ab08720427a60868d8b60935ce665a3d03f17207b5"
+    },
+    {
+      "path": "models/lumen-grove/fir_tree_01-a-middle.gltf",
+      "bytes": 6676,
+      "sha256": "a50f5a3b2ba8fffb712cfd983f0a440314c5591e5d93b1cac32a0e49f6fb35d0"
+    },
+    {
+      "path": "models/lumen-grove/fir_tree_01-a.gltf",
+      "bytes": 6688,
+      "sha256": "ab89531074cb10dc21f95579f9ca8dd2b6308fc7c6265385e1cd74a89e121dcf"
+    },
+    {
+      "path": "models/lumen-grove/forrest_ground_01-arm.jpg",
+      "bytes": 134619,
+      "sha256": "69d128dba26ceb50603b9098cdb6d035c39d1da9f1a183b841eb45695772cf59"
+    },
+    {
+      "path": "models/lumen-grove/forrest_ground_01-diffuse.jpg",
+      "bytes": 337149,
+      "sha256": "a226dcf8bfd8bdff91e63e1c752e2a1c45d7330c19246aa674087861f509b554"
+    },
+    {
+      "path": "models/lumen-grove/forrest_ground_01-normal.jpg",
+      "bytes": 462771,
+      "sha256": "7033db56d0cdf4e3fb03a4b3e8a8ee9ecabeddcaa70b8cec1dcba8b14ddee0ec"
+    },
+    {
+      "path": "models/lumen-grove/rock_moss_set_02.glb",
+      "bytes": 2522772,
+      "sha256": "73144e9d42735c5e0dc74ef6f3e6742ef9d12806735185fa271d1fe5e817a66f"
+    },
+    {
+      "path": "models/lumen-grove/tree_stump_01.glb",
+      "bytes": 3299524,
+      "sha256": "d58b94bd1654d85217fe77379acd4175e88dd6240716778f9e9db7a40ad62d39"
+    },
+    {
+      "path": "scenes/main.iwsdk.scene.json",
+      "bytes": 504,
+      "sha256": "f1bd4056f877273d857be0384dd9b8015dd7cde89ee73be411f797465e0d448a"
+    },
+    {
+      "path": "webxr-input-profiles/profiles/generic-hand/left.glb",
+      "bytes": 94572,
+      "sha256": "bc67783144944ea1cda54d9247885825ea5fb9d4651469fe7d00be517a5c2b87"
+    },
+    {
+      "path": "webxr-input-profiles/profiles/generic-hand/profile.json",
+      "bytes": 1942,
+      "sha256": "749bb0624eb032d1e726e87dad398e6729020f35d62d2e9b431d4202e4c656fc"
+    },
+    {
+      "path": "webxr-input-profiles/profiles/generic-hand/right.glb",
+      "bytes": 94004,
+      "sha256": "291790c14f7f88a7f9bd35330c47392ed8e8d395ae6728f4bb7089f1bc1f2b96"
+    },
+    {
+      "path": "webxr-input-profiles/profiles/meta-quest-touch-plus-v2/left.glb",
+      "bytes": 804740,
+      "sha256": "2df6f94439d23e9bedda4c60b55d2c45c477e2590b9338ad4f452a2b81fe27c7"
+    },
+    {
+      "path": "webxr-input-profiles/profiles/meta-quest-touch-plus-v2/profile.json",
+      "bytes": 11468,
+      "sha256": "303427e74f751137eaa0886895cd67460eb9993250f7554752d2efd616b0375d"
+    },
+    {
+      "path": "webxr-input-profiles/profiles/meta-quest-touch-plus-v2/right.glb",
+      "bytes": 806196,
+      "sha256": "380b1a6fb82fecaf76f8a3c202aadaa441d58da66020c692b90adc0e9490a672"
+    },
+    {
+      "path": "webxr-input-profiles/profiles/meta-quest-touch-plus/left.glb",
+      "bytes": 217984,
+      "sha256": "41a35b80221398d37029cbfaa9e39084ccd43e0206be72a5e8460f52e7882cb4"
+    },
+    {
+      "path": "webxr-input-profiles/profiles/meta-quest-touch-plus/profile.json",
+      "bytes": 11430,
+      "sha256": "f69041753f555fb91c36d97fd4a58885f3ceb35e2273b179f59cedd464aec688"
+    },
+    {
+      "path": "webxr-input-profiles/profiles/meta-quest-touch-plus/right.glb",
+      "bytes": 213868,
+      "sha256": "5126d638fb1d03e05d16d8eec3b31b9588df88eaa8b42cc21b857fac3bd44916"
+    }
+  ]
+}
